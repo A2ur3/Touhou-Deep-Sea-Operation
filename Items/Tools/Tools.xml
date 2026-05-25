@@ -579,9 +579,7 @@
         <Sprite texture="%ModDir%/Images/Tools/Kappa_Miningdrill.png" sourcerect="0,0,400,140" depth="0.55" origin="0.5,0.5"/>
         <Body width="400" height="140" density="10"/>
         <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="55,-10" aimpos="55,0" handle1="-115,1" handle2="-42,-24" holdangle="-40"
-                  msg="ItemMsgPickUpSelect">
-            <StatusEffect type="OnActive" target="This" Interval="0.5" disabledeltatime="true" setvalue="true" scale="0.23"/>
-        </Holdable>
+                  msg="ItemMsgPickUpSelect"/>
         <RepairTool firedamage="10.0" structurefixamount="-0.75" range="300" barrelpos="85,9" combatpriority="23" RepairMultiple="true"
                     RepairThroughHoles="false" levelwallfixamount="-20.0">
             <RequiredItems identifier="batterycell,Spiritual_Water,fulguriumbatterycell" type="Contained" msg="需要电池或灵水"/>
@@ -1212,7 +1210,6 @@
                 <Conditional Hyouibana_Effect_Prefect_Nitori="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100"/>
             </StatusEffect>
-            <StatusEffect type="OnActive" target="This" comparison="And" Interval="5" disabledeltatime="true" setvalue="true" scale="0.23"/>
         </Holdable>
         <RepairTool firedamage="10.0" structurefixamount="3.0" range="200" barrelpos="60,5" particles="weld" repairmultiple="true"
                     HitBrokenDoors="true" repairthroughwalls="false" levelwallfixamount="-0.8" targetforce="10">
@@ -1778,7 +1775,7 @@
                     <StatusEffect type="OnWearing" target="Character" OxygenAvailable="1000.0">
                         <RequiredItem items="Touhou_Nuclear_Battery" type="Contained"/>
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Condition="-0.01" comparison="And">
+                    <StatusEffect type="OnWearing" target="Contained" Condition="-0.01" comparison="And" Interval="1.0" disabledeltatime="true">
                         <Conditional HasTag="eq Tactical_Open" TargetContainer="true"/>
                         <Conditional TargetContainer="true" TargetGrandparent="true" IsDead="false"/>
                         <Conditional TargetContainer="true" TargetGrandparent="true" DecreasedOxygenConsumption="lt 99"/>
@@ -1799,7 +1796,7 @@
                     <StatusEffect type="OnRemoved" target="This" TargetItemComponent="CustomInterface" drawhudwhenequipped="false" setvalue="true"/>
                 </Containable>
                 <Containable items="Touhou_Nuclear_Energy_Capacitor_Magazine">
-                    <StatusEffect type="OnWearing" target="Contained" Condition="-0.02" comparison="And">
+                    <StatusEffect type="OnWearing" target="Contained" Condition="-0.02" comparison="And" Interval="1.0" disabledeltatime="true">
                         <Conditional HasTag="eq Tactical_Open" TargetContainer="true"/>
                         <Conditional TargetContainer="true" TargetGrandparent="true" IsDead="false"/>
                         <Conditional TargetContainer="true" TargetGrandparent="true" DecreasedOxygenConsumption="lt 99"/>
@@ -1845,7 +1842,7 @@
             <StatusEffect type="OnWearing" target="Character" PressureProtection="4200.0" SpeedMultiplier="0.95" setvalue="true"
                           disabledeltatime="true"/>
 
-            <StatusEffect type="OnWearing" target="Character">
+            <StatusEffect type="OnWearing" target="Character" Interval="1.0" duration="1.0">
                 <Conditional Candid_Friend="gt 0"/>
                 <Conditional Hyouibana_Effect_Prefect_Nitori="gt 0"/>
                 <Affliction identifier="Nitori_Tools" amount="50"/>
@@ -2811,7 +2808,7 @@
         <Price baseprice="2000" sold="false" minleveldifficulty="40">
             <Price storeidentifier="merchantoutpost"/>
             <Price storeidentifier="merchantcity" multiplier="0.9"/>
-            <Price storeidentifier="merchantresearch" multiplier="1.1" sold="true"/>
+            <Price storeidentifier="merchantresearch" multiplier="1.1" />
             <Price storeidentifier="merchantmilitary" multiplier="1.1"/>
             <Price storeidentifier="merchantmine"/>
             <Price locationtype="Merchant_Kawasiro_Nitori" multiplier="0.7" maxavailable="1"/>
@@ -4812,8 +4809,8 @@
         <Body width="120" height="170" density="10"/>
         <Sprite Texture="%ModDir%/Images/Tools/Touhou_Lost_Storage_Bag.png" depth="0.5" sourcerect="120,0,120,170"/>
         <Deconstruct time="3" chooserandom="true" amount="3">
-            <Item identifier="Touhou_Plant_Extract" amount="6" commonness="0.1"/>
-            <Item identifier="Magic_Material" amount="2" commonness="0.2"/>
+            <Item identifier="Touhou_Plant_Extract" amount="5" commonness="0.1"/>
+            <Item identifier="Magic_Material" commonness="0.2"/>
             <Item identifier="Touhou_Bottle_Element" commonness="0.2"/>
             <Item identifier="Touhou_Base_Metal" commonness="0.25"/>
             <Item identifier="deusizine" commonness="0.05"/>
@@ -5351,8 +5348,8 @@
                         <Conditional IsDead="false"/>
                         <Affliction identifier="Touhou_Octopus_Waist_Pouch_Effect" strength="10"/>
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="This,Character" setvalue="true" multiplyafflictionsbymaxvitality="true" Interval="3.0" disabledeltatime="true">
-                        <Conditional condition="lte 10"/>
+                    <StatusEffect type="OnWearing" target="Contained,Character" setvalue="true" multiplyafflictionsbymaxvitality="true" Interval="3.0" disabledeltatime="true">
+                        <Conditional condition="lte 25"/>
                         <Affliction identifier="Tsukuyomi_Administrator_Low_Power" strength="10"/>
                     </StatusEffect>
                 </Containable>
@@ -5429,7 +5426,8 @@
 
 
     <!--月读VR镜片-->
-    <Item name="月读VR镜片" identifier="Touhou_Tsukuyomi_Stealth_VR_Glasses" tags="smallitem,mobileradio" subcategory="Touhou" category="Equipment"
+    <Item name="月读VR镜片" identifier="Touhou_Tsukuyomi_Stealth_VR_Glasses" tags="smallitem,mobileradio" subcategory="Touhou" category="Equipment" maxstacksize="8"
+          maxstacksizecharacterinventory="1"
           allowasextracargo="true" cargocontaineridentifier="metalcrate" scale="0.08">
         <PreferredContainer primary="medcab"/>
         <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Tsukuyomi_Stealth_VR_Glasses.png" sourcerect="0,0,192,192" origin="0.5,0.5"/>
@@ -5447,9 +5445,9 @@
                     origin="0.5,0.5"/>
             <StatusEffect type="OnWearing" target="Character" Interval="9.9" disabledeltatime="true" multiplyafflictionsbymaxvitality="true" >
                 <Conditional Iroha_Versatile_Adaptation="gt 0"/>
-                <Affliction identifier="Touhou_Tsukuyomi_Stealth_VR_Glasses_Effect" amount="1"/>
+                <Affliction identifier="Touhou_Tsukuyomi_Stealth_VR_Glasses_Effect" amount="13"/>
             </StatusEffect>
-            <StatusEffect type="OnWearing" target="This,Character" Condition="-0.01" Interval="1.0" disabledeltatime="true">
+            <StatusEffect type="OnWearing" target="This,Character" Condition="-0.1" Interval="1.0" disabledeltatime="true">
                 <Conditional HealthPercentage="lte 95"/>
             </StatusEffect>
         </Wearable>
@@ -5484,13 +5482,13 @@
           tags="mediumitem,tool,backpack,Magic_Pouch,Touhou_Wearable_Equipment" fireproof="true" waterproof="true"
           cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="medcab"/>
-        <Price baseprice="6000" minleveldifficulty="30">
+        <Price baseprice="10000" minleveldifficulty="36">
             <Price storeidentifier="merchantoutpost" multiplier="1.4" sold="false"/>
             <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false"/>
             <Price storeidentifier="merchantresearch" multiplier="0.9" minavailable="1" sold="false"/>
             <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="false"/>
             <Price storeidentifier="merchantmine" multiplier="1.2" sold="false"/>
-            <Price storeidentifier="Merchant_Kawasiro_Nitori" multiplier="0.7"/>
+            <Price storeidentifier="Merchant_Kawasiro_Nitori" multiplier="0.85"/>
         </Price>
         <Deconstruct time="10">
             <Item identifier="organicfiber" amount="4"/>
@@ -5504,6 +5502,7 @@
             <Item identifier="Seven_Elements_Alchemical" amount="2"/>
             <Item identifier="Touhou_Base_Metal" amount="2"/>
         </Fabricate>
+        <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Star_Moon_Waist_Pouch.png" sourcerect="0,0,200,140" origin="0.5,0.5"/>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Star_Moon_Waist_Pouch.png" depth="0.7" sourcerect="0,0,200,140" origin="0.5,0.5"/>
         <Body width="200" height="140" density="10"/>
         <ItemContainer autofill="False" capacity="0" maxstacksize="0" containedstateindicatorslot="0" ExtraStackSize="2" slotsperrow="4">
@@ -5600,7 +5599,7 @@
                 <Containable items="smallitem,mediumitem" excludeditems="backpack,crate,toolbelt,toolbox,Touhou_Magic_Charging_Box,bulkyweapon,mountableweapon,ammobox"/>
             </SubContainer>
             <SubContainer capacity="4" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
-                <Containable items="smallitem,mediumitem,Touhou_Magic_Charging_Box,bulkyweapon" excludeditems="backpack,crate,toolbelt"/>
+                <Containable items="smallitem,mediumitem,Touhou_Magic_Charging_Box,bulkyweapon,tsm_gun" excludeditems="backpack,crate,toolbelt"/>
             </SubContainer>
         </ItemContainer>
 

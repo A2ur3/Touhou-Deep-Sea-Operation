@@ -86,7 +86,7 @@
             <RequiredItem identifier="Touhou_Plant_Extract" />
             <RequiredItem tag="Touhou_Weapon_Level03" mincondition="0" maxcondtion="100" usecondition="false"/>
         </Fabricate>
-        <Fabricate suitablefabricators="Magic_Altar" requiredtime="10" amount="6">
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="10" amount="4">
             <RequiredSkill identifier="Touhou_Magic" level="40"/>
             <RequiredItem identifier="Touhou_Disintegration_Stone" mincondition="0" usecondition="true"/>
             <RequiredItem tag="Touhou_Weapon_Level04" mincondition="0" maxcondtion="100" usecondition="false"/>

@@ -5,7 +5,7 @@
     Touhou_Weapon_Level01——回收副产物*2
     Touhou_Weapon_Level02——回收以太层
     Touhou_Weapon_Level03——回收以太层*3
-    Touhou_Weapon_Level04——回收以太层*6
+    Touhou_Weapon_Level04——回收以太层*4
     Touhou_Weapon_Level05——回收以太层*16
     -->
 
@@ -1009,7 +1009,7 @@
             </StatusEffect>
             <StatusEffect type="OnBroken" target="This" delay="4.0" aimable="true" aimpos="10,90" drawhudwhenequipped="true"/>
             <StatusEffect type="Always" target="This" Condition="100" disabledeltatime="true" delay="4.0" checkconditionalalways="true" aimable="true"
-                          aimpos="10,90" drawhudwhenequipped="true" AllowWhenBroken="true">
+                          aimpos="10,90" drawhudwhenequipped="true" AllowWhenBroken="true" stackable="false" Interval="0.5">
                 <Conditional condition="eq 0"/>
                 <SpawnItem identifiers="Gungnier_Bolt" spawnposition="ThisInventory"/>
             </StatusEffect>
@@ -1052,9 +1052,6 @@
             </StatusEffect>
             <StatusEffect type="OnImpact" target="Limb">
                 <Affliction identifier="lacerations" strength="66" penetration="0.4"/>
-            </StatusEffect>
-            <StatusEffect type="OnImpact" target="Limb">
-                <Affliction identifier="bloodloss" strength="5"/>
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
                 <Affliction identifier="Touhou_Lost_Dream" strength="20"/>
@@ -1131,7 +1128,7 @@
         </Deconstruct>
         <InventoryIcon texture="%ModDir%/Images/Youmu_Items/Youmusmg_Icon.png" sourcerect="0,0,65,54" origin="0.5,0.5"/>
         <Sprite texture="%ModDir%/Images/Youmu_Items/Youmusmg_Sprite.png" sourcerect="0,0,147,79" depth="0.55" origin="0.5,0.5"/>
-        <Body width="140" height="60" density="25"/>
+        <Body width="140" height="60" density="10"/>
         <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="50,-10" handle1="-30,-15" handle2="26,5" holdangle="-35"
                   msg="ItemMsgPickUpSelect">
             <StatusEffect type="OnActive" target="Character" Interval="0.5" disabledeltatime="true">
@@ -1829,28 +1826,18 @@
                 <Conditional entitytype="eq Character"/>
                 <Sound file="Content/Items/Medical/Syringe.ogg" range="500"/>
             </StatusEffect>
-            <StatusEffect type="Always" target="This" Condition="0.3" comparison="And">
+            <StatusEffect type="Always" target="This" Condition="0.3" comparison="And" Interval="1.0" disabledeltatime="true">
                 <Conditional InWater="false"/>
                 <Conditional condition="gt 0"/>
             </StatusEffect>
-            <StatusEffect type="Always" target="This" Condition="0.001" comparison="And">
+            <StatusEffect type="Always" target="This" Condition="0.001" comparison="And" Interval="1.0" disabledeltatime="true">
                 <Conditional InWater="True"/>
                 <Conditional condition="gt 0"/>
             </StatusEffect>
-            <StatusEffect type="Always" target="This" Condition="0.05" comparison="And">
+            <StatusEffect type="Always" target="This" Condition="0.2" comparison="And" Interval="1.0" disabledeltatime="true">
                 <Conditional InWater="false"/>
                 <Conditional condition="gt 0"/>
-                <Conditional qualitylevel="eq 1"/>
-            </StatusEffect>
-            <StatusEffect type="Always" target="This" Condition="0.1" comparison="And">
-                <Conditional InWater="false"/>
-                <Conditional condition="gt 0"/>
-                <Conditional qualitylevel="eq 2"/>
-            </StatusEffect>
-            <StatusEffect type="Always" target="This" Condition="0.15" comparison="And">
-                <Conditional InWater="false"/>
-                <Conditional condition="gt 0"/>
-                <Conditional qualitylevel="eq 2"/>
+                <Conditional qualitylevel="gt 2"/>
             </StatusEffect>
         </Holdable>
         <SkillRequirementHint identifier="medical" level="160"/>
@@ -5317,9 +5304,9 @@
     <!--灼热核心-->
     <Item name="灼热核心" identifier="Touhou_Scorching_Ray_Gun_Ammo" scale="0.2" subcategory="Touhou" category="Weapon"
           maxstacksize="16" maxstacksizecharacterinventory="3" cargocontaineridentifier="metalcrate"
-          tags="smallitem,Touhou_Magic_Charging06" impactsoundtag="impact_metal_light">
+          tags="smallitem,Touhou_Magic_Charging05" impactsoundtag="impact_metal_light">
         <PreferredContainer secondary="armcab"/>
-        <Price baseprice="1000" minleveldifficulty="20">
+        <Price baseprice="1500" minleveldifficulty="20">
             <Price storeidentifier="merchantoutpost" maxavailable="3" sold="false"/>
             <Price storeidentifier="merchantcity" maxavailable="2"/>
             <Price storeidentifier="merchantresearch" multiplier="1.25" maxavailable="1"/>
@@ -5335,19 +5322,10 @@
             <RequiredSkill identifier="Touhou_Magic" level="60"/>
             <RequiredSkill identifier="electrical" level="60"/>
             <RequiredItem identifier="uranium" amount="2"/>
-            <RequiredItem identifier="flashpowder"/>
+            <RequiredItem identifier="flashpowder" amount="2"/>
             <RequiredItem identifier="titaniumaluminiumalloy" amount="2"/>
-            <RequiredItem identifier="Touhou_Bottle_Element"/>
-            <RequiredItem identifier="Phoenix_Tail"/>
-            <RequiredItem identifier="Touhou_Base_Metal"/>
-        </Fabricate>
-        <Fabricate suitablefabricators="Magic_Altar" requiredtime="10" displayname="recycleitem">
-            <RequiredSkill identifier="Touhou_Magic" level="50"/>
-            <RequiredSkill identifier="electrical" level="50"/>
-            <RequiredItem identifier="uranium"/>
-            <RequiredItem identifier="Touhou_Plant_Extract" amount="2"/>
-            <RequiredItem identifier="flashpowder"/>
-            <RequiredItem identifier="Touhou_Scorching_Ray_Gun_Ammo" mincondition="0.0" maxcondition="0.5" usecondition="false"/>
+            <RequiredItem identifier="Touhou_Bottle_Element" amount="3"/>
+            <RequiredItem identifier="Touhou_Base_Metal" amount="2"/>
         </Fabricate>
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Scorching_Ray_Gun.png" sourcerect="0,274,140,100" depth="0.45" origin="0.5,0.5"/>
         <Body width="140" height="100" density="10"/>
@@ -7821,15 +7799,15 @@
             <RequiredSkill identifier="Touhou_Magic" level="20"/>
             <RequiredItem identifier="plastic" amount="3"/>
             <RequiredItem identifier="Touhou_Plant_Extract" amount="3"/>
-            <RequiredItem tag="munition_propulsion" amount="2" defaultitem="phosphorus"/>
-            <RequiredItem identifier="titaniumaluminiumalloy"/>
+            <RequiredItem tag="munition_propulsion" amount="3" defaultitem="phosphorus"/>
+            <RequiredItem identifier="titaniumaluminiumalloy" amount="2"/>
             <RequiredItem identifier="Touhou_Bottle_Element"/>
         </Fabricate>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="5" displayname="recycleitem">
             <RequiredSkill identifier="weapons" level="10"/>
             <RequiredItem identifier="plastic" amount="2"/>
             <RequiredItem identifier="Touhou_Plant_Extract" amount="3"/>
-            <RequiredItem tag="munition_propulsion" amount="2" defaultitem="phosphorus"/>
+            <RequiredItem tag="munition_propulsion" amount="3" defaultitem="phosphorus"/>
             <RequiredItem identifier="titaniumaluminiumalloy"/>
             <RequiredItem identifier="Touhou_Lunar_Energy_Magazine" mincondition="0.0" maxcondition="0.5" usecondition="false"/>
         </Fabricate>
@@ -8273,7 +8251,7 @@
                            camerashake="10.0"/>
             </StatusEffect>
             <StatusEffect type="OnFailure" target="This" reload="1.5" setvalue="true"/>
-            <RequiredSkill identifier="weapons" level="70"/>
+            <RequiredSkill identifier="weapons" level="50"/>
             <!--Reset the reload speed-->
             <StatusEffect type="OnUse" target="This" reload="0.7" setvalue="true" delay="1.5"/>
         </MeleeWeapon>
@@ -8822,10 +8800,10 @@
             <SubContainer capacity="1" maxstacksize="1">
                 <Containable items="mobilebattery" setactive="true" hide="true">
                     <StatusEffect type="OnContaining" target="This" penetration="0.1" weapondamagemodifier="1.1" Interval="1.0" disabledeltatime="true" setvalue="true">
-                        <Conditional condition="gt 0"/>
+                        <Conditional condition="gt 0" TargetContainedItem="true"/>
                     </StatusEffect>
                     <StatusEffect type="OnContaining" target="This" penetration="0.0" weapondamagemodifier="1.0" Interval="1.0" disabledeltatime="true" setvalue="true">
-                        <Conditional condition="eq 0"/>
+                        <Conditional condition="eq 0" TargetContainedItem="true"/>
                     </StatusEffect>
                     <StatusEffect type="OnRemoved" target="This" penetration="0.0" weapondamagemodifier="1.0" setvalue="true"/>
                 </Containable>
@@ -8895,7 +8873,7 @@
         <Projectile characterusable="false" hitscan="true" removeonhit="true">
             <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,155,255"
                              scalemultiplier="1,1.4"/>
-            <Attack itemdamage="10" severlimbsprobability="0.45" penetration="0.15">
+            <Attack itemdamage="10" severlimbsprobability="0.45" penetration="0.1">
                 <Affliction identifier="burn" strength="2" probability="0.5"/>
                 <Affliction identifier="lacerations" strength="24"/>
                 <Affliction identifier="explosiondamage" strength="1"/>
@@ -9266,8 +9244,6 @@
                 <Conditional MRE_Satori_Effect="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100"/>
             </StatusEffect>
-
-            <StatusEffect type="OnActive" target="This" Interval="0.5" disabledeltatime="true" setvalue="true" scale="0.17"/>
 
             <StatusEffect type="OnActive" target="This,Character" Interval="0.25" disabledeltatime="true" reload="0.2"
                           setvalue="true">
@@ -14286,7 +14262,7 @@
                 <RequiredItems items="Blunderbussround" type="Contained" msg="ItemMsgAmmoRequired"/>
             </StatusEffect>
             <RequiredItems items="Touhou_Lunar_Phantasm_Ammo,Touhou_Mercy_Ammo,Blunderbussround" type="Contained" msg="ItemMsgAmmoRequired"/>
-            <RequiredSkill identifier="Touhou_Magic" level="75"/>
+            <RequiredSkill identifier="Touhou_Magic" level="100"/>
             <RequiredSkill identifier="weapons" level="75"/>
         </RangedWeapon>
         <ItemContainer capacity="0" maxstacksize="1" hideitems="false" containedstateindicatorstyle="Bullet" containedstateindicatorslot="0">
@@ -14822,22 +14798,14 @@
         </Price>
         <Deconstruct time="6">
             <Item identifier="Touhou_Plant_Extract" amount="2"/>
-            <Item identifier="titaniumaluminiumalloy" amount="2"/>
-            <Item identifier="plastic" amount="2"/>
+            <Item identifier="titaniumaluminiumalloy"/>
         </Deconstruct>
-        <Fabricate suitablefabricators="Magic_Altar" requiredtime="20">
-            <RequiredSkill identifier="Touhou_Magic" level="60"/>
-            <RequiredItem identifier="plastic" amount="4"/>
-            <RequiredItem identifier="titaniumaluminiumalloy" amount="2"/>
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="10">
+            <RequiredSkill identifier="Touhou_Magic" level="10"/>
+            <RequiredItem identifier="Touhou_Plant_Extract" amount="4"/>
+            <RequiredItem identifier="titaniumaluminiumalloy" />
             <RequiredItem identifier="Touhou_Bottle_Element" amount="2"/>
             <RequiredItem identifier="Touhou_Base_Metal" amount="2"/>
-        </Fabricate>
-        <Fabricate suitablefabricators="Magic_Altar" requiredtime="10" displayname="recycleitem">
-            <RequiredSkill identifier="Touhou_Magic" level="50"/>
-            <RequiredItem identifier="Touhou_Plant_Extract" amount="3"/>
-            <RequiredItem identifier="Touhou_Bottle_Element" amount="2"/>
-            <RequiredItem identifier="plastic" amount="2"/>
-            <RequiredItem identifier="Touhou_Arcane_Rune_Cannon_Ammo" mincondition="0.0" maxcondition="0.5" usecondition="false"/>
         </Fabricate>
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Arcane_Rune_Cannon.png" sourcerect="0,292,99,98" depth="0.56" origin="0.5,0.5"/>
         <Body width="21" height="21" density="10"/>
@@ -16684,7 +16652,7 @@
             <RequiredSkill identifier="Touhou_Magic" level="80"/>
         </RangedWeapon>
         <ItemContainer capacity="0" maxstacksize="1" hideitems="true" containedstateindicatorslot="0">
-            <SlotIcon slotindex="0" texture="%ModDir%/Images/OtherWeapons/Touhou_Petal_Tempest.png" sourcerect="0,118,47,80" origin="0.5,0.5"/>
+            <SlotIcon slotindex="0" texture="%ModDir%/Images/OtherWeapons/Touhou_Boundary_Purifier.png" sourcerect="0,140,77,80" origin="0.5,0.5"/>
             <SlotIcon slotindex="1" texture="%ModDir%/Images/Tools/Touhou_Enhanced_Crystal01.png" sourcerect="0,0,68,100" origin="0.5,0.5"/>
             <ContainedStateIndicator texture="%ModDir%/Images/UI/Touhou_Magic_ContainerIndicators.png" sourcerect="0,0,120,32"/>
             <SubContainer capacity="1" maxstacksize="1">
@@ -17857,7 +17825,7 @@
                 <Sound file="Content/Items/Weapons/WEAPON_rifleReload50-_1.ogg" type="OnUse" range="500" volume="2" selectionmode="Random"/>
                 <Sound file="Content/Items/Weapons/WEAPON_rifleReload50-_2.ogg" type="OnUse" range="500" volume="2"/>
             </StatusEffect>
-            <RequiredSkill identifier="weapons" level="35"/>
+            <RequiredSkill identifier="weapons" level="55"/>
             <RequiredItems items="Touhou_Mental_Image_Bullet,handcannonammo" type="Contained" msg="ItemMsgAmmoRequired"/>
         </RangedWeapon>
 

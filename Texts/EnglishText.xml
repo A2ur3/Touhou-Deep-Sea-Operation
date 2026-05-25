@@ -757,15 +757,6 @@
     <entityname.Medical_Toolkit_Antibleeding2_Toolkit>Malleable Synthetic Skin Set</entityname.Medical_Toolkit_Antibleeding2_Toolkit>
     <entitydescription.Medical_Toolkit_Antibleeding2_Toolkit>Malleable synthetic skin set, usable with the Eientei Medical Kit.</entitydescription.Medical_Toolkit_Antibleeding2_Toolkit>
 
-    <entityname.Touhou_Small_Spell_Card_Cannon>Small Spell Card Launcher</entityname.Touhou_Small_Spell_Card_Cannon>
-    <entitydescription.Touhou_Small_Spell_Card_Cannon>A compact spell card launcher capable of using Coilgun ammunition and related spell cards. Compared to a Coilgun, it offers higher firepower with a slightly slower average rate of fire.</entitydescription.Touhou_Small_Spell_Card_Cannon>
-
-    <entityname.Touhou_Rapidly_Spell_Card_Cannon>High-Speed Spell Card Launcher</entityname.Touhou_Rapidly_Spell_Card_Cannon>
-    <entitydescription.Touhou_Rapidly_Spell_Card_Cannon>A high-rate spell card launcher that can use gatling ammunition and related spell cards. Compared to a gatling gun, it boasts greater firepower and rate of fire, but requires continuous fire to reduce spread.</entitydescription.Touhou_Rapidly_Spell_Card_Cannon>
-
-    <entityname.Touhou_Huge_Spell_Card_Cannon>Large Spell Card Launcher</entityname.Touhou_Huge_Spell_Card_Cannon>
-    <entitydescription.Touhou_Huge_Spell_Card_Cannon>A large spell card launcher capable of using cannon or pulse-laser ammunition and related spell cards. Its firepower is much lower than other turrets, but its twin-barrel design compensates for the deficit.</entitydescription.Touhou_Huge_Spell_Card_Cannon>
-
     <entityname.Touhou_Sun_Cannon>‖color:200,200,100,255‖Sun Cannon‖color:end‖</entityname.Touhou_Sun_Cannon>
     <entitydescription.Touhou_Sun_Cannon>A scorching grenade launcher crafted by kappas as payment for Sunny’s assistance. Fires ‖color:gui.yellow‖Standard Grenades or Garnet Grenades‖end‖.</entitydescription.Touhou_Sun_Cannon>
 

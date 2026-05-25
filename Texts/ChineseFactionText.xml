@@ -315,4 +315,17 @@
         第一次发现时间：破壳日前120天
         发现者：联盟直属炼金实验室主任
     </Touhou_Top_Secret_Classified_Reiki_Erode_Crawler_Msg>
+
+    <upgradecategory.Turret_Spell_Card_Cannon>符卡发射器</upgradecategory.Turret_Spell_Card_Cannon>
+    <upgradename.Touhou_Turret_Increasedamage>符卡发射器伤害增强</upgradename.Touhou_Turret_Increasedamage>
+    <upgradedescription.Touhou_Turret_Increasedamage>提高符卡发射器威力，加强抛射速度</upgradedescription.Touhou_Turret_Increasedamage>
+    <entityname.Touhou_Small_Spell_Card_Cannon>小型符卡发射器</entityname.Touhou_Small_Spell_Card_Cannon>
+    <entitydescription.Touhou_Small_Spell_Card_Cannon>小体型的符卡发射器，可以使用电磁枪弹药和相关类型的符卡。相比电磁枪，小型符卡发射器的火力性能更高，平均射速略慢</entitydescription.Touhou_Small_Spell_Card_Cannon>
+    <entityname.Touhou_Rapidly_Spell_Card_Cannon>高速符卡发射器</entityname.Touhou_Rapidly_Spell_Card_Cannon>
+    <entitydescription.Touhou_Rapidly_Spell_Card_Cannon>高射速的符卡发射器，可以使用连射炮弹药和相关类型的符卡。相比连射炮，高速符卡发射器的火力性能和射速都更高，但散布需要持续射击才会减小</entitydescription.Touhou_Rapidly_Spell_Card_Cannon>
+    <entityname.Touhou_Huge_Spell_Card_Cannon>大型符卡发射器</entityname.Touhou_Huge_Spell_Card_Cannon>
+    <entitydescription.Touhou_Huge_Spell_Card_Cannon>大体型的符卡发射器，可以使用加农炮弹药、脉冲激光弹药和相关类型的符卡。相比其他炮塔，大型符卡发射器的火力性能大幅降低，但双联装弥补了这一点。</entitydescription.Touhou_Huge_Spell_Card_Cannon>
+    <entityname.Touhou_Scatter_Spell_Card_Cannon>散射符卡发射器</entityname.Touhou_Scatter_Spell_Card_Cannon>
+    <entitydescription.Touhou_Scatter_Spell_Card_Cannon>低射速的散射符卡发射器，可以使用连射炮弹药和相关类型的符卡。相比连射炮，散射符卡发射器通过蓄力发射多枚射弹，可以压制成群的敌人</entitydescription.Touhou_Scatter_Spell_Card_Cannon>
+
 </infotexts>

@@ -567,7 +567,7 @@
     </Item>
 
     <!--帕秋莉手册-木元素-->
-    <Item name="帕秋莉手册-护符篇" identifier="Patchouli_Book_Charm_01" category="Misc" hideinmenus="true" Tags="smallitem,Patchouli_Book"
+    <Item name="帕秋莉手册-护符篇" identifier="Patchouli_Book_Charm_01" category="Misc" Tags="smallitem,Patchouli_Book"
           cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
 <!--        <Price baseprice="20" canbespecial="false" sold="false">
             <Price storeidentifier="merchantoutpost" minavailable="1" maxavailable="2"/>
@@ -595,7 +595,7 @@
     </Item>
 
     <!--帕秋莉手册-五行元素转换-->
-    <Item name="帕秋莉手册-元素转换篇" identifier="Patchouli_Book_01" category="Misc" hideinmenus="true" Tags="smallitem,Patchouli_Book"
+    <Item name="帕秋莉手册-元素转换篇" identifier="Patchouli_Book_01" category="Misc" Tags="smallitem,Patchouli_Book"
           cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
 <!--        <Price baseprice="20" canbespecial="false" sold="false">
             <Price storeidentifier="merchantoutpost" minavailable="1" maxavailable="2"/>
@@ -623,7 +623,7 @@
     </Item>
 
     <!--帕秋莉手册-以太层金属篇-->
-    <Item name="帕秋莉手册-以太层金属篇" identifier="Patchouli_Book_02" category="Misc" hideinmenus="true" Tags="smallitem,Patchouli_Book"
+    <Item name="帕秋莉手册-以太层金属篇" identifier="Patchouli_Book_02" category="Misc" Tags="smallitem,Patchouli_Book"
           cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
         <Price baseprice="20" canbespecial="false" sold="false">
             <Price storeidentifier="merchantoutpost" minavailable="1" maxavailable="2"/>
@@ -651,7 +651,7 @@
     </Item>
 
     <!--帕秋莉手册-副产物篇-->
-    <Item name="帕秋莉手册-副产物篇" identifier="Patchouli_Book_03" category="Misc" hideinmenus="true" Tags="smallitem,Patchouli_Book"
+    <Item name="帕秋莉手册-副产物篇" identifier="Patchouli_Book_03" category="Misc" Tags="smallitem,Patchouli_Book"
           cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
         <Price baseprice="20" canbespecial="false" sold="false">
             <Price storeidentifier="merchantoutpost" minavailable="1" maxavailable="2"/>
@@ -705,7 +705,7 @@
         </Item>-->
 
     <!--帕秋莉手册-伊奘诺物质篇-->
-    <Item name="帕秋莉手册-伊奘诺物质篇" identifier="Patchouli_Book_05" category="Misc" hideinmenus="true" Tags="smallitem,Patchouli_Book"
+    <Item name="帕秋莉手册-伊奘诺物质篇" identifier="Patchouli_Book_05" category="Misc" Tags="smallitem,Patchouli_Book"
           cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
         <Price baseprice="20" canbespecial="false" sold="false">
             <Price storeidentifier="merchantoutpost" minavailable="1" maxavailable="2"/>
@@ -733,7 +733,7 @@
     </Item>
 
     <!--帕秋莉手册-记忆材料篇-->
-    <Item name="帕秋莉手册-记忆材料篇" identifier="Patchouli_Book_06" category="Misc" hideinmenus="true" Tags="smallitem,Patchouli_Book"
+    <Item name="帕秋莉手册-记忆材料篇" identifier="Patchouli_Book_06" category="Misc" Tags="smallitem,Patchouli_Book"
           cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
         <Price baseprice="20" canbespecial="false" sold="false">
             <Price storeidentifier="merchantoutpost" minavailable="1" maxavailable="2"/>
@@ -761,7 +761,7 @@
     </Item>
 
     <!--帕秋莉手册-出血物质篇-->
-    <Item name="帕秋莉手册-出血物质篇" identifier="Patchouli_Book_07" category="Misc" hideinmenus="true" Tags="smallitem,Patchouli_Book"
+    <Item name="帕秋莉手册-出血物质篇" identifier="Patchouli_Book_07" category="Misc" Tags="smallitem,Patchouli_Book"
           cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
         <Price baseprice="20" canbespecial="false" sold="false">
             <Price storeidentifier="merchantoutpost" minavailable="1" maxavailable="2"/>

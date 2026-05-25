@@ -355,4 +355,8 @@
         First Discovery Date: 120 days before Hatching
         Discoverer: Alliance Alchemy Laboratory Director
     </Touhou_Top_Secret_Classified_Reiki_Erode_Crawler_Msg>
+
+    <upgradecategory.Turret_Spell_Card_Cannon>Spell Card Launcher</upgradecategory.Turret_Spell_Card_Cannon>
+    <upgradename.Touhou_Turret_Increasedamage>Spell Card Launcher Damage Enhancement</upgradename.Touhou_Turret_Increasedamage>
+    <upgradedescription.Touhou_Turret_Increasedamage>Increases the power of the Spell Card Launcher and improves projectile velocity.</upgradedescription.Touhou_Turret_Increasedamage>
 </infotexts>

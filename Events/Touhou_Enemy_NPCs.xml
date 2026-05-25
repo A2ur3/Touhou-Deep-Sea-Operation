@@ -746,7 +746,7 @@
                     <Item identifier="Touhou_MEID"/>
                 </Item>
                 <Item identifier="piratehelmet" equip="true"/>
-                <Item identifier="Pollution_Magician_Clothes01" equip="true"/>
+                <Item identifier="Pollution_Magician_Clothes01_Touhou_Savior_Mod_Effect" equip="true"/>
                 <Item identifier="Gensokyo_Divinggear_Enemy" equip="true">
                     <Item identifier="oxygentank"/>
                     <Item identifier="combatstimulantsyringe"/>
@@ -890,7 +890,7 @@
                 <Item identifier="Touhou_Knightmare_Submachine_Gun" equip="true">
                     <Item identifier="Touhou_Knightmare_Submachine_Gun_Ammo02"/>
                 </Item>
-                <Item identifier="Touhou_Knightmare_Submachine_Gun_Ammo02" amount="6"/>
+                <Item identifier="Touhou_Knightmare_Submachine_Gun_Ammo02" amount="3"/>
                 <Item identifier="Touhou_Assassin_Dagger"/>
                 <Item identifier="Touhou_External_Within_Pill"/>
                 <Item identifier="Touhou_Lost_Storage_Bag_Disciple" amount="2"/>
@@ -1130,7 +1130,7 @@
                 moduleflags="banditleader,crewmodule,engineeringmodule,securitymodule"
                 job="Magician_Enemy"
                 behavior="Passive"
-                healthmultiplier="1.2"
+                healthmultiplier="1.3"
                 healthmultiplierinmultiplayer="1.1"
                 reactionTime="0.1"
                 aimspeed="35"
@@ -1164,7 +1164,7 @@
                     <Item identifier="combatstimulantsyringe"/>
                 </Item>
                 <Item identifier="Touhou_Godsplitter"/>
-                <Item identifier="boardingaxe"/>
+                <Item identifier="Touhou_Pride_Amulet"/>
                 <Item identifier="Touhou_External_Medicine_Box"/>
                 <Item identifier="Touhou_Lost_Storage_Bag_Disciple" amount="2"/>
                 <Item identifier="Touhou_Detoxificatioin_Pill" amount="2"/>
@@ -1181,7 +1181,7 @@
                     <Item identifier="combatstimulantsyringe"/>
                 </Item>
                 <Item identifier="Touhou_Godsplitter"/>
-                <Item identifier="boardingaxe"/>
+                <Item identifier="Touhou_Pride_Amulet"/>
                 <Item identifier="Touhou_External_Medicine_Box" amount="2"/>
                 <Item identifier="Touhou_Lost_Storage_Bag_Disciple" amount="2"/>
                 <Item identifier="Touhou_Detoxificatioin_Pill" amount="2"/>

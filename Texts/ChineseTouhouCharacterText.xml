@@ -642,6 +642,22 @@
     <afflictiondescription.Manifest_God_Of_Miracles>早苗有着一头及腰绿色长发，头顶戴着青蛙发饰，左侧头发用青蛇发饰扎成一束。</afflictiondescription.Manifest_God_Of_Miracles>
     <afflictionname.Sanae_Weapons>风与湖的通神者</afflictionname.Sanae_Weapons>
     <afflictiondescription.Sanae_Weapons>早苗是八坂神奈子的巫女，她用秘术引发的呼风唤雨的奇迹其实是由作为风神的神奈子引发的。早苗同样祭祀着洩矢诹访子，而且是诹访子的遥远的子孙。</afflictiondescription.Sanae_Weapons>
+    <afflictionname.Touhou_Miracles_Wind>奇迹之风</afflictionname.Touhou_Miracles_Wind>
+    <afflictiondescription.Touhou_Miracles_Wind>来自风祝的魔力保护着你，并缓慢治愈伤势</afflictiondescription.Touhou_Miracles_Wind>
+    <afflictionname.SanaeTalent_Effect01>星之奇迹</afflictionname.SanaeTalent_Effect01>
+    <afflictiondescription.SanaeTalent_Effect01>增加30%技能获取速度，技能水平提高10%</afflictiondescription.SanaeTalent_Effect01>
+    <afflictionname.SanaeTalent_Effect02>月之奇迹</afflictionname.SanaeTalent_Effect02>
+    <afflictiondescription.SanaeTalent_Effect02>修复速度和船体修复速度提高50%，提高15%眩晕抗性</afflictiondescription.SanaeTalent_Effect02>
+    <afflictionname.SanaeTalent_Effect03>日之奇迹</afflictionname.SanaeTalent_Effect03>
+    <afflictiondescription.SanaeTalent_Effect03>远程攻击伤害提高5%，近战攻击伤害提高15%</afflictiondescription.SanaeTalent_Effect03>
+    <afflictionname.SanaeTalent_Effect04>山之奇迹</afflictionname.SanaeTalent_Effect04>
+    <afflictiondescription.SanaeTalent_Effect04>增加10%最大生命值，双腿的物理伤害抗性提高20%</afflictiondescription.SanaeTalent_Effect04>
+    <afflictionname.SanaeTalent_Effect05>海之奇迹</afflictionname.SanaeTalent_Effect05>
+    <afflictiondescription.SanaeTalent_Effect05>增加40%游泳速度，烧伤抗性提高10%</afflictiondescription.SanaeTalent_Effect05>
+    <afflictionname.SanaeTalent_Effect06>空之奇迹</afflictionname.SanaeTalent_Effect06>
+    <afflictiondescription.SanaeTalent_Effect06>获得随机技能7点，经验获取速度提高15%</afflictiondescription.SanaeTalent_Effect06>
+    <afflictionname.SanaeTalent_Effect07>风之奇迹</afflictionname.SanaeTalent_Effect07>
+    <afflictiondescription.SanaeTalent_Effect07>移动速度提高15%，降低20%友军伤害</afflictiondescription.SanaeTalent_Effect07>
 
     <!--Reisen-->
     <entityname.Reisen_gear>‖color:220,25,200,255‖铃仙装束‖end‖</entityname.Reisen_gear>
@@ -748,12 +764,12 @@
     <talentname.RenkoTalent>少女秘封俱乐部-莲子</talentname.RenkoTalent>
     <talentdescription.RenkoTalent>当你身着莲子 装束+时，
         减少‖color:gui.red‖15%‖end‖移动速度和‖color:gui.red‖15%‖end‖最大生命值。
-        ‖color:gui.orange‖攻击伤害‖end‖减少‖color:gui.red‖25%‖end‖
+        ‖color:gui.orange‖攻击伤害‖end‖减少‖color:gui.red‖20%‖end‖
 
         免疫精神病类型的效果
         持有的魔法武器都能获得自己的专属武器效果
         搜寻沉船、遗迹容器时，有‖color:gui.green‖10%‖end‖概率发现‖color:gui.yellow‖伊奘诺物质或以太层金属‖end‖。
-        根据自身‖color:gui.orange‖医疗水平‖end‖，获得对应‖color:gui.green‖10%‖end‖的‖color:gui.orange‖攻击速度‖end‖。最高‖color:gui.green‖20%‖end‖
+        根据自身‖color:gui.orange‖医疗水平‖end‖，获得对应‖color:gui.green‖10%‖end‖的‖color:gui.orange‖攻击速度‖end‖。最高‖color:gui.green‖10%‖end‖
 
         与梅莉一起开始巡回、巡回结束时完成所有任务并且等级大于‖color:gui.green‖5‖end‖，获得‖color:gui.yellow‖《红斑博物志》‖end‖
         莲子阅读‖color:gui.yellow‖《红斑博物志》‖end‖后，以下效果随机触发（可全部触发或全部不触发）：
@@ -1092,7 +1108,7 @@
     <entitydescription.Iroha_Plus>是虚拟空间「月夜见」顶流主播兼管理员月见八千代的狂热粉丝，甚至在卧室里为八千代的立牌专门设置了一个小小的神龛。</entitydescription.Iroha_Plus>
     <talentname.IrohaTalent>全才适应</talentname.IrohaTalent>
     <talentdescription.IrohaTalent>当你身着彩叶 装束+时，
-        （非静止状态下）随时间获得‖color:gui.yellow‖“疲惫”‖end‖效果，最多减少‖color:gui.green‖40%‖end‖‖color:gui.orange‖移动速度‖end‖，‖color:gui.green‖35%‖end‖‖color:gui.orange‖攻击伤害‖end‖，‖color:gui.green‖20%‖end‖‖color:gui.orange‖物理伤害抗性‖end‖
+        （非静止状态下）随时间获得‖color:gui.yellow‖“疲惫”‖end‖效果，最多减少‖color:gui.red‖40%‖end‖‖color:gui.orange‖移动速度‖end‖，‖color:gui.red‖35%‖end‖‖color:gui.orange‖攻击伤害‖end‖，‖color:gui.red‖20%‖end‖‖color:gui.orange‖物理伤害抗性‖end‖
         等级大于‖color:gui.green‖8‖end‖时，‖color:gui.yellow‖“疲惫”‖end‖增长速度减半
         保持生命值在‖color:gui.green‖50%‖end‖以上并食用‖color:gui.green‖3‖end‖级以上料理，可以逐渐消解‖color:gui.yellow‖“疲惫”‖end‖
 
@@ -1114,6 +1130,16 @@
 
     <entityname.Touhou_Tsukuyomi_Stealth_VR_Glasses>‖color:107,63,160,255‖月读VR镜片‖end‖</entityname.Touhou_Tsukuyomi_Stealth_VR_Glasses>
     <entitydescription.Touhou_Tsukuyomi_Stealth_VR_Glasses>小巧的VR眼镜</entitydescription.Touhou_Tsukuyomi_Stealth_VR_Glasses>
+
+    <!--通用-->
+    <entityname.Normal_Yousei_Clothes>妖精常服</entityname.Normal_Yousei_Clothes>
+    <entitydescription.Normal_Yousei_Clothes>随处可见的妖精的常服</entitydescription.Normal_Yousei_Clothes>
+
+
+
+
+
+
 
 
 

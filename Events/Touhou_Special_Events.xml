@@ -2269,52 +2269,52 @@
                                                 ContinueAutomatically="true"/>
                             <CountTargetsAction targettag="player" MinAmount="6">
                                 <Success>
-                                    <SpawnAction npcsetidentifier="Touhou_ODM4_Enemy_NPC" npcidentifier="Touhou_ODM03_Enemy_Human_Lunatic"
+                                    <SpawnAction npcsetidentifier="Touhou_ODM4_Enemy_NPC" npcidentifier="Touhou_ODM04_Enemy_Human_Lunatic"
                                                  lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                                     <WaitAction time="1"/>
-                                    <SpawnAction npcsetidentifier="Touhou_ODM4_Enemy_NPC" npcidentifier="Touhou_ODM03_Enemy_Human_Hard"
+                                    <SpawnAction npcsetidentifier="Touhou_ODM4_Enemy_NPC" npcidentifier="Touhou_ODM04_Enemy_Human_Hard"
                                                  lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                                     <WaitAction time="1"/>
-                                    <SpawnAction npcsetidentifier="Touhou_ODM4_Enemy_NPC" npcidentifier="Touhou_ODM03_Enemy_Human_Hard"
+                                    <SpawnAction npcsetidentifier="Touhou_ODM4_Enemy_NPC" npcidentifier="Touhou_ODM04_Enemy_Human_Hard"
                                                  lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                                     <WaitAction time="1"/>
-                                    <SpawnAction npcsetidentifier="Touhou_ODM4_Enemy_NPC" npcidentifier="Touhou_ODM03_Enemy_Human_Hard"
+                                    <SpawnAction npcsetidentifier="Touhou_ODM4_Enemy_NPC" npcidentifier="Touhou_ODM04_Enemy_Human_Hard"
                                                  lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                                     <WaitAction time="1"/>
-                                    <SpawnAction npcsetidentifier="Touhou_ODM4_Enemy_NPC" npcidentifier="Touhou_ODM03_Enemy_Human_Normal"
+                                    <SpawnAction npcsetidentifier="Touhou_ODM4_Enemy_NPC" npcidentifier="Touhou_ODM04_Enemy_Human_Normal"
                                                  lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                                     <WaitAction time="1"/>
-                                    <SpawnAction npcsetidentifier="Touhou_ODM4_Enemy_NPC" npcidentifier="Touhou_ODM03_Enemy_Human_Normal"
+                                    <SpawnAction npcsetidentifier="Touhou_ODM4_Enemy_NPC" npcidentifier="Touhou_ODM04_Enemy_Human_Normal"
                                                  lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                                     <WaitAction time="1"/>
-                                    <SpawnAction npcsetidentifier="Touhou_ODM4_Enemy_NPC" npcidentifier="Touhou_ODM03_Enemy_Human_Normal"
+                                    <SpawnAction npcsetidentifier="Touhou_ODM4_Enemy_NPC" npcidentifier="Touhou_ODM04_Enemy_Human_Normal"
                                                  lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                                     <WaitAction time="1"/>
-                                    <SpawnAction npcsetidentifier="Touhou_ODM4_Enemy_NPC" npcidentifier="Touhou_ODM03_Enemy_Human_Normal"
+                                    <SpawnAction npcsetidentifier="Touhou_ODM4_Enemy_NPC" npcidentifier="Touhou_ODM04_Enemy_Human_Normal"
                                                  lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                                     <WaitAction time="1"/>
-                                    <TagAction criteria="humanprefabidentifier:Touhou_ODM03_Enemy_Human_Lunatic" tag="Touhou_ODM04_Enemy_Human_Stronger"
+                                    <TagAction criteria="humanprefabidentifier:Touhou_ODM03_Enemy_Human_Lunatic" tag="Touhou_ODM03_Enemy_Human_Stronger"
                                                continueifnotargetsfound="true"/>
-                                    <TagAction criteria="humanprefabidentifier:Touhou_ODM03_Enemy_Human_Hard" tag="Touhou_ODM04_Enemy_Human_Stronger"
+                                    <TagAction criteria="humanprefabidentifier:Touhou_ODM03_Enemy_Human_Hard" tag="Touhou_ODM03_Enemy_Human_Stronger"
                                                continueifnotargetsfound="true"/>
-                                    <TagAction criteria="humanprefabidentifier:Touhou_ODM03_Enemy_Human_Normal" tag="Touhou_ODM04_Enemy_Human_Stronger"
+                                    <TagAction criteria="humanprefabidentifier:Touhou_ODM03_Enemy_Human_Normal" tag="Touhou_ODM03_Enemy_Human_Stronger"
                                                continueifnotargetsfound="true"/>
-                                    <StatusEffectAction targettag="Touhou_ODM04_Enemy_Human_Stronger">
+                                    <StatusEffectAction targettag="Touhou_ODM03_Enemy_Human_Stronger">
                                         <StatusEffect target="This" enabledespawn="true"/>
                                     </StatusEffectAction>
                                 </Success>
                                 <Failure>
-                                    <SpawnAction npcsetidentifier="Touhou_ODM4_Enemy_NPC" npcidentifier="Touhou_ODM03_Enemy_Human_Lunatic"
+                                    <SpawnAction npcsetidentifier="Touhou_ODM4_Enemy_NPC" npcidentifier="Touhou_ODM04_Enemy_Human_Lunatic"
                                                  lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                                     <WaitAction time="1"/>
-                                    <SpawnAction npcsetidentifier="Touhou_ODM4_Enemy_NPC" npcidentifier="Touhou_ODM03_Enemy_Human_Hard"
+                                    <SpawnAction npcsetidentifier="Touhou_ODM4_Enemy_NPC" npcidentifier="Touhou_ODM04_Enemy_Human_Hard"
                                                  lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                                     <WaitAction time="1"/>
-                                    <TagAction criteria="humanprefabidentifier:Touhou_ODM03_Enemy_Human_Lunatic" tag="Touhou_ODM04_Enemy_Human_Stronger"
+                                    <TagAction criteria="humanprefabidentifier:Touhou_ODM03_Enemy_Human_Lunatic" tag="Touhou_ODM03_Enemy_Human_Stronger"
                                                continueifnotargetsfound="true"/>
-                                    <TagAction criteria="humanprefabidentifier:Touhou_ODM03_Enemy_Human_Hard" tag="Touhou_ODM04_Enemy_Human_Stronger"
+                                    <TagAction criteria="humanprefabidentifier:Touhou_ODM03_Enemy_Human_Hard" tag="Touhou_ODM03_Enemy_Human_Stronger"
                                                continueifnotargetsfound="true"/>
-                                    <StatusEffectAction targettag="Touhou_ODM04_Enemy_Human_Stronger">
+                                    <StatusEffectAction targettag="Touhou_ODM03_Enemy_Human_Stronger">
                                         <StatusEffect target="This" enabledespawn="true"/>
                                     </StatusEffectAction>
                                 </Failure>
@@ -2360,11 +2360,11 @@
                                     <SpawnAction npcsetidentifier="Touhou_ODM4_Enemy_NPC" npcidentifier="Touhou_ODM04_Enemy_Human_Normal"
                                                  lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                                     <WaitAction time="1"/>
-                                    <TagAction criteria="humanprefabidentifier:Touhou_ODM04_Enemy_Human_Hard" tag="Touhou_ODM04_Enemy_Human_Stronger"
+                                    <TagAction criteria="humanprefabidentifier:Touhou_ODM04_Enemy_Human_Hard" tag="Touhou_ODM03_Enemy_Human_Stronger"
                                                continueifnotargetsfound="true"/>
-                                    <TagAction criteria="humanprefabidentifier:Touhou_ODM04_Enemy_Human_Normal" tag="Touhou_ODM04_Enemy_Human_Stronger"
+                                    <TagAction criteria="humanprefabidentifier:Touhou_ODM04_Enemy_Human_Normal" tag="Touhou_ODM03_Enemy_Human_Stronger"
                                                continueifnotargetsfound="true"/>
-                                    <StatusEffectAction targettag="Touhou_ODM04_Enemy_Human_Stronger">
+                                    <StatusEffectAction targettag="Touhou_ODM03_Enemy_Human_Stronger">
                                         <StatusEffect target="This" enabledespawn="true"/>
                                     </StatusEffectAction>
                                 </Success>
@@ -2375,11 +2375,11 @@
                                     <SpawnAction npcsetidentifier="Touhou_ODM4_Enemy_NPC" npcidentifier="Touhou_ODM04_Enemy_Human_Normal"
                                                  lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                                     <WaitAction time="1"/>
-                                    <TagAction criteria="humanprefabidentifier:Touhou_ODM04_Enemy_Human_Hard" tag="Touhou_ODM04_Enemy_Human_Stronger"
+                                    <TagAction criteria="humanprefabidentifier:Touhou_ODM04_Enemy_Human_Hard" tag="Touhou_ODM03_Enemy_Human_Stronger"
                                                continueifnotargetsfound="true"/>
-                                    <TagAction criteria="humanprefabidentifier:Touhou_ODM04_Enemy_Human_Normal" tag="Touhou_ODM04_Enemy_Human_Stronger"
+                                    <TagAction criteria="humanprefabidentifier:Touhou_ODM04_Enemy_Human_Normal" tag="Touhou_ODM03_Enemy_Human_Stronger"
                                                continueifnotargetsfound="true"/>
-                                    <StatusEffectAction targettag="Touhou_ODM04_Enemy_Human_Stronger">
+                                    <StatusEffectAction targettag="Touhou_ODM03_Enemy_Human_Stronger">
                                         <StatusEffect target="This" enabledespawn="true"/>
                                     </StatusEffectAction>
                                 </Failure>
@@ -2397,9 +2397,9 @@
                                     <Affliction identifier="Touhou_OutpostDestroyMission04_Event_Player_Weakness" strength="50"/>
                                 </StatusEffect>
                             </StatusEffectAction>
-                            <TagAction criteria="humanprefabidentifier:Touhou_ODM03_Enemy_Human_Stronger" tag="Touhou_ODM04_Enemy_Human_Stronger"
+                            <TagAction criteria="humanprefabidentifier:Touhou_ODM03_Enemy_Human_Stronger" tag="Touhou_ODM03_Enemy_Human_Stronger"
                                        continueifnotargetsfound="true"/>
-                            <StatusEffectAction targettag="Touhou_ODM04_Enemy_Human_Stronger">
+                            <StatusEffectAction targettag="Touhou_ODM03_Enemy_Human_Stronger">
                                 <StatusEffect target="This" enabledespawn="true"/>
                             </StatusEffectAction>
                         </Failure>

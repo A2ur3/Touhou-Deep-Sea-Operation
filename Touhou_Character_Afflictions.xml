@@ -2586,7 +2586,7 @@
     <!--奇迹标记-->
     <Affliction name="奇迹标记" identifier="SanaeTalent_Effect_Flag" description="" type="Touhou_Character_Affliction" isbuff="true"
                 limbspecific="false" maxstrength="1"
-                duration="30.0" showiconthreshold="100" showinhealthscannerthreshold="100" resetbetweenrounds="true"
+                showiconthreshold="100" showinhealthscannerthreshold="100" resetbetweenrounds="true"
                 iconcolors="94,94,94;163,164,164;255,255,255">
         <Effect minstrength="0" maxstrength="1"/>
         <icon texture="%ModDir%/Images/Afflictions/SanaeTalent_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
@@ -3180,8 +3180,8 @@
         <Effect minstrength="0" maxstrength="10" resistancefor="psychosis" minresistance="1.0" maxresistance="1.0">
             <StatValue stattype="MovementSpeed" value="-0.15"/>
             <StatValue stattype="MaximumHealthMultiplier" value="-0.15"/>
-            <StatValue stattype="RangedAttackMultiplier" value="-0.25"/>
-            <StatValue stattype="MeleeAttackMultiplier" value="-0.25"/>
+            <StatValue stattype="RangedAttackMultiplier" value="-0.2"/>
+            <StatValue stattype="MeleeAttackMultiplier" value="-0.2"/>
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Hifuu_Club_Renko.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
     </Affliction>
@@ -4277,8 +4277,8 @@
     <!--疲惫-->
     <Affliction name="疲惫" identifier="Touhou_Iroha_Fatigue" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false"
                 maxstrength="100" showinhealthscannerthreshold="50" >
-        <Effect minstrength="0" maxstrength="10" />
-        <Effect minstrength="10" maxstrength="100" resistancefor="damage" minresistance="0" maxresistance="-0.2" >
+        <Effect minstrength="0" maxstrength="30" />
+        <Effect minstrength="30" maxstrength="100" resistancefor="damage" minresistance="0" maxresistance="-0.2" >
             <StatValue stattype="MovementSpeed" minvalue="0" value="-0.4"/>
             <StatValue stattype="RangedAttackMultiplier" minvalue="0" value="-0.35"/>
             <StatValue stattype="MeleeAttackMultiplier" minvalue="0" value="-0.35"/>
@@ -4333,7 +4333,7 @@
 
     <!--创造者模式-->
     <Affliction name="创造者模式" identifier="Iroha_Mode_Creator" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false"
-                duration="11.1" maxstrength="1" hideiconafterdelay="true" showiconthreshold="100" showinhealthscannerthreshold="100" >
+                duration="11.1" maxstrength="1" hideiconafterdelay="true" showinhealthscannerthreshold="100" >
         <Effect minstrength="0" maxstrength="1" >
             <StatValue stattype="SkillGainSpeed" value="0.5"/>
         </Effect>

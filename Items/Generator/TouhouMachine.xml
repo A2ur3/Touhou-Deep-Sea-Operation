@@ -261,7 +261,7 @@
     <!--小型符卡发射器-->
     <Item name="小型符卡发射器"
           identifier="Touhou_Small_Spell_Card_Cannon"
-          Tags="turret"
+          Tags="turret,Spell_Card_Cannon"
           subcategory="Touhou"
           category="Machine"
           interactthroughwalls="true"
@@ -271,8 +271,9 @@
           focusonselected="true"
           offsetonselected="800"
           linkable="true"
+          allowedupgrades="Spell_Card_Cannon"
           allowedlinks="Touhou_Small_Spell_Card_Cannon_Loader">
-        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Turrets_Bed.png" depth="0.01" sourcerect="444,3,222,151" canflipy="false"/>
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Turrets.png" depth="0.01" sourcerect="782,34,222,188" canflipy="false"/>
         <MinimapIcon name="Command_Weapons_Coilgun" texture="Content/UI/CommandUIAtlas.png" sourcerect="768,0,128,128"/>
         <SwappableItem price="12000" replacementonuninstall="turrethardpoint" origin="128,215" swapidentifier="basicturret">
             <SchematicSprite texture="Content/UI/WeaponUI.png" sourcerect="256,0,256,389"/>
@@ -297,7 +298,7 @@
                 reload="0.05"
                 ShotsPerBurst="5"
                 DelayBetweenBursts="0.85"
-                DamageMultiplier="1.1"
+                DamageMultiplier="1.05"
                 springstiffnesslowskill="2"
                 springstiffnesshighskill="50"
                 springdampinglowskill="0.5"
@@ -315,8 +316,8 @@
             <sound file="Content/Items/Weapons/Coilgun6.ogg" range="10000" type="OnUse"/>
 
             <WeaponIndicator texture="Content/UI/WeaponUI.png" sourcerect="425,913,66,36" origin="0.24, 0.472"/>
-            <RailSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Turrets.png" depth="0.011" sourcerect="250,0,88,235" origin="0.505, 0.68"/>
-            <BarrelSprite texture="Content/Items/Weapons/Turrets.png" depth="0.012" sourcerect="776,256,125,333" origin="0.465, 0.8"/>
+<!--            <RailSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Turrets.png" depth="0.011" sourcerect="250,0,88,235" origin="0.505, 0.68"/>-->
+            <BarrelSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Turrets.png" depth="0.012" sourcerect="789,275,104,274" origin="0.465, 0.92"/>
             <Crosshair texture="%ModDir%/Images/OtherWeapons/Touhou_Rippling_Crosshair.png" sourcerect="0,0,256,256"/>
             <CrosshairPointer texture="%ModDir%/Images/OtherWeapons/Touhou_Rippling_Crosshair.png" sourcerect="256,0,256,256"/>
             <MoveSound file="Content/Items/Weapons/RailgunLoop.ogg"/>
@@ -355,7 +356,7 @@
     <!--高速符卡发射器-->
     <Item name="高速符卡发射器"
           identifier="Touhou_Rapidly_Spell_Card_Cannon"
-          Tags="turret"
+          Tags="turret,Spell_Card_Cannon"
           subcategory="Touhou"
           category="Machine"
           interactthroughwalls="true"
@@ -365,8 +366,9 @@
           focusonselected="true"
           offsetonselected="800"
           linkable="true"
+          allowedupgrades="Spell_Card_Cannon"
           allowedlinks="Touhou_Rapidly_Spell_Card_Cannon_Loader">
-        <Sprite texture="Content/Items/Weapons/Turrets.png" depth="0.01" sourcerect="772,8,248,248" canflipy="false"/>
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Turrets.png" depth="0.01" sourcerect="782,34,222,188" canflipy="false"/>
         <MinimapIcon name="Command_Weapons_Coilgun" texture="Content/UI/CommandUIAtlas.png" sourcerect="768,0,128,128"/>
         <SwappableItem price="12000" replacementonuninstall="turrethardpoint" origin="128,215" swapidentifier="basicturret">
             <SchematicSprite texture="Content/UI/WeaponUI.png" sourcerect="256,0,256,389"/>
@@ -382,7 +384,7 @@
                 launchimpulse="100.0"
                 characterusable="false"
                 linkable="true"
-                barrelpos="128,88"
+                barrelpos="118,58"
                 rotationlimits="180,360"
                 powerconsumption="400.0"
                 showchargeindicator="true"
@@ -390,7 +392,7 @@
                 recoildistance="50"
                 maxchargetime="0.3"
                 reload="0.09"
-                DamageMultiplier="1.2"
+                DamageMultiplier="1.1"
                 springstiffnesslowskill="2"
                 springstiffnesshighskill="50"
                 springdampinglowskill="0.5"
@@ -453,10 +455,12 @@
         <SkillRequirementHint identifier="weapons" level="50"/>
     </Item>
 
-    <!--大型符卡发射器-->
-    <Item name="大型符卡发射器"
-          identifier="Touhou_Huge_Spell_Card_Cannon"
-          Tags="turret"
+<!--
+
+    &lt;!&ndash;散射符卡发射器&ndash;&gt;
+    <Item name="散射符卡发射器"
+          identifier="Touhou_Scatter_Spell_Card_Cannon"
+          Tags="turret,Spell_Card_Cannon"
           subcategory="Touhou"
           category="Machine"
           interactthroughwalls="true"
@@ -466,8 +470,104 @@
           focusonselected="true"
           offsetonselected="800"
           linkable="true"
+          allowedlinks="Touhou_Rapidly_Spell_Card_Cannon_Loader">
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Turrets.png" depth="0.01" sourcerect="782,34,222,188" canflipy="false"/>
+        <MinimapIcon name="Command_Weapons_Coilgun" texture="Content/UI/CommandUIAtlas.png" sourcerect="768,0,128,128"/>
+        <SwappableItem price="12000" replacementonuninstall="turrethardpoint" origin="128,215" swapidentifier="basicturret">
+            <SchematicSprite texture="Content/UI/WeaponUI.png" sourcerect="256,0,256,389"/>
+            <SwapConnectedItem tag="periscope" swapto="periscope"/>
+            <SwapConnectedItem tag="turretammosource" swapto="Touhou_Rapidly_Spell_Card_Cannon_Loader"/>
+        </SwappableItem>
+        <UpgradePreviewSprite scale="2.5" texture="Content/UI/WeaponUI.png" sourcerect="7,810,109,65" origin="0.5,0.5"/>
+        <StaticBody width="80" radius="80"/>
+
+        <Turret
+                canbeselected="false"
+                spread="20.0"
+                launchimpulse="100.0"
+                characterusable="false"
+                linkable="true"
+                barrelpos="128,118"
+                rotationlimits="180,360"
+                powerconsumption="3000.0"
+                showchargeindicator="true"
+                showprojectileindicator="true"
+                recoildistance="50"
+                maxchargetime="0.3"
+                reload="0.7"
+                DamageMultiplier="1.1"
+                springstiffnesslowskill="2"
+                springstiffnesshighskill="50"
+                springdampinglowskill="0.5"
+                springdampinghighskill="10"
+                rotationspeedlowskill="1"
+                rotationspeedhighskill="8"
+                firingoffset="-10,-370"
+                MaxAngleOffset="5"
+                AICurrentTargetPriorityMultiplier="1">
+            <Sound file="Content/Items/Weapons/WEAPONS_chainGunShot1.ogg" type="OnUse" range="10000" selectionmode="Random"/>
+            <Sound file="Content/Items/Weapons/WEAPONS_chainGunShot2.ogg" type="OnUse" range="10000"/>
+            <Sound file="Content/Items/Weapons/WEAPONS_chainGunShot3.ogg" type="OnUse" range="10000"/>
+            <Sound file="Content/Items/Weapons/WEAPONS_chainGunShot4.ogg" type="OnUse" range="10000"/>
+            <Sound file="Content/Items/Weapons/WEAPONS_chainGunShot5.ogg" type="OnUse" range="10000"/>
+            <Sound file="Content/Items/Weapons/WEAPONS_chainGunShot6.ogg" type="OnUse" range="10000"/>
+            <WeaponIndicator texture="Content/UI/WeaponUI.png" sourcerect="575,914,66,32" origin="0.227, 0.531"/>
+            <RailSprite texture="Content/Items/Weapons/Turrets.png" depth="0.011" sourcerect="901,256,120,287" origin="0.7, 0.7" />
+            <BarrelSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Turrets.png" depth="0.012" sourcerect="513,189,252,471" origin="0.6, 1"/>
+            <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256"/>
+            <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256"/>
+            <MoveSound file="Content/Items/Weapons/RailgunLoop.ogg"/>
+            <StartMoveSound file="Content/Items/Weapons/RailgunStart.ogg"/>
+            <EndMoveSound file="Content/Items/Weapons/RailgunStop.ogg"/>
+            <ChargeSound file="Content/Items/Weapons/CHAINGUN_chargeUp_loop.ogg" volume="2" range="10000"/>
+
+            <RequiredSkill identifier="Touhou_Magic" level="50"/>
+
+            <LightComponent LightColor="1.0,0.8,0.8,1.0" Flicker="0.0" range="2500" directional="true" IsOn="true" drawbehindsubs="true"
+                            ignorecontinuoustoggle="true" InheritParentIsActive="false">
+                <LightTexture texture="Content/Lights/lightcone.png" origin="0.0,0.5" size="1.0,1.0"/>
+            </LightComponent>
+            <ParticleEmitter particle="muzzleflashcoilgun" particleamount="1" velocitymin="50" velocitymax="100"/>
+            <StatusEffect type="OnUse" target="This">
+                <Explosion range="1000.0" structuredamage="0" force="0.01" camerashake="5.0" flames="false" smoke="false" sparks="false"
+                           underwaterbubble="false"/>
+            </StatusEffect>
+        </Turret>
+
+        <aitarget maxsightrange="3000" maxsoundrange="8000" fadeouttime="5"/>
+
+        <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+            <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel"/>
+            <RequiredItem items="screwdriver" type="Equipped"/>
+            <input name="power_in" displayname="connection.powerin"/>
+            <input name="position_in" displayname="connection.turretaimingin"/>
+            <input name="trigger_in" displayname="connection.turrettriggerin"/>
+            <input name="toggle_light" displayname="connection.togglelight"/>
+            <input name="set_light" displayname="connection.setlight"/>
+            <input name="set_auto_operate" displayname="connection.setautooperate"/>
+            <input name="toggle_auto_operate" displayname="connection.toggleautooperate"/>
+        </ConnectionPanel>
+        <SkillRequirementHint identifier="weapons" level="50"/>
+    </Item>
+-->
+
+
+    <!--大型符卡发射器-->
+    <Item name="大型符卡发射器"
+          identifier="Touhou_Huge_Spell_Card_Cannon"
+          Tags="turret,Spell_Card_Cannon"
+          subcategory="Touhou"
+          category="Machine"
+          interactthroughwalls="true"
+          Scale="0.5"
+          interactdistance="10"
+          spritecolor="1.0,1.0,1.0,1.0"
+          focusonselected="true"
+          offsetonselected="800"
+          linkable="true"
+          allowedupgrades="Spell_Card_Cannon"
           allowedlinks="Touhou_Huge_Spell_Card_Cannon_Loader">
-        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Turrets_Bed.png" depth="0.01" sourcerect="0,0,444,303" canflipy="false"/>
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Turrets.png" depth="0.01" sourcerect="25,64,451,396" canflipy="false"/>
         <MinimapIcon name="Command_Weapons_FlakCannon" texture="Content/UI/CommandUIBackground.png" sourcerect="512,768,128,128"/>
         <SwappableItem price="20000" replacementonuninstall="largeturrethardpoint" origin="256,438" swapidentifier="largeturret">
             <SchematicSprite texture="Content/UI/WeaponUI.png" sourcerect="768,389,256,389"/>
@@ -483,7 +583,7 @@
                 launchimpulse="70.0"
                 characterusable="false"
                 linkable="true"
-                barrelpos="180,220"
+                barrelpos="250,300"
                 rotationlimits="0,360"
                 powerconsumption="20000.0"
                 showchargeindicator="true"
@@ -492,7 +592,7 @@
                 reload="1.0"
                 ShotsPerBurst="3"
                 DelayBetweenBursts="3"
-                DamageMultiplier="0.7"
+                DamageMultiplier="0.6"
                 springstiffnesslowskill="2"
                 springstiffnesshighskill="50"
                 springdampinglowskill="0.5"
@@ -512,8 +612,8 @@
             <sound file="Content/Items/Weapons/WEAPONS_FlakGun5.ogg" range="10000" type="OnUse" volume="2.0"/>
             <sound file="Content/Items/Weapons/WEAPONS_FlakGun6.ogg" range="10000" type="OnUse" volume="2.0"/>
             <WeaponIndicator texture="Content/UI/WeaponUI.png" sourcerect="653,908,73,44" origin="0.24, 0.472"/>
-
-            <BarrelSprite texture="Content/Items/Weapons/TurretsAndDepthCharges.png" depth="0.012" sourcerect="610,442,111,582" origin="0.6, 1"/>
+            <RailSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Turrets.png" depth="0.011" sourcerect="4,549,311,440" origin="0.6, 1.05" />
+            <BarrelSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Turrets.png" depth="0.012" sourcerect="513,189,252,471" origin="0.6, 1"/>
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256"/>
             <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256"/>
 
@@ -542,7 +642,7 @@
                 launchimpulse="70.0"
                 characterusable="false"
                 linkable="true"
-                barrelpos="280,220"
+                barrelpos="250,300"
                 rotationlimits="0,360"
                 powerconsumption="20000.0"
                 showchargeindicator="true"
@@ -551,7 +651,7 @@
                 reload="1.5"
                 ShotsPerBurst="3"
                 DelayBetweenBursts="3"
-                DamageMultiplier="0.7"
+                DamageMultiplier="0.6"
                 springstiffnesslowskill="2"
                 springstiffnesshighskill="50"
                 springdampinglowskill="0.5"
@@ -565,8 +665,7 @@
             <ParticleEmitterCharge particle="chargepulselaser" particlespersecond="60" scalemin="1.0" scalemax="1.0" anglemax="360"
                                    colormutiplier="10,200,200,255"/>
             <WeaponIndicator texture="%ModDir%/Images/OtherWeapons/Touhou_Blue_Rose_Crosshair.png" sourcerect="0,0,312,348"/>
-            <RailSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Turrets.png" depth="0.011" sourcerect="0,0,250,484" origin="0.72, 0.8"/>
-            <BarrelSprite texture="Content/Items/Weapons/TurretsAndDepthCharges.png" depth="0.012" sourcerect="610,442,111,582" origin="0.51, 1"/>
+            <BarrelSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Turrets.png" depth="0.012" sourcerect="513,189,252,471" origin="0.6, 1"/>
             <LightComponent LightColor="1.0,0.8,0.8,1.0" Flicker="0.0" range="4800" directional="true" IsOn="true" drawbehindsubs="true"
                             ignorecontinuoustoggle="true" InheritParentIsActive="false">
                 <LightTexture texture="Content/Lights/lightcone.png" origin="0.0,0.5" size="1.0,1.0"/>

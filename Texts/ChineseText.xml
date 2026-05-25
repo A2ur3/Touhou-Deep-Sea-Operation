@@ -629,12 +629,6 @@
     <entitydescription.Medical_Toolkit_Antibleeding1_Toolkit>绷带套装，可用于永远亭医疗套件</entitydescription.Medical_Toolkit_Antibleeding1_Toolkit>
     <entityname.Medical_Toolkit_Antibleeding2_Toolkit>可塑人造皮肤套装</entityname.Medical_Toolkit_Antibleeding2_Toolkit>
     <entitydescription.Medical_Toolkit_Antibleeding2_Toolkit>可塑人造皮肤套装，可用于永远亭医疗套件</entitydescription.Medical_Toolkit_Antibleeding2_Toolkit>
-    <entityname.Touhou_Small_Spell_Card_Cannon>小型符卡发射器</entityname.Touhou_Small_Spell_Card_Cannon>
-    <entitydescription.Touhou_Small_Spell_Card_Cannon>小体型的符卡发射器，可以使用电磁枪弹药和相关类型的符卡。相比电磁枪，小型符卡发射器的火力性能更高，平均射速略慢</entitydescription.Touhou_Small_Spell_Card_Cannon>
-    <entityname.Touhou_Rapidly_Spell_Card_Cannon>高速符卡发射器</entityname.Touhou_Rapidly_Spell_Card_Cannon>
-    <entitydescription.Touhou_Rapidly_Spell_Card_Cannon>高射速的符卡发射器，可以使用连射炮弹药和相关类型的符卡。相比连射炮，高速符卡发射器的火力性能和射速都更高，但散布需要持续射击才会减小</entitydescription.Touhou_Rapidly_Spell_Card_Cannon>
-    <entityname.Touhou_Huge_Spell_Card_Cannon>大型符卡发射器</entityname.Touhou_Huge_Spell_Card_Cannon>
-    <entitydescription.Touhou_Huge_Spell_Card_Cannon>大体型的符卡发射器，可以使用加农炮弹药、脉冲激光弹药和相关类型的符卡。相比其他炮塔，大型符卡发射器的火力性能大幅降低，但双联装弥补了这一点。</entitydescription.Touhou_Huge_Spell_Card_Cannon>
     <entityname.Touhou_Sun_Cannon>‖color:200,200,100,255‖阳光大炮‖color:end‖</entityname.Touhou_Sun_Cannon>
     <entitydescription.Touhou_Sun_Cannon>灼热的榴弹发射器，作为桑尼帮忙售卖商品的报酬，河童们为她打造了这把武器。可以发射‖color:gui.yellow‖普通榴弹或金红石榴弹‖end‖</entitydescription.Touhou_Sun_Cannon>
     <entityname.Touhou_Sun_Cannon_Ammo>‖color:200,200,100,255‖金红石榴弹‖color:end‖</entityname.Touhou_Sun_Cannon_Ammo>
@@ -1997,6 +1991,11 @@
     <entityname.Touhou_Star_Moon_Waist_Pouch>星月腰包</entityname.Touhou_Star_Moon_Waist_Pouch>
     <entitydescription.Touhou_Star_Moon_Waist_Pouch>由精通魔法纹路的匠人手工缝制的昂贵腰包，能与魔力披纱产生更好的效果。同时也具有元素腰带的属性，同样拥有单独的元素瓶槽位。虽然槽位更少，但有了更好的效果。</entitydescription.Touhou_Star_Moon_Waist_Pouch>
 
+
+    <entityname.Touhou_Mixer_Gun>调音台</entityname.Touhou_Mixer_Gun>
+    <entitydescription.Touhou_Mixer_Gun>把乐器和武器结合，这种设计已有先例，但像调音台这样激进，却是绝无仅有的。插入稀有度越高的唱片，武器的威力越大。使用‖color:gui.yellow‖共鸣核心‖end‖。</entitydescription.Touhou_Mixer_Gun>
+    <entityname.Touhou_Mixer_Gun_Ammo>共鸣核心</entityname.Touhou_Mixer_Gun_Ammo>
+    <entitydescription.Touhou_Mixer_Gun_Ammo>用于提取音乐中每一处音符的能量，即便是简单的音符也能爆发出不容小觑的威力。作为‖color:gui.yellow‖调音台‖end‖的弹药</entitydescription.Touhou_Mixer_Gun_Ammo>
 
 
 

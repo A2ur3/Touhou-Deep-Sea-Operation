@@ -672,6 +672,21 @@
 <afflictiondescription.Manifest_God_Of_Miracles>Sanae has waist-length green hair and wears a frog hairpin. Her left hair is tied into a bundle with a snake hairpin.</afflictiondescription.Manifest_God_Of_Miracles>
 <afflictionname.Sanae_Weapons>The Communicator of Wind and Lake</afflictionname.Sanae_Weapons>
 <afflictiondescription.Sanae_Weapons>Sanae is the shrine maiden of Sanae Kochiya. The miracles of summoning wind and rain she performs with secret techniques are actually triggered by Sanae, the Wind God. Sanae also worships Izanami, and is a distant descendant of Izanami.</afflictiondescription.Sanae_Weapons>
+    <afflictionname.SanaeTalent_Effect01>Star Miracle</afflictionname.SanaeTalent_Effect01>
+    <afflictiondescription.SanaeTalent_Effect01>+30% skill gain speed, +10% skill level.</afflictiondescription.SanaeTalent_Effect01>
+    <afflictionname.SanaeTalent_Effect02>Moon Miracle</afflictionname.SanaeTalent_Effect02>
+    <afflictiondescription.SanaeTalent_Effect02>+50% repair and hull repair speed, +15% stun resistance.</afflictiondescription.SanaeTalent_Effect02>
+    <afflictionname.SanaeTalent_Effect03>Sun Miracle</afflictionname.SanaeTalent_Effect03>
+    <afflictiondescription.SanaeTalent_Effect03>+5% ranged damage, +15% melee damage.</afflictiondescription.SanaeTalent_Effect03>
+    <afflictionname.SanaeTalent_Effect04>Mountain Miracle</afflictionname.SanaeTalent_Effect04>
+    <afflictiondescription.SanaeTalent_Effect04>+10% max health, +20% leg physical damage resistance.</afflictiondescription.SanaeTalent_Effect04>
+    <afflictionname.SanaeTalent_Effect05>Sea Miracle</afflictionname.SanaeTalent_Effect05>
+    <afflictiondescription.SanaeTalent_Effect05>+40% swim speed, +10% burn resistance.</afflictiondescription.SanaeTalent_Effect05>
+    <afflictionname.SanaeTalent_Effect06>Sky Miracle</afflictionname.SanaeTalent_Effect06>
+    <afflictiondescription.SanaeTalent_Effect06>Gain 7 random skill points, +15% experience gain speed.</afflictiondescription.SanaeTalent_Effect06>
+    <afflictionname.SanaeTalent_Effect07>Wind Miracle</afflictionname.SanaeTalent_Effect07>
+    <afflictiondescription.SanaeTalent_Effect07>+15% movement speed, -20% friendly fire damage.</afflictiondescription.SanaeTalent_Effect07>
+
 
     <!--Reisen-->
     <entityname.Reisen_gear>‖color:220,25,200,255‖Reisen's Outfit‖end‖</entityname.Reisen_gear>
@@ -778,11 +793,11 @@
     <talentname.RenkoTalent>Secret Sealing Club – Renko</talentname.RenkoTalent>
     <talentdescription.RenkoTalent>While wearing Renko's Outfit+:
         −‖color:gui.red‖15%‖end‖ movement speed and −‖color:gui.red‖15%‖end‖ maximum health.
-        ‖color:gui.orange‖Attack damage‖end‖ −‖color:gui.red‖25%‖end‖.
+        ‖color:gui.orange‖Attack damage‖end‖ −‖color:gui.red‖20%‖end‖.
         Immune to psychosis effects.
         All magic weapons gain their own exclusive weapon effect.
         When searching shipwreck or ruin containers, ‖color:gui.green‖10%‖end‖ chance to find ‖color:gui.yellow‖Izanagi Matter or Aether Layer Metal‖end‖.
-        Based on your ‖color:gui.orange‖medical skill‖end‖, gain +‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖attack speed‖end‖, up to ‖color:gui.green‖20%‖end‖.
+        Based on your ‖color:gui.orange‖medical skill‖end‖, gain +‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖attack speed‖end‖, up to ‖color:gui.green‖10%‖end‖.
         When starting or finishing a mission with Merry and completing all tasks while level >‖color:gui.green‖5‖end‖, obtain ‖color:gui.yellow‖“Red Spot Bestiary”‖end‖.
         Reading ‖color:gui.yellow‖“Red Spot Bestiary”‖end‖ triggers random effects (may all trigger or none):
         1. All crew gain +‖color:gui.green‖1‖end‖ point in every skill and +‖color:gui.green‖50%‖end‖ skill gain speed.
@@ -1149,7 +1164,7 @@
 
     <talentname.IrohaTalent>Versatile Adaptation</talentname.IrohaTalent>
     <talentdescription.IrohaTalent>While wearing Iroha Outfit+,
-        gain the ‖color:gui.yellow‖“Fatigue”‖end‖ effect over time while moving, reducing up to ‖color:gui.green‖40%‖end‖ ‖color:gui.orange‖movement speed‖end‖, ‖color:gui.green‖35%‖end‖ ‖color:gui.orange‖attack damage‖end‖, and ‖color:gui.green‖20%‖end‖ ‖color:gui.orange‖physical damage resistance‖end‖
+        gain the ‖color:gui.yellow‖“Fatigue”‖end‖ effect over time while moving, reducing up to ‖color:gui.red‖40%‖end‖ ‖color:gui.orange‖movement speed‖end‖, ‖color:gui.red‖35%‖end‖ ‖color:gui.orange‖attack damage‖end‖, and ‖color:gui.red‖20%‖end‖ ‖color:gui.orange‖physical damage resistance‖end‖
         When level is above ‖color:gui.green‖8‖end‖, the accumulation speed of ‖color:gui.yellow‖“Fatigue”‖end‖ is halved
         Keeping health above ‖color:gui.green‖50%‖end‖ and consuming food of quality level ‖color:gui.green‖3‖end‖ or higher gradually removes ‖color:gui.yellow‖“Fatigue”‖end‖
 
@@ -1173,6 +1188,18 @@
 
     <entityname.Touhou_Tsukuyomi_Stealth_VR_Glasses>‖color:107,63,160,255‖Tsukuyomi VR Lens‖end‖</entityname.Touhou_Tsukuyomi_Stealth_VR_Glasses>
     <entitydescription.Touhou_Tsukuyomi_Stealth_VR_Glasses>A compact VR headset</entitydescription.Touhou_Tsukuyomi_Stealth_VR_Glasses>
+
+    <!--通用-->
+    <entityname.Normal_Yousei_Clothes>Fairy Casual Wear</entityname.Normal_Yousei_Clothes>
+    <entitydescription.Normal_Yousei_Clothes>Common casual wear seen everywhere on fairies</entitydescription.Normal_Yousei_Clothes>
+
+
+
+
+
+
+
+
 
 
 

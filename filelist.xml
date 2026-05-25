@@ -61,6 +61,7 @@
   <Item file="%ModDir%/Items/Touhou_Mod_Linkage/Yachiyo_gear.xml" />
   <Item file="%ModDir%/Items/Touhou_Mod_Linkage/Hiro_gear.xml" />
   <Item file="%ModDir%/Items/Touhou_Mod_Linkage/Iroha_gear.xml" />
+  <Item file="%ModDir%/Items/Clothes/Normal_Yousei_Clothes.xml" />
   <Item file="%ModDir%/Items/Tools/Tools.xml" />
   <Item file="%ModDir%/Items/Tools/MusicPlayer.xml" />
   <Item file="%ModDir%/Items/Materials/Monster_Drops/Maoyu.xml" />
@@ -115,6 +116,7 @@
   <Other file="%ModDir%/Characters/HumanTouhou_Tail/Lilywhite_Wings.xml" />
   <Other file="%ModDir%/Characters/HumanTouhou_Tail/Lilywhite_Black_Wings.xml" />
   <Other file="%ModDir%/Characters/HumanTouhou_Tail/IrohaTail.xml" />
+  <Other file="%ModDir%/Characters/HumanTouhou_Tail/Normal_YouseiWings.xml" />
   <Character file="%ModDir%/Characters/Maoyu/Maoyu.xml" />
   <Character file="%ModDir%/Characters/Touhou_Little_Ghost/Touhou_Little_Ghost.xml" />
   <Character file="%ModDir%/Characters/Touhou_Little_Photosphere/Touhou_Little_Photosphere.xml" />
@@ -226,4 +228,5 @@
   <OutpostModule file="%ModDir%/Sub/Touhou_MedicalModule_01.sub" />
   <OutpostModule file="%ModDir%/Sub/Touhou_MedicalModule_02.sub" />
   <OutpostModule file="%ModDir%/Sub/Touhou_ResearchModule_01.sub" />
+  <UpgradeModules file="%ModDir%/UpgradeModules.xml" />
 </contentpackage>

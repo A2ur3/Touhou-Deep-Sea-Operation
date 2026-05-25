@@ -26,7 +26,7 @@
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true">
-                            <Affliction identifier="Touhou_Iroha_Fatigue" amount="0.1"/>
+                            <Affliction identifier="Touhou_Iroha_Fatigue" amount="0.02"/>
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffects>
@@ -42,7 +42,7 @@
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true">
-                            <Affliction identifier="Touhou_Iroha_Fatigue" amount="0.1"/>
+                            <Affliction identifier="Touhou_Iroha_Fatigue" amount="0.02"/>
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffects>
@@ -66,7 +66,7 @@
         <AbilityGroupInterval interval="5.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Iroha_Versatile_Adaptation"/>
-                <AbilityConditionAboveVitality invert="true" />
+                <AbilityConditionAboveVitality vitalitypercentage="0.5" />
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Cuisine_Effect03" />
             </Conditions>
             <Abilities>
@@ -106,7 +106,7 @@
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Iroha_Versatile_Adaptation"/>
                 <AbilityConditionHasAffliction afflictionidentifier="Iroha_Mode_Creator"/>
-                <AbilityConditionServerRandom randomchance="0.5"/>
+                <AbilityConditionServerRandom randomchance="0.15"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityPutItem itemidentifier="Touhou_Tsukuyomi_Stealth_VR_Glasses" amount="1"/>
