@@ -5021,7 +5021,7 @@
                 identifier="Touhou_Savior_Mod_Attack_Effect"
                 type="burn"
                 limbspecific="true"
-                maxstrength="100"
+                maxstrength="20"
                 showiconthreshold="100"
                 showinhealthscannerthreshold="100"
                 affectmachines="true"

@@ -1366,9 +1366,6 @@
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Fix_Foamg_Tank.png" depth="0.55" sourcerect="0,0,40,80" origin="0.5,0.5"/>
         <Body width="40" height="80" density="10"/>
         <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect"/>
-        <Quality>
-            <QualityStat stattype="Condition" value="0.05"/>
-        </Quality>
         <Upgrade gameversion="0.10.0.0" scale="0.5"/>
     </Item>
 
@@ -3320,6 +3317,57 @@
     </Item>
 
 
+    <!--魔法武器充能箱（定制）-->
+    <Item name="魔法武器充能箱（定制）" identifier="Touhou_Magic_Charging_Box_Special" subcategory="Touhou" category="Equipment" Health="100"
+          tags="mobilecontainer,Touhou_Magic_Charging_Box,toolbox" scale="0.4" cargocontaineridentifier="metalcrate">
+        <PreferredContainer primary="crewcab" notcampaign="true"/>
+        <Price baseprice="6000" minleveldifficulty="15">
+            <Price storeidentifier="merchantoutpost" sold="false"/>
+            <Price storeidentifier="merchantcity" maxavailable="1" sold="false"/>
+            <Price storeidentifier="merchantresearch" maxavailable="1" sold="false"/>
+            <Price storeidentifier="merchantmilitary" maxavailable="1" sold="false"/>
+            <Price storeidentifier="merchantmine" maxavailable="1" sold="false"/>
+            <Price storeidentifier="Merchant_Kawasiro_Nitori" multiplier="0.6" maxavailable="1"/>
+        </Price>
+        <Deconstruct time="5"/>
+        <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Magic_Charging_Box_Special.png" sourcerect="0,0,140,80" origin="0.5,0.5"/>
+        <Sprite texture="%ModDir%/Images/Tools/Touhou_Magic_Charging_Box_Special.png" sourcerect="0,0,140,80" depth="0.55" origin="0.5,0.5"/>
+        <Body width="50" height="100" density="10"/>
+        <Holdable canBeCombined="true" slots="RightHand+LeftHand" msg="ItemMsgPickUpSelect" holdpos="50,-50" aimpos="50,-40" />
+        <CustomInterface canbeselected="true" drawhudwhenequipped="true">
+            <GuiFrame relativesize="0.11,0.11" anchor="Center" absoluteoffset="20,240" style="ItemUI"/>
+            <Button text="Text.Touhou_Magic_Charging_Box_Charge">
+                <StatusEffect type="OnUse" target="This" forceplaysounds="true">
+                    <RequiredItem identifier="Touhou_Magic_Charging01,Touhou_Magic_Charging02,Touhou_Magic_Charging03,Touhou_Magic_Charging04,
+                    Touhou_Magic_Charging05,Touhou_Magic_Charging06" type="Contained" ExcludeFullCondition="true"/>
+                    <sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Charging.ogg" type="OnUse" volume="1" range="200.0" loop="false"/>
+                </StatusEffect>
+
+                <!--消耗-->
+                <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
+                    <RequiredItem items="Touhou_Magic_Charging01,Touhou_Magic_Charging02,Touhou_Magic_Charging03,Touhou_Magic_Charging04,
+                    Touhou_Magic_Charging05,Touhou_Magic_Charging06" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false"/>
+                </StatusEffect>
+                <StatusEffect type="OnUse" target="Contained" Condition="100.0" disabledeltatime="true">
+                    <RequiredItem items="Touhou_Magic_Charging01,Touhou_Magic_Charging02,Touhou_Magic_Charging03,Touhou_Magic_Charging04,
+                    Touhou_Magic_Charging05,Touhou_Magic_Charging06" type="Contained" ExcludeBroken="false"/>
+                </StatusEffect>
+
+            </Button>
+        </CustomInterface>
+        <RepairTool barrelpos="64,16">
+            <sound file="Content/Items/Tools/WeldingLoop.ogg" type="OnUse" range="500.0" loop="true"/>
+            <ParticleEmitter particle="Touhou_Blue_Explosion_Underwater" AngleMax="360" ScaleMultiplier="0.25,0.25" particlespersecond="10"
+                             ColorMultiplier="255,155,255,200"/>
+        </RepairTool>
+        <ItemContainer autofill="False" capacity="1" maxstacksize="3">
+            <Containable items="Touhou_Magic_Charging01,Touhou_Magic_Charging02,Touhou_Magic_Charging03,Touhou_Magic_Charging04,
+                    Touhou_Magic_Charging05,Touhou_Magic_Charging06"/>
+        </ItemContainer>
+        <aitarget soundrange="1" fadeouttime="5"/>
+    </Item>
+
+
     <!--不死鸟焊接罐-->
     <Item name="不死鸟焊接罐" identifier="Touhou_Phoenix_Tail_Tank" category="Fuel" subcategory="Touhou" maxstacksize="32"
           maxstacksizecharacterinventory="3" Health="120"
@@ -4202,9 +4250,9 @@
 
 
     <Item name="增幅水晶" identifier="Touhou_Enhanced_Crystal01" subcategory="Touhou" category="Equipment" Tags="smallitem,Touhou_Enhanced_Crystal"
-          Scale="0.2"
+          Scale="0.2" maxstacksize="8"
           Health="200" impactsoundtag="impact_metal_light">
-        <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.04"/>
+        <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.035"/>
         <PreferredContainer secondary="outpostcrewcabinet" amount="1" spawnprobability="0.04"/>
         <PreferredContainer primary="storagecab"/>
         <Price baseprice="300" sold="false">
@@ -4241,15 +4289,12 @@
             </StatusEffect>
             <StatusEffect type="OnActive" target="This" Condition="-0.05" Interval="1.0" disabledeltatime="true"/>
         </Holdable>
-        <Quality>
-            <QualityStat stattype="Condition" value="0.1"/>
-        </Quality>
     </Item>
 
     <Item name="气化水晶" identifier="Touhou_Enhanced_Crystal02" subcategory="Touhou" category="Equipment" Tags="smallitem,Touhou_Enhanced_Crystal"
-          Scale="0.2"
+          Scale="0.2" maxstacksize="8"
           Health="200" impactsoundtag="impact_metal_light">
-        <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.04"/>
+        <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.035"/>
         <PreferredContainer secondary="outpostcrewcabinet" amount="1" spawnprobability="0.04"/>
         <PreferredContainer primary="storagecab"/>
         <Price baseprice="300" sold="false">
@@ -4286,15 +4331,12 @@
             </StatusEffect>
             <StatusEffect type="OnActive" target="This" Condition="-0.05" Interval="1.0" disabledeltatime="true"/>
         </Holdable>
-        <Quality>
-            <QualityStat stattype="Condition" value="0.1"/>
-        </Quality>
     </Item>
 
     <Item name="深渊水晶" identifier="Touhou_Enhanced_Crystal03" subcategory="Touhou" category="Equipment" Tags="smallitem,Touhou_Enhanced_Crystal"
-          Scale="0.2"
+          Scale="0.2" maxstacksize="8"
           Health="200" impactsoundtag="impact_metal_light">
-        <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.04"/>
+        <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.035"/>
         <PreferredContainer secondary="outpostcrewcabinet" amount="1" spawnprobability="0.04"/>
         <PreferredContainer primary="storagecab"/>
         <Price baseprice="300" sold="false">
@@ -4331,9 +4373,6 @@
             </StatusEffect>
             <StatusEffect type="OnActive" target="This" Condition="-0.05" Interval="1.0" disabledeltatime="true"/>
         </Holdable>
-        <Quality>
-            <QualityStat stattype="Condition" value="0.1"/>
-        </Quality>
     </Item>
 
 
@@ -4814,7 +4853,7 @@
             <Item identifier="Touhou_Bottle_Element" commonness="0.2"/>
             <Item identifier="Touhou_Base_Metal" commonness="0.25"/>
             <Item identifier="deusizine" commonness="0.05"/>
-            <Item identifier="Byproduct_Alchemical" amount="4" commonness="0.2"/>
+            <Item identifier="Byproduct_Alchemical" amount="3" commonness="0.2"/>
         </Deconstruct>
         <Holdable slots="Any,RightHand+LeftHand" aimpos="30,0" handle1="-5,-10" msg="ItemMsgPickUpSelect"/>
         <aitarget soundrange="800" fadeouttime="5"/>
@@ -5447,7 +5486,7 @@
                 <Conditional Iroha_Versatile_Adaptation="gt 0"/>
                 <Affliction identifier="Touhou_Tsukuyomi_Stealth_VR_Glasses_Effect" amount="13"/>
             </StatusEffect>
-            <StatusEffect type="OnWearing" target="This,Character" Condition="-0.1" Interval="1.0" disabledeltatime="true">
+            <StatusEffect type="OnWearing" target="This,Character" Condition="-0.08" Interval="1.0" disabledeltatime="true">
                 <Conditional HealthPercentage="lte 95"/>
             </StatusEffect>
         </Wearable>

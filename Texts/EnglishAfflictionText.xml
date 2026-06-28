@@ -438,6 +438,10 @@
     <afflictioncauseofdeathself.Reiki_Side_Effect_NT>Your reiki within has been polluted and eroded, collapsing from the inside out.</afflictioncauseofdeathself.Reiki_Side_Effect_NT>
     <afflictioncauseofdeath.Touhou_Freeze>Frozen Solid</afflictioncauseofdeath.Touhou_Freeze>
     <afflictioncauseofdeathself.Touhou_Freeze>Your breathing has completely stopped, frozen into a statue.</afflictioncauseofdeathself.Touhou_Freeze>
+    <afflictioncauseofdeath.Touhou_MRE_Yuyuko_Effect_Debuff>Reduced to a Restless Spirit</afflictioncauseofdeath.Touhou_MRE_Yuyuko_Effect_Debuff>
+    <afflictioncauseofdeathself.Touhou_MRE_Yuyuko_Effect_Debuff>Led to Death</afflictioncauseofdeathself.Touhou_MRE_Yuyuko_Effect_Debuff>
+
+
 
     <!--Possession / Bleed Effects-->
     <afflictionname.Hyouibana_Effect_Prefect_Reimu>Reimu - Perfect Possession</afflictionname.Hyouibana_Effect_Prefect_Reimu>
@@ -536,4 +540,6 @@
     <afflictionname.Hyouibana_Effect_Prefect_Kaguya>Kaguya Houraisan - Perfect Possession</afflictionname.Hyouibana_Effect_Prefect_Kaguya>
     <afflictiondescription.Hyouibana_Effect_Prefect_Kaguya>Grants the exclusive weapon effects of the corresponding character.</afflictiondescription.Hyouibana_Effect_Prefect_Kaguya>
 
+    <afflictionname.Hyouibana_Effect_Prefect_Yuyuko>Yuyuko - Perfect Possession</afflictionname.Hyouibana_Effect_Prefect_Yuyuko>
+    <afflictiondescription.Hyouibana_Effect_Prefect_Yuyuko>Grants the exclusive weapon effects of the corresponding character.</afflictiondescription.Hyouibana_Effect_Prefect_Yuyuko>
 </infotexts>

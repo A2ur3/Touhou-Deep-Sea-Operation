@@ -77,7 +77,7 @@
     <Item identifier="Touhou_Sunflower_Headpiece" subcategory="Touhou" category="Equipment" tags="smallitem,clothing"
           cargocontaineridentifier="metalcrate" scale="0.15" hideinmenus="false">
         <PreferredContainer primary="crewcab"/>
-        <Price baseprice="1800">
+        <Price baseprice="800">
             <Price storeidentifier="merchantoutpost" minavailable="1"/>
             <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1"/>
             <Price storeidentifier="merchantresearch" minavailable="1"/>
@@ -106,7 +106,7 @@
     <Item identifier="Touhou_Hakurei_Fox_Headpiece" subcategory="Touhou" category="Equipment" tags="smallitem,clothing"
           cargocontaineridentifier="metalcrate" scale="0.1" hideinmenus="false">
         <PreferredContainer primary="crewcab"/>
-        <Price baseprice="1800">
+        <Price baseprice="800">
             <Price storeidentifier="merchantoutpost" minavailable="1"/>
             <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1"/>
             <Price storeidentifier="merchantresearch" minavailable="1"/>
@@ -314,6 +314,10 @@
             <StatusEffect type="OnWearing" target="Character" Interval="0.5" disabledeltatime="true" oneshot="true">
                 <Conditional jobidentifier="eq Magician_Enemy"/>
                 <Affliction identifier="Pollution_Magician_Clothes01_Effect" strength="50"/>
+            </StatusEffect>
+            <StatusEffect type="OnWearing" target="Character" Interval="10" disabledeltatime="true" >
+                <Conditional jobidentifier="eq Magician_Enemy"/>
+                <Affliction identifier="Pollution_Magician_Clothes01_Touhou_Savior_Mod_Effect" strength="50"/>
             </StatusEffect>
 
         </Wearable>
@@ -637,7 +641,7 @@
     <Item name="不可思议的头饰" identifier="Touhou_Incredible_Headpiece" subcategory="Touhou" category="Equipment" tags="smallitem,clothing"
           cargocontaineridentifier="metalcrate" scale="0.1" >
         <PreferredContainer primary="crewcab"/>
-        <Price baseprice="1800">
+        <Price baseprice="800">
             <Price storeidentifier="merchantoutpost" minavailable="1"/>
             <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1"/>
             <Price storeidentifier="merchantresearch" minavailable="1"/>

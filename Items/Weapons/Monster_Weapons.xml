@@ -1875,7 +1875,7 @@
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Bolt_Normal.png" sourcerect="0,0,72,72" depth="0.55"/>
         <Body width="48" height="48" density="10"/>
         <Projectile characterusable="false" launchimpulse="60" maxtargetstohit="3" damagedoors="true" friendlyfire="false">
-            <Attack structuredamage="20" itemdamage="2.5" severlimbsprobability="0.5" penetration="0.3" targetforce="1000">
+            <Attack structuredamage="30" itemdamage="2.5" severlimbsprobability="0.5" penetration="0.3" targetforce="1000">
                 <Affliction identifier="blunttrauma" strength="15"/>
                 <Affliction identifier="explosiondamage" strength="15"/>
                 <Affliction identifier="stun" strength="0.15" probability="0.25"/>
@@ -1917,7 +1917,7 @@
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Bolt_Normal.png" sourcerect="0,0,72,72" depth="0.55"/>
         <Body width="24" height="24" density="10"/>
         <Projectile characterusable="false" launchimpulse="30" maxtargetstohit="4" damagedoors="true" friendlyfire="false">
-            <Attack structuredamage="0" itemdamage="0" severlimbsprobability="0.25" penetration="0.1">
+            <Attack structuredamage="10" itemdamage="0" severlimbsprobability="0.25" penetration="0.1">
                 <Affliction identifier="bleeding" strength="5"/>
                 <Affliction identifier="lacerations" strength="10"/>
                 <Affliction identifier="Sleepless_Nightmare" strength="10" probability="0.4"/>
@@ -1944,8 +1944,8 @@
         <Projectile characterusable="false" hitscan="true" maxtargetstohit="1" hitscancount="2" removeonhit="true" spread="10" damagedoors="true"
                     friendlyfire="false">
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="55,55,255,255"/>
-            <Attack structuredamage="20" targetforce="1" itemdamage="50" severlimbsprobability="0.25" penetration="0.6">
-                <Affliction identifier="lacerations" strength="30"/>
+            <Attack structuredamage="30" targetforce="1" itemdamage="50" severlimbsprobability="0.25" penetration="0.6">
+                <Affliction identifier="lacerations" strength="35"/>
                 <Affliction identifier="Touhou_Freeze" strength="5"/>
                 <Affliction identifier="stun" strength="0.3" probability="0.2"/>
             </Attack>
@@ -1965,7 +1965,7 @@
 
     <!--幽灵守护者-重力拳-->
     <Item name="幽灵守护者-重力拳" identifier="Touhou_Spectral_Guardian_Gravity_Punch" tags="smallitem" category="Weapon" sonarsize="15" scale="1" impactsoundtag="impact_metal_heavy"
-          damagedbyprojectiles="true" Health="250" hideinmenus="true">
+          damagedbyprojectiles="true" Health="220" hideinmenus="true">
         <Sprite texture="%ModDir%/Images/Characters/Touhou_Spectral_Guardian/Touhou_Spectral_Guardian.png" sourcerect="545,0,360,227" depth="0.25"/>
         <Body width="360" height="227" density="10"/>
         <Projectile characterusable="false" launchimpulse="60" maxtargetstohit="4" damagedoors="true" friendlyfire="false">
@@ -1989,7 +1989,7 @@
                 </Explosion>
                 <Remove/>
             </StatusEffect>
-            <StatusEffect type="OnNotContained" target="This" delay="21.0" stackable="false">
+            <StatusEffect type="OnNotContained" target="This" delay="16.0" stackable="false">
                 <Conditional Removed="false"/>
                 <Remove/>
             </StatusEffect>
