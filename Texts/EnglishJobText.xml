@@ -29,7 +29,7 @@
     <talentname.Talents_Magician_Primary06>Spiritual Training</talentname.Talents_Magician_Primary06>
     <talentdescription.Talents_Magician_Primary06>Based on current magic ability, increase ‖color:gui.green‖10%‖end‖ movement speed and ranged firing speed, up to ‖color:gui.green‖20%‖end‖.</talentdescription.Talents_Magician_Primary06>
     <talentname.Talents_Magician_Primary07>Yokai Slayer</talentname.Talents_Magician_Primary07>
-    <talentdescription.Talents_Magician_Primary07>Physical damage to non-humans +‖color:gui.green‖15%‖end‖; damage to allies –‖color:gui.green‖30%‖end‖.</talentdescription.Talents_Magician_Primary07>
+    <talentdescription.Talents_Magician_Primary07>Physical damage to non-humans +‖color:gui.green‖15%‖end‖; damage to allies –‖color:gui.green‖20%‖end‖.</talentdescription.Talents_Magician_Primary07>
     <talentname.Talents_Magician_Primary08>Physical Magician</talentname.Talents_Magician_Primary08>
     <talentdescription.Talents_Magician_Primary08>Reduce water-current impact ‖color:gui.green‖30%‖end‖; +‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖max HP‖end‖. Unlock recipes: ‖color:gui.orange‖Exorcist Holy Flame‖end‖ and ‖color:gui.orange‖Purification Buckshot‖end‖.</talentdescription.Talents_Magician_Primary08>
 
@@ -79,19 +79,19 @@
     <talentdescription.MEID_Unlocked>When crafting magic-related items, there is a chance to not consume one of the required materials. Unlocks recipe: ‖color:gui.orange‖MEID‖end‖</talentdescription.MEID_Unlocked>
 
     <afflictionname.Gensokyo_Divinggear_Unlocked_Effect01>Fantasy Entry – Patchouli</afflictionname.Gensokyo_Divinggear_Unlocked_Effect01>
-    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect01>Reduce friendly fire by 15% and increase all five elemental damages by 10%.</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect01>
+    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect01>Reduce friendly fire by 10% and increase all five elemental damages by 10%.</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect01>
     <afflictionname.Gensokyo_Divinggear_Unlocked_Effect02>Fantasy Entry – Marisa</afflictionname.Gensokyo_Divinggear_Unlocked_Effect02>
-    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect02>Reduce friendly fire by 15%; slightly increases all skills, especially magic ability.</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect02>
+    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect02>Reduce friendly fire by 10%; slightly increases all skills, especially magic ability.</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect02>
     <afflictionname.Gensokyo_Divinggear_Unlocked_Effect03>Fantasy Entry – Flandre</afflictionname.Gensokyo_Divinggear_Unlocked_Effect03>
-    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect03>Reduce friendly fire by 15%; +‖color:gui.green‖40%‖end‖ burn resistance. increase max HP by 10% based on magic skill, up to 20%.</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect03>
+    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect03>Reduce friendly fire by 10%; +‖color:gui.green‖40%‖end‖ burn resistance. increase max HP by 10% based on magic skill, up to 20%.</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect03>
     <afflictionname.Gensokyo_Divinggear_Unlocked_Effect04>Fantasy Entry – Alice</afflictionname.Gensokyo_Divinggear_Unlocked_Effect04>
-    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect04>Reduce friendly fire by 15%; Gain 20% physical and burn resistance and are harder to detect.</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect04>
+    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect04>Reduce friendly fire by 10%; Gain 20% physical and burn resistance and are harder to detect.</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect04>
     <afflictionname.Gensokyo_Divinggear_Unlocked_Effect05>Fantasy Entry – Emma</afflictionname.Gensokyo_Divinggear_Unlocked_Effect05>
-    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect05>Reduce friendly fire by 15%; increase skill levels by 40%, +15% max HP.</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect05>
+    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect05>Reduce friendly fire by 10%; increase skill levels by 40%, +15% max HP.</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect05>
     <afflictionname.Gensokyo_Divinggear_Unlocked_Effect06>Fantasy Entry - Hiro</afflictionname.Gensokyo_Divinggear_Unlocked_Effect06>
-    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect06>Reduces friendly fire damage by 15% and increases danmaku damage by 20%.</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect06>
+    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect06>Reduces friendly fire damage by 10% and increases danmaku damage by 20%.</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect06>
     <afflictionname.Gensokyo_Divinggear_Unlocked_Effect07>Gensokyo Entry - Sherry</afflictionname.Gensokyo_Divinggear_Unlocked_Effect07>
-    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect07>Reduces friendly fire damage by 15%, increases armor penetration by 10%.</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect07>
+    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect07>Reduces friendly fire damage by 10%, increases armor penetration by 10%.</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect07>
     <!--幻想入爱丽丝未完成-->
 
     <!--Fairy Class-->
@@ -236,7 +236,7 @@
 
     <talenttree.Yokai_Talents_Select>Branch Selection</talenttree.Yokai_Talents_Select>
     <talentname.Yokai_Select_Youling_Wangling>Ghost/Undead</talentname.Yokai_Select_Youling_Wangling>
-    <talentdescription.Yokai_Select_Youling_Wangling>After selecting this branch, no others can be unlocked. Character: ‖color:gui.orange‖Youmu Konpaku‖end‖.</talentdescription.Yokai_Select_Youling_Wangling>
+    <talentdescription.Yokai_Select_Youling_Wangling>After selecting this branch, no others can be unlocked. Character: ‖color:gui.orange‖Youmu Konpaku, Saigyouji Yuyuko‖end‖.</talentdescription.Yokai_Select_Youling_Wangling>
     <talentname.Yokai_Select_Yaoguai>Yokai</talentname.Yokai_Select_Yaoguai>
     <talentdescription.Yokai_Select_Yaoguai>After selecting this branch, no others can be unlocked. Characters: ‖color:gui.orange‖Yuuka Kazami, Houjuu Nue, Nitori Kawashiro, Koishi Komeiji, Yukari Yakumo, Satori Komeji‖end‖.</talentdescription.Yokai_Select_Yaoguai>
     <talentname.Yokai_Select_Vampire>Vampire</talentname.Yokai_Select_Vampire>
@@ -266,7 +266,7 @@
     <talentname.Touhou_Youling_Wangling04>Three Souls, Seven Spirits</talentname.Touhou_Youling_Wangling04>
     <talentdescription.Touhou_Youling_Wangling04>When health falls below ‖color:gui.green‖30%‖end‖, temporarily gain ‖color:gui.green‖20%‖end‖ ‖color:gui.orange‖Physical Damage Resistance‖end‖ and ‖color:gui.orange‖Burn Resistance‖end‖.
         While wearing ‖color:gui.red‖Youmu Outfit+‖end‖: Gain ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖Maximum Health‖end‖ and ‖color:gui.green‖20‖end‖ ‖color:gui.orange‖Weapons Skill‖end‖.
-        While wearing ‖color:gui.red‖Yuyuko Outfit+‖end‖: Gain ‖color:gui.green‖30%‖end‖ ‖color:gui.orange‖Maximum Health‖end‖.</talentdescription.Touhou_Youling_Wangling04>
+        While wearing ‖color:gui.red‖Yuyuko Outfit+‖end‖: Gain ‖color:gui.green‖20%‖end‖ ‖color:gui.orange‖Maximum Health‖end‖.</talentdescription.Touhou_Youling_Wangling04>
     <talentname.Touhou_Youling_Wangling05>Life or Death</talentname.Touhou_Youling_Wangling05>
     <talentdescription.Touhou_Youling_Wangling05>Whenever you kill any creature, temporarily increase your ‖color:gui.orange‖Stun Resistance‖end‖.
         While wearing ‖color:gui.red‖Youmu Outfit+‖end‖: Killing any creature also temporarily increases your ‖color:gui.orange‖Debuff Resistance‖end‖.
@@ -431,7 +431,7 @@
 
     <talenttree.Touhou_ShenMing>Divine / Tsukumogami</talenttree.Touhou_ShenMing>
     <talentname.Touhou_ShenMing01>Dwelling in Objects</talentname.Touhou_ShenMing01>
-    <talentdescription.Touhou_ShenMing01>‖color:gui.orange‖Physical damage resistance‖end‖ −‖color:gui.red‖10%‖end‖, +‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖Max HP‖end‖. Harder to detect when HP is above ‖color:gui.green‖50%‖end‖.</talentdescription.Touhou_ShenMing01>
+    <talentdescription.Touhou_ShenMing01>+‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖Max HP‖end‖. Harder to detect when HP is above ‖color:gui.green‖50%‖end‖.</talentdescription.Touhou_ShenMing01>
     <talentname.Touhou_ShenMing02>Shine Anew</talentname.Touhou_ShenMing02>
     <talentdescription.Touhou_ShenMing02>Healing from medicine +‖color:gui.green‖20%‖end‖; +‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖debuff resistance‖end‖; +‖color:gui.green‖35%‖end‖ ‖color:gui.orange‖poison resistance‖end‖; debuff duration −‖color:gui.green‖10%‖end‖.</talentdescription.Touhou_ShenMing02>
     <talentname.Touhou_ShenMing03>Essence Manifest</talentname.Touhou_ShenMing03>

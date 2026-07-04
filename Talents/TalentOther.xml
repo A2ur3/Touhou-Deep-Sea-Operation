@@ -438,6 +438,7 @@
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
                 <AbilityConditionHasItem tags="Touhou_Corrupted_Savior"/>
+                <AbilityConditionHasItem tags="Corrupted_Savior_Mod"/>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Corrupted_Savior_Mod_Effect"/>
                 <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
             </Conditions>

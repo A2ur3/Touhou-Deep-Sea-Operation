@@ -1046,8 +1046,8 @@
 
 
     <!--春度碎片-->
-    <Item name="春度碎片" identifier="Touhou_Spring_Fragment" tags="smallitem,Vegetarian,Mild" subcategory="Touhou" category="Alien"
-          cargocontaineridentifier="metalcrate" maxstacksize="32" maxstacksizecharacterinventory="16" scale="0.25">
+    <Item name="春度碎片" identifier="Touhou_Spring_Fragment" tags="smallitem,Touhou_Food_Ingredients,Vegetarian,Mild" subcategory="Touhou" category="Alien"
+          cargocontaineridentifier="metalcrate" maxstacksize="32" maxstacksizecharacterinventory="16" scale="0.25" useinhealthinterface="true">
         <PreferredContainer primary="engcab"/>
         <Deconstruct time="5"/>
         <Sprite texture="%ModDir%/Images/Materials/Touhou_Spring_Fragment.png" depth="0.4" sourcerect="0,0,100,136"/>
@@ -1064,6 +1064,16 @@
                 <ReduceAffliction type="Touhou_MRE_Yuyuko_Effect_Debuff" amount="2"/>
             </StatusEffect>
         </Holdable>
+    </Item>
+
+    <!--虚空灰烬-->
+    <Item name="虚空灰烬" identifier="Touhou_Eidolon_Shard" tags="smallitem" subcategory="Touhou" category="Alien"
+          cargocontaineridentifier="metalcrate" maxstacksize="8" maxstacksizecharacterinventory="1" scale="0.25" >
+        <PreferredContainer primary="engcab"/>
+        <Deconstruct time="5"/>
+        <Sprite texture="%ModDir%/Images/Materials/Touhou_Eidolon_Shard.png" depth="0.4" sourcerect="0,0,96,100"/>
+        <Body width="96" height="100" density="10.5" gravityscale="0.4"/>
+        <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,-55" handle2="0,-55"/>
     </Item>
 
 

@@ -2414,15 +2414,15 @@
             <Item identifier="titaniumaluminiumalloy" amount="2"/>
             <Item identifier="plastic" amount="2"/>
         </Deconstruct>
-        <!--        <Fabricate suitablefabricators="Magic_Altar" requiredtime="10" >
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="10" >
             <RequiredSkill identifier="weapons" level="70" />
             <RequiredSkill identifier="Touhou_Magic" level="70" />
-            <RequiredItem identifier="Touhou_Pollution_Rifle" />
+            <RequiredItem identifier="Touhou_Eidolon_Shard" />
             <RequiredItem tag="tsm_touhou_item_3" />
             <RequiredItem identifier="Seven_Elements_Alchemical_Fake" />
             <RequiredItem identifier="titaniumaluminiumalloy" amount="4" />
             <RequiredItem identifier="plastic" amount="4" />
-        </Fabricate>-->
+        </Fabricate>
         <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Aphelion.png" sourcerect="322,0,152,100" origin="0.5,0.5"/>
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Aphelion.png" depth="0.4" sourcerect="0,0,322,76"/>
         <Body width="351" height="63" density="10"/>
@@ -10956,7 +10956,10 @@
                     <Conditional Condition="gte 99.99"/>
                     <Affliction identifier="Touhou_Corrupted_Savior_Mod_Effect" strength="100"/>
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="This" holdpos="55,-40" aimpos="55,-40" holdangle="70" maxchargetime="999" setvalue="true">
+                <StatusEffect type="OnUse" target="This" holdpos="55,-40" aimpos="55,-40" holdangle="70" maxchargetime="999" tags="Corrupted_Savior_Mod" setvalue="true">
+                    <Conditional Condition="gte 99.99"/>
+                </StatusEffect>
+                <StatusEffect type="OnUse" target="This" delay="20" tags="Corrupted_Savior_Mod_Off" setvalue="true" stackable="false">
                     <Conditional Condition="gte 99.99"/>
                 </StatusEffect>
                 <StatusEffect type="OnUse" target="This" setvalue="true">

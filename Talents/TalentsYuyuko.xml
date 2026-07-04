@@ -3,7 +3,7 @@
     <Talent identifier="YuyukoTalent">
         <Icon texture="%ModDir%/Images/Talents/YuyukoTalent.png" sheetindex="0,0" sheetelementsize="128,128"/>
         <Description tag="talentdescription.YuyukoTalent"/>
-        <AbilityGroupInterval maxtriggercount="1">
+        <AbilityGroupInterval maxtriggercount="1" Interval="10.0">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yuyuko_Character_Effect"/>
             </Conditions>

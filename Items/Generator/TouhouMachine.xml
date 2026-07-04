@@ -963,10 +963,6 @@
             <StatusEffect type="OnContained" target="Character" interval="5">
                 <GiveTalentInfo giverandom="false" talentidentifiers="Touhou_Plant_Machine_Talent"/>
             </StatusEffect>
-            <StatusEffect target="This" type="OnContained">
-                <Conditional attached="false" targetitemcomponentname="Holdable" />
-                <DropContainedItems />
-            </StatusEffect>
 <!--            <StatusEffect type="Always" target="This" comparison="And" Interval="1.0" disabledeltatime="true" setvalue="true"
                           Tags="Gilead_Branch_Seed_On" stackable="false">
                 <RequiredItems items="Spiritual_Water" type="Contained" targetslot="0"/>
@@ -1039,6 +1035,7 @@
                 <RequiredItems items="Gilead_Branch_Seed,Cinnamon_Branch_Seed,Sun_Flower_Seed,Touhou_Potion_Blending_Seeds" type="Contained" targetslot="4"/>
             </StatusEffect>
             <StatusEffect type="OnActive" target="This" targetitemcomponent="PowerContainer" interval="1" charge="1" stackable="false" disabledeltatime="true">
+                <Conditional targetitemcomponent="Holdable" Attached="eq true" />
                 <Conditional HasStatusTag="eq Touhou_Machine_On" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="This" targetitemcomponent="PowerContainer" interval="10" charge="-1" stackable="false" disabledeltatime="true">
@@ -1674,9 +1671,10 @@
                 <GiveTalentInfo giverandom="false" talentidentifiers="Touhou_Plant_Machine_Talent"/>
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.9" setvalue="true"/>
-            <StatusEffect type="NotInWater" target="This" Interval="300" stackable="false" condition="0.1"/>
-            <StatusEffect type="NotInWater" target="This" comparison="And" Interval="300" stackable="false" spawnItemRandomly="true">
+            <StatusEffect type="NotInWater" target="This" Interval="3" stackable="false" condition="0.1"/>
+            <StatusEffect type="Always" target="This" comparison="And" Interval="300" stackable="false" spawnItemRandomly="true">
                 <Conditional Condition="eq 100"/>
+                <Conditional targetitemcomponent="Holdable" Attached="eq true" />
                 <SpawnItem identifiers="Touhou_Spring_Fragment" spawnposition="ThisInventory"/>
             </StatusEffect>
         </Holdable>

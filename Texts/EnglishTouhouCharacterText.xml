@@ -1234,9 +1234,9 @@
 
     <talentname.YuyukoTalent>Ghost of Hakugyokurou</talentname.YuyukoTalent>
     <talentdescription.YuyukoTalent>While wearing Yuyuko Outfit+:
-        Healing received is reduced by ‖color:gui.green‖30%‖end‖
-        ‖color:gui.orange‖Weapons and Medical skill levels‖end‖ are reduced by ‖color:gui.green‖40‖end‖
-        At the start of every round, permanently lose ‖color:gui.green‖25%‖end‖ of your ‖color:gui.orange‖maximum health‖end‖
+        Healing received is reduced by ‖color:gui.red‖30%‖end‖
+        ‖color:gui.orange‖Weapons and Medical skill levels‖end‖ are reduced by ‖color:gui.red‖40‖end‖
+        At the start of every round, permanently lose ‖color:gui.red‖25%‖end‖ of your ‖color:gui.orange‖maximum health‖end‖
         Food effects of level 2 and below will no longer take effect.
 
         Immune to ‖color:gui.yellow‖Oxygen Low‖end‖
@@ -1256,8 +1256,7 @@
     <afflictiondescription.Yuyuko_Weapons>Yuyuko has existed as a ghost for over a thousand years and will forever reside in Hakugyokurou within the Netherworld.</afflictiondescription.Yuyuko_Weapons>
 
     <entityname.Touhou_Spring_Fragment>‖color:162,195,219,255‖Spring Fragment‖end‖</entityname.Touhou_Spring_Fragment>
-    <entitydescription.Touhou_Spring_Fragment>A rare fragment of spring found within the frozen ocean. Consuming it directly provides a small healing effect, and it can also be used to craft other items.</entitydescription.Touhou_Spring_Fragment>
-
+    <entitydescription.Touhou_Spring_Fragment>A rare fragment of Spring found within the frozen ocean. Consuming it directly provides a small healing effect and cures the "Resurrection Butterfly" affliction. It can also be used as a substitute for certain cooking ingredients or crafted into other items.</entitydescription.Touhou_Spring_Fragment>
     <entityname.Touhou_Saigyou_Ayakashi_Potted_Plant>‖color:162,195,219,255‖Saigyou Ayakashi Potted Plant‖end‖</entityname.Touhou_Saigyou_Ayakashi_Potted_Plant>
     <entitydescription.Touhou_Saigyou_Ayakashi_Potted_Plant>A plant resembling the Saigyou Ayakashi, grown through the gathering of Yuyuko's power and fragments of spring. It possesses similar abilities and will shed Spring Fragment over time.‖color:gui.yellow‖(Right-click + E to place, press E to pick up)‖end‖</entitydescription.Touhou_Saigyou_Ayakashi_Potted_Plant>
 

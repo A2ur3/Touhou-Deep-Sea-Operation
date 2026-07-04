@@ -1899,6 +1899,9 @@
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yuyuko_Character_Effect"/>
                 <AbilityConditionHasAffliction afflictionidentifier="Yuyuko_Weapons"/>
                 <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" />
+                <AbilityConditionCharacter targettype="Enemy">
+                    <Conditional MaxHealth="lte 6000"/>
+                </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
                 <CharacterAbilityGiveAffliction affliction="Touhou_MRE_Yuyuko_Effect_Debuff" strength="0.5"/>

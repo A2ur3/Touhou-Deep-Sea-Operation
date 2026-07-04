@@ -1633,7 +1633,7 @@
         <!--控制刷新敌人-->
         <ScriptedEvent identifier="Touhou_ODM06_Enemy_Spawn">
             <TagAction criteria="player" tag="player"/>
-            <CountTargetsAction targettag="player" MinAmount="3">
+            <CountTargetsAction targettag="player" MinAmount="4">
                 <Success>
                     <SpawnAction npcsetidentifier="Touhou_ODM6_Enemy_NPC" npcidentifier="Touhou_ODM06_Enemy_Human_Hard" lootingisstealing="false"
                                  spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
@@ -2085,7 +2085,7 @@
             <Label name="End_Mission"/>
         </ScriptedEvent>
 
-        <!--不期而遇事件-->
+        <!--绕越事件-->
         <ScriptedEvent identifier="Touhou_OutpostDestroyMission08_Event">
             <TagAction criteria="crew" tag="crew"/>
             <TagAction criteria="bot" tag="bot"/>
@@ -2305,9 +2305,16 @@
                     </CountTargetsAction>
                     <CountTargetsAction targettag="player" MinAmount="8">
                         <Success>
-                            <SpawnAction npcsetidentifier="Touhou_ODM8_Enemy_NPC" npcidentifier="Touhou_ODM08_Enemy_Human_Lunatic"
-                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
-                            <WaitAction time="1"/>
+                            <RNGAction chance="0.6">
+                                <Success>
+                                    <SpawnAction npcsetidentifier="Touhou_ODM8_Enemy_NPC" npcidentifier="Touhou_ODM08_Enemy_Human_Lunatic"
+                                                 lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                                    <WaitAction time="1"/>
+                                </Success>
+                                <Failure>
+
+                                </Failure>
+                            </RNGAction>
                         </Success>
                         <Failure>
                         </Failure>
@@ -2369,7 +2376,7 @@
             <Label name="End_Mission"/>
         </ScriptedEvent>
 
-        <!--不期而遇BGM-->
+        <!--绕越BGM-->
         <ScriptedEvent identifier="Touhou_ODM08_BGM">
             <TagAction criteria="player" tag="BGM_Player"/>
             <StatusEffectAction targettag="BGM_Player">
@@ -3148,9 +3155,16 @@
                     </CountTargetsAction>
                     <CountTargetsAction targettag="player" MinAmount="8">
                         <Success>
-                            <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Hard"
-                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
-                            <WaitAction time="1"/>
+                            <RNGAction chance="0.6">
+                                <Success>
+                                    <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Hard"
+                                                 lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                                    <WaitAction time="1"/>
+                                </Success>
+                                <Failure>
+
+                                </Failure>
+                            </RNGAction>
                         </Success>
                         <Failure>
                         </Failure>
@@ -3238,9 +3252,16 @@
                     </CountTargetsAction>
                     <CountTargetsAction targettag="player" MinAmount="8">
                         <Success>
-                            <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Lunatic"
-                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
-                            <WaitAction time="1"/>
+                            <RNGAction chance="0.6">
+                                <Success>
+                                    <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Lunatic"
+                                                 lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                                    <WaitAction time="1"/>
+                                </Success>
+                                <Failure>
+
+                                </Failure>
+                            </RNGAction>
                         </Success>
                         <Failure>
                         </Failure>
@@ -3309,9 +3330,16 @@
                     </CountTargetsAction>
                     <CountTargetsAction targettag="player" MinAmount="8">
                         <Success>
-                            <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Lunatic"
-                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
-                            <WaitAction time="1"/>
+                            <RNGAction chance="0.6">
+                                <Success>
+                                    <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Lunatic"
+                                                 lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                                    <WaitAction time="1"/>
+                                </Success>
+                                <Failure>
+
+                                </Failure>
+                            </RNGAction>
                         </Success>
                         <Failure>
                         </Failure>
@@ -3403,9 +3431,6 @@
                     <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Lunatic_Reinforcements"
                                  lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                     <WaitAction time="1"/>
-                    <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Lunatic_Reinforcements"
-                                 lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
-                    <WaitAction time="1"/>
                 </Success>
                 <Failure>
                 </Failure>
@@ -3415,9 +3440,16 @@
                     <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Lunatic_Reinforcements"
                                  lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                     <WaitAction time="1"/>
-                    <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Lunatic_Reinforcements"
-                                 lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
-                    <WaitAction time="1"/>
+                    <RNGAction chance="0.6">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Lunatic_Reinforcements"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+
+                        </Failure>
+                    </RNGAction>
                 </Success>
                 <Failure>
                 </Failure>

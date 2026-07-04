@@ -472,6 +472,10 @@
                 <ParticleEmitter particle="StarDanmuBoom" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10"
                                  colormultiplier="220,150,100,255" velocitymax="-200" scalemin="0.3" scalemax="0.7"/>
             </StatusEffect>
+            <StatusEffect type="OnNotContained" target="This" delay="3.5" stackable="false">
+                <Conditional Removed="false"/>
+                <Remove/>
+            </StatusEffect>
         </Projectile>
     </Item>
 
@@ -21807,12 +21811,13 @@
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="5">
             <RequiredSkill identifier="Touhou_Magic" level="10"/>
             <RequiredItem identifier="Touhou_Bottle_Element"/>
+            <RequiredItem identifier="Touhou_Spring_Fragment"/>
             <RequiredItem identifier="Touhou_Plant_Extract" amount="4"/>
             <RequiredItem tag="munition_core" defaultitem="copper"/>
         </Fabricate>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="5" displayname="recycleitem">
             <RequiredSkill identifier="Touhou_Magic" level="10"/>
-            <RequiredItem identifier="Touhou_Spring_Fragment" />
+            <RequiredItem identifier="Touhou_Plant_Extract" amount="2" />
             <RequiredItem identifier="Magic_Material" />
             <RequiredItem tag="munition_core" defaultitem="copper"/>
             <RequiredItem identifier="Touhou_Higanbana_Arbiter_Ammo" mincondition="0.0" maxcondition="0.5" usecondition="false"/>
@@ -21866,7 +21871,7 @@
           Tags="smallitem,weapon,Touhou_Weapon_Level04,Touhou_Cam_Offset_Low" cargocontaineridentifier="metalcrate" scale="0.15"
           impactsoundtag="impact_metal_light" RequireAimToUse="True">
         <PreferredContainer primary="secarmcab" secondary="armcab"/>
-        <PreferredContainer secondary="wreckarmcab,abandonedarmcab" amount="1" spawnprobability="0.06"/>
+        <PreferredContainer secondary="wreckarmcab,abandonedarmcab" amount="1" spawnprobability="0.04"/>
         <Price baseprice="7500" sold="false">
             <Price storeidentifier="merchantoutpost" minavailable="2"/>
             <Price storeidentifier="merchantcity" minavailable="2"/>

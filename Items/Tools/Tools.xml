@@ -810,10 +810,6 @@
                     <StatusEffect type="OnRemoved" target="This" TargetItemComponent="CustomInterface" drawhudwhenequipped="false" setvalue="true"/>
                 </Containable>
                 <Containable items="Mu_Alchemical">
-                    <StatusEffect type="OnWearing" target="Contained">
-                        <Conditional condition="lt 5.0"/>
-                        <Sound file="Content/Items/WarningBeepSlow.ogg" range="250" loop="true"/>
-                    </StatusEffect>
                     <StatusEffect type="OnContaining" target="This,Character" OxygenAvailable="1000.0" Interval="10.0" Duration="10.0"
                                   comparison="And">
                         <Conditional HasTag="eq Magic_Pouch_Open"/>
@@ -950,6 +946,7 @@
                 <Conditional Grunt_Security_Tengu="gt 2"/>
                 <Conditional Wind_God_Girl="gt 2"/>
                 <Conditional Hyouibana_Aya_Effect="gt 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Momizi="gt 0"/>
                 <Affliction identifier="Touhou_Aya_Token_Effect" strength="100"/>
             </StatusEffect>
             <StatusEffect type="OnBroken" target="This" disabledeltatime="true">
@@ -3782,7 +3779,7 @@
                 <StatusEffect type="OnUse" targettype="This" delay="0.21" Condition="-100" disabledeltatime="true"/>
                 <StatusEffect type="OnUse" target="This" delay="0.2" stackable="false">
                     <Conditional HasTag="neq Opened"/>
-                    <SpawnItem identifiers="Touhou_Aphelion" spawnposition="ThisInventory"/>
+                    <SpawnItem identifiers="Touhou_Eidolon_Shard" spawnposition="ThisInventory"/>
                     <SpawnItem identifiers="Touhou_Missions_Collection_Spectral_Creature" spawnposition="ThisInventory"/>
                 </StatusEffect>
                 <StatusEffect type="OnUse" target="This" delay="0.2" stackable="false">
@@ -3807,7 +3804,7 @@
         </CustomInterface>
         <ItemContainer autofill="False" capacity="0" maxstacksize="1" drawinventory="false">
             <SubContainer capacity="8" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
-                <Containable items="smallitem,Touhou_Aphelion"/>
+                <Containable items="smallitem,Touhou_Eidolon_Shard"/>
             </SubContainer>
         </ItemContainer>
         <aitarget soundrange="800" fadeouttime="5"/>
@@ -5566,10 +5563,6 @@
                     <StatusEffect type="OnRemoved" target="This" TargetItemComponent="CustomInterface" drawhudwhenequipped="false" setvalue="true"/>
                 </Containable>
                 <Containable items="Mu_Alchemical">
-                    <StatusEffect type="OnWearing" target="Contained">
-                        <Conditional condition="lt 5.0"/>
-                        <Sound file="Content/Items/WarningBeepSlow.ogg" range="250" loop="true"/>
-                    </StatusEffect>
                     <StatusEffect type="OnContaining" target="This,Character" OxygenAvailable="1000.0" Interval="10.0" Duration="10.0"
                                   comparison="And">
                         <Conditional HasTag="eq Magic_Pouch_Open"/>

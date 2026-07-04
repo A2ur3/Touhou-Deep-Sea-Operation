@@ -125,6 +125,14 @@
                 <CharacterAbilityGivePermanentStat statidentifier="Touhou_Yokai_Talents_Locked_Counter" value="1" removeondeath="false"/>
             </Abilities>
         </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnGainMissionExperience">
+            <Conditions>
+                <AbilityConditionHasLevel minlevel="25"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyValue multiplyvalue="0.0"/>
+            </Abilities>
+        </AbilityGroupEffect>
     </Talent>
 
     <!--格物致知 增加15%技能获取速度，生命值大于60%时，这个效果翻倍-->
@@ -771,7 +779,7 @@
 
     <!--三魂七魄 当血量低于30%时，一定时间内提高20%物理伤害抗性和烧伤抗性
     穿着妖梦装束+时：增加10%最大生命值，增加20点武器操作
-    穿着幽幽子装束+时：增加30%最大生命值-->
+    穿着幽幽子装束+时：增加20%最大生命值-->
     <Talent identifier="Touhou_Youling_Wangling04">
         <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Defense.png" sheetindex="0,0" sheetelementsize="400,400"/>
         <Description tag="talentdescription.Touhou_Youling_Wangling04"/>
@@ -804,7 +812,7 @@
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yuyuko_Character_Effect"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyStat stattype="MaximumHealthMultiplier" value="0.3"/>
+                <CharacterAbilityModifyStat stattype="MaximumHealthMultiplier" value="0.2"/>
             </Abilities>
         </AbilityGroupInterval>
     </Talent>
@@ -950,7 +958,7 @@
                 <AbilityConditionHasSkill skillidentifier="Touhou_Magic" minvalue="200" invert="true"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyStatToSkill stattype="MaximumHealthMultiplier" maxvalue="0.05" skillidentifier="Touhou_Magic"/>
+                <CharacterAbilityModifyStatToSkill stattype="AttackMultiplier" maxvalue="0.05" skillidentifier="Touhou_Magic"/>
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="5">
@@ -959,7 +967,7 @@
                 <AbilityConditionHasSkill skillidentifier="Touhou_Magic" minvalue="200"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyStat stattype="MaximumHealthMultiplier" value="0.1"/>
+                <CharacterAbilityModifyStat stattype="AttackMultiplier" value="0.1"/>
             </Abilities>
         </AbilityGroupInterval>
     </Talent>
@@ -3420,15 +3428,10 @@
 
     <!--神明/付丧神-->
 
-    <!--寄宿于物 物理伤害抗性减少10%，增加10%最大生命值。生命值高于50%时，更难被敌人发现-->
+    <!--寄宿于物 增加10%最大生命值。生命值高于50%时，更难被敌人发现-->
     <Talent identifier="Touhou_ShenMing01">
         <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Survivable.png" sheetindex="0,0" sheetelementsize="400,400"/>
         <Description tag="talentdescription.Touhou_ShenMing01"/>
-        <AbilityGroupInterval interval="9.9">
-            <Abilities>
-                <CharacterAbilityModifyResistance resistanceid="damage" multiplier="1.1"/>
-            </Abilities>
-        </AbilityGroupInterval>
         <AbilityGroupEffect abilityeffecttype="None">
             <Abilities>
                 <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.1"/>
@@ -3598,7 +3601,7 @@
         怒：攻击目标将附加持续撕裂伤害，魔法武器攻击附加缓慢
         哀：魔法近战武器攻击生物将使其攻击伤害暂时降低25%，远程弹幕的效果则减半
         乐：根据所有技能水平平均值，增加对应5%的攻击伤害和移动速度。最多15%-->
-    <Talent identifier="Touhou_ShenMing06" trackedstat="Touhou_ShenMing06_Counter" trackedmax="4">
+    <Talent identifier="Touhou_ShenMing06" trackedstat="Touhou_ShenMing06_Counter" trackedmax="5">
         <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Buff.png" sheetindex="0,0" sheetelementsize="400,400"/>
         <Description tag="talentdescription.Touhou_ShenMing06"/>
         <AbilityGroupEffect abilityeffecttype="OnRoundEnd">

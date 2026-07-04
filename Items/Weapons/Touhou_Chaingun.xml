@@ -311,9 +311,6 @@
                                  velocitymax="1500" scalemin="0.6" scalemax="1"/>
                 <Remove/>
             </StatusEffect>
-            <StatusEffect type="OnBroken" target="This">
-                <Remove/>
-            </StatusEffect>
         </Projectile>
     </Item>
 
