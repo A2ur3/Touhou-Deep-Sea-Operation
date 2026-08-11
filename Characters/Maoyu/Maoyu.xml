@@ -1,4 +1,4 @@
-﻿<Character SpeciesName="Maoyu" SpeciesTranslationOverride="" DisplayName="毛玉" Group="Touhou_Monster" Humanoid="False" HasInfo="False"
+﻿<Character SpeciesName="Maoyu" SpeciesTranslationOverride="" DisplayName="" Group="Touhou_Monster" Humanoid="False" HasInfo="False"
            CanInteract="False" Husk="False" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" UseHumanAI="False" IsMachine="False"
            CanSpeak="False" ShowHealthBar="True" UseBossHealthBar="False" Noise="100" Visibility="100" BloodDecal="blood" BleedParticleAir="blooddrop"
            BleedParticleWater="waterblood" BleedParticleMultiplier="1" CanEat="True" EatingSpeed="10" UsePathFinding="True" PathFinderPriority="1"
