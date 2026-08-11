@@ -128,4 +128,5 @@
     </inventory>
     <sound File="%ModDir%/Sounds/Monsters/Maoyu/Maoyu_low.ogg" State="Idle" Range="3000" Volume="0.59999996" Tags=""/>
     <sound File="%ModDir%/Sounds/Monsters/Maoyu/Maoyu_attack.ogg" State="Attack" Range="3000" Volume="0.7" Tags=""/>
+    <sound file="%ModDir%/Sounds/Monsters/Maoyu/Maoyu_Underattack.ogg" state="Damage" range="3000" volume="1" />
 </Character>

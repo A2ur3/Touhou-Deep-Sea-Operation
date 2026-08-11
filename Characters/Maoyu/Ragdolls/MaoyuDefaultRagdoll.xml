@@ -23,8 +23,6 @@
             <Affliction Strength="0.5" Identifier="stun" Probability="0.6" DivideByLimbCount="True" MultiplyByMaxVitality="False"/>
             <Affliction Strength="2" Identifier="blunttrauma" Probability="1" DivideByLimbCount="True" MultiplyByMaxVitality="False"/>
         </attack>
-        <damagemodifier DamageSound="%ModDir%/Sounds/Monsters/Maoyu/Maoyu_Underattack.ogg" DamageParticle="" DamageMultiplier="1"
-                        ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="False" AfflictionIdentifiers="" AfflictionTypes="damage"/>
     </limb>
     <limb Name="Limb 1" ID="1" Type="Torso" Notes="" Scale="2" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="True"
           SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="36.899998" Width="40.499996" Density="10"
@@ -44,8 +42,6 @@
                 rootforceworldmiddle="0,0" rootforceworldend="0,0" roottransitioneasing="Linear" fullspeedafterattack="False"
                 emitstructuredamageparticles="True" penetration="0" levelwalldamage="35" ranged="False" avoidfriendlyfire="False" requiredangle="20"
                 stun="0" submarineimpactmultiplier="1" blink="False"/>
-        <damagemodifier DamageSound="%ModDir%/Sounds/Monsters/Maoyu/Maoyu_Underattack.ogg" DamageParticle="" DamageMultiplier="1"
-                        ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="False" AfflictionIdentifiers="" AfflictionTypes="damage"/>
     </limb>
     <joint Name="Joint 0 - 1" Limb1="0" Limb2="1" Limb1Anchor="0.65,2.81" Limb2Anchor="-1.51,0.65" CanBeSevered="True"
            SeveranceProbabilityModifier="0" BreakSound="gore" LimitEnabled="True" UpperLimit="0" LowerLimit="0" Stiffness="0.25" Scale="1"
