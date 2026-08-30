@@ -471,7 +471,7 @@
         </Deconstruct>
         <Fabricate suitablefabricators="fabricator" requiredtime="5">
             <RequiredSkill identifier="weapons" level="75"/>
-            <RequiredItem identifier="physicorium" amount="3"/>
+            <RequiredItem identifier="physicorium" amount="4"/>
             <RequiredItem identifier="Touhou_Plant_Extract" amount="6"/>
             <RequiredItem identifier="Touhou_Bottle_Element" amount="2"/>
             <RequiredItem identifier="Magic_Material"/>
@@ -2444,10 +2444,7 @@
                 </Explosion>
                 <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="10" velocitymin="100" velocitymax="2000" scalemin="0.25" scalemax="0.5" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="This" stackable="false" delay="3">
-                <Remove/>
-            </StatusEffect>
-            <StatusEffect type="OnBroken" target="This">
+            <StatusEffect type="OnNotContained" target="This" stackable="false" delay="3">
                 <Remove/>
             </StatusEffect>
         </Projectile>

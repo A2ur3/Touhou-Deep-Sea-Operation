@@ -20,7 +20,7 @@
                     <Conditional ispet="false"/>
                     <Conditional KokoroTalent_Mark="lte 0"/>
                 </AbilityConditionCharacter>
-                <AbilityConditionServerRandom randomchance="0.35"/>
+                <AbilityConditionServerRandom randomchance="0.4"/>
                 <AbilityConditionHasPermanentStat statidentifier="Mood_Learning_Counter" min="66" invert="true"/>
                 <AbilityConditionCharacterNotLooted identifier="KokoroTalent_Mark"/>
             </Conditions>
@@ -51,9 +51,9 @@
                         <StatusEffect type="OnAbility" target="UseTarget" disabledeltatime="true">
                             <Affliction identifier="KokoroTalent_Mark" amount="100"/>
                         </StatusEffect>
-                        <CharacterAbilityMarkAsLooted identifier="KokoroTalent_Mark"/>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffects>
+                <CharacterAbilityMarkAsLooted identifier="KokoroTalent_Mark"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupInterval interval="2.9">

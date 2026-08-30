@@ -311,13 +311,18 @@
                 <GiveTalentInfo giverandom="false" talentidentifiers="Touhou_Enemy_Pollution_Magician_Talent"/>
             </StatusEffect>
 
+            <StatusEffect type="OnWearing" target="Character" oneshot="true">
+                <Conditional jobidentifier="eq Magician_Enemy"/>
+                <GiveTalentInfo giverandom="false" talentidentifiers="Touhou_Remnant_Talent"/>
+            </StatusEffect>
+
             <StatusEffect type="OnWearing" target="Character" Interval="0.5" disabledeltatime="true" oneshot="true">
                 <Conditional jobidentifier="eq Magician_Enemy"/>
                 <Affliction identifier="Pollution_Magician_Clothes01_Effect" strength="50"/>
             </StatusEffect>
             <StatusEffect type="OnWearing" target="Character" Interval="10" disabledeltatime="true" >
                 <Conditional jobidentifier="eq Magician_Enemy"/>
-                <Affliction identifier="Pollution_Magician_Clothes01_Touhou_Savior_Mod_Effect" strength="50"/>
+                <Affliction identifier="Touhou_Savior_Mod_Effect" strength="50"/>
             </StatusEffect>
 
         </Wearable>

@@ -157,13 +157,13 @@
             </StatusEffect>
             <CustomInterface canbeselected="true" drawhudwhenequipped="true">
                 <GuiFrame relativesize="0.11,0.11" anchor="BottomLeft" absoluteoffset="20,60" relativeoffset="0,0.5" style="ItemUI"/>
-                <Button text="狮子">
+                <Button text="Text.Aunn_Plus_Lion">
                     <StatusEffect type="OnUse" target="Character" disabledeltatime="true">
                         <Conditional Aunn_Koma_Inu="lt 1"/>
                         <Affliction identifier="Aunn_Lion" strength="100"/>
                     </StatusEffect>
                 </Button>
-                <Button text="狛犬">
+                <Button text="Text.Aunn_Plus_Koma_Inu">
                     <StatusEffect type="OnUse" target="Character" delay="0.01" disabledeltatime="true">
                         <Conditional Aunn_Lion="lt 1"/>
                         <Affliction identifier="Aunn_Koma_Inu" strength="100"/>
