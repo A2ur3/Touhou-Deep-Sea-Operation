@@ -405,7 +405,7 @@
             </StatusEffect>
             <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="3" setvalue="true"/>
             <StatusEffect type="OnBroken" target="This">
-                <Sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Weapon_Reload01.ogg" type="OnUse" range="800" volume="1.5" selectionmode="Random"/>
+                <Sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Weapon_Reload01.ogg" range="800" volume="1.5" selectionmode="Random"/>
             </StatusEffect>
         </Holdable>
         <ItemContainer autofill="False" hideitems="true" capacity="1" maxstacksize="1" SpawnWithId="Touhou_Rippling_Bolt_Monster_Fortune_Teller"
@@ -1790,7 +1790,7 @@
             </StatusEffect>
             <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="3" setvalue="true"/>
             <StatusEffect type="OnBroken" target="This">
-                <Sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Weapon_Reload01.ogg" type="OnUse" range="800" volume="1.5" selectionmode="Random"/>
+                <Sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Weapon_Reload01.ogg" range="800" volume="1.5" selectionmode="Random"/>
             </StatusEffect>
         </Holdable>
         <ItemContainer autofill="False" hideitems="true" capacity="1" maxstacksize="1" SpawnWithId="Touhou_Magic_Ray_Gun_Light"
@@ -1854,7 +1854,7 @@
             </StatusEffect>
             <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="3" setvalue="true"/>
             <StatusEffect type="OnBroken" target="This">
-                <Sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Weapon_Reload01.ogg" type="OnUse" range="800" volume="1.5" selectionmode="Random"/>
+                <Sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Weapon_Reload01.ogg" range="800" volume="1.5" selectionmode="Random"/>
             </StatusEffect>
         </Holdable>
         <ItemContainer autofill="False" hideitems="true" capacity="1" maxstacksize="1" SpawnWithId="Touhou_Lightsmithing_Bullet"

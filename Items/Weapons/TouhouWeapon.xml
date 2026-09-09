@@ -57,7 +57,7 @@
             </StatusEffect>
             <StatusEffect type="OnBroken" target="This" Condition="8" disabledeltatime="true" delay="5" stackable="false"/>
             <StatusEffect type="OnBroken" target="This">
-                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart01.ogg" type="OnUse" range="500.0" loop="false"/>
+                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart01.ogg" range="500.0" loop="false"/>
             </StatusEffect>
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true"/>
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.85" setvalue="true"/>
@@ -521,7 +521,7 @@
             </StatusEffect>
             <StatusEffect type="OnBroken" target="This" Condition="2" disabledeltatime="true" delay="8" stackable="false"/>
             <StatusEffect type="OnBroken" target="This">
-                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart01.ogg" type="OnUse" range="1500.0" loop="false"/>
+                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart01.ogg" range="1500.0" loop="false"/>
             </StatusEffect>
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.85" setvalue="true"/>
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.7" setvalue="true"/>
@@ -747,7 +747,7 @@
             </StatusEffect>
             <StatusEffect type="OnBroken" target="This" Condition="0.1" disabledeltatime="true" delay="8" stackable="false"/>
             <StatusEffect type="OnBroken" target="This">
-                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart02.ogg" type="OnUse" range="1500.0" loop="false"/>
+                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart02.ogg" range="1500.0" loop="false"/>
             </StatusEffect>
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.95" setvalue="true"/>
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.9" setvalue="true"/>
@@ -2029,7 +2029,7 @@
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100"/>
             </StatusEffect>
             <StatusEffect type="OnBroken" target="This">
-                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart02.ogg" type="OnUse" range="1000.0" loop="false"/>
+                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart02.ogg" range="1000.0" loop="false"/>
             </StatusEffect>
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.95" setvalue="true"/>
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.9" setvalue="true"/>
@@ -2183,7 +2183,7 @@
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect02" strength="100"/>
             </StatusEffect>
             <StatusEffect type="OnBroken" target="This">
-                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart02.ogg" type="OnUse" range="500.0" loop="false"/>
+                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart02.ogg" range="500.0" loop="false"/>
             </StatusEffect>
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.95" setvalue="true"/>
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.85" setvalue="true"/>
@@ -4425,7 +4425,7 @@
             </StatusEffect>
             <StatusEffect type="OnBroken" target="This" Condition="0.1" disabledeltatime="true" delay="8" stackable="false"/>
             <StatusEffect type="OnBroken" target="This">
-                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart02.ogg" type="OnUse" range="1500.0" loop="false"/>
+                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart02.ogg" range="1500.0" loop="false"/>
             </StatusEffect>
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.95" setvalue="true"/>
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.85" setvalue="true"/>
@@ -5048,7 +5048,7 @@
             <StatusEffect type="OnSpawn" target="This" Condition="100" disabledeltatime="true" AllowWhenBroken="true"/>
             <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="15" stackable="false" AllowWhenBroken="true"/>
             <StatusEffect type="OnBroken" target="This">
-                <sound file="%ModDir%/Sounds/Weapons/Touhou_Strange_Phone_Sound_End.ogg" type="OnUse" range="500.0" loop="false"/>
+                <sound file="%ModDir%/Sounds/Weapons/Touhou_Strange_Phone_Sound_End.ogg" range="500.0" loop="false"/>
             </StatusEffect>
         </Holdable>
         <RangedWeapon reload="1">
@@ -5230,7 +5230,7 @@
             </StatusEffect>
             <StatusEffect type="OnBroken" target="This" Condition="20" disabledeltatime="true" delay="8" setvalue="true"/>
             <StatusEffect type="OnBroken" target="This">
-                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart01.ogg" type="OnUse" range="500.0" loop="false"/>
+                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart01.ogg" range="500.0" loop="false"/>
             </StatusEffect>
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.8" setvalue="true"/>
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true"/>
@@ -9408,7 +9408,7 @@
 
             <StatusEffect type="OnBroken" target="This" Condition="100" setvalue="true" disabledeltatime="true" delay="6" stackable="false"/>
             <StatusEffect type="OnBroken" target="This">
-                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart02.ogg" type="OnUse" range="500.0" loop="false"/>
+                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart02.ogg" range="500.0" loop="false"/>
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.75" setvalue="true"/>
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.6" setvalue="true"/>
@@ -9582,7 +9582,7 @@
             <StatusEffect type="OnActive" target="This" Condition="2" Interval="1.0" disabledeltatime="true" stackable="false"/>
             <StatusEffect type="OnBroken" target="This" Condition="20" setvalue="true" disabledeltatime="true" delay="5" stackable="false"/>
             <StatusEffect type="OnBroken" target="This">
-                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart02.ogg" type="OnUse" range="500.0" loop="false"/>
+                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart02.ogg" range="500.0" loop="false"/>
             </StatusEffect>
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.75" setvalue="true"/>
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.5" setvalue="true"/>
@@ -10072,7 +10072,7 @@
             </StatusEffect>
             <StatusEffect type="OnBroken" target="This" Condition="20" disabledeltatime="true" delay="6" setvalue="true"/>
             <StatusEffect type="OnBroken" target="This">
-                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart01.ogg" type="OnUse" range="500.0" loop="false"/>
+                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart01.ogg" range="500.0" loop="false"/>
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.7" setvalue="true"/>
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.6" setvalue="true"/>
@@ -10313,7 +10313,7 @@
             </StatusEffect>
             <StatusEffect type="OnBroken" target="This" Condition="0.2" disabledeltatime="true" delay="8" stackable="false"/>
             <StatusEffect type="OnBroken" target="This">
-                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart02.ogg" type="OnUse" range="1500.0" loop="false"/>
+                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart02.ogg" range="1500.0" loop="false"/>
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.8" setvalue="true"/>
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.6" setvalue="true"/>
@@ -11621,7 +11621,7 @@
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget" delay="1.0" stackable="false">
                 <Conditional entitytype="neq Structure"/>
-                <Sound file="%ModDir%/Sounds/Weapons/Touhou_Rose_Wand_Attack.ogg" type="OnUse" range="1500" selectionmode="Random"/>
+                <Sound file="%ModDir%/Sounds/Weapons/Touhou_Rose_Wand_Attack.ogg" range="1500" selectionmode="Random"/>
                 <SpawnItem identifier="Touhou_Closed_Third_Eye_Spawn" spawnposition="Target" MinCount="1" MaxCount="2" aimspread="360"
                            rotationtype="Collider" Probability="0.9"/>
                 <SpawnItem identifier="Touhou_Closed_Third_Eye_Spawn" spawnposition="Target" MinCount="1" MaxCount="2" aimspread="360"
@@ -11633,7 +11633,7 @@
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget" delay="2.0" stackable="false">
                 <Conditional entitytype="neq Structure"/>
-                <Sound file="%ModDir%/Sounds/Weapons/Touhou_Rose_Wand_Attack.ogg" type="OnUse" range="1500" selectionmode="Random"/>
+                <Sound file="%ModDir%/Sounds/Weapons/Touhou_Rose_Wand_Attack.ogg" range="1500" selectionmode="Random"/>
                 <SpawnItem identifier="Touhou_Closed_Third_Eye_Spawn" spawnposition="Target" MinCount="1" MaxCount="2" aimspread="360"
                            rotationtype="Collider" Probability="0.9"/>
                 <SpawnItem identifier="Touhou_Closed_Third_Eye_Spawn" spawnposition="Target" MinCount="1" MaxCount="2" aimspread="360"
@@ -11645,7 +11645,7 @@
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget" delay="3.0" stackable="false">
                 <Conditional entitytype="neq Structure"/>
-                <Sound file="%ModDir%/Sounds/Weapons/Touhou_Rose_Wand_Attack.ogg" type="OnUse" range="1500" selectionmode="Random"/>
+                <Sound file="%ModDir%/Sounds/Weapons/Touhou_Rose_Wand_Attack.ogg" range="1500" selectionmode="Random"/>
                 <SpawnItem identifier="Touhou_Closed_Third_Eye_Spawn" spawnposition="Target" MinCount="2" MaxCount="3" aimspread="360"
                            rotationtype="Collider" Probability="0.9"/>
                 <SpawnItem identifier="Touhou_Closed_Third_Eye_Spawn" spawnposition="Target" MinCount="3" MaxCount="3" aimspread="360"
@@ -22188,7 +22188,7 @@
             </StatusEffect>
             <StatusEffect type="OnBroken" target="This" Condition="20" disabledeltatime="true" delay="8" setvalue="true"/>
             <StatusEffect type="OnBroken" target="This">
-                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart01.ogg" type="OnUse" range="500.0" loop="false"/>
+                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart01.ogg" range="500.0" loop="false"/>
             </StatusEffect>
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.7" setvalue="true"/>
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.5" setvalue="true"/>

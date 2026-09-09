@@ -308,7 +308,7 @@
         <Body width="72" height="72" density="10"/>
         <Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="45,-10" handle1="-10,-50" handle2="70,10" msg="ItemMsgPickUpSelect">
             <StatusEffect type="OnBroken" target="This">
-                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart02.ogg" type="OnUse" range="500.0" loop="false"/>
+                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart02.ogg" range="500.0" loop="false"/>
             </StatusEffect>
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true"/>
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.85" setvalue="true"/>
@@ -400,7 +400,7 @@
         <Body width="72" height="72" density="10"/>
         <Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="45,-10" handle1="-10,-50" handle2="70,10" msg="ItemMsgPickUpSelect">
             <StatusEffect type="OnBroken" target="This">
-                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart02.ogg" type="OnUse" range="500.0" loop="false"/>
+                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart02.ogg" range="500.0" loop="false"/>
             </StatusEffect>
 
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true"/>
@@ -493,7 +493,7 @@
         <Body width="72" height="72" density="10"/>
         <Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="45,-10" handle1="-10,-50" handle2="70,10" msg="ItemMsgPickUpSelect">
             <StatusEffect type="OnBroken" target="This">
-                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart02.ogg" type="OnUse" range="500.0" loop="false"/>
+                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart02.ogg" range="500.0" loop="false"/>
             </StatusEffect>
 
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true"/>
@@ -586,7 +586,7 @@
         <Body width="72" height="72" density="10"/>
         <Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="45,-10" handle1="-10,-50" handle2="70,10" msg="ItemMsgPickUpSelect">
             <StatusEffect type="OnBroken" target="This">
-                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart02.ogg" type="OnUse" range="500.0" loop="false"/>
+                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart02.ogg" range="500.0" loop="false"/>
             </StatusEffect>
 
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true"/>
@@ -3039,7 +3039,7 @@
         <Body width="200" height="72" density="10"/>
         <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,-15" aimpos="52,4" handle1="-40,-15" handle2="10,-3" holdangle="-35">
             <StatusEffect type="OnBroken" target="This">
-                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart01.ogg" type="OnUse" range="500.0" loop="false"/>
+                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart01.ogg" range="500.0" loop="false"/>
             </StatusEffect>
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.85" setvalue="true"/>
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.7" setvalue="true"/>
@@ -3890,7 +3890,7 @@
             </StatusEffect>
             <StatusEffect type="OnBroken" target="This" Condition="60" disabledeltatime="true" delay="6" setvalue="true"/>
             <StatusEffect type="OnBroken" target="This">
-                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart01.ogg" type="OnUse" range="500.0" loop="false"/>
+                <sound file="%ModDir%/Sounds/Tools/Overheating_Restart01.ogg" range="500.0" loop="false"/>
             </StatusEffect>
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.8" setvalue="true"/>
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true"/>
@@ -7956,7 +7956,7 @@
         <Body radius="50" density="10" gravityscale="0"/>
         <Projectile characterusable="false" launchimpulse="0.0" impulsespread="0.5" damagedoors="true">
             <StatusEffect type="OnSpawn" target="This">
-                <sound file="Content/Items/Weapons/GRAVITYSHELLS_boom.ogg" volume="2" range="50000" type="OnUse"/>
+                <sound file="Content/Items/Weapons/GRAVITYSHELLS_boom.ogg" volume="2" range="50000" />
                 <!-- initial "explosion" -->
                 <ParticleEmitter particle="cyborgammotracer" particleamount="25" anglemin="0" anglemax="360" distancemin="0" distancemax="150"
                                  scalemin="1" scalemax="2.5" velocitymin="-50" velocitymax="0"/>
