@@ -366,7 +366,7 @@
                                 Hyouibana_Tenshi,Hyouibana_Reimu,Hyouibana_Momizi,Hyouibana_Yuka,Hyouibana_Aunn,Hyouibana_Flandre,Hyouibana_Nue,Hyouibana_Piece,
                                 Hyouibana_Cirno,Hyouibana_Koishi,Hyouibana_Alice,Hyouibana_Sunny,Hyouibana_Luna,Hyouibana_Star,Hyouibana_Sakuya,Hyouibana_Sanae，
                                 Hyouibana_Reisen,Hyouibana_Yukari,Hyouibana_Merry,Hyouibana_Renko,Hyouibana_Kokoro,Hyouibana_Lilywhite,Hyouibana_Satori,Hyouibana_Tewi,
-                                Hyouibana_Kaguya,Hyouibana_Yuyuko,Hyouibana_Shinki,Hyouibana_Koakuma,Hyouibana_Kagiyama_Hina"/>
+                                Hyouibana_Kaguya,Hyouibana_Yuyuko,Hyouibana_Shinki,Hyouibana_Koakuma,Hyouibana_Kagiyama_Hina,Hyouibana_Shion"/>
             </StatusEffect>
             <StatusEffect type="OnUse" target="UseTarget">
                 <Conditional Hyouibana_Effect_Flag="gt 0"/>
@@ -1843,8 +1843,13 @@
                 <Containable items="antibleeding1,antibleeding2">
                     <StatusEffect type="OnContaining" target="Contained" NonPlayerTeamInteractable="true" setvalue="true" Interval="1.0" />
                 </Containable>
-                <Containable items="antibleeding1" excludebroken="false" >
-                    <StatusEffect type="OnContaining" target="Contained" Condition="-100" Interval="1.0" disabledeltatime="true" comparison="And" >
+                <Containable items="antibleeding1" >
+                    <StatusEffect type="OnContaining" target="Contained" Condition="-99" Interval="1.0" disabledeltatime="true" comparison="And" >
+                        <Conditional HasTag="eq Charging_Open" targetcontainer="true"/>
+                        <Conditional ConditionPercentage="lt 100" targetcontainer="true"/>
+                        <RequiredItem items="antibleeding1" type="Contained"/>
+                    </StatusEffect>
+                    <StatusEffect type="OnContaining" target="Contained" Condition="-2" Interval="1.0" delay="0.01" stackable="false" disabledeltatime="true" comparison="And" >
                         <Conditional HasTag="eq Charging_Open" targetcontainer="true"/>
                         <Conditional ConditionPercentage="lt 100" targetcontainer="true"/>
                         <RequiredItem items="antibleeding1" type="Contained"/>
@@ -1855,8 +1860,13 @@
                         <RequiredItem items="antibleeding1" type="Contained"/>
                     </StatusEffect>
                 </Containable>
-                <Containable items="antibleeding2" excludebroken="false" >
-                    <StatusEffect type="OnContaining" target="Contained" Condition="-100" Interval="1.0" disabledeltatime="true" comparison="And" >
+                <Containable items="antibleeding2" >
+                    <StatusEffect type="OnContaining" target="Contained" Condition="-99" Interval="1.0" disabledeltatime="true" comparison="And" >
+                        <Conditional HasTag="eq Charging_Open" targetcontainer="true"/>
+                        <Conditional ConditionPercentage="lt 100" targetcontainer="true"/>
+                        <RequiredItem items="antibleeding2" type="Contained"/>
+                    </StatusEffect>
+                    <StatusEffect type="OnContaining" target="Contained" Condition="-2" Interval="1.0" delay="0.01" stackable="false" disabledeltatime="true" comparison="And" >
                         <Conditional HasTag="eq Charging_Open" targetcontainer="true"/>
                         <Conditional ConditionPercentage="lt 100" targetcontainer="true"/>
                         <RequiredItem items="antibleeding2" type="Contained"/>
@@ -1867,8 +1877,13 @@
                         <RequiredItem items="antibleeding2" type="Contained"/>
                     </StatusEffect>
                 </Containable>
-                <Containable items="antibleeding3" excludebroken="false" >
-                    <StatusEffect type="OnContaining" target="Contained" Condition="-25" Interval="1.0" disabledeltatime="true" comparison="And" >
+                <Containable items="antibleeding3" >
+                    <StatusEffect type="OnContaining" target="Contained" Condition="-24" Interval="1.0" disabledeltatime="true" comparison="And" >
+                        <Conditional HasTag="eq Charging_Open" targetcontainer="true"/>
+                        <Conditional ConditionPercentage="lt 100" targetcontainer="true"/>
+                        <RequiredItem items="antibleeding3" type="Contained"/>
+                    </StatusEffect>
+                    <StatusEffect type="OnContaining" target="Contained" Condition="-1" Interval="1.0" delay="0.01" stackable="false" disabledeltatime="true" comparison="And" >
                         <Conditional HasTag="eq Charging_Open" targetcontainer="true"/>
                         <Conditional ConditionPercentage="lt 100" targetcontainer="true"/>
                         <RequiredItem items="antibleeding3" type="Contained"/>
@@ -1879,8 +1894,13 @@
                         <RequiredItem items="antibleeding3" type="Contained"/>
                     </StatusEffect>
                 </Containable>
-                <Containable items="Touhou_External_Medicine_Box" excludebroken="false" >
-                    <StatusEffect type="OnContaining" target="Contained" Condition="-10" Interval="1.0" disabledeltatime="true" comparison="And" >
+                <Containable items="Touhou_External_Medicine_Box" >
+                    <StatusEffect type="OnContaining" target="Contained" Condition="-9" Interval="1.0" disabledeltatime="true" comparison="And" >
+                        <Conditional HasTag="eq Charging_Open" targetcontainer="true"/>
+                        <Conditional ConditionPercentage="lt 100" targetcontainer="true"/>
+                        <RequiredItem items="Touhou_External_Medicine_Box" type="Contained"/>
+                    </StatusEffect>
+                    <StatusEffect type="OnContaining" target="Contained" Condition="-1" Interval="1.0" delay="0.01" stackable="false" disabledeltatime="true" comparison="And" >
                         <Conditional HasTag="eq Charging_Open" targetcontainer="true"/>
                         <Conditional ConditionPercentage="lt 100" targetcontainer="true"/>
                         <RequiredItem items="Touhou_External_Medicine_Box" type="Contained"/>
@@ -1907,7 +1927,7 @@
     <!--永远亭止痛药盒-->
     <Item name="永远亭止痛药盒" identifier="Touhou_Eternal_House_Painkiller_Kit" tags="smallitem,medical,Touhou_Magic_Medical"
           subcategory="Touhou" category="medical"
-          cargocontaineridentifier="metalcrate" scale="0.3" useinhealthinterface="true" >
+          cargocontaineridentifier="metalcrate" scale="0.2" useinhealthinterface="true" >
         <PreferredContainer primary="medcab"/>
         <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" amount="1" spawnprobability="0.02" minleveldifficulty="15"/>
         <Price baseprice="1000" minleveldifficulty="36" sold="false">
@@ -1975,8 +1995,13 @@
                 <Containable items="pomegrenadeextract,opium,antidama1,antidama2">
                     <StatusEffect type="OnContaining" target="Contained" NonPlayerTeamInteractable="true" setvalue="true" Interval="1.0" />
                 </Containable>
-                <Containable items="pomegrenadeextract" excludebroken="false" >
-                    <StatusEffect type="OnContaining" target="Contained" Condition="-100" Interval="1.0" disabledeltatime="true" comparison="And" >
+                <Containable items="pomegrenadeextract" >
+                    <StatusEffect type="OnContaining" target="Contained" Condition="-99" Interval="1.0" disabledeltatime="true" comparison="And" >
+                        <Conditional HasTag="eq Charging_Open" targetcontainer="true"/>
+                        <Conditional ConditionPercentage="lt 100" targetcontainer="true"/>
+                        <RequiredItem items="pomegrenadeextract" type="Contained"/>
+                    </StatusEffect>
+                    <StatusEffect type="OnContaining" target="Contained" Condition="-2" Interval="1.0" delay="0.01" stackable="false" disabledeltatime="true" comparison="And" >
                         <Conditional HasTag="eq Charging_Open" targetcontainer="true"/>
                         <Conditional ConditionPercentage="lt 100" targetcontainer="true"/>
                         <RequiredItem items="pomegrenadeextract" type="Contained"/>
@@ -1987,8 +2012,13 @@
                         <RequiredItem items="pomegrenadeextract" type="Contained"/>
                     </StatusEffect>
                 </Containable>
-                <Containable items="opium" excludebroken="false" >
-                    <StatusEffect type="OnContaining" target="Contained" Condition="-100" Interval="1.0" disabledeltatime="true" comparison="And" >
+                <Containable items="opium" >
+                    <StatusEffect type="OnContaining" target="Contained" Condition="-99" Interval="1.0" disabledeltatime="true" comparison="And" >
+                        <Conditional HasTag="eq Charging_Open" targetcontainer="true"/>
+                        <Conditional ConditionPercentage="lt 100" targetcontainer="true"/>
+                        <RequiredItem items="opium" type="Contained"/>
+                    </StatusEffect>
+                    <StatusEffect type="OnContaining" target="Contained" Condition="-2" Interval="1.0" delay="0.01" stackable="false" disabledeltatime="true" comparison="And" >
                         <Conditional HasTag="eq Charging_Open" targetcontainer="true"/>
                         <Conditional ConditionPercentage="lt 100" targetcontainer="true"/>
                         <RequiredItem items="opium" type="Contained"/>
@@ -1999,8 +2029,13 @@
                         <RequiredItem items="opium" type="Contained"/>
                     </StatusEffect>
                 </Containable>
-                <Containable items="antidama1" excludebroken="false" >
-                    <StatusEffect type="OnContaining" target="Contained" Condition="-100" Interval="1.0" disabledeltatime="true" comparison="And" >
+                <Containable items="antidama1" >
+                    <StatusEffect type="OnContaining" target="Contained" Condition="-99" Interval="1.0" disabledeltatime="true" comparison="And" >
+                        <Conditional HasTag="eq Charging_Open" targetcontainer="true"/>
+                        <Conditional ConditionPercentage="lt 100" targetcontainer="true"/>
+                        <RequiredItem items="antidama1" type="Contained"/>
+                    </StatusEffect>
+                    <StatusEffect type="OnContaining" target="Contained" Condition="-2" Interval="1.0" delay="0.01" stackable="false" disabledeltatime="true" comparison="And" >
                         <Conditional HasTag="eq Charging_Open" targetcontainer="true"/>
                         <Conditional ConditionPercentage="lt 100" targetcontainer="true"/>
                         <RequiredItem items="antidama1" type="Contained"/>
@@ -2011,8 +2046,13 @@
                         <RequiredItem items="antidama1" type="Contained"/>
                     </StatusEffect>
                 </Containable>
-                <Containable items="antidama2" excludebroken="false" >
-                    <StatusEffect type="OnContaining" target="Contained" Condition="-100" Interval="1.0" disabledeltatime="true" comparison="And" >
+                <Containable items="antidama2" >
+                    <StatusEffect type="OnContaining" target="Contained" Condition="-99" Interval="1.0" disabledeltatime="true" comparison="And" >
+                        <Conditional HasTag="eq Charging_Open" targetcontainer="true"/>
+                        <Conditional ConditionPercentage="lt 100" targetcontainer="true"/>
+                        <RequiredItem items="antidama2" type="Contained"/>
+                    </StatusEffect>
+                    <StatusEffect type="OnContaining" target="Contained" Condition="-2" Interval="1.0" delay="0.01" stackable="false" disabledeltatime="true" comparison="And" >
                         <Conditional HasTag="eq Charging_Open" targetcontainer="true"/>
                         <Conditional ConditionPercentage="lt 100" targetcontainer="true"/>
                         <RequiredItem items="antidama2" type="Contained"/>
@@ -2023,8 +2063,13 @@
                         <RequiredItem items="antidama2" type="Contained"/>
                     </StatusEffect>
                 </Containable>
-                <Containable items="Touhou_External_Within_Pill" excludebroken="false" >
-                    <StatusEffect type="OnContaining" target="Contained" Condition="-25" Interval="1.0" disabledeltatime="true" comparison="And" >
+                <Containable items="Touhou_External_Within_Pill" >
+                    <StatusEffect type="OnContaining" target="Contained" Condition="-24" Interval="1.0" disabledeltatime="true" comparison="And" >
+                        <Conditional HasTag="eq Charging_Open" targetcontainer="true"/>
+                        <Conditional ConditionPercentage="lt 100" targetcontainer="true"/>
+                        <RequiredItem items="Touhou_External_Within_Pill" type="Contained"/>
+                    </StatusEffect>
+                    <StatusEffect type="OnContaining" target="Contained" Condition="-1" Interval="1.0" delay="0.01" stackable="false" disabledeltatime="true" comparison="And" >
                         <Conditional HasTag="eq Charging_Open" targetcontainer="true"/>
                         <Conditional ConditionPercentage="lt 100" targetcontainer="true"/>
                         <RequiredItem items="Touhou_External_Within_Pill" type="Contained"/>

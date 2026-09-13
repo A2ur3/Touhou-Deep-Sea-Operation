@@ -2844,7 +2844,7 @@
     <Item identifier="Touhou_Quality_Upper_Machine" subcategory="Touhou" category="Equipment" scale="0.35" tags="smallitem" allowasextracargo="true">
         <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" spawnprobability="0.05"/>
         <PreferredContainer primary="wreckengcab,abandonedengcab,pirateengcab" amount="1" spawnprobability="0.05"/>
-        <Price baseprice="6000" sold="true" >
+        <Price baseprice="2000" sold="true" >
             <Price locationtype="Merchant_Kawasiro_Nitori" maxavailable="1"/>
         </Price>
         <Deconstruct time="10"/>
@@ -2886,7 +2886,7 @@
           spritecolor="150,150,255,255" allowasextracargo="true">
         <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" spawnprobability="0.03"/>
         <PreferredContainer primary="wreckengcab,abandonedengcab,pirateengcab" amount="1" spawnprobability="0.03"/>
-        <Price baseprice="6000" sold="false" minleveldifficulty="15">
+        <Price baseprice="2000" sold="false" minleveldifficulty="15">
             <Price locationtype="Merchant_Kawasiro_Nitori" maxavailable="1"/>
         </Price>
         <Deconstruct time="10"/>

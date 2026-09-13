@@ -2498,7 +2498,27 @@
     <entitydescription.Touhou_Eternal_House_Hemostatic_Kit>Упакованный интегрированный контейнер для лекарств, позволяющий хранить гемостатические препараты для удобного доступа. Требуется держать в руках и активировать опцию «Зарядка» для восстановления прочности. Может содержать: бинты, пластичный искусственный кожный покров, антибиотический гель и наружный медицинский набор Вечного Павильона.</entitydescription.Touhou_Eternal_House_Hemostatic_Kit>
 
     <entityname.Touhou_Eternal_House_Painkiller_Kit>Обезболивающий набор Вечного Павильона</entityname.Touhou_Eternal_House_Painkiller_Kit>
-    <entitydescription.Touhou_Eternal_House_Painkiller_Kit>Упакованный интегрированный контейнер для лекарств, позволяющий хранить гемостатические препараты для удобного доступа. Требуется держать в руках и активировать опцию «Зарядка» для восстановления прочности. Может содержать: экстракт взрывного граната, лечебный опий, морфин, фентанил и таблетки для приёма внутрь Вечного Павильона.</entitydescription.Touhou_Eternal_House_Painkiller_Kit>
+    <entitydescription.Touhou_Eternal_House_Painkiller_Kit>Упакованный интегрированный контейнер для лекарств, позволяющий хранить Обезболивающий препараты для удобного доступа. Требуется держать в руках и активировать опцию «Зарядка» для восстановления прочности. Может содержать: экстракт взрывного граната, лечебный опий, морфин, фентанил и таблетки для приёма внутрь Вечного Павильона.</entitydescription.Touhou_Eternal_House_Painkiller_Kit>
+
+
+    <entityname.Touhou_Calamity_Wither_Bloom>‖color:95,120,176,255‖Увядание Бедствий‖end‖</entityname.Touhou_Calamity_Wither_Bloom>
+    <entitydescription.Touhou_Calamity_Wither_Bloom>Увядание и цветение — естественный порядок вещей. Но некоторые способны нарушить это равновесие, заставляя цветущее внезапно увянуть, а увядшее — не расцвести вновь. Чем ниже максимальное здоровье врага, тем выше наносимый урон. Использует ‖color:gui.yellow‖Семя Увядания‖end‖.</entitydescription.Touhou_Calamity_Wither_Bloom>
+    <entityname.Touhou_Calamity_Wither_Bloom_Ammo>‖color:95,120,176,255‖Семя Увядания‖end‖</entityname.Touhou_Calamity_Wither_Bloom_Ammo>
+    <entitydescription.Touhou_Calamity_Wither_Bloom_Ammo>Семя, которое никогда не прорастёт. Упав на землю, оно больше не решает, что расцветёт, а что увянет. Является боеприпасом для ‖color:gui.yellow‖Увядания Бедствий‖end‖.</entitydescription.Touhou_Calamity_Wither_Bloom_Ammo>
+
+    <entityname.Touhou_Malevolent_Fantasy>‖color:95,120,176,255‖Злобная фантазия‖end‖</entityname.Touhou_Malevolent_Fantasy>
+    <entitydescription.Touhou_Malevolent_Fantasy>Люди всегда говорят, что фантазии прекрасны. Иллюзии, которые оставляет это оружие, никогда не сбываются. Оно лишь показывает цели то, чего она желает больше всего, а затем уничтожает это у неё на глазах. Использует ‖color:gui.yellow‖Осколок Кошмара‖end‖.</entitydescription.Touhou_Malevolent_Fantasy>
+    <entityname.Touhou_Malevolent_Fantasy_Ammo>‖color:95,120,176,255‖Осколок Кошмара‖end‖</entityname.Touhou_Malevolent_Fantasy_Ammo>
+    <entitydescription.Touhou_Malevolent_Fantasy_Ammo>Они проникают в реальность, ища того, кто способен им поверить. Являются боеприпасом для ‖color:gui.yellow‖Злобной фантазии‖end‖.</entitydescription.Touhou_Malevolent_Fantasy_Ammo>
+
+    <entityname.Touhou_Fallen_Ears_Grain>‖color:95,120,176,255‖Упавший Колос‖end‖</entityname.Touhou_Fallen_Ears_Grain>
+    <entitydescription.Touhou_Fallen_Ears_Grain>То, что когда-то принадлежало урожаю, в конце концов осталось лишь в этом.</entitydescription.Touhou_Fallen_Ears_Grain>
+
+
+
+
+
+
 
 
 
@@ -2982,4 +3002,7 @@
 
     <talentname.Hyouibana_Kagiyama_Hina>Одержимость Кагиямой Хиной</talentname.Hyouibana_Kagiyama_Hina>
     <talentdescription.Hyouibana_Kagiyama_Hina>Увеличивает сопротивление отрицательным эффектам на 10 и урон от данмаку на 5%.</talentdescription.Hyouibana_Kagiyama_Hina>
+
+    <talentname.Hyouibana_Shion>Одержимость Сион</talentname.Hyouibana_Shion>
+    <talentdescription.Hyouibana_Shion>Дальнобойные атаки данмаку накладывают на врагов «Хватку Несчастья».</talentdescription.Hyouibana_Shion>
 </infotexts>

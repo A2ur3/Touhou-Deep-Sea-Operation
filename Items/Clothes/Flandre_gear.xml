@@ -89,7 +89,7 @@
 
 
     <!--芙兰plus-->
-    <Item identifier="Flandre_Plus" subcategory="Touhou" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing,Touhou_Clothes"
+    <Item identifier="Flandre_Plus" subcategory="Touhou" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing,Touhou_Clothes,charscale_0.84"
           scale="0.5" impactsoundtag="impact_soft">
         <PreferredContainer primary="crewcab"/>
         <Price baseprice="200" minleveldifficulty="15">
@@ -277,7 +277,7 @@
 
     <!--周年庆芙兰plus-->
     <Item identifier="Flandre_Eclipse_Anniversary_Plus" subcategory="Touhou" category="Equipment" cargocontaineridentifier="metalcrate"
-          tags="smallitem,clothing,Touhou_Clothes" scale="0.5" impactsoundtag="impact_soft">
+          tags="smallitem,clothing,Touhou_Clothes,charscale_0.84" scale="0.5" impactsoundtag="impact_soft">
         <PreferredContainer primary="crewcab"/>
         <Price baseprice="200" minleveldifficulty="15">
             <Price storeidentifier="merchantoutpost" multiplier="2.9" minavailable="1"/>

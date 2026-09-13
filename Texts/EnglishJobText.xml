@@ -248,7 +248,7 @@
     <talentname.Yokai_Select_Tianren_Xianren>Celestial/Immortal</talentname.Yokai_Select_Tianren_Xianren>
     <talentdescription.Yokai_Select_Tianren_Xianren>After selecting this branch, no others can be unlocked. Character: ‖color:gui.orange‖Tenshi Hinanawi‖end‖.</talentdescription.Yokai_Select_Tianren_Xianren>
     <talentname.Yokai_Select_ShenMing>God/Artifact Spirit</talentname.Yokai_Select_ShenMing>
-    <talentdescription.Yokai_Select_ShenMing>After selecting this branch, no others can be unlocked. Character: ‖color:gui.orange‖Hata no Kokoro, Shinki‖end‖.</talentdescription.Yokai_Select_ShenMing>
+    <talentdescription.Yokai_Select_ShenMing>After selecting this branch, no others can be unlocked. Character: ‖color:gui.orange‖Hata no Kokoro, Shinki, Kagiyama Hina‖end‖.</talentdescription.Yokai_Select_ShenMing>
     <talentname.Touhou_Yokai_Talents_Locked>Talent Lockdown</talentname.Touhou_Yokai_Talents_Locked>
     <talentdescription.Touhou_Yokai_Talents_Locked>Increase ‖color:gui.orange‖max HP‖end‖ by ‖color:gui.green‖5%‖end‖. Final talent of the branch: after unlocking this talent, ‖color:gui.red‖other branches cannot be unlocked‖end‖. If Source of Mutation count is not full, immediately gain ‖color:gui.green‖100‖end‖ count.
     </talentdescription.Touhou_Yokai_Talents_Locked>
@@ -449,10 +449,19 @@
         While wearing ‖color:gui.red‖Shinki Outfit+‖end‖: Gain ‖color:gui.green‖10‖end‖ points of ‖color:gui.orange‖additional health‖end‖. After completing any mission during a campaign, there is a chance to additionally obtain one ‖color:gui.orange‖Makai Essence‖end‖
         While wearing the ‖color:gui.red‖Kagiyama Hina Outfit+‖end‖: increases ‖color:gui.green‖30%‖end‖ ‖color:gui.orange‖buff duration and swimming speed‖end‖, and grants ‖color:gui.green‖10‖end‖ bonus health.
         While wearing the ‖color:gui.red‖Kagiyama Hina Outfit+‖end‖: damage dealt with ‖color:gui.orange‖exclusive weapons‖end‖ is increased by ‖color:gui.green‖10%‖end‖, and healing received is increased by ‖color:gui.green‖10%‖end‖.</talentdescription.Touhou_ShenMing04>
+    <talentname.Touhou_ShenMing04_02>Forgotten Thing</talentname.Touhou_ShenMing04_02>
+    <talentdescription.Touhou_ShenMing04_02>When health is above ‖color:gui.green‖50%‖end‖, increases ‖color:gui.green‖15%‖end‖ ‖color:gui.orange‖skill levels‖end‖
+        While wearing the ‖color:gui.red‖Shion Outfit+‖end‖: for every ‖color:gui.green‖1‖end‖ point of ‖color:gui.orange‖magical ability‖end‖, increases ‖color:gui.green‖0.1%‖end‖ ‖color:gui.orange‖max health‖end‖, up to a maximum of ‖color:gui.green‖15%‖end‖. For every ‖color:gui.green‖1‖end‖ level, reduces ‖color:gui.green‖0.5%‖end‖ ‖color:gui.orange‖debuff duration‖end‖, up to a maximum of ‖color:gui.green‖10%‖end‖.</talentdescription.Touhou_ShenMing04_02>
+
     <talentname.Touhou_ShenMing05>Formless Faith</talentname.Touhou_ShenMing05>
     <talentdescription.Touhou_ShenMing05>After completing a campaign mission without anyone dying, money obtained is increased by ‖color:gui.green‖10%‖end‖
         While wearing ‖color:gui.red‖Hata no Kokoro Outfit+‖end‖: At the start of a campaign, gain a ‖color:gui.green‖10‖end‖ minute enhancement: increase ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖maximum health and burn resistance‖end‖
         While wearing ‖color:gui.red‖Shinki Outfit+‖end‖: For every ‖color:gui.green‖1‖end‖ point of ‖color:gui.orange‖Magic Skill‖end‖, increase ‖color:gui.green‖0.1%‖end‖ ‖color:gui.orange‖attack damage‖end‖, up to ‖color:gui.green‖20%‖end‖. For every ‖color:gui.green‖1‖end‖ level, increase ‖color:gui.green‖0.5%‖end‖ ‖color:gui.orange‖maximum health‖end‖, up to ‖color:gui.green‖10%‖end‖</talentdescription.Touhou_ShenMing05>
+
+    <talentname.Touhou_ShenMing05_02>Formless Faith</talentname.Touhou_ShenMing05_02>
+    <talentdescription.Touhou_ShenMing05_02>If no one dies after completing a round trip, money gained is increased by ‖color:gui.green‖10%‖end‖
+        While wearing the ‖color:gui.red‖Shion Outfit+‖end‖: increases ‖color:gui.green‖20%‖end‖ ‖color:gui.yellow‖stun resistance‖end‖, and stun inflicted is increased by ‖color:gui.green‖10%‖end‖</talentdescription.Touhou_ShenMing05_02>
+
     <talentname.Touhou_ShenMing06>Myth and Legend</talentname.Touhou_ShenMing06>
     <talentdescription.Touhou_ShenMing06>Once every ‖color:gui.green‖4‖end‖ campaigns, for one minute after taking damage, increase ‖color:gui.green‖15%‖end‖ ‖color:gui.orange‖burn resistance and maximum health‖end‖
         While wearing ‖color:gui.red‖Hata no Kokoro Outfit+‖end‖: When capturing eligible creatures, there is a chance to learn an additional emotion. After the total number of emotions exceeds ‖color:gui.green‖33‖end‖, strengthen the main emotions:
@@ -462,9 +471,18 @@
         ‖color:gui.orange‖Fun‖end‖: Based on the average of all skill levels, increase corresponding ‖color:gui.green‖5%‖end‖ ‖color:gui.orange‖attack damage and movement speed‖end‖, up to ‖color:gui.green‖15%‖end‖
         While wearing ‖color:gui.red‖Shinki Outfit+‖end‖: When own ‖color:gui.orange‖health‖end‖ is above ‖color:gui.green‖100%‖end‖, become immune to ‖color:gui.yellow‖poison, paralysis, mental illness‖end‖ and similar debuffs
         While wearing the ‖color:gui.red‖Kagiyama Hina Outfit+‖end‖: damage taken is reduced by ‖color:gui.green‖10%‖end‖. While under the effect of ‖color:gui.yellow‖Misfortune's Grasp‖end‖, increases ‖color:gui.green‖25%‖end‖ ‖color:gui.yellow‖stun resistance and burn resistance‖end‖.</talentdescription.Touhou_ShenMing06>
+
+    <talentname.Touhou_ShenMing06_02>Myths and Legends</talentname.Touhou_ShenMing06_02>
+    <talentdescription.Touhou_ShenMing06_02>Once every ‖color:gui.green‖4‖end‖ round trips, for one minute after being attacked, increases ‖color:gui.green‖15%‖end‖ ‖color:gui.orange‖burn resistance and max health‖end‖
+        While wearing the ‖color:gui.red‖Shion Outfit+‖end‖: ‖color:gui.orange‖danmaku damage‖end‖ is increased by ‖color:gui.green‖10%‖end‖, damage against humans is increased by ‖color:gui.green‖5%‖end‖, and armor penetration against non-humans is increased by ‖color:gui.green‖10%‖end‖</talentdescription.Touhou_ShenMing06_02>
+
     <talentname.Touhou_ShenMing07>Primordial Power</talentname.Touhou_ShenMing07>
     <talentdescription.Touhou_ShenMing07>
         While wearing ‖color:gui.red‖Hata no Kokoro Outfit+‖end‖: When standing still, being attacked has a ‖color:gui.green‖30%‖end‖ chance to reduce damage taken by ‖color:gui.green‖30%‖end‖. While walking, reduce ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖ranged attack spread‖end‖. While running, increase ‖color:gui.green‖50%‖end‖ ‖color:gui.orange‖melee attack damage‖end‖
         While wearing ‖color:gui.red‖Shinki Outfit+‖end‖: Deal an additional ‖color:gui.green‖20%‖end‖ damage to creatures that are not at full health. As long as own health is not full, reduce damage taken by ‖color:gui.green‖20%‖end‖
         While wearing the ‖color:gui.red‖Kagiyama Hina Outfit+‖end‖: immune to ‖color:gui.yellow‖oxygen deprivation‖end‖ while moving. For every ‖color:gui.green‖1‖end‖ point of ‖color:gui.orange‖magical ability‖end‖, increases ‖color:gui.green‖0.1%‖end‖ ‖color:gui.orange‖attack speed‖end‖, up to a maximum of ‖color:gui.green‖15%‖end‖.</talentdescription.Touhou_ShenMing07>
+
+    <talentname.Touhou_ShenMing07_02>Primordial Power</talentname.Touhou_ShenMing07_02>
+    <talentdescription.Touhou_ShenMing07_02>
+        While wearing the ‖color:gui.red‖Shion Outfit+‖end‖: increases ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖danmaku damage‖end‖. When ‖color:gui.orange‖danmaku attacks‖end‖ deal damage to enemies with ‖color:gui.yellow‖Misfortune's Grasp‖end‖, immediately reduces their ‖color:gui.orange‖max health‖end‖ by ‖color:gui.green‖15%‖end‖</talentdescription.Touhou_ShenMing07_02>
 </infotexts>

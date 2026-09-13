@@ -2072,7 +2072,23 @@
     <entitydescription.Touhou_Eternal_House_Hemostatic_Kit>集成包裝好的藥物，可以放入止血類藥物便於取用。需要手持開啟「充能」選項恢復耐久。可放入：繃帶、可塑人造皮膚、抗生素凝膠和永遠亭外敷藥箱</entitydescription.Touhou_Eternal_House_Hemostatic_Kit>
 
     <entityname.Touhou_Eternal_House_Painkiller_Kit>永遠亭止痛藥盒</entityname.Touhou_Eternal_House_Painkiller_Kit>
-    <entitydescription.Touhou_Eternal_House_Painkiller_Kit>集成包裝好的藥物，可以放入止血類藥物便於取用。需要手持開啟「充能」選項恢復耐久。可放入：爆彈石榴精華、藥用鴉片、嗎啡、芬太尼和永遠亭內服藥丸</entitydescription.Touhou_Eternal_House_Painkiller_Kit>
+    <entitydescription.Touhou_Eternal_House_Painkiller_Kit>集成包裝好的藥物，可以放入止痛類藥物便於取用。需要手持開啟「充能」選項恢復耐久。可放入：爆彈石榴精華、藥用鴉片、嗎啡、芬太尼和永遠亭內服藥丸</entitydescription.Touhou_Eternal_House_Painkiller_Kit>
+
+
+    <entityname.Touhou_Calamity_Wither_Bloom>‖color:95,120,176,255‖災厄枯榮‖end‖</entityname.Touhou_Calamity_Wither_Bloom>
+    <entitydescription.Touhou_Calamity_Wither_Bloom>枯榮本是自然之理。有人卻能令它失去平衡，讓盛者驟衰，讓枯者不再復甦。對最大生命值越低的敵人，造成的傷害越高。使用‖color:gui.yellow‖枯榮籽‖end‖。</entitydescription.Touhou_Calamity_Wither_Bloom>
+    <entityname.Touhou_Calamity_Wither_Bloom_Ammo>‖color:95,120,176,255‖枯榮籽‖end‖</entityname.Touhou_Calamity_Wither_Bloom_Ammo>
+    <entitydescription.Touhou_Calamity_Wither_Bloom_Ammo>一枚不會發芽的種子。落地之後，繁盛與衰敗便不再由自己決定。作為‖color:gui.yellow‖災厄枯榮‖end‖的彈藥</entitydescription.Touhou_Calamity_Wither_Bloom_Ammo>
+
+    <entityname.Touhou_Malevolent_Fantasy>‖color:95,120,176,255‖凶惡幻想‖end‖</entityname.Touhou_Malevolent_Fantasy>
+    <entitydescription.Touhou_Malevolent_Fantasy>人們總說幻想是美好的。這件武器留下的幻象從來不會實現。它只會讓目標看見自己最想得到的東西，然後親手毀掉它。使用‖color:gui.yellow‖惡夢碎片‖end‖。</entitydescription.Touhou_Malevolent_Fantasy>
+    <entityname.Touhou_Malevolent_Fantasy_Ammo>‖color:95,120,176,255‖惡夢碎片‖end‖</entityname.Touhou_Malevolent_Fantasy_Ammo>
+    <entitydescription.Touhou_Malevolent_Fantasy_Ammo>它們會鑽進現實，尋找一個足以相信它的人。作為‖color:gui.yellow‖凶惡幻想‖end‖的彈藥</entitydescription.Touhou_Malevolent_Fantasy_Ammo>
+
+    <entityname.Touhou_Fallen_Ears_Grain>‖color:95,120,176,255‖落穗‖end‖</entityname.Touhou_Fallen_Ears_Grain>
+    <entitydescription.Touhou_Fallen_Ears_Grain>曾經屬於豐收的東西，最後只剩下這一點。</entitydescription.Touhou_Fallen_Ears_Grain>
+
+
 
 
 
@@ -2398,5 +2414,7 @@
     <talentdescription.Hyouibana_Koakuma>生命值高於50%時，緩慢恢復物理傷害和出血</talentdescription.Hyouibana_Koakuma>
     <talentname.Hyouibana_Kagiyama_Hina>憑依鍵山雛</talentname.Hyouibana_Kagiyama_Hina>
     <talentdescription.Hyouibana_Kagiyama_Hina>增加10減益抗性，增加5%彈幕傷害</talentdescription.Hyouibana_Kagiyama_Hina>
+    <talentname.Hyouibana_Shion>憑依紫苑</talentname.Hyouibana_Shion>
+    <talentdescription.Hyouibana_Shion>遠程彈幕對敵人附加「厄運纏身」</talentdescription.Hyouibana_Shion>
 
 </infotexts>

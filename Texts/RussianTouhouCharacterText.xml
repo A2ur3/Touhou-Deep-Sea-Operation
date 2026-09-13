@@ -1345,8 +1345,40 @@
     <afflictiondescription.Touhou_Kagiyama_Hina_Character_Effect>У Хины длинные зелёные волосы до груди, на голове перевязаны красной лентой; две пряди волос на груди также собраны в одну красной лентой, на которой белые оборки.</afflictiondescription.Touhou_Kagiyama_Hina_Character_Effect>
     <afflictionname.Kagiyama_Hina_Weapons>Нагаси-бина, Обречённая на Забвение</afflictionname.Kagiyama_Hina_Weapons>
     <afflictiondescription.Kagiyama_Hina_Weapons>Чтобы несчастье не возвращалось к людям, Хина собирает и охраняет его, подбирая плывущих вниз по течению кукол нагаси-бина, и в конечном счёте передаёт их богам.</afflictiondescription.Kagiyama_Hina_Weapons>
-    <afflictionname.Touhou_Kagiyama_Hina_Misfortune_Curse>Хватка Несчастья</afflictionname.Touhou_Kagiyama_Hina_Misfortune_Curse>
-    <afflictiondescription.Touhou_Kagiyama_Hina_Misfortune_Curse>Несчастье сгущается; движение и атаки замедляются.</afflictiondescription.Touhou_Kagiyama_Hina_Misfortune_Curse>
+    <afflictionname.Touhou_Misfortune_Curse>Хватка Несчастья</afflictionname.Touhou_Misfortune_Curse>
+    <afflictiondescription.Touhou_Misfortune_Curse>Несчастье сгущается; движение и атаки замедляются.</afflictiondescription.Touhou_Misfortune_Curse>
+
+
+
+    <!--Yorigami Shion-->
+    <entityname.Shion_gear>‖color:95,120,176,255‖Наряд Сион‖end‖</entityname.Shion_gear>
+    <entitydescription.Shion_gear>Она богиня бедности, поэтому её все ненавидят, но на самом деле она — хранительница, которая защищает людей от финансовых бедствий, погружая их в нищету.</entitydescription.Shion_gear>
+    <entityname.Shion_Plus>‖color:95,120,176,255‖Наряд Сион+‖end‖</entityname.Shion_Plus>
+    <entitydescription.Shion_Plus>Она богиня бедности, поэтому её все ненавидят, но на самом деле она — хранительница, которая защищает людей от финансовых бедствий, погружая их в нищету.</entitydescription.Shion_Plus>
+    <talentname.ShionTalent>Старшая из Самых Зловещих и Злейших Близнецов</talentname.ShionTalent>
+    <talentdescription.ShionTalent>Пока надет Наряд Сион+, вы непрерывно получаете эффект ‖color:gui.yellow‖«Хватка Несчастья»‖end‖, снижающий ‖color:gui.orange‖скорость передвижения, скорость атаки и сопротивление оглушению‖end‖ вплоть до ‖color:gui.red‖20%‖end‖
+        ‖color:gui.orange‖Скорость получения навыков‖color:gui.red‖-20%‖end‖
+        ‖color:gui.orange‖Скорость получения опыта, урон атаки, сопротивление физическому урону, максимальное здоровье‖end‖ ‖color:gui.red‖-10%‖end‖
+        За каждый рейс теряется ‖color:gui.red‖50mk‖end‖
+
+        При использовании любого лекарства на существе также частично излечивается ‖color:gui.yellow‖«Хватка Несчастья»‖end‖
+        Дальнобойные атаки данмаку накладывают на врагов ‖color:gui.yellow‖«Хватку Несчастья»‖end‖ и дополнительно снижают их ‖color:gui.orange‖максимальное здоровье‖end‖ вплоть до ‖color:gui.green‖15%‖end‖
+        Урон от дальнобойной данмаку по врагам с ‖color:gui.yellow‖«Хваткой Несчастья»‖end‖ увеличивается на ‖color:gui.green‖15%‖end‖; этот эффект удваивается, когда у врага меньше половины здоровья
+    </talentdescription.ShionTalent>
+    <afflictionname.Touhou_Shion_Character_Effect>Богиня Бедности, Обращающая Всё в Тщету</afflictionname.Touhou_Shion_Character_Effect>
+    <afflictiondescription.Touhou_Shion_Character_Effect>У Сион длинные тёмно-синие волосы до колен, сливающиеся с её аурой, слегка волнистые. На макушке завязан тёмно-синий бантик, к которому приклеены долговые требования, залоговые пломбы и прочие документы.</afflictiondescription.Touhou_Shion_Character_Effect>
+    <afflictionname.Shion_Weapons>Богиня Бедности в Грубой Одежде</afflictionname.Shion_Weapons>
+    <afflictiondescription.Shion_Weapons>Из-за своей силы Сион не может избавиться от бедности и целыми днями пребывает в апатии.</afflictiondescription.Shion_Weapons>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1417,6 +1449,7 @@
     <Character.MRE_Material_Shinki>Память Шинки</Character.MRE_Material_Shinki>
     <Character.MRE_Material_Koakuma>Память Коакумы</Character.MRE_Material_Koakuma>
     <Character.MRE_Material_Kagiyama_Hina>Воспоминание Кагиямы Хины</Character.MRE_Material_Kagiyama_Hina>
+    <Character.MRE_Material_Shion>Воспоминание Сион</Character.MRE_Material_Shion>
     <talentname.MRE_Reimu>Эффект кровотечения – Хакурей Рейму</talentname.MRE_Reimu>
     <talentdescription.MRE_Reimu>Действует только с Нарядом Рейму+. Предоставляет эксклюзивный эффект оружия. При каждом попадании 15% шанс избежать этого урона.</talentdescription.MRE_Reimu>
     <talentname.MRE_Remilia>Эффект кровотечения – Ремилия Скарлет</talentname.MRE_Remilia>
@@ -1501,4 +1534,6 @@
     <talentdescription.MRE_Koakuma>Эффективен только при ношении Koakuma Outfit+. Заградительные атаки наносят врагам дополнительные ранения. Урон, наносимый союзникам заградительными атаками, уменьшен на 80%.</talentdescription.MRE_Koakuma>
     <talentname.MRE_Kagiyama_Hina>Эффект кровотечения — Кагияма Хина</talentname.MRE_Kagiyama_Hina>
     <talentdescription.MRE_Kagiyama_Hina>Действует только в Наряде Кагиямы Хины+. Увеличивает сопротивление отрицательным эффектам на 20% и непрерывно восстанавливает эффекты типа дебаффа. Когда Хватка Несчастья ниже 50%, увеличивает сопротивление физическому урону на 10%.</talentdescription.MRE_Kagiyama_Hina>
+    <talentname.MRE_Shion>Эффект кровотечения — Ёригами Сион</talentname.MRE_Shion>
+    <talentdescription.MRE_Shion>Действует только в Наряде Сион+. Когда здоровье выше 50%, получаемый урон снижается на 20%. При Полной одержимости увеличивает урон от данмаку на 15% и урон ближнего боя на 40%.</talentdescription.MRE_Shion>
 </infotexts>

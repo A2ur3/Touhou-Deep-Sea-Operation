@@ -75,6 +75,7 @@
   <Item file="%ModDir%/Items/Clothes/Shinki_gear.xml" />
   <Item file="%ModDir%/Items/Clothes/Koakuma_gear.xml" />
   <Item file="%ModDir%/Items/Clothes/Kagiyama_Hina_gear.xml" />
+  <Item file="%ModDir%/Items/Clothes/Shion_gear.xml" />
   <Item file="%ModDir%/Items/Touhou_Mod_Linkage/Ema_gear.xml" />
   <Item file="%ModDir%/Items/Touhou_Mod_Linkage/Cosmic_Princess_Kaguya_gear.xml" />
   <Item file="%ModDir%/Items/Touhou_Mod_Linkage/Yachiyo_gear.xml" />
@@ -226,6 +227,7 @@
   <Talents file="%ModDir%/Talents/TalentsShinki.xml" />
   <Talents file="%ModDir%/Talents/TalentsKoakuma.xml" />
   <Talents file="%ModDir%/Talents/TalentsKagiyama_Hina.xml" />
+  <Talents file="%ModDir%/Talents/TalentsShion.xml" />
   <Talents file="%ModDir%/Talents/TalentsMagician.xml" />
   <Talents file="%ModDir%/Talents/TalentsYousei.xml" />
   <Talents file="%ModDir%/Talents/TalentsYokai.xml" />

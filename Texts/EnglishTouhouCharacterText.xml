@@ -1382,8 +1382,46 @@
     <afflictiondescription.Touhou_Kagiyama_Hina_Character_Effect>Hina has long green hair reaching her chest, tied with a red ribbon on her head; the two strands of hair in front of her chest are also gathered into one with a red ribbon, the ribbon adorned with white frills.</afflictiondescription.Touhou_Kagiyama_Hina_Character_Effect>
     <afflictionname.Kagiyama_Hina_Weapons>The Nagashi-bina Doomed to be Abandoned</afflictionname.Kagiyama_Hina_Weapons>
     <afflictiondescription.Kagiyama_Hina_Weapons>To prevent misfortune from returning to humans, Hina collects and watches over misfortune by recovering nagashi-bina dolls floated downstream, ultimately offering them to the gods.</afflictiondescription.Kagiyama_Hina_Weapons>
-    <afflictionname.Touhou_Kagiyama_Hina_Misfortune_Curse>Misfortune's Grasp</afflictionname.Touhou_Kagiyama_Hina_Misfortune_Curse>
-    <afflictiondescription.Touhou_Kagiyama_Hina_Misfortune_Curse>Misfortune is gathering; movement and attacks become sluggish.</afflictiondescription.Touhou_Kagiyama_Hina_Misfortune_Curse>
+    <afflictionname.Touhou_Misfortune_Curse>Misfortune's Grasp</afflictionname.Touhou_Misfortune_Curse>
+    <afflictiondescription.Touhou_Misfortune_Curse>Misfortune is gathering; movement and attacks become sluggish.</afflictiondescription.Touhou_Misfortune_Curse>
+
+
+
+    <!--Yorigami Shion-->
+    <entityname.Shion_gear>‖color:95,120,176,255‖Shion Outfit‖end‖</entityname.Shion_gear>
+    <entitydescription.Shion_gear>She is a god of poverty, hated by all because of this, but in truth she is a guardian deity who protects people from financial calamity by plunging them into poverty.</entitydescription.Shion_gear>
+    <entityname.Shion_Plus>‖color:95,120,176,255‖Shion Outfit+‖end‖</entityname.Shion_Plus>
+    <entitydescription.Shion_Plus>She is a god of poverty, hated by all because of this, but in truth she is a guardian deity who protects people from financial calamity by plunging them into poverty.</entitydescription.Shion_Plus>
+    <talentname.ShionTalent>Elder of the Most Fearsome and Wicked Twins</talentname.ShionTalent>
+    <talentdescription.ShionTalent>While wearing the Shion Outfit+, you continuously gain the ‖color:gui.yellow‖"Misfortune's Grasp"‖end‖ effect, reducing ‖color:gui.orange‖movement speed, attack speed, and stun resistance‖end‖ by up to ‖color:gui.red‖20%‖end‖
+        ‖color:gui.orange‖Skill gain rate‖color:gui.red‖-20%‖end‖
+        ‖color:gui.orange‖Experience gain rate, attack damage, physical damage resistance, max health‖end‖ ‖color:gui.red‖-10%‖end‖
+        Lose ‖color:gui.red‖50mk‖end‖ per round trip
+
+        Using any medication on a creature also cures some of their ‖color:gui.yellow‖"Misfortune's Grasp"‖end‖
+        Ranged danmaku attacks inflict ‖color:gui.yellow‖"Misfortune's Grasp"‖end‖ on enemies, and additionally reduce their ‖color:gui.orange‖max health‖end‖ by up to ‖color:gui.green‖15%‖end‖
+        Ranged danmaku damage against enemies with ‖color:gui.yellow‖"Misfortune's Grasp"‖end‖ is increased by ‖color:gui.green‖15%‖end‖; this effect is doubled when the enemy is below half health
+    </talentdescription.ShionTalent>
+    <afflictionname.Touhou_Shion_Character_Effect>The Poverty God Who Turns Everything to Vain</afflictionname.Touhou_Shion_Character_Effect>
+    <afflictiondescription.Touhou_Shion_Character_Effect>Shion has long dark blue hair reaching her knees, blending with her aura, slightly wavy. A dark blue bow is tied atop her head, adorned with debt collection letters, mortgage seals, and other documents.</afflictiondescription.Touhou_Shion_Character_Effect>
+    <afflictionname.Shion_Weapons>The Poverty God in Coarse Clothing</afflictionname.Shion_Weapons>
+    <afflictiondescription.Shion_Weapons>Due to her abilities, Shion cannot escape poverty, and remains listless all day.</afflictiondescription.Shion_Weapons>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1455,6 +1493,7 @@
     <Character.MRE_Material_Shinki>Shinki's Memory</Character.MRE_Material_Shinki>
     <Character.MRE_Material_Koakuma>Koakuma's Memory</Character.MRE_Material_Koakuma>
     <Character.MRE_Material_Kagiyama_Hina>Memory of Kagiyama Hina</Character.MRE_Material_Kagiyama_Hina>
+    <Character.MRE_Material_Shion>Memory of Shion</Character.MRE_Material_Shion>
     <talentname.MRE_Reimu>Bleeding Effect – Hakurei Reimu</talentname.MRE_Reimu>
     <talentdescription.MRE_Reimu>Effective only with Reimu Outfit+. Grants exclusive weapon effect. Each time hit, 15% chance to avoid that damage.</talentdescription.MRE_Reimu>
     <talentname.MRE_Remilia>Bleeding Effect – Remilia Scarlet</talentname.MRE_Remilia>
@@ -1543,4 +1582,6 @@
     <talentdescription.MRE_Koakuma>Only effective while wearing Koakuma Outfit+. Barrage attacks inflict additional lacerations on enemies. Damage dealt to allies by barrage attacks is reduced by 80%.</talentdescription.MRE_Koakuma>
     <talentname.MRE_Kagiyama_Hina>Bleed Effect - Kagiyama Hina</talentname.MRE_Kagiyama_Hina>
     <talentdescription.MRE_Kagiyama_Hina>Only effective while wearing the Kagiyama Hina Outfit+. Increases debuff resistance by 20% and continuously recovers debuff-type effects. When Misfortune's Grasp is below 50%, increases physical damage resistance by 10%.</talentdescription.MRE_Kagiyama_Hina>
+    <talentname.MRE_Shion>Bleed Effect - Yorigami Shion</talentname.MRE_Shion>
+    <talentdescription.MRE_Shion>Only effective while wearing the Shion Outfit+. When health is above 50%, damage taken is reduced by 20%. While under Perfect Possession, increases danmaku damage by 15% and melee attack damage by 40%.</talentdescription.MRE_Shion>
 </infotexts>

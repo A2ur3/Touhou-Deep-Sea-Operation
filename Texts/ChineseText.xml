@@ -2068,14 +2068,25 @@
     <entityname.Touhou_Calamity_Vortex>‖color:68,194,0,255‖灾厄旋涡‖end‖</entityname.Touhou_Calamity_Vortex>
     <entitydescription.Touhou_Calamity_Vortex>将厄运凝聚为旋涡的近战武器。它不追逐敌人，只需让敌人靠近——剩下的，交给命运。</entitydescription.Touhou_Calamity_Vortex>
 
-
     <entityname.Touhou_Eternal_House_Hemostatic_Kit>永远亭止血药盒</entityname.Touhou_Eternal_House_Hemostatic_Kit>
     <entitydescription.Touhou_Eternal_House_Hemostatic_Kit>集成包装好的药物，可以放入止血类药物便于取用。需要手持开启“充能”选项恢复耐久。可放入：绷带、可塑人造皮肤、抗生素凝胶和永远亭外敷药箱</entitydescription.Touhou_Eternal_House_Hemostatic_Kit>
 
-
     <entityname.Touhou_Eternal_House_Painkiller_Kit>永远亭止痛药盒</entityname.Touhou_Eternal_House_Painkiller_Kit>
-    <entitydescription.Touhou_Eternal_House_Painkiller_Kit>集成包装好的药物，可以放入止血类药物便于取用。需要手持开启“充能”选项恢复耐久。可放入：爆弹石榴精华、药用鸦片、吗啡、芬太尼和永远亭内服药丸</entitydescription.Touhou_Eternal_House_Painkiller_Kit>
+    <entitydescription.Touhou_Eternal_House_Painkiller_Kit>集成包装好的药物，可以放入止痛类药物便于取用。需要手持开启“充能”选项恢复耐久。可放入：爆弹石榴精华、药用鸦片、吗啡、芬太尼和永远亭内服药丸</entitydescription.Touhou_Eternal_House_Painkiller_Kit>
 
+
+    <entityname.Touhou_Calamity_Wither_Bloom>‖color:95,120,176,255‖灾厄枯荣‖end‖</entityname.Touhou_Calamity_Wither_Bloom>
+    <entitydescription.Touhou_Calamity_Wither_Bloom>枯荣本是自然之理。有人却能令它失去平衡，让盛者骤衰，让枯者不再复苏。对最大生命值越低的敌人，造成的伤害越高。使用‖color:gui.yellow‖枯荣籽‖end‖。</entitydescription.Touhou_Calamity_Wither_Bloom>
+    <entityname.Touhou_Calamity_Wither_Bloom_Ammo>‖color:95,120,176,255‖枯荣籽‖end‖</entityname.Touhou_Calamity_Wither_Bloom_Ammo>
+    <entitydescription.Touhou_Calamity_Wither_Bloom_Ammo>一枚不会发芽的种子。落地之后，繁盛与衰败便不再由自己决定。作为‖color:gui.yellow‖灾厄枯荣‖end‖的弹药</entitydescription.Touhou_Calamity_Wither_Bloom_Ammo>
+
+    <entityname.Touhou_Malevolent_Fantasy>‖color:95,120,176,255‖凶恶幻想‖end‖</entityname.Touhou_Malevolent_Fantasy>
+    <entitydescription.Touhou_Malevolent_Fantasy>人们总说幻想是美好的。这件武器留下的幻象从来不会实现。它只会让目标看见自己最想得到的东西，然后亲手毁掉它。使用‖color:gui.yellow‖恶梦碎片‖end‖。</entitydescription.Touhou_Malevolent_Fantasy>
+    <entityname.Touhou_Malevolent_Fantasy_Ammo>‖color:95,120,176,255‖恶梦碎片‖end‖</entityname.Touhou_Malevolent_Fantasy_Ammo>
+    <entitydescription.Touhou_Malevolent_Fantasy_Ammo>它们会钻进现实，寻找一个足以相信它的人。作为‖color:gui.yellow‖凶恶幻想‖end‖的弹药</entitydescription.Touhou_Malevolent_Fantasy_Ammo>
+
+    <entityname.Touhou_Fallen_Ears_Grain>‖color:95,120,176,255‖落穗‖end‖</entityname.Touhou_Fallen_Ears_Grain>
+    <entitydescription.Touhou_Fallen_Ears_Grain>曾经属于丰收的东西，最后只剩下这一点。</entitydescription.Touhou_Fallen_Ears_Grain>
 
 
 
@@ -2400,5 +2411,7 @@
     <talentdescription.Hyouibana_Koakuma>生命值高于50%时，缓慢恢复物理伤害和出血</talentdescription.Hyouibana_Koakuma>
     <talentname.Hyouibana_Kagiyama_Hina>凭依键山雏</talentname.Hyouibana_Kagiyama_Hina>
     <talentdescription.Hyouibana_Kagiyama_Hina>增加10%debuff抗性，增加5%弹幕伤害</talentdescription.Hyouibana_Kagiyama_Hina>
+    <talentname.Hyouibana_Shion>凭依紫苑</talentname.Hyouibana_Shion>
+    <talentdescription.Hyouibana_Shion>远程弹幕对敌人附加“厄运缠身”</talentdescription.Hyouibana_Shion>
 
 </infotexts>

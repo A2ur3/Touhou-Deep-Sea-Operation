@@ -87,7 +87,7 @@
 
 
     <!--莲子plus-->
-    <Item identifier="Renko_Plus" subcategory="Touhou" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing,Touhou_Clothes"
+    <Item identifier="Renko_Plus" subcategory="Touhou" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing,Touhou_Clothes,charscale_0.95"
           scale="0.5" impactsoundtag="impact_soft">
         <PreferredContainer primary="crewcab"/>
         <Price baseprice="200" minleveldifficulty="15">

@@ -2030,10 +2030,58 @@
         <AbilityGroupInterval Interval="5.0">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kagiyama_Hina_Character_Effect"/>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kagiyama_Hina_Misfortune_Curse" minimumPercentage="0.5" invert="true"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Misfortune_Curse" minimumPercentage="0.5" invert="true"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyResistance resistanceid="damage" multiplier="0.9"/>
+            </Abilities>
+        </AbilityGroupInterval>
+    </Talent>
+
+
+    <!--出血效应-依神紫苑-->
+    <Talent identifier="MRE_Shion">
+        <Icon texture="%ModDir%/Images/Talents/MRE_Talent.png" sheetindex="0,0" sheetelementsize="128,128"/>
+        <Description tag="talentdescription.MRE_Shion"/>
+        <AbilityGroupInterval interval="9.9">
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <Affliction identifier="MRE_Effect_Flag" amount="10.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+
+        <AbilityGroupEffect abilityeffecttype="OnAttacked">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Shion_Character_Effect"/>
+                <AbilityConditionAboveVitality vitalitypercentage="0.5" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.2"/>
+            </Abilities>
+        </AbilityGroupEffect>
+
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Shion_Character_Effect"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Hyouibana_Effect_Prefect"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.15"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Shion_Character_Effect"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Hyouibana_Effect_Prefect"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStat stattype="MeleeAttackMultiplier" value="0.4"/>
             </Abilities>
         </AbilityGroupInterval>
     </Talent>

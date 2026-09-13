@@ -91,7 +91,7 @@
         </AbilityGroupEffect>
     </Talent>
 
-    <!--神明/付丧神天赋分支 选择此分支后，不可再解锁其它分支。对应角色：秦心，神绮，键山雏-->
+    <!--神明/付丧神天赋分支 选择此分支后，不可再解锁其它分支。对应角色：秦心，神绮，键山雏，依神紫苑-->
     <Talent identifier="Yokai_Select_ShenMing">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128"/>
         <Description tag="talentdescription.Yokai_Select_ShenMing"/>
@@ -138,7 +138,7 @@
                 <AbilityConditionHasLevel minlevel="25"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyStat stattype="ExperienceGainMultiplier" value="-0.7"/>
+                <CharacterAbilityModifyStat stattype="ExperienceGainMultiplier" value="-0.9"/>
             </Abilities>
         </AbilityGroupInterval>
     </Talent>
@@ -1176,6 +1176,9 @@
         <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Defense.png" sheetindex="0,0" sheetelementsize="400,400"/>
         <Description tag="talentdescription.Touhou_Yaoguai03"/>
         <AbilityGroupEffect abilityeffecttype="OnAttacked">
+            <Conditions>
+                <AbilityConditionAboveVitality invert="true" vitalitypercentage="0.9"/>
+            </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects applytoself="true">
                     <StatusEffects>
@@ -2167,7 +2170,7 @@
                 <CharacterAbilityReplaceAffliction affliction="acidburn" newaffliction="bitewounds" strengthmultiplier="1.2"/>
             </Abilities>
         </AbilityGroupInterval>
-        <AbilityGroupInterval interval="0.5">
+        <AbilityGroupInterval interval="5">
             <Abilities>
                 <CharacterAbilityModifyStatToLevel stattype="DebuffDurationMultiplier" statperlevel="-0.005" maxlevel="20"/>
             </Abilities>
@@ -3742,6 +3745,56 @@
         </AbilityGroupInterval>
     </Talent>
 
+    <!--遗忘之物 生命值大于50%时，增加15%技能水平
+    穿着紫苑装束+时：每有1点魔法能力，增加0.1%最大生命值，最多15%。每有1级，减少0.5%减益效果持续时间，最多10%
+    -->
+    <Talent identifier="Touhou_ShenMing04_02">
+        <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Buff.png" sheetindex="0,0" sheetelementsize="400,400"/>
+        <Description tag="talentdescription.Touhou_ShenMing04_02"/>
+        <AbilityGroupInterval interval="4.9">
+            <Conditions>
+                <AbilityConditionAboveVitality vitalitypercentage="0.5"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Touhou_ShenMing04_Effect" amount="1"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <!--依神紫苑-->
+        <AbilityGroupInterval interval="10.0">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Shion_Character_Effect"/>
+                <AbilityConditionHasSkill skillidentifier="Touhou_Magic" minvalue="150" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStatToSkill stattype="MaximumHealthMultiplier" maxvalue="0.1" skillidentifier="Touhou_Magic"/>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="10.0">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Shion_Character_Effect"/>
+                <AbilityConditionHasSkill skillidentifier="Touhou_Magic" minvalue="150" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStat stattype="MaximumHealthMultiplier" value="0.15"/>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="5">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Shion_Character_Effect"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStatToLevel stattype="DebuffDurationMultiplier" statperlevel="-0.005" maxlevel="20"/>
+            </Abilities>
+        </AbilityGroupInterval>
+    </Talent>
+
+
     <!--无形信仰 完成巡回后若无人死亡，则获得的金钱增加10%
         穿着秦心装束+时：巡回开始时，获得10分钟强化：增加10%最大生命值、烧伤抗性和所有攻击伤害
         穿着神绮装束+时：每有1点魔法能力，增加0.1%攻击伤害，最多20%。每有1级，增加0.5%最大生命值，最多10%
@@ -3829,6 +3882,42 @@
                 <CharacterAbilityModifyStat stattype="MedicalItemEffectivenessMultiplier" value="0.1"/>
             </Abilities>
         </AbilityGroupInterval>
+    </Talent>
+
+
+
+    <!--无形信仰 完成巡回后若无人死亡，则获得的金钱增加10%
+        穿着紫苑装束+时：增加20%眩晕抗性，造成的眩晕增加10%
+        -->
+    <Talent identifier="Touhou_ShenMing05_02">
+        <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Buff.png" sheetindex="0,0" sheetelementsize="400,400"/>
+        <Description tag="talentdescription.Touhou_ShenMing05_02"/>
+        <AbilityGroupEffect abilityeffecttype="OnGainMissionMoney">
+            <Conditions>
+                <AbilityConditionNoCrewDied/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyValue multiplyvalue="1.1"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <!--依神紫苑-->
+        <AbilityGroupInterval interval="10.0">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Shion_Character_Effect"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyResistance resistanceid="stun" multiplier="0.8"/>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Shion_Character_Effect"/>
+                <AbilityConditionIsAiming weapontype="ranged,Melee"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAffliction afflictionidentifiers="stun" addedmultiplier="0.1"/>
+            </Abilities>
+        </AbilityGroupEffect>
     </Talent>
 
     <!--神话传说 一个巡回4次，受到攻击后的一分钟内，增加15%烧伤抗性和最大生命值
@@ -4041,7 +4130,7 @@
         <AbilityGroupInterval Interval="5.0">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kagiyama_Hina_Character_Effect"/>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kagiyama_Hina_Misfortune_Curse"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Misfortune_Curse"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyResistance resistanceid="stun" multiplier="0.75"/>
@@ -4049,6 +4138,77 @@
             </Abilities>
         </AbilityGroupInterval>
     </Talent>
+
+
+    <!--神话传说 一个巡回4次，受到攻击后的一分钟内，增加15%烧伤抗性和最大生命值
+        穿着紫苑装束+时：弹幕伤害增加10%，对人类造成的伤害增加5%，对非人类造成的穿甲增加10%-->
+    <Talent identifier="Touhou_ShenMing06_02" trackedstat="Touhou_ShenMing06_Counter" trackedmax="5">
+        <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Buff.png" sheetindex="0,0" sheetelementsize="400,400"/>
+        <Description tag="talentdescription.Touhou_ShenMing06_02"/>
+        <AbilityGroupEffect abilityeffecttype="OnRoundEnd">
+            <Abilities>
+                <CharacterAbilityResetPermanentStat statidentifier="Touhou_ShenMing06_Counter"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttacked">
+            <Conditions>
+                <AbilityConditionHasPermanentStat statidentifier="Touhou_ShenMing06_Counter" min="4" invert="true"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_ShenMing06_Effect" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGivePermanentStat statidentifier="Touhou_ShenMing06_Counter" value="1"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttacked">
+            <Conditions>
+                <AbilityConditionHasPermanentStat statidentifier="Touhou_ShenMing06_Counter" min="4" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects applytoself="true">
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" targetlimb="Torso" delay="0.1" disabledeltatime="true">
+                            <Affliction identifier="Touhou_ShenMing06_Effect" amount="1.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupEffect>
+        <!--依神紫苑-->
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Shion_Character_Effect"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.15"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Shion_Character_Effect"/>
+                <AbilityConditionCharacter targettype="Enemy">
+                    <Conditional speciesname="eq human"/>
+                </AbilityConditionCharacter>
+                <AbilityConditionAttackData weapontype="Turret" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.05"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Shion_Character_Effect"/>
+                <AbilityConditionCharacter targettype="Enemy">
+                    <Conditional speciesname="neq human"/>
+                </AbilityConditionCharacter>
+                <AbilityConditionAttackData weapontype="Turret" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addedpenetration="0.1"/>
+            </Abilities>
+        </AbilityGroupEffect>
+    </Talent>
+
 
     <!--本源力量
         穿着秦心装束+时：站立不动时，受到攻击有30%概率减少30%受到的伤害。行走时，远程攻击散布减少10%。奔跑时，近战攻击伤害增加50%
@@ -4154,5 +4314,45 @@
                 <CharacterAbilityModifyStat stattype="MeleeAttackSpeed" value="0.15"/>
             </Abilities>
         </AbilityGroupInterval>
+    </Talent>
+
+
+    <!--本源力量
+        穿着紫苑装束+时：增加10%弹幕伤害。弹幕攻击对拥有厄运缠身的敌人造成伤害后，会立刻削减15%最大生命值
+        -->
+    <Talent identifier="Touhou_ShenMing07_02">
+        <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Indirect_Damage.png" sheetindex="0,0" sheetelementsize="400,400"/>
+        <Description tag="talentdescription.Touhou_ShenMing07_02"/>
+        <!--依神紫苑-->
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Shion_Character_Effect"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1"/>
+            </Abilities>
+        </AbilityGroupEffect>
+
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Shion_Character_Effect"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
+                <AbilityConditionCharacter targettype="Enemy" targetabilitytarget="true">
+                    <Conditional Touhou_Misfortune_Curse="gt 0"/>
+                </AbilityConditionCharacter>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" targetlimb="Torso" delay="0.1" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                            <Conditional TeamID="None"/>
+                            <Conditional TeamID="Team2"/>
+                            <Affliction identifier="Touhou_ShenMing07_02_Effect" amount="0.2"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupEffect>
     </Talent>
 </Talents>

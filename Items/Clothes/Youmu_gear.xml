@@ -83,7 +83,7 @@
 
 
     <!--妖梦Plus-->
-    <Item name="" identifier="Youmu_Plus" subcategory="Touhou" category="Equipment" tags="smallitem,clothing,Touhou_Clothes" cargocontaineridentifier="metalcrate"
+    <Item name="" identifier="Youmu_Plus" subcategory="Touhou" category="Equipment" tags="smallitem,clothing,Touhou_Clothes,charscale_0.9" cargocontaineridentifier="metalcrate"
           description="" scale="0.5" impactsoundtag="impact_soft">
         <Price baseprice="200" minleveldifficulty="15">
             <Price storeidentifier="merchantoutpost" multiplier="2.9" minavailable="1"/>
@@ -257,7 +257,7 @@
     </Item>
 
     <!--庭师裙plus-->
-    <Item identifier="Youmu_Skirt_Plus" subcategory="Touhou" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing,Touhou_Clothes"
+    <Item identifier="Youmu_Skirt_Plus" subcategory="Touhou" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing,Touhou_Clothes,charscale_0.9"
           scale="0.5" impactsoundtag="impact_soft">
         <PreferredContainer primary="crewcab"/>
         <Price baseprice="200" minleveldifficulty="15">
@@ -435,7 +435,7 @@
 
 
     <!--妖梦圣诞节plus-->
-    <Item identifier="Youmu_Plus_Christmas" subcategory="Touhou" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing,Touhou_Clothes"
+    <Item identifier="Youmu_Plus_Christmas" subcategory="Touhou" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing,Touhou_Clothes,charscale_0.9"
           scale="0.5" impactsoundtag="impact_soft">
         <PreferredContainer primary="crewcab"/>
         <Price baseprice="200" minleveldifficulty="15">

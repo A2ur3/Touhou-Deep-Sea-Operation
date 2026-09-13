@@ -1306,8 +1306,59 @@
     <afflictiondescription.Touhou_Kagiyama_Hina_Character_Effect>雛有著一頭綠色及胸長髮，頭上紮著紅色絲帶，胸前兩股頭髮也用紅色絲帶收為一股，絲帶打著白色褶子</afflictiondescription.Touhou_Kagiyama_Hina_Character_Effect>
     <afflictionname.Kagiyama_Hina_Weapons>注定被拋棄的流雛</afflictionname.Kagiyama_Hina_Weapons>
     <afflictiondescription.Kagiyama_Hina_Weapons>雛為了厄運不再回到人類，通過回收順流而下的雛人偶，收集並看守著厄運，最終將其交諸眾神</afflictiondescription.Kagiyama_Hina_Weapons>
-    <afflictionname.Touhou_Kagiyama_Hina_Misfortune_Curse>厄運纏身</afflictionname.Touhou_Kagiyama_Hina_Misfortune_Curse>
-    <afflictiondescription.Touhou_Kagiyama_Hina_Misfortune_Curse>厄運正在聚集，移動和攻擊變得遲緩</afflictiondescription.Touhou_Kagiyama_Hina_Misfortune_Curse>
+    <afflictionname.Touhou_Misfortune_Curse>厄運纏身</afflictionname.Touhou_Misfortune_Curse>
+    <afflictiondescription.Touhou_Misfortune_Curse>厄運正在聚集，移動和攻擊變得遲緩</afflictiondescription.Touhou_Misfortune_Curse>
+
+
+
+
+
+    <!--Yorigami Shion-->
+    <entityname.Shion_gear>‖color:95,120,176,255‖紫苑 裝束‖end‖</entityname.Shion_gear>
+    <entitydescription.Shion_gear>她是貧窮神，因此被所有人討厭，但實際上她是藉由讓他人陷入貧窮，來保護他人免受財禍之苦的守護神。</entitydescription.Shion_gear>
+    <entityname.Shion_Plus>‖color:95,120,176,255‖紫苑 裝束+‖end‖</entityname.Shion_Plus>
+    <entitydescription.Shion_Plus>她是貧窮神，因此被所有人討厭，但實際上她是藉由讓他人陷入貧窮，來保護他人免受財禍之苦的守護神。</entitydescription.Shion_Plus>
+    <talentname.ShionTalent>最凶最惡的雙子之姐</talentname.ShionTalent>
+    <talentdescription.ShionTalent>當你身著紫苑 裝束+時，自身持續獲得‖color:gui.yellow‖「厄運纏身」‖end‖效果，減少‖color:gui.orange‖移動速度、攻擊速度和眩暈抗性‖end‖，最高減少‖color:gui.red‖20%‖end‖
+        ‖color:gui.orange‖技能獲取速度‖color:gui.red‖-20%‖end‖
+        ‖color:gui.orange‖經驗獲取速度、攻擊傷害、物理傷害抗性、最大生命值‖end‖‖color:gui.red‖-10%‖end‖
+        每個巡迴損失‖color:gui.red‖50mk‖end‖
+
+        使用任意藥物治療生物時，也會治癒些許‖color:gui.yellow‖「厄運纏身」‖end‖
+        遠程彈幕攻擊敵人將附加‖color:gui.yellow‖「厄運纏身」‖end‖，並額外削減最多‖color:gui.green‖15%‖end‖‖color:gui.orange‖最大生命值‖end‖
+        對擁有‖color:gui.yellow‖「厄運纏身」‖end‖的敵人造成的遠程彈幕傷害增加‖color:gui.green‖15%‖end‖，這個效果在敵人半血以下翻倍
+    </talentdescription.ShionTalent>
+    <afflictionname.Touhou_Shion_Character_Effect>讓一切徒勞無功的貧窮神</afflictionname.Touhou_Shion_Character_Effect>
+    <afflictiondescription.Touhou_Shion_Character_Effect>紫苑有著一頭深藍色及膝長髮，與散發出的氣場融為一體，略捲。頭頂繫著深藍色蝴蝶結，貼著催債信、抵押封條等文件</afflictiondescription.Touhou_Shion_Character_Effect>
+    <afflictionname.Shion_Weapons>粗衣糲食的貧窮神</afflictionname.Shion_Weapons>
+    <afflictiondescription.Shion_Weapons>紫苑因為能力的關係無法擺脫貧窮，整天無精打采</afflictiondescription.Shion_Weapons>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1375,6 +1426,7 @@
     <Character.MRE_Material_Shinki>神綺的回憶</Character.MRE_Material_Shinki>
     <Character.MRE_Material_Koakuma>小惡魔的回憶</Character.MRE_Material_Koakuma>
     <Character.MRE_Material_Kagiyama_Hina>鍵山雛的回憶</Character.MRE_Material_Kagiyama_Hina>
+    <Character.MRE_Material_Shion>紫苑的回憶</Character.MRE_Material_Shion>
     <talentname.MRE_Reimu>出血效應-博麗靈夢</talentname.MRE_Reimu>
     <talentdescription.MRE_Reimu>僅對靈夢裝束+生效。擁有專屬武器效果。每次受擊都有15%概率避免那次傷害</talentdescription.MRE_Reimu>
     <talentname.MRE_Remilia>出血效應-蕾米莉亞·斯卡雷特</talentname.MRE_Remilia>
@@ -1458,4 +1510,6 @@
     <talentdescription.MRE_Koakuma>僅對小惡魔 裝束+生效。彈幕攻擊對敵人造成額外撕裂傷。彈幕攻擊對隊友造成的傷害降低80%。</talentdescription.MRE_Koakuma>
     <talentname.MRE_Kagiyama_Hina>出血效應-鍵山雛</talentname.MRE_Kagiyama_Hina>
     <talentdescription.MRE_Kagiyama_Hina>僅對鍵山雛 裝束+生效。增加20%減益抗性並持續恢復減益類型的效果。厄運纏身低於50%時，增加10%物理傷害抗性</talentdescription.MRE_Kagiyama_Hina>
+    <talentname.MRE_Shion>出血效應-依神紫苑</talentname.MRE_Shion>
+    <talentdescription.MRE_Shion>僅對紫苑 裝束+生效。生命值大於50%時，受到的傷害減少20%。擁有完全憑依時，增加15%彈幕傷害和40%近戰攻擊傷害</talentdescription.MRE_Shion>
 </infotexts>

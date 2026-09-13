@@ -89,7 +89,7 @@
 
 
     <!--荷取Plus-->
-    <Item name="" identifier="Nitori_Plus" subcategory="Touhou" category="Equipment" tags="smallitem,clothing,Touhou_Clothes" fireproof="false"
+    <Item name="" identifier="Nitori_Plus" subcategory="Touhou" category="Equipment" tags="smallitem,clothing,Touhou_Clothes,charscale_0.85" fireproof="false"
           cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
         <PreferredContainer primary="crewcab"/>
         <Price baseprice="200" minleveldifficulty="15">

@@ -2534,10 +2534,21 @@
     <entitydescription.Touhou_Eternal_House_Hemostatic_Kit>Pre-packaged integrated medication container for storing hemostatic items for easy access. Must be held in hand to activate the "Recharge" option to restore durability. Can hold: Bandages, Malleable Artificial Skin, Antibiotic Gel, and Eternal House External Medicine Kit.</entitydescription.Touhou_Eternal_House_Hemostatic_Kit>
 
     <entityname.Touhou_Eternal_House_Painkiller_Kit>Eternal House Painkiller Kit</entityname.Touhou_Eternal_House_Painkiller_Kit>
-    <entitydescription.Touhou_Eternal_House_Painkiller_Kit>Pre-packaged integrated medication container for storing hemostatic items for easy access. Must be held in hand to activate the "Recharge" option to restore durability. Can hold: Explosive Pomegranate Extract, Medicinal Opium, Morphine, Fentanyl, and Eternal House Oral Pills.</entitydescription.Touhou_Eternal_House_Painkiller_Kit>
+    <entitydescription.Touhou_Eternal_House_Painkiller_Kit>Pre-packaged integrated medication container for storing painkiller items for easy access. Must be held in hand to activate the "Recharge" option to restore durability. Can hold: Explosive Pomegranate Extract, Medicinal Opium, Morphine, Fentanyl, and Eternal House Oral Pills.</entitydescription.Touhou_Eternal_House_Painkiller_Kit>
 
 
+    <entityname.Touhou_Calamity_Wither_Bloom>‖color:95,120,176,255‖Calamity Wither-Bloom‖end‖</entityname.Touhou_Calamity_Wither_Bloom>
+    <entitydescription.Touhou_Calamity_Wither_Bloom>Withering and flourishing are the natural order of things. Yet some can throw this balance into disarray, causing the flourishing to wither in an instant and the withered to never bloom again. The lower the enemy's max health, the higher the damage dealt. Uses ‖color:gui.yellow‖Wither Seed‖end‖.</entitydescription.Touhou_Calamity_Wither_Bloom>
+    <entityname.Touhou_Calamity_Wither_Bloom_Ammo>‖color:95,120,176,255‖Wither Seed‖end‖</entityname.Touhou_Calamity_Wither_Bloom_Ammo>
+    <entitydescription.Touhou_Calamity_Wither_Bloom_Ammo>A seed that will never sprout. Once it falls to the ground, flourishing and withering are no longer yours to decide. Serves as ammunition for ‖color:gui.yellow‖Calamity Wither-Bloom‖end‖.</entitydescription.Touhou_Calamity_Wither_Bloom_Ammo>
 
+    <entityname.Touhou_Malevolent_Fantasy>‖color:95,120,176,255‖Malevolent Fantasy‖end‖</entityname.Touhou_Malevolent_Fantasy>
+    <entitydescription.Touhou_Malevolent_Fantasy>People always say fantasies are beautiful. The illusions left behind by this weapon never come true. It only shows the target what they desire most, and then destroys it before their very eyes. Uses ‖color:gui.yellow‖Nightmare Fragment‖end‖.</entitydescription.Touhou_Malevolent_Fantasy>
+    <entityname.Touhou_Malevolent_Fantasy_Ammo>‖color:95,120,176,255‖Nightmare Fragment‖end‖</entityname.Touhou_Malevolent_Fantasy_Ammo>
+    <entitydescription.Touhou_Malevolent_Fantasy_Ammo>They burrow into reality, searching for someone who can believe in them. Serves as ammunition for ‖color:gui.yellow‖Malevolent Fantasy‖end‖.</entitydescription.Touhou_Malevolent_Fantasy_Ammo>
+
+    <entityname.Touhou_Fallen_Ears_Grain>‖color:95,120,176,255‖Fallen Ear of Grain‖end‖</entityname.Touhou_Fallen_Ears_Grain>
+    <entitydescription.Touhou_Fallen_Ears_Grain>What once belonged to the harvest, in the end, is all that remains.</entitydescription.Touhou_Fallen_Ears_Grain>
 
 
 
@@ -3028,4 +3039,7 @@
 
     <talentname.Hyouibana_Kagiyama_Hina>Possessed by Kagiyama Hina</talentname.Hyouibana_Kagiyama_Hina>
     <talentdescription.Hyouibana_Kagiyama_Hina>Increases debuff resistance by 10 and danmaku damage by 5%.</talentdescription.Hyouibana_Kagiyama_Hina>
+
+    <talentname.Hyouibana_Shion>Possessed by Shion</talentname.Hyouibana_Shion>
+    <talentdescription.Hyouibana_Shion>Ranged danmaku attacks inflict "Misfortune's Grasp" on enemies.</talentdescription.Hyouibana_Shion>
 </infotexts>

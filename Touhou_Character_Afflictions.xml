@@ -4784,18 +4784,18 @@
     </Affliction>
 
     <!--厄运缠身-->
-    <Affliction identifier="Touhou_Kagiyama_Hina_Misfortune_Curse" type="Touhou_Character_Affliction" limbspecific="false" hideiconafterdelay="false"
+    <Affliction identifier="Touhou_Misfortune_Curse" type="Touhou_Character_Affliction" limbspecific="false" hideiconafterdelay="false"
                 maxstrength="100" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
         <Effect minstrength="0" maxstrength="100" resistancefor="stun" minresistance="0" maxresistance="-0.2" >
             <StatValue stattype="MovementSpeed" minvalue="0" maxvalue="-0.2"/>
             <StatValue stattype="RangedAttackSpeed" minvalue="0" maxvalue="-0.2"/>
             <StatValue stattype="MeleeAttackSpeed" minvalue="0" maxvalue="-0.2"/>
         </Effect>
-        <Icon texture="%ModDir%/Images/Afflictions/Touhou_Kagiyama_Hina_Misfortune_Curse.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+        <Icon texture="%ModDir%/Images/Afflictions/Touhou_Misfortune_Curse.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
     </Affliction>
 
     <!--厄运缠身释放效果-->
-    <Affliction identifier="Touhou_Kagiyama_Hina_Misfortune_Curse_Release" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
+    <Affliction identifier="Touhou_Misfortune_Curse_Release" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
                 maxstrength="1" duration="1.0" showiconthreshold="100" showinhealthscannerthreshold="100"  iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
         <Effect minstrength="0" maxstrength="1">
             <StatusEffect target="Character">
@@ -4807,7 +4807,7 @@
     </Affliction>
 
     <!--厄运缠身释放给予敌人效果-->
-    <Affliction identifier="Touhou_Kagiyama_Hina_Misfortune_Curse_Release_Debuff" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
+    <Affliction identifier="Touhou_Misfortune_Curse_Release_Debuff" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
                 maxstrength="1" duration="30.0" showiconthreshold="100" showinhealthscannerthreshold="100"  iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
         <Effect minstrength="0" maxstrength="1" resistancefor="stun" minresistance="-0.2" maxresistance="-0.2">
             <StatValue stattype="MovementSpeed" value="-0.2"/>
@@ -4816,7 +4816,8 @@
             <StatusEffect target="Character" disabledeltatime="true" Interval="0.1">
                 <Conditional TeamID="Team1"/>
                 <Conditional TeamID="FriendlyNPC"/>
-                <ReduceAffliction identifier="Touhou_Kagiyama_Hina_Misfortune_Curse_Release_Debuff" amount="10"/>
+                <ReduceAffliction identifier="Touhou_Misfortune_Curse" amount="10"/>
+                <ReduceAffliction identifier="Touhou_Misfortune_Curse_Release_Debuff" amount="10"/>
             </StatusEffect>
             <StatusEffect target="Character">
                 <ParticleEmitter particle="nasonovsparkles" particleamount="1" anglemin="0" anglemax="360" velocitymin="100" velocitymax="250"
@@ -4869,6 +4870,72 @@
             <StatValue stattype="MeleeAttackSpeed" value="0.1"/>
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Kagiyama_Hina_Weapons.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+
+
+    <!--让一切徒劳无功的贫穷神-->
+    <Affliction identifier="Touhou_Shion_Character_Effect" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
+                maxstrength="10" duration="1.0" showinhealthscannerthreshold="100" >
+        <Effect minstrength="0" maxstrength="10" resistancefor="damage" minresistance="-0.1" maxresistance="-0.1" >
+            <StatValue stattype="SkillGainSpeed" value="-0.2"/>
+            <StatValue stattype="ExperienceGainMultiplier" value="-0.1"/>
+            <StatValue stattype="RangedAttackMultiplier" value="-0.1"/>
+            <StatValue stattype="MeleeAttackMultiplier" value="-0.1"/>
+            <StatValue stattype="MaximumHealthMultiplier" value="-0.1"/>
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Touhou_Shion_Character_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+    <!--厄运缠身攻击敌人削减最大生命值-->
+    <Affliction identifier="Touhou_Misfortune_Curse_MaxHealth_Debuff" type="debuff" isbuff="true" limbspecific="false" hideiconafterdelay="false"
+                maxstrength="10" resetbetweenrounds="true" showiconthreshold="100" showinhealthscannerthreshold="100" >
+        <Effect minstrength="0" maxstrength="10" >
+            <StatValue stattype="MaximumHealthMultiplier" minvalue="0" maxvalue="-0.15"/>
+            <StatusEffect target="Character">
+                <ParticleEmitter particle="nasonovsparkles" particleamount="1" anglemin="0" anglemax="360" velocitymin="100" velocitymax="250"
+                                 scalemin="0.4" scalemax="0.6" drawontop="true" colormultiplier="200,55,200,220"/>
+<!--                <ParticleEmitter particle="nasonovfx" particleamount="1" emitinterval="1" anglemin="0" anglemax="360" velocitymin="10"
+                                 velocitymax="50" scalemin="0.06" scalemax="0.1" drawontop="true" colormultiplier="55,255,90,180"/>-->
+            </StatusEffect>
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Touhou_Shion_Character_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+    <!--凭依紫苑-->
+    <Affliction identifier="Hyouibana_Shion_Effect" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
+                maxstrength="10"
+                showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="94,94,94;163,164,164;255,255,255">
+        <Effect minstrength="0" maxstrength="10"  />
+        <Icon texture="%ModDir%/Images/Afflictions/Touhou_Shion_Character_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+    <!--紫苑-完全凭依-->
+    <Affliction identifier="Hyouibana_Effect_Prefect_Shion" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false"
+                hideiconafterdelay="true"
+                showinhealthscannerthreshold="100" maxstrength="1" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
+        <Effect minstrength="0" maxstrength="1"/>
+        <Icon texture="%ModDir%/Images/Afflictions/Touhou_Shion_Character_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+    <!--出血效应-紫苑-->
+    <Affliction name="" identifier="MRE_Shion_Effect" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false"
+                maxstrength="10"
+                Duration="10.0" showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="94,94,94;163,164,164;255,255,255">
+        <Effect minstrength="0" maxstrength="10"/>
+        <icon texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb.png" sourcerect="0,0,32,32" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--紫苑-专属武器效果-->
+    <Affliction identifier="Shion_Weapons" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
+                maxstrength="10"
+                duration="1.0" showinhealthscannerthreshold="100" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" resistancefor="stun" minresistance="0.1" maxresistance="0.1">
+            <StatValue stattype="RangedAttackMultiplier" value="0.05"/>
+            <StatValue stattype="MeleeAttackMultiplier" value="0.1"/>
+            <StatValue stattype="MeleeAttackSpeed" value="0.1"/>
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Shion_Weapons.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
     </Affliction>
 
 
