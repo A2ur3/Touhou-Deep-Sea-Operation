@@ -30,7 +30,8 @@
 
         <AbilityGroupEffect abilityeffecttype="OnApplyTreatment">
             <Conditions>
-                <AbilityConditionItem identifiers="antibloodloss2"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Shion_Character_Effect"/>
+                <AbilityConditionItem tags="medical"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>

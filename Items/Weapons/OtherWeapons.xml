@@ -3872,13 +3872,13 @@
             <Price storeidentifier="merchantmine" multiplier="2.25"/>
         </Price>
         <Deconstruct time="5">
-            <Item identifier="titaniumaluminiumalloy"/>
+            <Item identifier="steel"/>
             <Item identifier="Magic_Material" />
         </Deconstruct>
-        <Fabricate suitablefabricators="Magic_Altar" requiredtime="20">
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="10">
             <RequiredSkill identifier="Touhou_Magic" level="45"/>
             <RequiredItem identifier="Touhou_Base_Metal" amount="3"/>
-            <RequiredItem identifier="titaniumaluminiumalloy" amount="2"/>
+            <RequiredItem identifier="steel" amount="4"/>
             <RequiredItem identifier="Magic_Material" amount="2"/>
         </Fabricate>
         <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Ray_Gun.png" sourcerect="401,0,178,136" origin="0.5,0.5"/>
@@ -3962,12 +3962,12 @@
         </Price>
         <Deconstruct time="1" chooserandom="true">
             <Item identifier="plastic" commonness="0.7"/>
-            <Item identifier="titaniumaluminiumalloy" commonness="0.3"/>
+            <Item identifier="steel" commonness="0.3"/>
         </Deconstruct>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="10" amount="2">
             <RequiredSkill identifier="Touhou_Magic" level="10"/>
             <RequiredItem identifier="plastic" amount="2"/>
-            <RequiredItem identifier="titaniumaluminiumalloy" amount="2"/>
+            <RequiredItem identifier="steel" amount="2"/>
             <RequiredItem identifier="Touhou_Base_Metal"/>
         </Fabricate>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="3" displayname="recycleitem">
@@ -11842,7 +11842,7 @@
 
     <!--共鸣核心-->
     <Item name="共鸣核心" identifier="Touhou_Mixer_Gun_Ammo" scale="0.1" subcategory="Touhou" category="Weapon" maxstacksize="16" Health="150"
-          maxstacksizecharacterinventory="4" cargocontaineridentifier="metalcrate" tags="smallitem,Touhou_Record_Scar_Ammo,Touhou_Magic_Charging02"
+          maxstacksizecharacterinventory="4" cargocontaineridentifier="metalcrate" tags="smallitem,Touhou_Record_Scar_Ammo,Touhou_Magic_Charging03"
           impactsoundtag="impact_metal_light">
         <PreferredContainer secondary="armcab"/>
         <Price baseprice="300" sold="false">
@@ -11869,8 +11869,7 @@
             <RequiredSkill identifier="Touhou_Magic" level="10"/>
             <RequiredItem tag="advmunition_core" amount="2"/>
             <RequiredItem identifier="plastic" />
-            <RequiredItem identifier="Magic_Material" />
-            <RequiredItem identifier="Touhou_Plant_Extract" amount="2"/>
+            <RequiredItem identifier="Touhou_Plant_Extract" amount="3"/>
             <RequiredItem identifier="Touhou_Mixer_Gun_Ammo" mincondition="0.0" maxcondition="0.5" usecondition="false"/>
         </Fabricate>
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Mixer_Gun.png" sourcerect="0,122,85,138" depth="0.56" origin="0.5,0.5"/>
