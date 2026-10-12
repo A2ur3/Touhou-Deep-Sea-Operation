@@ -108,7 +108,7 @@
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Piece_Character_Effect"/>
                 <AbilityConditionHasTalent identifier="Touhou_Yousei_Alliance"/>
-                <AbilityConditionHasAffliction afflictionidentifier="psychosis" minimumPercentage="0.45"/>
+                <AbilityConditionHasAffliction afflictionidentifier="psychosis" minimumPercentage="0.6"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyStat stattype="RangedAttackMultiplier" value="0.025"/>

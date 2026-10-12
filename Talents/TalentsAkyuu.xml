@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Talents>
 
-    <Talent identifier="AkyuuTalent" trackedstat="Touhou_Akyuu_Counter" trackedmax="34">
+    <Talent identifier="AkyuuTalent" trackedstat="Touhou_Akyuu_Counter" trackedmax="33">
         <Icon texture="%ModDir%/Images/Talents/AkyuuTalent.png" sheetindex="0,0" sheetelementsize="128,128"/>
         <Description tag="talentdescription.AkyuuTalent"/>
         <AbilityGroupEffect abilityeffecttype="OnAllMissionsCompleted">
@@ -22,6 +22,17 @@
                 <CharacterAbilityResetPermanentStat statidentifier="Touhou_Akyuu_Counter" requiresalive="false"/>
             </Abilities>
         </AbilityGroupEffect>
+        <!--  累计满3个巡回：技能获取速度增加50%（满9个巡回后的+80%会接管，所以这里限定3~8）  -->
+        <AbilityGroupInterval interval="2.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Akyuu_Character_Effect"/>
+                <AbilityConditionHasPermanentStat statidentifier="Touhou_Akyuu_Counter" min="3"/>
+                <AbilityConditionHasPermanentStat statidentifier="Touhou_Akyuu_Counter" min="9" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStat stattype="SkillGainSpeed" value="0.5"/>
+            </Abilities>
+        </AbilityGroupInterval>
         <!--  总计有9个巡回完成所有任务后，获得以下效果  -->
         <!--  完成任意一个任务后，获得《东方求闻口授》（木卫二专供）  -->
         <AbilityGroupEffect abilityeffecttype="OnAnyMissionCompleted">
@@ -44,7 +55,7 @@
                 <CharacterAbilityPutItem itemidentifier="Perfect_Memento_In_Strict_Sense" amount="1"/>
             </Abilities>
         </AbilityGroupEffect>
-        <!--  技能获取速度增加80%  -->
+        <!--  技能获取速度增加100%  -->
         <!--  增加25%的使用医疗物品效果  -->
         <AbilityGroupInterval interval="2.9">
             <Conditions>
@@ -52,7 +63,7 @@
                 <AbilityConditionHasPermanentStat statidentifier="Touhou_Akyuu_Counter" min="9"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyStat stattype="SkillGainSpeed" value="0.8"/>
+                <CharacterAbilityModifyStat stattype="SkillGainSpeed" value="1.0"/>
                 <CharacterAbilityModifyStat stattype="MedicalItemApplyingMultiplier" value="0.25"/>
             </Abilities>
         </AbilityGroupInterval>
@@ -70,6 +81,26 @@
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="0.2"/>
             </Abilities>
         </AbilityGroupEffect>
+        <!--  累计满15个巡回：完成所有任务后，额外获得一本《东方求闻渊识》  -->
+        <AbilityGroupEffect abilityeffecttype="OnAllMissionsCompleted">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Akyuu_Character_Effect"/>
+                <AbilityConditionHasPermanentStat statidentifier="Touhou_Akyuu_Counter" min="15"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityPutItem itemidentifier="Touhou_Europa_Customs" amount="1"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <!--  累计满21个巡回：减益效果持续时间减少10%  -->
+        <AbilityGroupInterval interval="2.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Akyuu_Character_Effect"/>
+                <AbilityConditionHasPermanentStat statidentifier="Touhou_Akyuu_Counter" min="21"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStat stattype="DebuffDurationMultiplier" value="-0.1"/>
+            </Abilities>
+        </AbilityGroupInterval>
         <!--  总计33个巡回后，原本的生命值和移动速度减益效果消失，增加30%技能水平  -->
         <AbilityGroupInterval interval="2.9">
             <Conditions>

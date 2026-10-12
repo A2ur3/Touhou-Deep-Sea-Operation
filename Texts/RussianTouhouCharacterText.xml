@@ -52,6 +52,8 @@
     <talentname.YoumuTalent>Жизнь и усилитель; Смерть Half &amp; Половина</talentname.YoumuTalent>
     <talentdescription.YoumuTalent>При ношении ‖color:gui.orange‖Youmu Outfit+‖end‖:
         Чем ниже ваше здоровье, тем меньший урон вы наносите, максимальное снижение составляет ‖color:gui.red‖25%‖end‖.
+        Уменьшите ‖color:gui.yellow‖сопротивление ожогам‖end‖ на ‖color:gui.red‖15%‖end‖.
+
         Увеличьте ‖color:gui.orange‖Урон в ближнем бою‖end‖ на ‖color:gui.green‖30%‖end‖.
         Увеличьте ‖color:gui.orange‖Скорость ходьбы‖end‖ на ‖color:gui.green‖15%‖end‖.
         В зависимости от вашего навыка обращения с оружием увеличьте ‖color:gui.orange‖Скорость и урон дальней атаки‖end‖ на величину, равную ‖color:gui.green‖5%‖end‖ от этого значения.
@@ -168,12 +170,15 @@
         \n‖color:gui.red‖Чтение «Perfect Memento in Strict Sense» или «Хроники Генсокё» не дает никакого эффекта.‖end‖
         Объедините «Идеальный сувенир в строгом смысле», «Хроники Генсокё» и «Газету Бумбуммару» на Фабрикаторе, чтобы создать ‖color:gui.red‖ «Глубокие знания Генсокё»‖end‖ и получить полный бонус.
 
+        После завершения всех миссий в общей сложности ‖color:gui.green‖3‖end‖ кампаний: +‖color:gui.green‖50%‖end‖ к скорости набора навыков
         После завершения всех миссий в общей сложности ‖color:gui.green‖9‖end‖ кампания запускается:
         Завершение ‖color:gui.orange‖любой миссии‖end‖ дает ‖color:gui.orange‖ «Идеальный сувенир в строгом смысле» (эксклюзивно для Европы)‖end‖.
         Завершение ‖color:gui.orange‖любой миссии без смертей‖end‖ дает ‖color:gui.orange‖ «Хроники Генсокё» (эксклюзивно для Европы)‖end‖.
-        +‖color:gui.green‖80%‖end‖ скорости набора навыков
+        +‖color:gui.green‖100%‖end‖ скорости набора навыков
         +‖color:gui.green‖15%‖end‖ эффективность предметов медицинского назначения
         +‖color:gui.green‖20%‖end‖ урона снарядами против врагов, не являющихся людьми
+        После ‖color:gui.green‖15‖end‖ кампаний завершение всех миссий дополнительно дает ‖color:gui.orange‖ «Генсокё: Предания Европы»‖end‖
+        После ‖color:gui.green‖21‖end‖ кампаний длительность негативных эффектов уменьшается на ‖color:gui.green‖10%‖end‖
         После ‖color:gui.green‖33‖end‖ кампании исходные штрафы за скорость передвижения и максимальное количество HP удаляются, +‖color:gui.green‖30%‖end‖ ‖color:gui.orange‖уровни навыков‖end‖.
         Если счетчик не полон, он будет очищен после смерти.</talentdescription.AkyuuTalent>
     <afflictionname.Akyuu_Weapons>Ученый девятого поколения</afflictionname.Akyuu_Weapons>
@@ -284,8 +289,10 @@
         Она любит цветы, которые цветут сезонно, и живет в окружении живых цветов круглый год, стремясь к цветению в любое время года.‖color:end‖\n(Встроенный слот для сканера)</entitydescription.Yuka_Plus>
     <talentname.YukaTalent>Повелитель цветов четырех сезонов</talentname.YukaTalent>
     <talentdescription.YukaTalent>Когда вы носите Yuuka Outfit+,
-        повышается устойчивость к яду и кровотечению
         урон, наносимый существам, не являющимся людьми, уменьшен на ‖color:gui.red‖10%‖end‖
+        Уменьшите ‖color:gui.red‖10%‖end‖ ‖color:gui.orange‖максимальное здоровье‖end‖
+
+        повышается устойчивость к яду и кровотечению
         Урон от атак ближнего боя увеличен на ‖color:gui.green‖30%‖end‖
         В каждом раунде есть ‖color:gui.green‖50%‖end‖ шанс получить семечко подсолнечника. Подсолнух беспорядочно сбрасывает разные лепестки; каждый лепесток при использовании дает свой бонус:
         Острый лепесток: увеличивает урон в дальнем бою на ‖color:gui.green‖10%‖end‖ и уменьшает получаемый урон на ‖color:gui.green‖10%‖end‖.
@@ -434,7 +441,7 @@
         Наносит дополнительный ‖color:gui.green‖30%‖end‖ урона от замораживания.
         Скорость приобретения навыков ‖color:gui.red‖−50%‖end‖.
         Находясь в воде, вы получаете ‖color:gui.green‖20%‖end‖ ‖color:gui.orange‖скорость атаки‖end‖ и ‖color:gui.green‖20%‖end‖ ‖color:gui.orange‖скорость передвижения‖end‖, постепенно залечивая некоторые раны.
-        \nПри использовании магического оружия ближнего боя каждая атака наносит ‖color:gui.green‖4–8‖end‖ очков ‖color:gui.orange‖Freeze‖end‖, масштабируясь в зависимости от сложности изготовления оружия.
+        \nПри использовании магического оружия ближнего боя каждая атака наносит ‖color:gui.green‖7.5–22.5‖end‖ очков ‖color:gui.orange‖Freeze‖end‖, масштабируясь в зависимости от сложности изготовления оружия.
         \nДальний заградительный огонь (без турели) против врагов, у которых здоровье больше половины, имеет ‖color:gui.green‖35%‖end‖ шанс применить незначительное ‖color:gui.orange‖Freeze‖end‖.</talentdescription.CirnoTalent>
     <afflictionname.Touhou_Cirno_Character_Effect>Острая Ледяная Фея</afflictionname.Touhou_Cirno_Character_Effect>
     <afflictiondescription.Touhou_Cirno_Character_Effect>Фея, любящая битвы, с немного глупым умом, но, в конце концов, она всего лишь ребенок.</afflictiondescription.Touhou_Cirno_Character_Effect>
@@ -563,8 +570,8 @@
         Врагам сложнее вас заметить.
         \n‖color:gui.yellow‖Burn‖end‖ Нанесенный урон +‖color:gui.green‖10%‖end‖.
         \nУменьшите ‖color:gui.red‖10%‖end‖ ‖color:gui.orange‖максимальное здоровье‖end‖.
-        \nАтаки дальнего боя магическим оружием имеют ‖color:gui.green‖5%‖end‖ шанс нанести дополнительный ‖color:gui.yellow‖ожог‖end‖. Если талант класса Фея ‖color:gui.red‖ «Альянс фей»‖end‖ разблокирован, также накладывает эффект Солнечного света.
-        Атаки ближнего боя имеют ‖color:gui.green‖30%‖end‖ шанс нанести дополнительный ‖color:gui.yellow‖ожог‖end‖. Если «Альянс фей» разблокирован, также накладывает эффект солнечного света.
+        \nАтаки дальнего боя магическим оружием имеют ‖color:gui.green‖30%‖end‖ шанс нанести дополнительный ‖color:gui.yellow‖ожог‖end‖. Если талант класса Фея ‖color:gui.red‖ «Альянс фей»‖end‖ разблокирован, также накладывает эффект Солнечного света.
+        Атаки ближнего боя имеют ‖color:gui.green‖60%‖end‖ шанс нанести дополнительный ‖color:gui.yellow‖ожог‖end‖. Если «Альянс фей» разблокирован, также накладывает эффект солнечного света.
         ‖color:gui.yellow‖Sunlight‖end‖: уменьшает урон от атак врагов и ненадолго убирает цель из поля зрения.</talentdescription.SunnyTalent>
     <afflictionname.Touhou_Sunny_Character_Effect>Сияющий солнечный свет</afflictionname.Touhou_Sunny_Character_Effect>
     <afflictiondescription.Touhou_Sunny_Character_Effect>У нее оранжевые волосы до плеч, завязанные в короткие два хвоста с красными бантиками, и она носит белую кружевную повязку на голове.</afflictiondescription.Touhou_Sunny_Character_Effect>
@@ -602,7 +609,7 @@
         \nВы можете ощутить расположение живых существ вокруг вас.
         После длительного отсутствия урона увеличьте на ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖максимальное здоровье‖end‖, уменьшите получаемый урон на ‖color:gui.green‖20%‖end‖ и значительно увеличьте скорость восстановления здоровья.
         \nВраги, нанесшие вам урон:
-        Когда их здоровье ниже ‖color:gui.green‖50%‖end‖, дальнобойные заграждения (кроме турелей) имеют ‖color:gui.green‖5%‖end‖ шанс вызвать дополнительное ‖color:gui.yellow‖оглушение, ожог и звездный свет‖end‖. Вероятность для оружия ближнего боя составляет ‖color:gui.green‖30%‖end‖.
+        Когда их здоровье ниже ‖color:gui.green‖50%‖end‖, дальнобойные заграждения (кроме турелей) имеют ‖color:gui.green‖20%‖end‖ шанс вызвать дополнительное ‖color:gui.yellow‖оглушение, ожог и звездный свет‖end‖. Вероятность для оружия ближнего боя составляет ‖color:gui.green‖40%‖end‖.
         \nЕсли талант класса фей ‖color:gui.red‖ «Сказочный союз»‖end‖ разблокирован, любая атака имеет ‖color:gui.green‖10%‖end‖ шанс применить эффект ‖color:gui.yellow‖Starlight‖end‖.
         Атака врагов с помощью ‖color:gui.yellow‖Starlight‖end‖ наносит дополнительно ‖color:gui.green‖5%‖end‖ урона, а убийство врагов с помощью Starlight восстановит ваш ‖color:gui.yellow‖физический урон, ожоги и кровотечение‖end‖.
         ‖color:gui.yellow‖Starlight‖end‖: снижает сопротивление существ физическому урону, урон от атаки, скорость передвижения и уровень навыков.</talentdescription.StarTalent>
@@ -826,7 +833,9 @@
     <entitydescription.Kokoro_Mask02>Полулицая маска лисы со слабой, двусмысленной улыбкой, содержащей насыщенные эмоции.</entitydescription.Kokoro_Mask02>
     <talentname.KokoroTalent>Выразительное покерное лицо</talentname.KokoroTalent>
     <talentdescription.KokoroTalent>В костюме Кокоро+:
-        Все навыки −‖color:gui.red‖10‖end‖; уменьшить ‖color:gui.red‖10%‖end‖ ‖color:gui.orange‖скорость передвижения, урон от атак, физическое сопротивление и максимальное здоровье‖end‖.
+        Все навыки −‖color:gui.red‖10‖end‖; уменьшить ‖color:gui.red‖10%‖end‖ ‖color:gui.orange‖скорость передвижения, урон от атак, физическое сопротивление и максимальное здоровье‖end‖;
+
+        +‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖урона от данмаку‖end‖.
         Захват немеханических существ с высоким максимальным здоровьем может позволить вам изучить новые эмоции (каждое существо один раз, всего до 66).
         Раз в минуту вы можете потратить одну выученную эмоцию, чтобы переключиться на одну из четырех основных эмоций до конца миссии:
         Радость: +‖color:gui.green‖15%‖end‖ скорости передвижения и скорости атаки.
@@ -919,7 +928,7 @@
         Урон, получаемый от врагов, на которых действует этот эффект, уменьшается на ‖color:gui.green‖15%‖end‖.
 
         Когда «Чтение мыслей» активно активировано, все атаки наносят ‖color:gui.yellow‖Endless Nightmare‖end‖.
-        Чтение мыслей можно использовать один раз каждые ‖color:gui.green‖3‖end‖ минут.
+        Чтение мыслей можно использовать один раз каждые ‖color:gui.green‖2‖end‖ минут.
         В этом состоянии убийство любого существа дает способности, полученные от этого существа, или воспоминания, связанные с ним.
 
         Страховая память людей: +‖color:gui.green‖20%‖end‖ ‖color:gui.orange‖уровней навыков‖end‖
@@ -974,12 +983,12 @@
 
         При атаке имеет шанс вызвать случайное
         ‖color:gui.orange‖Счастливая благосклонность‖end‖ действует на вас.
-        Время восстановления этого эффекта составляет ‖color:gui.green‖15‖end‖ секунд.
+        Время восстановления этого эффекта составляет ‖color:gui.green‖12‖end‖ секунд.
 
         При использовании волшебных растительных лекарств,
         имеет шанс вызвать случайное
         ‖color:gui.orange‖Lucky Protection‖end‖ действует на вас.
-        Время восстановления этого эффекта составляет ‖color:gui.green‖3‖end‖ минут.</talentdescription.TewiTalent>
+        Время восстановления этого эффекта составляет ‖color:gui.green‖2‖end‖ минут.</talentdescription.TewiTalent>
     <afflictionname.Touhou_Tewi_Character_Effect>Земляной кролик</afflictionname.Touhou_Tewi_Character_Effect>
     <afflictiondescription.Touhou_Tewi_Character_Effect>У нее липкие, тусклые черные короткие волосы и пара пушистых кроличьих ушей, свисающих с головы.</afflictiondescription.Touhou_Tewi_Character_Effect>
     <afflictionname.Tewi_Weapons>Белый кролик с серебряным языком</afflictionname.Tewi_Weapons>

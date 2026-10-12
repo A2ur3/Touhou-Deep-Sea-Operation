@@ -25,9 +25,7 @@
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
-                <AbilityConditionCharacter>
-                    <Conditional speciesgroup="neq human"/>
-                </AbilityConditionCharacter>
+                <AbilityConditionCharacter targettype="Enemy"/>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Aunn_Character_Effect"/>
                 <AbilityConditionHasAffliction afflictionidentifier="Aunn_Lion"/>
             </Conditions>
@@ -54,6 +52,7 @@
                 <CharacterAbilityModifyResistance resistanceid="Aunn_Koma_Inu_Others" multiplier="0"/>
             </Abilities>
         </AbilityGroupInterval>
+        <!--狛犬形态的守护神兽：800 内维持、离开就摘（见 C# 的 CharacterAbilityProximityAura）。
         <AbilityGroupInterval maxtriggercount="1" interval="0.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Aunn_Character_Effect"/>
@@ -67,6 +66,14 @@
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffectsToAllies>
+            </Abilities>
+        </AbilityGroupInterval>
+        -->
+        <AbilityGroupInterval Interval="0.9">
+            <Abilities>
+                <CharacterAbilityProximityAura affliction="Aunn_Koma_Inu_Others" strength="10" maxdistance="800"
+                                              gateaffliction="Touhou_Aunn_Character_Effect" requireaffliction="Aunn_Koma_Inu"
+                                              allowself="false" requiresalive="true"/>
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="3">

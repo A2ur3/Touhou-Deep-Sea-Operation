@@ -49,6 +49,12 @@
             </Abilities>
         </AbilityGroupInterval>
 
+        <!-- 「主动释放厄运缠身」改由 Lua 脚本
+             Lua/Scripts/Server/Talents/Kagiyama_Hina_Misfortune_Release.lua 实现（东方潜渊行动组Lua补丁）：
+             按描述改成「以释放瞬间的厄运缠身强度为准，只打附近敌对目标，并附加长眠不醒的噩梦」，
+             不再对 2500 内所有人施加固定数值的 debuff（旧版靠 debuff 内部自清来规避友军，且不含噩梦）。
+             以下旧 XML 保留备查。
+
         <AbilityGroupInterval interval="0.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kagiyama_Hina_Character_Effect"/>
@@ -64,13 +70,26 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupInterval>
+        -->
 
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kagiyama_Hina_Character_Effect"/>
                 <AbilityConditionHasAffliction afflictionidentifier="Kagiyama_Hina_Weapons"/>
                 <AbilityConditionAboveVitality invert="true" vitalitypercentage="1.0"/>
-                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged,Melee"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveAffliction affliction="Touhou_Misfortune_Curse" strength="1.0"/>
+            </Abilities>
+        </AbilityGroupEffect>
+
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kagiyama_Hina_Character_Effect"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Kagiyama_Hina_Weapons"/>
+                <AbilityConditionAboveVitality invert="true" vitalitypercentage="1.0"/>
+                <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityGiveAffliction affliction="Touhou_Misfortune_Curse" strength="1.0"/>
@@ -93,10 +112,15 @@
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffectsToAttacker>
-                <CharacterAbilityApplyStatusEffects>
+                <!-- 冷却：CharacterAbilityReduceAffliction 走的是 ReduceAfflictionOnAllLimbs，
+                     只削减「已存在」的 affliction。而 Touhou_Kagiyama_Hina_Character_Effect_OnAttacked_CD
+                     在全模组没有任何地方施加过它（只有这里的 invert 判断与这条削减），
+                     所以条件恒成立、2 秒冷却从来没生效过。改成施加：
+                     affliction 自身 duration="2.0"，挂上即等于「2 秒冷却」。 -->
+                <CharacterAbilityApplyStatusEffects applytoself="true">
                     <StatusEffects>
-                        <StatusEffect type="OnAbility" target="This">
-                            <ReduceAffliction identifier="Touhou_Kagiyama_Hina_Character_Effect_OnAttacked_CD" strength="10.0"/>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <Affliction identifier="Touhou_Kagiyama_Hina_Character_Effect_OnAttacked_CD" amount="1"/>
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffects>

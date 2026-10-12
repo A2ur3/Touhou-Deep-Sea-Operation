@@ -4,6 +4,7 @@
         <Icon texture="%ModDir%/Images/Talents/TewiTalent.png" sheetindex="0,0" sheetelementsize="128,128"/>
         <Description tag="talentdescription.TewiTalent"/>
 
+        <!--受击自减益（10% 概率给自己挂「远程/近战 −10%、攻速 −10%」）与「幸运白兔」的设定相悖，去掉。原样留档：
         <AbilityGroupEffect abilityeffecttype="OnAttacked">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Tewi_Character_Effect"/>
@@ -20,6 +21,7 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupEffect>
+        -->
         <AbilityGroupEffect abilityeffecttype="OnOpenItemContainer">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Tewi_Character_Effect"/>
@@ -90,11 +92,12 @@
         </AbilityGroupEffect>
 
 
+        <!--攻击抽奖已由 Lua 接管（Tewi_Lucky_Talent.lua：20% 概率、冷却 12 秒，标记照旧挂），原样留档：
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Tewi_Character_Effect"/>
                 <AbilityConditionHasAffliction afflictionidentifier="TewiTalent_OnAttack_Effect_CD" invert="true"/>
-                <AbilityConditionServerRandom randomchance="0.1"/>
+                <AbilityConditionServerRandom randomchance="0.2"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects applytoself="true">
@@ -110,6 +113,7 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupEffect>
+        -->
 
         <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
             <Conditions>
@@ -124,6 +128,7 @@
         </AbilityGroupEffect>
 
 
+        <!--治疗抽奖已由 Lua 接管（Tewi_Lucky_Talent.lua：50% 概率、冷却 120 秒，标记照旧挂），原样留档：
         <AbilityGroupEffect abilityeffecttype="OnApplyTreatment">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Tewi_Character_Effect"/>
@@ -145,5 +150,6 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupEffect>
+        -->
     </Talent>
 </Talents>

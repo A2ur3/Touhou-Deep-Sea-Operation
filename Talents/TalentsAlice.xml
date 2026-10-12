@@ -23,7 +23,7 @@
 
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Patchouli_Character_Effect"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Alice_Character_Effect"/>
                 <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
                 <AbilityConditionCharacter targettype="Enemy">
                     <Conditional HealthPercentage="gt 30"/>

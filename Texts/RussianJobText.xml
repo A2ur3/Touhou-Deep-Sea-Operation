@@ -357,7 +357,7 @@
         При ношении ‖color:gui.red‖Reisen Outfit+‖end‖: увеличение ‖color:gui.green‖50%‖end‖ ‖color:gui.orange‖Скорости набора навыков‖end‖ и ‖color:gui.green‖15%‖end‖ ‖color:gui.orange‖Скорости получения опыта‖end‖. Увеличение ‖color:gui.green‖20%‖end‖ ‖color:gui.yellow‖Сопротивления оглушению‖end‖.
         При ношении ‖color:gui.red‖Инаба Теви Костюм+‖end‖: увеличение ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖Скорости движения‖end‖. Каждое ‖color:gui.green‖1‖end‖ очко ‖color:gui.orange‖Магической способности‖end‖ увеличивает ‖color:gui.green‖0,1%‖end‖ ‖color:gui.orange‖Скорость атаки‖end‖, максимум до ‖color:gui.green‖20%‖end‖.</talentdescription.Touhou_Yaoshou_Shouren05>
     <talentname.Touhou_Yaoshou_Shouren06>Ёкайский порыв хвоста</talentname.Touhou_Yaoshou_Shouren06>
-    <talentdescription.Touhou_Yaoshou_Shouren06>Увеличьте ‖color:gui.orange‖Максимальное здоровье‖end‖ в зависимости от ‖color:gui.orange‖Уровня персонажа‖end‖. Получите ‖color:gui.green‖0,5%‖end‖ за уровень, максимум до ‖color:gui.green‖10%‖end‖.
+    <talentdescription.Touhou_Yaoshou_Shouren06>Увеличьте ‖color:gui.orange‖Максимальное здоровье‖end‖ в зависимости от ‖color:gui.orange‖Уровня персонажа‖end‖. Получите ‖color:gui.green‖0,75%‖end‖ за уровень, максимум до ‖color:gui.green‖15%‖end‖.
         При ношении ‖color:gui.red‖A-Un Outfit+‖end‖: нанесите на ‖color:gui.green‖10%‖end‖ больше урона врагам-людям.
         Дополнительные эффекты в зависимости от уровня персонажа:
         ‖color:gui.green‖Уровень 15‖end‖: Может тащить существ на полной скорости.
@@ -396,29 +396,30 @@
         В ‖color:gui.red‖Наряд Момиджи+‖end‖: находясь рядом с командой, наносите +‖color:gui.green‖20%‖end‖ урона врагам, у которых HP ниже ‖color:gui.green‖50%‖end‖.</talentdescription.Touhou_Tiangou06>
     <talentname.Touhou_Tiangou07>Горное Божество</talentname.Touhou_Tiangou07>
     <talentdescription.Touhou_Tiangou07>При ношении ‖color:gui.red‖Айя Костюм+‖end‖: +‖color:gui.green‖1%‖end‖ ‖color:gui.orange‖скорость передвижения‖end‖ за уровень (макс. ‖color:gui.green‖25%‖end‖); на уровнях ‖color:gui.green‖20‖end‖+ +‖color:gui.green‖15%‖end‖ ‖color:gui.orange‖нанесенного урона‖end‖.
-        При ношении ‖color:gui.red‖Наряд Момиджи+‖end‖: +‖color:gui.green‖2%‖end‖ ‖color:gui.orange‖урон в ближнем бою‖end‖ за уровень (максимум ‖color:gui.green‖50%‖end‖); на ‖color:gui.green‖20‖end‖+ уровней получаемый урон –‖color:gui.green‖15%‖end‖.</talentdescription.Touhou_Tiangou07>
+        При ношении ‖color:gui.red‖Наряд Момиджи+‖end‖: +‖color:gui.green‖2%‖end‖ ‖color:gui.orange‖урон в ближнем бою‖end‖ за уровень (максимум ‖color:gui.green‖40%‖end‖); на ‖color:gui.green‖20‖end‖+ уровней получаемый урон –‖color:gui.green‖15%‖end‖.</talentdescription.Touhou_Tiangou07>
 
     <talenttree.Touhou_Tianren_Xianren>Небесный/Бессмертный</talenttree.Touhou_Tianren_Xianren>
     <talentname.Touhou_Tianren_Xianren01>Неторопливая легкость</talentname.Touhou_Tianren_Xianren01>
     <talentdescription.Touhou_Tianren_Xianren01>Увеличение ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖сопротивления оглушению‖end‖. Если уровень ниже ‖color:gui.green‖15‖end‖, ‖color:gui.orange‖скорость повышения навыка‖end‖ ‖color:gui.red‖-50%‖end‖; в противном случае ‖color:gui.orange‖скорость повышения навыка‖end‖ ‖color:gui.red‖-150%‖end‖.</talentdescription.Touhou_Tianren_Xianren01>
     <talentname.Touhou_Tianren_Xianren02>Бесшовные небеса</talentname.Touhou_Tianren_Xianren02>
-    <talentdescription.Touhou_Tianren_Xianren02>Увеличьте ‖color:gui.green‖20%‖end‖ ‖color:gui.orange‖сопротивление яду‖end‖ и ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖сопротивление дебаффам‖end‖. Если ваш уровень на ‖color:gui.green‖2‖end‖ или более ниже члена экипажа самого высокого уровня, +‖color:gui.green‖20%‖end‖ ‖color:gui.orange‖скилл получает скорость‖end‖; в противном случае +‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖макс. HP‖end‖.</talentdescription.Touhou_Tianren_Xianren02>
+    <talentdescription.Touhou_Tianren_Xianren02>Увеличьте ‖color:gui.green‖20%‖end‖ ‖color:gui.orange‖сопротивление яду‖end‖ и ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖сопротивление дебаффам‖end‖.
+        Если ваш уровень на ‖color:gui.green‖2‖end‖ или более ниже члена экипажа самого высокого уровня, +‖color:gui.green‖20%‖end‖ ‖color:gui.orange‖скилл получает скорость‖end‖; в противном случае +‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖макс. HP‖end‖.</talentdescription.Touhou_Tianren_Xianren02>
     <talentname.Touhou_Tianren_Xianren03>Небесная Кровь</talentname.Touhou_Tianren_Xianren03>
     <talentdescription.Touhou_Tianren_Xianren03>После атаки наложите на атакующего 8-секундный дебафф: ‖color:gui.green‖-20%‖end‖ ‖color:gui.orange‖скорость движения и атаки‖end‖ и ‖color:gui.green‖-20%‖end‖ ‖color:gui.orange‖сопротивление горению‖end‖. Время восстановления: ‖color:gui.green‖15‖end‖ секунд.</talentdescription.Touhou_Tianren_Xianren03>
     <talentname.Touhou_Tianren_Xianren04>Нет мыслей, нет ума</talentname.Touhou_Tianren_Xianren04>
     <talentdescription.Touhou_Tianren_Xianren04>При полном здоровье +‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖скорость передвижения‖end‖. Когда HP ≤ ‖color:gui.green‖0‖end‖, +‖color:gui.green‖90%‖end‖ ‖color:gui.orange‖сопротивление кислородному голоданию‖end‖. Выше ‖color:gui.green‖уровня 15‖end‖ получаемый урон –‖color:gui.green‖10%‖end‖.</talentdescription.Touhou_Tianren_Xianren04>
     <talentname.Touhou_Tianren_Xianren05>Сказочная иллюзия</talentname.Touhou_Tianren_Xianren05>
-    <talentdescription.Touhou_Tianren_Xianren05>После убийства любого существа дайте +‖color:gui.green‖1‖end‖ очко ко всем навыкам (максимум ‖color:gui.green‖3‖end‖ раз за раунд).
+    <talentdescription.Touhou_Tianren_Xianren05>После убийства любого существа дайте +‖color:gui.green‖1‖end‖ очко ко всем навыкам (максимум ‖color:gui.green‖3‖end‖ раз за раунд). Снижает ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖урона по союзникам‖end‖.
         Надев ‖color:gui.red‖Tenshi Outfit+‖end‖: после завершения всех миссий в раунде получите количество ‖color:gui.green‖1‖end‖. При ‖color:gui.green‖10‖end‖ учитывается: +‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖скорость атаки в ближнем бою‖end‖ и ‖color:gui.orange‖физическое сопротивление‖end‖. Счет сбрасывается в случае смерти.</talentdescription.Touhou_Tianren_Xianren05>
     <talentname.Touhou_Tianren_Xianren06>трансцендентность</talentname.Touhou_Tianren_Xianren06>
-    <talentdescription.Touhou_Tianren_Xianren06>Позволяет ‖color:gui.orange‖уровню навыка‖end‖ превышать ‖color:gui.green‖100‖end‖ до ‖color:gui.green‖200‖end‖, но ‖color:gui.orange‖скорость ремонта‖end‖ –‖color:gui.red‖70%‖end‖, уменьшить ‖color:gui.red‖10%‖end‖ ‖color:gui.orange‖уровни навыков‖end‖.
+    <talentdescription.Touhou_Tianren_Xianren06>Позволяет ‖color:gui.orange‖уровню навыка‖end‖ превышать ‖color:gui.green‖100‖end‖ до ‖color:gui.green‖150‖end‖, но ‖color:gui.orange‖скорость ремонта‖end‖ –‖color:gui.red‖35%‖end‖.
         При ношении ‖color:gui.red‖Tenshi Outfit+‖end‖: +‖color:gui.green‖1%‖end‖ ‖color:gui.orange‖скорость атаки‖end‖ за уровень (макс. ‖color:gui.green‖20%‖end‖).</talentdescription.Touhou_Tianren_Xianren06>
     <talentname.Touhou_Tianren_Xianren07>Священный и яркий</talentname.Touhou_Tianren_Xianren07>
     <talentdescription.Touhou_Tianren_Xianren07>При ношении ‖color:gui.red‖Tenshi Outfit+‖end‖: +‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖урон от атаки‖end‖. На основе ‖color:gui.orange‖магической способности‖end‖ увеличьте ‖color:gui.orange‖макс. HP‖end‖ на ‖color:gui.green‖10%‖end‖ за каждые 10% магической способности, вплоть до ‖color:gui.green‖20%‖end‖.</talentdescription.Touhou_Tianren_Xianren07>
 
     <talenttree.Touhou_ShenMing>Божественное Существо / Цукумогами</talenttree.Touhou_ShenMing>
     <talentname.Touhou_ShenMing01>Пребывание внутри объектов</talentname.Touhou_ShenMing01>
-    <talentdescription.Touhou_ShenMing01>Увеличение ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖максимального здоровья‖end‖. Когда здоровье выше ‖color:gui.green‖50%‖end‖, врагам становится труднее обнаружить</talentdescription.Touhou_ShenMing01>
+    <talentdescription.Touhou_ShenMing01>Увеличение ‖color:gui.green‖5%‖end‖ ‖color:gui.orange‖максимального здоровья‖end‖. Когда здоровье выше ‖color:gui.green‖50%‖end‖, врагам становится труднее обнаружить</talentdescription.Touhou_ShenMing01>
     <talentname.Touhou_ShenMing02>Яркий как новый</talentname.Touhou_ShenMing02>
     <talentdescription.Touhou_ShenMing02>Повысьте эффективность лечения на ‖color:gui.green‖20%‖end‖, увеличьте ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖сопротивление дебаффам‖end‖ и ‖color:gui.green‖35%‖end‖ ‖color:gui.orange‖сопротивление ядам‖end‖, уменьшите ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖длительность дебаффа‖end‖</talentdescription.Touhou_ShenMing02>
     <talentname.Touhou_ShenMing03>Проявление сущности</talentname.Touhou_ShenMing03>

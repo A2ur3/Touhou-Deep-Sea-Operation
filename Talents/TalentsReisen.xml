@@ -33,9 +33,9 @@
             </Conditions>
             <Conditions>
                 <AbilityConditionAttackData weapontype="Any"/>
-                <AbilityConditionCharacter targettype="Enemy">
+                <AbilityConditionAttacker targettype="Enemy">
                     <Conditional psychosis="gt 1"/>
-                </AbilityConditionCharacter>
+                </AbilityConditionAttacker>
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.2"/>

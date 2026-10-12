@@ -166,6 +166,7 @@
             </Abilities>
         </AbilityGroupEffect>
 
+        <!--队友光环改用 C# 的 CharacterAbilityProximityAura：只在进出范围时施加/摘掉。
         <AbilityGroupInterval interval="4.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Lilywhite_Character_Effect"/>
@@ -178,6 +179,14 @@
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffectsToAllies>
+            </Abilities>
+        </AbilityGroupInterval>
+        -->
+        <AbilityGroupInterval interval="4.9">
+            <Abilities>
+                <CharacterAbilityProximityAura affliction="LilywhiteTalent_ToAllies_Effect" strength="10" maxdistance="1500"
+                                              gateaffliction="Touhou_Lilywhite_Character_Effect"
+                                              allowself="false" requiresalive="true"/>
             </Abilities>
         </AbilityGroupInterval>
     </Talent>

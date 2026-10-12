@@ -762,7 +762,7 @@
 
     <!--魔力披纱（白）-->
     <Item name="" identifier="Magic_Veil" subcategory="Touhou" category="Diving,Equipment"
-          tags="mediumitem,bigitem,diving,deepdiving,divinggear_wearableindoors,provocative,Magic_Veil,Touhou_Divinggear,deepdivinglarge" scale="0.25" fireproof="true" description=""
+          tags="mediumitem,bigitem,diving,deepdiving,divinggear_wearableindoors,provocative,Magic_Veil,Touhou_Divinggear,deepdivinglarge,Touhou_SelfOxygen" scale="0.25" fireproof="true" description=""
           allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
         <Price baseprice="4000" minleveldifficulty="30">
             <Price storeidentifier="merchantoutpost" multiplier="0.95" sold="false"/>
@@ -986,7 +986,7 @@
 
     <!--魔力披纱(粉)-->
     <Item name="" identifier="Magic_Veil02" subcategory="Touhou" category="Diving,Equipment" variantof="Magic_Veil"
-          tags="mediumitem,bigitem,diving,deepdiving,divinggear_wearableindoors,provocative,Magic_Veil,Touhou_Divinggear,deepdivinglarge" scale="0.25" fireproof="true" description=""
+          tags="mediumitem,bigitem,diving,deepdiving,divinggear_wearableindoors,provocative,Magic_Veil,Touhou_Divinggear,deepdivinglarge,Touhou_SelfOxygen" scale="0.25" fireproof="true" description=""
           allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
         <Sprite name="Combat Diving Suit Item" texture="%ModDir%/Images/Divinggear/Magic_Veil02.png" sourcerect="0,0,196,244" depth="0.45"
                 origin="0.5,0.5"/>
@@ -1096,7 +1096,7 @@
 
     <!--二色莲花蝶-->
     <Item name="" identifier="Touhou_Dichromatic_Lotus_Butterfly" subcategory="Touhou" category="Diving,Equipment"
-          tags="diving,deepdiving,divinggear_wearableindoors,provocative,Touhou_Dichromatic_Lotus_Butterfly,Touhou_Divinggear" scale="0.5"
+          tags="diving,deepdiving,divinggear_wearableindoors,provocative,Touhou_Dichromatic_Lotus_Butterfly,Touhou_Divinggear,Touhou_SelfOxygen" scale="0.5"
           fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
         <Price baseprice="14000" minleveldifficulty="36">
             <Price storeidentifier="merchantoutpost" multiplier="0.95" sold="false"/>
@@ -2494,7 +2494,7 @@
 
     <!--星界披纱-->
     <Item name="" identifier="Touhou_Astral_Veil" subcategory="Touhou" category="Diving,Equipment"
-          tags="mediumitem,bigitem,diving,deepdiving,divinggear_wearableindoors,provocative,Magic_Veil,Touhou_Divinggear,Touhou_Astral_Veil,deepdivinglarge" scale="0.13" fireproof="true" description=""
+          tags="mediumitem,bigitem,diving,deepdiving,divinggear_wearableindoors,provocative,Magic_Veil,Touhou_Divinggear,Touhou_Astral_Veil,deepdivinglarge,Touhou_SelfOxygen" scale="0.13" fireproof="true" description=""
           allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
         <Price baseprice="12000" minleveldifficulty="36">
             <Price storeidentifier="merchantoutpost" multiplier="0.95" sold="false"/>

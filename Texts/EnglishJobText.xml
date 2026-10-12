@@ -372,7 +372,7 @@
         When wearing ‖color:gui.red‖Inaba Tewi Outfit+‖end‖: Increase ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖Movement Speed‖end‖. Each ‖color:gui.green‖1‖end‖ point of ‖color:gui.orange‖Magic Ability‖end‖ grants ‖color:gui.green‖0.1%‖end‖ ‖color:gui.orange‖Attack Speed‖end‖, up to a maximum of ‖color:gui.green‖20%‖end‖.
     </talentdescription.Touhou_Yaoshou_Shouren05>
     <talentname.Touhou_Yaoshou_Shouren06>Youkai Tail Gust</talentname.Touhou_Yaoshou_Shouren06>
-    <talentdescription.Touhou_Yaoshou_Shouren06>Increase ‖color:gui.orange‖Maximum Health‖end‖ based on ‖color:gui.orange‖Character Level‖end‖. Gain ‖color:gui.green‖0.5%‖end‖ per level, up to a maximum of ‖color:gui.green‖10%‖end‖.
+    <talentdescription.Touhou_Yaoshou_Shouren06>Increase ‖color:gui.orange‖Maximum Health‖end‖ based on ‖color:gui.orange‖Character Level‖end‖. Gain ‖color:gui.green‖0.75%‖end‖ per level, up to a maximum of ‖color:gui.green‖15%‖end‖.
         When wearing ‖color:gui.red‖A-Un Outfit+‖end‖: Deal ‖color:gui.green‖10%‖end‖ more damage to human enemies.
         Additional effects based on character level:
         ‖color:gui.green‖Level 15‖end‖: Can drag creatures at full speed.
@@ -415,22 +415,23 @@
     <talentname.Touhou_Tiangou07>Mountain Deity</talentname.Touhou_Tiangou07>
     <talentdescription.Touhou_Tiangou07>
         Wearing ‖color:gui.red‖Aya Outfit+‖end‖: +‖color:gui.green‖1%‖end‖ ‖color:gui.orange‖movement speed‖end‖ per level (max ‖color:gui.green‖25%‖end‖); at ‖color:gui.green‖20‖end‖+ levels, +‖color:gui.green‖15%‖end‖ ‖color:gui.orange‖damage dealt‖end‖.
-        Wearing ‖color:gui.red‖Momiji Outfit+‖end‖: +‖color:gui.green‖2%‖end‖ ‖color:gui.orange‖melee damage‖end‖ per level (max ‖color:gui.green‖50%‖end‖); at ‖color:gui.green‖20‖end‖+ levels, damage taken –‖color:gui.green‖15%‖end‖.</talentdescription.Touhou_Tiangou07>
+        Wearing ‖color:gui.red‖Momiji Outfit+‖end‖: +‖color:gui.green‖2%‖end‖ ‖color:gui.orange‖melee damage‖end‖ per level (max ‖color:gui.green‖40%‖end‖); at ‖color:gui.green‖20‖end‖+ levels, damage taken –‖color:gui.green‖15%‖end‖.</talentdescription.Touhou_Tiangou07>
 
     <talenttree.Touhou_Tianren_Xianren>Celestial / Immortal</talenttree.Touhou_Tianren_Xianren>
     <talentname.Touhou_Tianren_Xianren01>Leisurely Ease</talentname.Touhou_Tianren_Xianren01>
     <talentdescription.Touhou_Tianren_Xianren01>Increase ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖stun resistance‖end‖. If level is below ‖color:gui.green‖15‖end‖, ‖color:gui.orange‖skill gain speed‖end‖ ‖color:gui.red‖-50%‖end‖; otherwise ‖color:gui.orange‖skill gain speed‖end‖ ‖color:gui.red‖-150%‖end‖.</talentdescription.Touhou_Tianren_Xianren01>
     <talentname.Touhou_Tianren_Xianren02>Seamless Heaven</talentname.Touhou_Tianren_Xianren02>
-    <talentdescription.Touhou_Tianren_Xianren02>Increase ‖color:gui.green‖20%‖end‖ ‖color:gui.orange‖poison resistance‖end‖ and ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖debuff resistance‖end‖. If you are ‖color:gui.green‖2‖end‖ or more levels below the highest-level crew member, +‖color:gui.green‖20%‖end‖ ‖color:gui.orange‖skill gain speed‖end‖; otherwise +‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖max HP‖end‖.</talentdescription.Touhou_Tianren_Xianren02>
+    <talentdescription.Touhou_Tianren_Xianren02>Increase ‖color:gui.green‖20%‖end‖ ‖color:gui.orange‖poison resistance‖end‖ and ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖debuff resistance‖end‖.
+        If you are ‖color:gui.green‖2‖end‖ or more levels below the highest-level crew member, +‖color:gui.green‖20%‖end‖ ‖color:gui.orange‖skill gain speed‖end‖; otherwise +‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖max HP‖end‖.</talentdescription.Touhou_Tianren_Xianren02>
     <talentname.Touhou_Tianren_Xianren03>Celestial Blood</talentname.Touhou_Tianren_Xianren03>
     <talentdescription.Touhou_Tianren_Xianren03>After being attacked, inflict an 8-second debuff on the attacker: ‖color:gui.green‖-20%‖end‖ ‖color:gui.orange‖movement and attack speed‖end‖, and ‖color:gui.green‖-20%‖end‖ ‖color:gui.orange‖burn resistance‖end‖. Cooldown: ‖color:gui.green‖15‖end‖ seconds.</talentdescription.Touhou_Tianren_Xianren03>
     <talentname.Touhou_Tianren_Xianren04>No Thought, No Mind</talentname.Touhou_Tianren_Xianren04>
     <talentdescription.Touhou_Tianren_Xianren04>At full health, +‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖movement speed‖end‖. When HP ≤ ‖color:gui.green‖0‖end‖, +‖color:gui.green‖90%‖end‖ ‖color:gui.orange‖oxygen deprivation resistance‖end‖. Above ‖color:gui.green‖level 15‖end‖, damage taken –‖color:gui.green‖10%‖end‖.</talentdescription.Touhou_Tianren_Xianren04>
     <talentname.Touhou_Tianren_Xianren05>Dreamlike Illusion</talentname.Touhou_Tianren_Xianren05>
-    <talentdescription.Touhou_Tianren_Xianren05>After killing any creature, grant +‖color:gui.green‖1‖end‖ point to all skills (max ‖color:gui.green‖3‖end‖ times per round).
+    <talentdescription.Touhou_Tianren_Xianren05>After killing any creature, grant +‖color:gui.green‖1‖end‖ point to all skills (max ‖color:gui.green‖3‖end‖ times per round). Reduce ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖friendly fire damage‖end‖.
         Wearing ‖color:gui.red‖Tenshi Outfit+‖end‖: After completing all missions in a round, gain ‖color:gui.green‖1‖end‖ count. At ‖color:gui.green‖10‖end‖ counts: +‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖melee attack speed‖end‖ and ‖color:gui.orange‖physical resistance‖end‖. Counts reset on death.</talentdescription.Touhou_Tianren_Xianren05>
     <talentname.Touhou_Tianren_Xianren06>Transcendence</talentname.Touhou_Tianren_Xianren06>
-    <talentdescription.Touhou_Tianren_Xianren06>Allows ‖color:gui.orange‖skill level‖end‖ cap to exceed ‖color:gui.green‖100‖end‖ up to ‖color:gui.green‖200‖end‖, but ‖color:gui.orange‖repair speed‖end‖ –‖color:gui.red‖70%‖end‖, Reduce ‖color:gui.red‖10%‖end‖ ‖color:gui.orange‖skill levels‖end‖.
+    <talentdescription.Touhou_Tianren_Xianren06>Allows ‖color:gui.orange‖skill level‖end‖ cap to exceed ‖color:gui.green‖100‖end‖ up to ‖color:gui.green‖150‖end‖, but ‖color:gui.orange‖repair speed‖end‖ –‖color:gui.red‖35%‖end‖.
         Wearing ‖color:gui.red‖Tenshi Outfit+‖end‖: +‖color:gui.green‖1%‖end‖ ‖color:gui.orange‖attack speed‖end‖ per level (max ‖color:gui.green‖20%‖end‖).</talentdescription.Touhou_Tianren_Xianren06>
     <talentname.Touhou_Tianren_Xianren07>Sacred and Bright</talentname.Touhou_Tianren_Xianren07>
     <talentdescription.Touhou_Tianren_Xianren07>
@@ -438,7 +439,7 @@
 
     <talenttree.Touhou_ShenMing>Divine Being / Tsukumogami</talenttree.Touhou_ShenMing>
     <talentname.Touhou_ShenMing01>Dwelling Within Objects</talentname.Touhou_ShenMing01>
-    <talentdescription.Touhou_ShenMing01>Increase ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖maximum health‖end‖. When health is above ‖color:gui.green‖50%‖end‖, become harder for enemies to detect</talentdescription.Touhou_ShenMing01>
+    <talentdescription.Touhou_ShenMing01>Increase ‖color:gui.green‖5%‖end‖ ‖color:gui.orange‖maximum health‖end‖. When health is above ‖color:gui.green‖50%‖end‖, become harder for enemies to detect</talentdescription.Touhou_ShenMing01>
     <talentname.Touhou_ShenMing02>Bright as New</talentname.Touhou_ShenMing02>
     <talentdescription.Touhou_ShenMing02>Increase the effectiveness of medical treatment by ‖color:gui.green‖20%‖end‖, increase ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖debuff resistance‖end‖ and ‖color:gui.green‖35%‖end‖ ‖color:gui.orange‖poison resistance‖end‖, reduce ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖debuff duration‖end‖</talentdescription.Touhou_ShenMing02>
     <talentname.Touhou_ShenMing03>Essence Manifestation</talentname.Touhou_ShenMing03>

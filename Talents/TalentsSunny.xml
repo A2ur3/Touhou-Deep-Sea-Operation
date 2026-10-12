@@ -39,19 +39,10 @@
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Sunny_Character_Effect"/>
                 <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
-                <AbilityConditionServerRandom randomchance="0.05"/>
-                <AbilityConditionCharacter targettype="Enemy">
-                    <Conditional HealthPercentage="gt 50"/>
-                </AbilityConditionCharacter>
+                <AbilityConditionServerRandom randomchance="0.3"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityApplyStatusEffects>
-                    <StatusEffects>
-                        <StatusEffect type="OnAbility" target="Character" targetlimb="Torso" delay="0.1" disabledeltatime="true">
-                            <Affliction identifier="burn" amount="1.0"/>
-                        </StatusEffect>
-                    </StatusEffects>
-                </CharacterAbilityApplyStatusEffects>
+                <CharacterAbilityHitAffliction affliction="burn" strength="4.0" cooldown="0.2"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -59,19 +50,10 @@
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Sunny_Character_Effect"/>
                 <AbilityConditionHasTalent identifier="Touhou_Yousei_Alliance"/>
                 <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
-                <AbilityConditionServerRandom randomchance="0.05"/>
-                <AbilityConditionCharacter targettype="Enemy">
-                    <Conditional HealthPercentage="gt 50"/>
-                </AbilityConditionCharacter>
+                <AbilityConditionServerRandom randomchance="0.3"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityApplyStatusEffects>
-                    <StatusEffects>
-                        <StatusEffect type="OnAbility" target="Character" targetlimb="Torso" delay="0.1" disabledeltatime="true">
-                            <Affliction identifier="burn" amount="0.5"/>
-                        </StatusEffect>
-                    </StatusEffects>
-                </CharacterAbilityApplyStatusEffects>
+                <CharacterAbilityHitAffliction affliction="burn" strength="2.0" cooldown="0.2"/>
                 <CharacterAbilityGiveAffliction affliction="Light_Of_The_Sun_Effect" strength="100"/>
             </Abilities>
         </AbilityGroupEffect>
@@ -79,16 +61,10 @@
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Sunny_Character_Effect"/>
                 <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
-                <AbilityConditionServerRandom randomchance="0.3"/>
+                <AbilityConditionServerRandom randomchance="0.6"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityApplyStatusEffects>
-                    <StatusEffects>
-                        <StatusEffect type="OnAbility" target="Character" targetlimb="Torso" delay="0.1" disabledeltatime="true">
-                            <Affliction identifier="burn" amount="4.0"/>
-                        </StatusEffect>
-                    </StatusEffects>
-                </CharacterAbilityApplyStatusEffects>
+                <CharacterAbilityHitAffliction affliction="burn" strength="12.0"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -96,16 +72,10 @@
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Sunny_Character_Effect"/>
                 <AbilityConditionHasTalent identifier="Touhou_Yousei_Alliance"/>
                 <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
-                <AbilityConditionServerRandom randomchance="0.3"/>
+                <AbilityConditionServerRandom randomchance="0.6"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityApplyStatusEffects>
-                    <StatusEffects>
-                        <StatusEffect type="OnAbility" target="Character" targetlimb="Torso" delay="0.1" disabledeltatime="true">
-                            <Affliction identifier="burn" amount="2.0"/>
-                        </StatusEffect>
-                    </StatusEffects>
-                </CharacterAbilityApplyStatusEffects>
+                <CharacterAbilityHitAffliction affliction="burn" strength="6.0"/>
                 <CharacterAbilityGiveAffliction affliction="Light_Of_The_Sun_Effect" strength="100"/>
             </Abilities>
         </AbilityGroupEffect>

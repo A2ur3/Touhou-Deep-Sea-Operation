@@ -763,16 +763,16 @@
             <ClearTagAction tag="Open_player"/>
         </ScriptedEvent>
 
-        <!--因幡天为攻击概率事件-->
+        <!--因幡天为攻击概率事件：已由 Tewi_Lucky_Talent.lua 接管，原样留档（XML 注释不能嵌套，块内原有小注释改写成 [ ] 形式）
         <ScriptedEvent identifier="TewiTalent_OnAttack_Event" commonness="0">
             <RNGAction chance="0.5">
-                <!--第一次随机-->
+                [第一次随机]
                 <Success>
                     <RNGAction chance="0.5">
-                        <!--第二次随机-->
+                        [第二次随机]
                         <Success>
                             <RNGAction chance="0.5">
-                                <!--幸运眷顾01：技能水平提高10%-->
+                                [幸运眷顾01：技能水平提高10%]
                                 <Success>
                                     <StatusEffectAction targettag="Tewi_player">
                                         <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
@@ -780,7 +780,7 @@
                                         </StatusEffect>
                                     </StatusEffectAction>
                                 </Success>
-                                <!--幸运眷顾02：增加10点额外生命值-->
+                                [幸运眷顾02：增加10点额外生命值]
                                 <Failure>
                                     <StatusEffectAction targettag="Tewi_player">
                                         <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
@@ -792,7 +792,7 @@
                         </Success>
                         <Failure>
                             <RNGAction chance="0.5">
-                                <!--幸运眷顾03：远程攻击伤害增加10%-->
+                                [幸运眷顾03：远程攻击伤害增加10%]
                                 <Success>
                                     <StatusEffectAction targettag="Tewi_player">
                                         <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
@@ -800,7 +800,7 @@
                                         </StatusEffect>
                                     </StatusEffectAction>
                                 </Success>
-                                <!--幸运眷顾04：物理抗性增加10%-->
+                                [幸运眷顾04：物理抗性增加10%]
                                 <Failure>
                                     <StatusEffectAction targettag="Tewi_player">
                                         <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
@@ -812,12 +812,12 @@
                         </Failure>
                     </RNGAction>
                 </Success>
-                <!--另外四项-->
+                [另外四项]
                 <Failure>
                     <RNGAction chance="0.5">
                         <Success>
                             <RNGAction chance="0.5">
-                                <!--幸运眷顾05：免疫精神病类的效果-->
+                                [幸运眷顾05：免疫精神病类的效果]
                                 <Success>
                                     <StatusEffectAction targettag="Tewi_player">
                                         <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
@@ -825,7 +825,7 @@
                                         </StatusEffect>
                                     </StatusEffectAction>
                                 </Success>
-                                <!--幸运眷顾06：近战攻击伤害增加30%-->
+                                [幸运眷顾06：近战攻击伤害增加30%]
                                 <Failure>
                                     <StatusEffectAction targettag="Tewi_player">
                                         <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
@@ -837,7 +837,7 @@
                         </Success>
                         <Failure>
                             <RNGAction chance="0.5">
-                                <!--幸运眷顾07：造成的物理伤害以110%倍率转化为深层组织损伤-->
+                                [幸运眷顾07：造成的物理伤害以110%倍率转化为深层组织损伤]
                                 <Success>
                                     <StatusEffectAction targettag="Tewi_player">
                                         <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
@@ -847,7 +847,7 @@
                                 </Success>
                                 <Failure>
                                     <RNGAction chance="0.95">
-                                        <!--幸运眷顾08：增加35%眩晕抗性-->
+                                        [幸运眷顾08：增加35%眩晕抗性]
                                         <Success>
                                             <StatusEffectAction targettag="Tewi_player">
                                                 <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
@@ -855,7 +855,7 @@
                                                 </StatusEffect>
                                             </StatusEffectAction>
                                         </Success>
-                                        <!--幸运眷顾隐藏：获得破釜沉舟效果-->
+                                        [幸运眷顾隐藏：获得破釜沉舟效果]
                                         <Failure>
                                             <StatusEffectAction targettag="Tewi_player">
                                                 <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
@@ -872,14 +872,15 @@
             </RNGAction>
             <ClearTagAction tag="Tewi_player"/>
         </ScriptedEvent>
+        -->
 
-        <!--因幡天为治疗概率事件-->
+        <!--因幡天为治疗概率事件：已由 Tewi_Lucky_Talent.lua 接管，原样留档（XML 注释不能嵌套，块内原有小注释改写成 [ ] 形式）
         <ScriptedEvent identifier="TewiTalent_OnApplyTreatment_Event" commonness="0">
             <RNGAction chance="0.5">
-                <!--第二次随机-->
+                [第二次随机]
                 <Success>
                     <RNGAction chance="0.5">
-                        <!--幸运庇护01：受到治疗效果增加15%-->
+                        [幸运庇护01：受到治疗效果增加15%]
                         <Success>
                             <StatusEffectAction targettag="Tewi_ApplyTreatment_player">
                                 <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
@@ -887,7 +888,7 @@
                                 </StatusEffect>
                             </StatusEffectAction>
                         </Success>
-                        <!--幸运庇护02：缓慢治愈出血和烧伤-->
+                        [幸运庇护02：缓慢治愈出血和烧伤]
                         <Failure>
                             <StatusEffectAction targettag="Tewi_ApplyTreatment_player">
                                 <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
@@ -897,10 +898,10 @@
                         </Failure>
                     </RNGAction>
                 </Success>
-                <!--另外四项-->
+                [另外四项]
                 <Failure>
                     <RNGAction chance="0.5">
-                        <!--幸运庇护03：增加20医疗水平-->
+                        [幸运庇护03：增加20医疗水平]
                         <Success>
                             <StatusEffectAction targettag="Tewi_ApplyTreatment_player">
                                 <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
@@ -908,7 +909,7 @@
                                 </StatusEffect>
                             </StatusEffectAction>
                         </Success>
-                        <!--幸运庇护04：抑制阿片类药物戒断、中毒和化学戒断-->
+                        [幸运庇护04：抑制阿片类药物戒断、中毒和化学戒断]
                         <Failure>
                             <StatusEffectAction targettag="Tewi_ApplyTreatment_player">
                                 <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
@@ -921,19 +922,20 @@
             </RNGAction>
             <ClearTagAction tag="Tewi_ApplyTreatment_player"/>
         </ScriptedEvent>
+        -->
 
-        <!--因幡天为出血效应事件-->
+        <!--因幡天为出血效应事件：已由 Tewi_Lucky_Talent.lua 接管，原样留档（XML 注释不能嵌套，块内原有小注释改写成 [ ] 形式）
         <ScriptedEvent identifier="MRE_Tewi_Event" commonness="0">
             <RNGAction chance="0.334">
                 <Success>
                     <RNGAction chance="0.5">
-                        <!--第一次随机-->
+                        [第一次随机]
                         <Success>
                             <RNGAction chance="0.5">
-                                <!--第二次随机-->
+                                [第二次随机]
                                 <Success>
                                     <RNGAction chance="0.5">
-                                        <!--幸运眷顾01：技能水平提高10%-->
+                                        [幸运眷顾01：技能水平提高10%]
                                         <Success>
                                             <StatusEffectAction targettag="Tewi_MRE_player">
                                                 <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
@@ -941,7 +943,7 @@
                                                 </StatusEffect>
                                             </StatusEffectAction>
                                         </Success>
-                                        <!--幸运眷顾02：增加10点额外生命值-->
+                                        [幸运眷顾02：增加10点额外生命值]
                                         <Failure>
                                             <StatusEffectAction targettag="Tewi_MRE_player">
                                                 <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
@@ -953,7 +955,7 @@
                                 </Success>
                                 <Failure>
                                     <RNGAction chance="0.5">
-                                        <!--幸运眷顾03：远程攻击伤害增加10%-->
+                                        [幸运眷顾03：远程攻击伤害增加10%]
                                         <Success>
                                             <StatusEffectAction targettag="Tewi_MRE_player">
                                                 <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
@@ -961,7 +963,7 @@
                                                 </StatusEffect>
                                             </StatusEffectAction>
                                         </Success>
-                                        <!--幸运眷顾04：物理抗性增加10%-->
+                                        [幸运眷顾04：物理抗性增加10%]
                                         <Failure>
                                             <StatusEffectAction targettag="Tewi_MRE_player">
                                                 <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
@@ -973,12 +975,12 @@
                                 </Failure>
                             </RNGAction>
                         </Success>
-                        <!--另外四项-->
+                        [另外四项]
                         <Failure>
                             <RNGAction chance="0.5">
                                 <Success>
                                     <RNGAction chance="0.5">
-                                        <!--幸运眷顾05：免疫精神病类的效果-->
+                                        [幸运眷顾05：免疫精神病类的效果]
                                         <Success>
                                             <StatusEffectAction targettag="Tewi_MRE_player">
                                                 <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
@@ -986,7 +988,7 @@
                                                 </StatusEffect>
                                             </StatusEffectAction>
                                         </Success>
-                                        <!--幸运眷顾06：近战攻击伤害增加30%-->
+                                        [幸运眷顾06：近战攻击伤害增加30%]
                                         <Failure>
                                             <StatusEffectAction targettag="Tewi_MRE_player">
                                                 <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
@@ -998,7 +1000,7 @@
                                 </Success>
                                 <Failure>
                                     <RNGAction chance="0.5">
-                                        <!--幸运眷顾07：造成的物理伤害以110%倍率转化为深层组织损伤-->
+                                        [幸运眷顾07：造成的物理伤害以110%倍率转化为深层组织损伤]
                                         <Success>
                                             <StatusEffectAction targettag="Tewi_MRE_player">
                                                 <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
@@ -1008,7 +1010,7 @@
                                         </Success>
                                         <Failure>
                                             <RNGAction chance="0.95">
-                                                <!--幸运眷顾08：增加35%眩晕抗性-->
+                                                [幸运眷顾08：增加35%眩晕抗性]
                                                 <Success>
                                                     <StatusEffectAction targettag="Tewi_MRE_player">
                                                         <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
@@ -1016,7 +1018,7 @@
                                                         </StatusEffect>
                                                     </StatusEffectAction>
                                                 </Success>
-                                                <!--幸运眷顾隐藏：获得破釜沉舟效果-->
+                                                [幸运眷顾隐藏：获得破釜沉舟效果]
                                                 <Failure>
                                                     <StatusEffectAction targettag="Tewi_MRE_player">
                                                         <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
@@ -1034,10 +1036,10 @@
                 </Success>
                 <Failure>
                     <RNGAction chance="0.5">
-                        <!--第二次随机-->
+                        [第二次随机]
                         <Success>
                             <RNGAction chance="0.5">
-                                <!--幸运庇护01：受到治疗效果增加15%-->
+                                [幸运庇护01：受到治疗效果增加15%]
                                 <Success>
                                     <StatusEffectAction targettag="Tewi_MRE_player">
                                         <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
@@ -1045,7 +1047,7 @@
                                         </StatusEffect>
                                     </StatusEffectAction>
                                 </Success>
-                                <!--幸运庇护02：缓慢治愈出血和烧伤-->
+                                [幸运庇护02：缓慢治愈出血和烧伤]
                                 <Failure>
                                     <StatusEffectAction targettag="Tewi_MRE_player">
                                         <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
@@ -1055,10 +1057,10 @@
                                 </Failure>
                             </RNGAction>
                         </Success>
-                        <!--另外四项-->
+                        [另外四项]
                         <Failure>
                             <RNGAction chance="0.5">
-                                <!--幸运庇护03：增加20医疗水平-->
+                                [幸运庇护03：增加20医疗水平]
                                 <Success>
                                     <StatusEffectAction targettag="Tewi_MRE_player">
                                         <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
@@ -1066,7 +1068,7 @@
                                         </StatusEffect>
                                     </StatusEffectAction>
                                 </Success>
-                                <!--幸运庇护04：抑制阿片类药物戒断、中毒和化学戒断-->
+                                [幸运庇护04：抑制阿片类药物戒断、中毒和化学戒断]
                                 <Failure>
                                     <StatusEffectAction targettag="Tewi_MRE_player">
                                         <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
@@ -1081,6 +1083,7 @@
             </RNGAction>
             <ClearTagAction tag="Tewi_MRE_player"/>
         </ScriptedEvent>
+        -->
 
 
         <!--测试事件-->

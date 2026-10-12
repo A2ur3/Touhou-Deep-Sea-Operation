@@ -194,6 +194,16 @@
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffectsToRandomAlly>
+                <!-- 冷却：Touhou_Merry_MobilePhone_25CD 自身 duration 就是 25 秒。
+                     原先它只在上面那条 invert 条件里被判断，全模组没有任何地方施加过它，
+                     等于冷却不生效、电话可以连点；这里补上对自身的施加。 -->
+                <CharacterAbilityApplyStatusEffects applytoself="true">
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <Affliction identifier="Touhou_Merry_MobilePhone_25CD" amount="10"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupEffect>
 

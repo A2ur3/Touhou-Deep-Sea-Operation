@@ -364,7 +364,7 @@
             hideiconafterdelay="true"
             duration="3"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-        <Effect minstrength="0" maxstrength="1" resistancefor="burn" minresistance="0.125" maxresistance="0.125" strengthchange="-0.4">
+        <Effect minstrength="0" maxstrength="1" resistancefor="burn" minresistance="0.075" maxresistance="0.075" strengthchange="-0.4">
             <StatusEffect target="Character">
                 <ReduceAffliction type="burn" strength="0.05"/>
             </StatusEffect>

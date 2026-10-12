@@ -14,7 +14,7 @@
             <Abilities>
                 <CharacterAbilityApplyStatusEffects allowSelf="true" >
                     <StatusEffects>
-                        <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true">
+                        <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true" disabledeltatime="true">
                             <Affliction identifier="stun" strength="8" peneration="1.0"/>
                         </StatusEffect>
                     </StatusEffects>

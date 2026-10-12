@@ -50,6 +50,8 @@
     <talentname.YoumuTalent>生與死的Half &amp; Half</talentname.YoumuTalent>
     <talentdescription.YoumuTalent>當你身著‖color:gui.orange‖魂魄妖夢裝束+‖end‖時，
         血量越低，造成的傷害越低，最多下降‖color:gui.red‖25%‖end‖
+        減少‖color:gui.red‖15%‖end‖‖color:gui.yellow‖燒傷抗性‖end‖
+
         造成的‖color:gui.orange‖近戰傷害‖end‖提高‖color:gui.green‖30%‖end‖
         ‖color:gui.orange‖行走速度‖end‖提高‖color:gui.green‖15%‖end‖
         根據自身的武器操作等級，提高其數值相應5%的‖color:gui.orange‖遠程攻擊速度和傷害‖end‖
@@ -159,12 +161,15 @@
         \n‖color:gui.red‖你閱讀《東方求聞口授》《東方求聞史紀》時沒有任何效果。‖end‖
         在加工臺將《東方求聞口授》《東方求聞史紀》《文文。新聞》合成‖color:gui.red‖《東方求聞淵識》‖end‖，你閱讀這本書時可以獲得完整加成效果。
 
+        總計有‖color:gui.green‖3‖end‖個巡迴完成所有任務後，技能獲取速度增加‖color:gui.green‖50%‖end‖
         總計有‖color:gui.green‖9‖end‖個巡迴完成所有任務後，獲得以下效果：
         完成‖color:gui.orange‖任意一個任務後‖end‖，獲得‖color:gui.orange‖《東方求聞口授》（木衛二專供）‖end‖。
         完成‖color:gui.orange‖任意一個任務，且無人死亡‖end‖，獲得‖color:gui.orange‖《東方求聞史紀》（木衛二專供）‖end‖。
-        技能獲取速度增加‖color:gui.green‖80%‖end‖
+        技能獲取速度增加‖color:gui.green‖100%‖end‖
         增加‖color:gui.green‖15%‖end‖的使用醫療物品效果
         對非人類敵人造成的彈幕傷害增加‖color:gui.green‖20%‖end‖
+        總計有‖color:gui.green‖15‖end‖個巡迴完成所有任務後，完成所有任務額外獲得一本‖color:gui.orange‖《東方求聞淵識》‖end‖
+        總計有‖color:gui.green‖21‖end‖個巡迴完成所有任務後，受到的減益效果持續時間減少‖color:gui.green‖10%‖end‖
         總計‖color:gui.green‖33‖end‖個巡迴後，原本的生命值和移動速度減益效果消失，增加‖color:gui.green‖30%‖end‖‖color:gui.orange‖技能水平‖end‖
         計數未滿時，會在死亡後清除。
     </talentdescription.AkyuuTalent>
@@ -273,8 +278,10 @@
     <entitydescription.Yuka_Plus>‖color:117,128,110,255‖幽香生活在太陽花田，會消滅一切闖入打擾的人類和妖怪。由於活得久，最近很少離開花田周圍活動。\n非常喜歡季節性開放的花朵，一年四季都生活在被自然的花包圍的場所，以一年內所有時間都有花開放為目標而努力。‖color:end‖\n（內置掃描儀槽位）</entitydescription.Yuka_Plus>
     <talentname.YukaTalent>四季的鮮花之主</talentname.YukaTalent>
     <talentdescription.YukaTalent>當你身著 幽香裝束+ 時，
-        對毒藥和出血的抗性提高
         對非人類造成的傷害下降‖color:gui.red‖10%‖end‖
+        減少‖color:gui.red‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖
+
+        對毒藥和出血的抗性提高
         近戰攻擊傷害提高‖color:gui.green‖30%‖end‖
         每個巡迴都有‖color:gui.green‖50%‖end‖概率獲得一顆太陽花種子，太陽花會隨機掉落不同的花瓣，每種花瓣使用後可以給自己提供不同的加成效果：
         鋒利的花瓣：增加‖color:gui.green‖10%‖end‖彈幕傷害，減少‖color:gui.green‖10%‖end‖受到的傷害
@@ -421,7 +428,7 @@
         造成額外‖color:gui.green‖30%‖end‖的凍結傷害。
         技能獲取速度下降‖color:gui.red‖50%‖end‖。
         當你在水中時，增加‖color:gui.green‖20%‖end‖的‖color:gui.orange‖攻擊速度‖end‖和‖color:gui.green‖20%‖end‖的‖color:gui.orange‖移動速度‖end‖，並持續治癒一些傷勢。
-        \n使用魔法近戰武器時，每次攻擊附帶‖color:gui.green‖4~8‖end‖點‖color:gui.orange‖凍結‖end‖，這個效果隨著武器製作難度的不同會上升。
+        \n使用魔法近戰武器時，每次攻擊附帶‖color:gui.green‖7.5~22.5‖end‖點‖color:gui.orange‖凍結‖end‖，這個效果隨著武器製作難度的不同會上升。
         \n遠程彈幕（非炮塔）攻擊半血以上的敵人時，每次攻擊有‖color:gui.green‖35%‖end‖概率附帶少量‖color:gui.orange‖凍結‖end‖。</talentdescription.CirnoTalent>
     <afflictionname.Touhou_Cirno_Character_Effect>冰雪聰明冰之妖精</afflictionname.Touhou_Cirno_Character_Effect>
     <afflictiondescription.Touhou_Cirno_Character_Effect>在妖精中屬於好戰型。腦袋有些笨笨的。不過她本來就是個孩子而已。</afflictiondescription.Touhou_Cirno_Character_Effect>
@@ -546,8 +553,8 @@
         很難被敵人的目光察覺。
         \n造成的‖color:gui.yellow‖燒傷‖end‖傷害增加‖color:gui.green‖10%‖end‖。
         \n減少‖color:gui.red‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖。
-        \n魔法武器的遠程攻擊每次有‖color:gui.green‖5%‖end‖概率造成額外‖color:gui.yellow‖燒傷‖end‖。如果解鎖了妖精職業的天賦‖color:gui.red‖“妖精聯盟”‖end‖，額外造成日之光效果
-        近戰攻擊每次有‖color:gui.green‖30%‖end‖概率造成額外‖color:gui.yellow‖燒傷‖end‖。如果解鎖了妖精職業的天賦‖color:gui.red‖“妖精聯盟”‖end‖，額外造成日之光效果
+        \n魔法武器的遠程攻擊每次有‖color:gui.green‖30%‖end‖概率造成額外‖color:gui.yellow‖燒傷‖end‖。如果解鎖了妖精職業的天賦‖color:gui.red‖“妖精聯盟”‖end‖，額外造成日之光效果
+        近戰攻擊每次有‖color:gui.green‖60%‖end‖概率造成額外‖color:gui.yellow‖燒傷‖end‖。如果解鎖了妖精職業的天賦‖color:gui.red‖“妖精聯盟”‖end‖，額外造成日之光效果
         ‖color:gui.yellow‖日之光‖end‖：減少生物的攻擊傷害，讓怪物短時間內失去視野中的目標。
     </talentdescription.SunnyTalent>
     <afflictionname.Touhou_Sunny_Character_Effect>閃耀的日之光</afflictionname.Touhou_Sunny_Character_Effect>
@@ -587,7 +594,7 @@
         \n可以間歇性感知周圍活體生物的位置
         長時間沒有受到攻擊後，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖，減少‖color:gui.green‖20%‖end‖受到的傷害，並大大增加生命恢復速度
         \n對你造成過傷害的敵人：
-        當其生命值低於‖color:gui.green‖50%‖end‖時，遠程彈幕（非炮塔）攻擊有‖color:gui.green‖5%‖end‖概率對其造成額外‖color:gui.yellow‖眩暈、燒傷和星之光‖end‖，近戰武器概率則為‖color:gui.green‖30%‖end‖
+        當其生命值低於‖color:gui.green‖50%‖end‖時，遠程彈幕（非炮塔）攻擊有‖color:gui.green‖20%‖end‖概率對其造成額外‖color:gui.yellow‖眩暈、燒傷和星之光‖end‖，近戰武器概率則為‖color:gui.green‖40%‖end‖
         \n如果解鎖了妖精職業的天賦‖color:gui.red‖“妖精聯盟”‖end‖，任何攻擊都有‖color:gui.green‖10%‖end‖概率附加‖color:gui.yellow‖星之光‖end‖效果。
         攻擊帶有‖color:gui.yellow‖星之光‖end‖的敵人將造成額外‖color:gui.green‖5%‖end‖傷害，擊殺帶有星之光的敵人將恢復自身的‖color:gui.yellow‖物理傷害、燒傷和出血‖end‖。
         ‖color:gui.yellow‖星之光‖end‖：減少生物的物理傷害抗性、攻擊傷害、移動速度和技能水平。
@@ -818,8 +825,9 @@
     <entitydescription.Kokoro_Mask02>一面似笑非笑狐狸面具，包含相當豐富的感情</entitydescription.Kokoro_Mask02>
     <talentname.KokoroTalent>表情豐富的撲克臉</talentname.KokoroTalent>
     <talentdescription.KokoroTalent>當你身著秦心 裝束+時，
-        所有技能減少‖color:gui.red‖10‖end‖，減少‖color:gui.red‖10%‖end‖‖color:gui.orange‖移動速度、攻擊傷害、物理傷害抗性和最大生命值‖end‖
+        所有技能減少‖color:gui.red‖10‖end‖，減少‖color:gui.red‖10%‖end‖‖color:gui.orange‖移動速度、攻擊傷害、物理傷害抗性和最大生命值‖end‖。
 
+        遠程彈幕傷害增加‖color:gui.green‖10%‖end‖
         抓取最大生命值足夠高的非機械生物後，有概率學習新的感情，每個生物只能學習一次，最多學習66次。
         一分鐘一次，可以消耗一次感情，切換四種主要感情（主要情感持續一巡迴）：
         喜：增加‖color:gui.green‖15%‖end‖‖color:gui.orange‖移動速度‖end‖和‖color:gui.orange‖攻擊速度‖end‖
@@ -911,7 +919,7 @@
 
         造成傷害時，或被傷害時，有概率給予其‖color:gui.yellow‖“心靈刺探”‖end‖一段時間。受到此類敵人造成的傷害減少‖color:gui.green‖15%‖end‖
 
-        主動開啟心靈讀取時，所有攻擊都會附加‖color:gui.yellow‖長眠不醒的噩夢‖end‖。心靈讀取每‖color:gui.green‖3‖end‖分鐘可以使用1次
+        主動開啟心靈讀取時，所有攻擊都會附加‖color:gui.yellow‖長眠不醒的噩夢‖end‖。心靈讀取每‖color:gui.green‖2‖end‖分鐘可以使用1次
         此時擊殺任意生物後，將會獲得對應生物或與之相關的回憶的能力
 
         人類的恐懼記憶：增加‖color:gui.green‖20%‖end‖‖color:gui.orange‖技能水平‖end‖
@@ -956,8 +964,8 @@
         ‖color:gui.orange‖使用藥物的效果‖end‖增加‖color:gui.green‖10%‖end‖
         ‖color:gui.orange‖減益效果持續時間‖end‖減少‖color:gui.green‖15%‖end‖
         打開沉船、前哨站、遺蹟的容器時，有概率找到‖color:gui.orange‖兔子儲物袋‖end‖，允許打開獲得特別的物品
-        攻擊時，有概率給自己觸發隨機的‖color:gui.orange‖幸運眷顧效果‖end‖。這個效果有‖color:gui.green‖15‖end‖秒冷卻。
-        使用魔法植物藥物時，有概率給自己觸發隨機的‖color:gui.orange‖幸運庇護效果‖end‖。這個效果有‖color:gui.green‖3‖end‖分鐘冷卻
+        攻擊時，有概率給自己觸發隨機的‖color:gui.orange‖幸運眷顧效果‖end‖。這個效果有‖color:gui.green‖12‖end‖秒冷卻。
+        使用魔法植物藥物時，有概率給自己觸發隨機的‖color:gui.orange‖幸運庇護效果‖end‖。這個效果有‖color:gui.green‖2‖end‖分鐘冷卻
     </talentdescription.TewiTalent>
     <afflictionname.Touhou_Tewi_Character_Effect>地上兔</afflictionname.Touhou_Tewi_Character_Effect>
     <afflictiondescription.Touhou_Tewi_Character_Effect>她有著一頭黏糊糊、沒有光澤的黑色短髮。頭上垂著一雙毛絨絨的兔耳。</afflictiondescription.Touhou_Tewi_Character_Effect>

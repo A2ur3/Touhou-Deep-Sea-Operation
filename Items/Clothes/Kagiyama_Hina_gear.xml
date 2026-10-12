@@ -164,7 +164,10 @@
                     <StatusEffect type="OnUse" target="Character" disabledeltatime="true">
                         <Conditional Touhou_Misfortune_Curse="gte 100"/>
                         <Affliction identifier="Touhou_Misfortune_Curse_Release" strength="100"/>
-                        <ReduceAffliction type="Touhou_Misfortune_Curse" amount="200"/>
+                        <!-- 厄运缠身的清除与「释放」的实际结算都交给
+                             Lua/Scripts/Server/Talents/Kagiyama_Hina_Misfortune_Release.lua：
+                             脚本要按释放瞬间的厄运强度结算，所以这里不能再提前把厄运清零。
+                             （旧写法：<ReduceAffliction type="Touhou_Misfortune_Curse" amount="200"/>） -->
                     </StatusEffect>
                 </Button>
             </CustomInterface>

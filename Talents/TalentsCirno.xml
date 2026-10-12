@@ -28,7 +28,6 @@
         <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Cirno_Character_Effect"/>
-                <AbilityConditionHasTalent identifier="Touhou_Yousei_Alliance"/>
                 <AbilityConditionIsAiming weapontype="ranged,Melee"/>
             </Conditions>
             <Abilities>
@@ -38,6 +37,7 @@
         <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Cirno_Character_Effect"/>
+                <AbilityConditionHasTalent identifier="Touhou_Yousei_Alliance"/>
                 <AbilityConditionIsAiming weapontype="ranged,Melee"/>
             </Conditions>
             <Abilities>
@@ -69,7 +69,7 @@
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="Touhou_Freeze" strength="1.0"/>
+                <CharacterAbilityHitAffliction affliction="Touhou_Freeze" strength="8.0"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -83,7 +83,7 @@
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="Touhou_Freeze" strength="0.5"/>
+                <CharacterAbilityHitAffliction affliction="Touhou_Freeze" strength="4"/>
             </Abilities>
         </AbilityGroupEffect>
         <!--        <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -125,7 +125,7 @@
                 <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="Touhou_Freeze" strength="1.5"/>
+                <CharacterAbilityHitAffliction affliction="Touhou_Freeze" strength="7.5"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -136,7 +136,7 @@
                 <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="Touhou_Freeze" strength="0.75"/>
+                <CharacterAbilityHitAffliction affliction="Touhou_Freeze" strength="3.75"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -146,7 +146,7 @@
                 <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="Touhou_Freeze" strength="1.5"/>
+                <CharacterAbilityHitAffliction affliction="Touhou_Freeze" strength="7.5"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -157,7 +157,7 @@
                 <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="Touhou_Freeze" strength="0.75"/>
+                <CharacterAbilityHitAffliction affliction="Touhou_Freeze" strength="3.75"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -167,7 +167,7 @@
                 <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="Touhou_Freeze" strength="3"/>
+                <CharacterAbilityHitAffliction affliction="Touhou_Freeze" strength="15"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -178,7 +178,7 @@
                 <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="Touhou_Freeze" strength="1.5"/>
+                <CharacterAbilityHitAffliction affliction="Touhou_Freeze" strength="7.5"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -188,7 +188,7 @@
                 <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="Touhou_Freeze" strength="3"/>
+                <CharacterAbilityHitAffliction affliction="Touhou_Freeze" strength="15"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -199,7 +199,7 @@
                 <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="Touhou_Freeze" strength="1.5"/>
+                <CharacterAbilityHitAffliction affliction="Touhou_Freeze" strength="7.5"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -209,7 +209,7 @@
                 <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="Touhou_Freeze" strength="4.5"/>
+                <CharacterAbilityHitAffliction affliction="Touhou_Freeze" strength="22.5"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -220,7 +220,7 @@
                 <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="Touhou_Freeze" strength="2.25"/>
+                <CharacterAbilityHitAffliction affliction="Touhou_Freeze" strength="11.25"/>
             </Abilities>
         </AbilityGroupEffect>
     </Talent>

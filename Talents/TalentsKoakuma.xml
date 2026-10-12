@@ -13,6 +13,18 @@
             </Abilities>
         </AbilityGroupEffect>
 
+        <!--水中 −15% 移动速度（描述里一直写了）。走天赋的 ModifyStat：VerifyState 只在条件状态变化时结算，
+            比在角色效果的 affliction 里挂每秒重放的 StatusEffect 更省（而且不会在客户端空跑）-->
+        <AbilityGroupInterval interval="1.0">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Koakuma_Character_Effect"/>
+                <AbilityConditionInWater/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStat stattype="MovementSpeed" value="-0.15"/>
+            </Abilities>
+        </AbilityGroupInterval>
+
         <AbilityGroupInterval interval="2.0">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Koakuma_Character_Effect"/>

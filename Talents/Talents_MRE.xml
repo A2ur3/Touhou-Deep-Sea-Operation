@@ -532,9 +532,10 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupEffect>
+
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Patchouli_Character_Effect"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Momizi_Character_Effect"/>
                 <AbilityConditionHasAffliction afflictionidentifier="MRE_Effect_Momizi"/>
             </Conditions>
             <Abilities>
@@ -543,7 +544,7 @@
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Patchouli_Character_Effect"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Momizi_Character_Effect"/>
                 <AbilityConditionHasAffliction afflictionidentifier="MRE_Effect_Momizi"/>
                 <AbilityConditionAboveVitality invert="true" vitalitypercentage="0.5"/>
             </Conditions>
@@ -922,7 +923,7 @@
         <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Sunny_Character_Effect"/>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yousei_Alliance_Effect02"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yousei_Alliance_Effect03"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAffliction afflictionidentifiers="stun" addedmultiplier="0.05"/>
@@ -940,7 +941,7 @@
         <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Sunny_Character_Effect"/>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yousei_Alliance_Effect02"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yousei_Alliance_Effect03"/>
                 <AbilityConditionServerRandom randomchance="0.05"/>
             </Conditions>
             <Abilities>
@@ -959,7 +960,7 @@
         <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Sunny_Character_Effect"/>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yousei_Alliance_Effect02"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yousei_Alliance_Effect03"/>
                 <AbilityConditionServerRandom randomchance="0.05"/>
             </Conditions>
             <Abilities>
@@ -974,18 +975,18 @@
                 <AbilityConditionServerRandom randomchance="0.05"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="stun" strength="0.1"/>
+                <CharacterAbilityHitAffliction affliction="stun" strength="0.1"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Sunny_Character_Effect"/>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yousei_Alliance_Effect02"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yousei_Alliance_Effect03"/>
                 <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
                 <AbilityConditionServerRandom randomchance="0.05"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="stun" strength="0.05"/>
+                <CharacterAbilityHitAffliction affliction="stun" strength="0.05"/>
                 <CharacterAbilityGiveAffliction affliction="Light_Of_The_Moon_Effect" strength="100"/>
             </Abilities>
         </AbilityGroupEffect>
@@ -996,18 +997,18 @@
                 <AbilityConditionServerRandom randomchance="0.3"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="stun" strength="0.1"/>
+                <CharacterAbilityHitAffliction affliction="stun" strength="0.1"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Sunny_Character_Effect"/>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yousei_Alliance_Effect02"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yousei_Alliance_Effect03"/>
                 <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
                 <AbilityConditionServerRandom randomchance="0.3"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="stun" strength="0.05"/>
+                <CharacterAbilityHitAffliction affliction="stun" strength="0.05"/>
                 <CharacterAbilityGiveAffliction affliction="Light_Of_The_Moon_Effect" strength="100"/>
             </Abilities>
         </AbilityGroupEffect>
@@ -1035,8 +1036,8 @@
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="stun" strength="0.05"/>
-                <CharacterAbilityGiveAffliction affliction="burn" strength="0.4"/>
+                <CharacterAbilityHitAffliction affliction="stun" strength="0.05"/>
+                <CharacterAbilityHitAffliction affliction="burn" strength="1.2"/>
                 <CharacterAbilityGiveAffliction affliction="Light_Of_The_Star_Effect" strength="1"/>
             </Abilities>
         </AbilityGroupEffect>
@@ -1054,8 +1055,8 @@
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="stun" strength="0.025"/>
-                <CharacterAbilityGiveAffliction affliction="burn" strength="0.2"/>
+                <CharacterAbilityHitAffliction affliction="stun" strength="0.025"/>
+                <CharacterAbilityHitAffliction affliction="burn" strength="0.6"/>
                 <CharacterAbilityGiveAffliction affliction="Light_Of_The_Star_Effect" strength="1"/>
             </Abilities>
         </AbilityGroupEffect>
@@ -1073,8 +1074,8 @@
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="stun" strength="0.1"/>
-                <CharacterAbilityGiveAffliction affliction="burn" strength="0.8"/>
+                <CharacterAbilityHitAffliction affliction="stun" strength="0.1"/>
+                <CharacterAbilityHitAffliction affliction="burn" strength="2.4"/>
                 <CharacterAbilityGiveAffliction affliction="Light_Of_The_Star_Effect" strength="1"/>
             </Abilities>
         </AbilityGroupEffect>
@@ -1092,8 +1093,8 @@
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="stun" strength="0.05"/>
-                <CharacterAbilityGiveAffliction affliction="burn" strength="0.4"/>
+                <CharacterAbilityHitAffliction affliction="stun" strength="0.05"/>
+                <CharacterAbilityHitAffliction affliction="burn" strength="1.2"/>
                 <CharacterAbilityGiveAffliction affliction="Light_Of_The_Star_Effect" strength="1"/>
             </Abilities>
         </AbilityGroupEffect>
@@ -1785,6 +1786,7 @@
             </Abilities>
         </AbilityGroupInterval>
 
+        <!--出血效应抽奖已由 Lua 接管（Tewi_Lucky_Talent.lua：每 60 秒 33.4%），原样留档：
         <AbilityGroupInterval interval="60.0">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Tewi_Character_Effect"/>
@@ -1799,6 +1801,7 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupInterval>
+        -->
     </Talent>
 
 
@@ -1885,6 +1888,12 @@
             </Abilities>
         </AbilityGroupInterval>
 
+        <!--免秒杀：单次命中/爆炸不能把幽幽子从 >0 血直接打死（至少留 1 点），带 60 秒隐藏冷却。
+            由 CSharp/Shared/InstantDeathGuard.cs 实装：命中窗口内临时挂 CanNotDieToAfflictions 当保险，
+            引擎挡下致死判定后，再把致死的 affliction 削到留 1 点、摘掉 flag 并进入冷却。
+            持续伤害（流血/烧伤走每秒结算、不经过 ApplyDamage）不受保护，仍可致死。
+            原实现是 <CharacterAbilityModifyFlag flagtype="CanNotDieToAfflictions"/> + AboveVitality>0（每 9.9 秒刷新），
+            效果是「致死被挡下、最长延迟 9.9 秒死亡」，与描述的「不会被秒杀」语义不同，故替换。原样留档：
         <AbilityGroupInterval Interval="9.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yuyuko_Character_Effect"/>
@@ -1892,6 +1901,15 @@
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyFlag flagtype="CanNotDieToAfflictions"/>
+            </Abilities>
+        </AbilityGroupInterval>
+        -->
+        <AbilityGroupInterval Interval="1.0">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yuyuko_Character_Effect"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityPreventInstantDeath cooldown="60" minvitality="1"/>
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -1904,7 +1922,7 @@
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="Touhou_MRE_Yuyuko_Effect_Debuff" strength="0.5"/>
+                <CharacterAbilityHitAffliction affliction="Touhou_MRE_Yuyuko_Effect_Debuff" strength="0.5"/>
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
@@ -1964,13 +1982,7 @@
                 <AbilityConditionCharacter targettype="Enemy"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityApplyStatusEffects>
-                    <StatusEffects>
-                        <StatusEffect type="OnAbility" target="UseTarget" targetlimb="Torso" delay="0.1" disabledeltatime="true" stackable="false">
-                            <Affliction identifier="lacerations" strength="2.5"/>
-                        </StatusEffect>
-                    </StatusEffects>
-                </CharacterAbilityApplyStatusEffects>
+                <CharacterAbilityHitAffliction affliction="lacerations" strength="10.5"/>
             </Abilities>
         </AbilityGroupEffect>
 
@@ -2155,7 +2167,7 @@
             <Abilities>
                 <CharacterAbilityModifyResistance resistanceid="stun" multiplier="0.5"/>
                 <CharacterAbilityModifyStat stattype="RangedAttackMultiplier" value="0.15"/>
-                <CharacterAbilityModifyStat stattype="MeleedAttackMultiplier" value="0.15"/>
+                <CharacterAbilityModifyStat stattype="MeleeAttackMultiplier" value="0.15"/>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect target="Character" Interval="1.0" disabledeltatime="true">

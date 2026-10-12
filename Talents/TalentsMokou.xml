@@ -11,6 +11,8 @@
                 <CharacterAbilityModifyResistance resistanceid="Phoenix_Burn" multiplier="0.5"/>
             </Abilities>
         </AbilityGroupInterval>
+        <!--全队共享一次的复活已改由 Lua 接管（Lua/Scripts/Server/Talents/Mokou_Shared_Resurrection.lua）
+
         <AbilityGroupEffect abilityeffecttype="None">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="No_Effects10"/>
@@ -19,21 +21,6 @@
                 <CharacterAbilityGiveResistance resistanceid="Resurrection" multiplier="0"/>
             </Abilities>
         </AbilityGroupEffect>
-
-        <AbilityGroupInterval interval="60">
-            <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Mokou_Character_Effect"/>
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityApplyStatusEffects>
-                    <StatusEffects>
-                        <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true">
-                            <Affliction identifier="Mokou_Not_Die" strength="60"/>
-                        </StatusEffect>
-                    </StatusEffects>
-                </CharacterAbilityApplyStatusEffects>
-            </Abilities>
-        </AbilityGroupInterval>
 
         <AbilityGroupInterval maxtriggercount="1">
             <Conditions>
@@ -59,7 +46,23 @@
                 <CharacterAbilityGivePermanentStat statidentifier="Mokou_Resurrection" value="1"/>
             </Abilities>
         </AbilityGroupInterval>
+        -->
+        <AbilityGroupInterval interval="60">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Mokou_Character_Effect"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Mokou_Not_Die" strength="60"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
 
+        <!--「本巡回的共享复活是否已用掉」读 Mokou_Resurrection 永久统计（由 Lua 写）-->
         <AbilityGroupInterval Interval="4.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Mokou_Character_Effect"/>
@@ -74,7 +77,7 @@
         <AbilityGroupInterval Interval="4.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Mokou_Character_Effect"/>
-                <AbilityConditionHasPermanentStat statidentifier="Mokou_Resurrection" min="1" />
+                <AbilityConditionHasPermanentStat statidentifier="Mokou_Resurrection" min="1"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyStat stattype="RangedAttackMultiplier" value="-0.1"/>

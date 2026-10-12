@@ -151,7 +151,7 @@
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.85"/>
             <SkillModifier skillidentifier="mechanical" skillvalue="-30"/>
             <SkillModifier skillidentifier="electrical" skillvalue="-30"/>
-            <SkillModifier skillidentifier="weapons" skillvalue="-30"/>
+            <SkillModifier skillidentifier="weapons" skillvalue="-60"/>
 
             <StatusEffect type="OnWearing" target="Character" interval="5">
                 <GiveTalentInfo giverandom="false" talentidentifiers="KaguyaTalent"/>

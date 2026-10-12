@@ -54,15 +54,15 @@
                 <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged,Melee"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityApplyStatusEffects>
+                <CharacterAbilityHitAffliction>
                     <StatusEffects>
-                        <StatusEffect type="OnAbility" target="Character" targetlimb="Torso" delay="0.1" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                        <StatusEffect type="OnAbility" target="Limb" delay="0.1" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
                             <Conditional TeamID="None"/>
                             <Conditional TeamID="Team2"/>
                             <Affliction identifier="Jyoon_Wealth_Tier_3000_Debuff" amount="0.5"/>
                         </StatusEffect>
                     </StatusEffects>
-                </CharacterAbilityApplyStatusEffects>
+                </CharacterAbilityHitAffliction>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupInterval Interval="5.0">

@@ -52,6 +52,8 @@
     <talentname.YoumuTalent>Life &amp; Death Half &amp; Half</talentname.YoumuTalent>
     <talentdescription.YoumuTalent>When wearing ‖color:gui.orange‖Youmu Outfit+‖end‖:
         The lower your health, the lower the damage you deal, maximum reduction of ‖color:gui.red‖25%‖end‖.
+        Reduce ‖color:gui.yellow‖Burn Resistance‖end‖ by ‖color:gui.red‖15%‖end‖.
+
         Increase ‖color:gui.orange‖Melee Damage‖end‖ by ‖color:gui.green‖30%‖end‖.
         Increase ‖color:gui.orange‖Walking Speed‖end‖ by ‖color:gui.green‖15%‖end‖.
         Based on your Weapons skill, increase ‖color:gui.orange‖Ranged Attack Speed And Damage‖end‖ by an amount equal to ‖color:gui.green‖5%‖end‖ of that value.
@@ -170,12 +172,15 @@
         \n‖color:gui.red‖Reading “Perfect Memento in Strict Sense” or “The Gensokyo Chronicles” has no effect.‖end‖
         Combine “Perfect Memento in Strict Sense”, “The Gensokyo Chronicles”, and “Bunbunmaru Newspaper” at the Fabricator to craft ‖color:gui.red‖“Deep Gensokyo Knowledge”‖end‖ to gain the full bonus.
 
+        Completing all missions in a total of ‖color:gui.green‖3‖end‖ campaign runs grants +‖color:gui.green‖50%‖end‖ skill gain speed
         After completing all missions in a total of ‖color:gui.green‖9‖end‖ campaign runs:
         Completing ‖color:gui.orange‖any mission‖end‖ grants ‖color:gui.orange‖“Perfect Memento in Strict Sense” (Europa exclusive)‖end‖.
         Completing ‖color:gui.orange‖any mission with no deaths‖end‖ grants ‖color:gui.orange‖“The Gensokyo Chronicles” (Europa exclusive)‖end‖.
-        +‖color:gui.green‖80%‖end‖ skill gain speed
+        +‖color:gui.green‖100%‖end‖ skill gain speed
         +‖color:gui.green‖15%‖end‖ medical item effectiveness
         +‖color:gui.green‖20%‖end‖ projectile damage vs. non-human enemies
+        After a total of ‖color:gui.green‖15‖end‖ campaign runs, completing all missions additionally grants one ‖color:gui.orange‖“Gensokyo Lore of Europa”‖end‖
+        After a total of ‖color:gui.green‖21‖end‖ campaign runs, debuff duration is reduced by ‖color:gui.green‖10%‖end‖
         After a total of ‖color:gui.green‖33‖end‖ campaign runs, the original movement speed and Max HP penalties are removed, +‖color:gui.green‖30%‖end‖ ‖color:gui.orange‖skill levels‖end‖.
         When the count is not full, it will be cleared upon death.
     </talentdescription.AkyuuTalent>
@@ -290,8 +295,10 @@
         She loves flowers that bloom seasonally and lives surrounded by natural flowers year-round, striving to have blossoms in every season.‖color:end‖\n(Built-in scanner slot)</entitydescription.Yuka_Plus>
     <talentname.YukaTalent>Lord of the Four Seasons' Flowers</talentname.YukaTalent>
     <talentdescription.YukaTalent>When you are wearing Yuuka Outfit+,
-        resistance to poison and bleeding is increased
         damage dealt to nonhuman creatures is reduced by ‖color:gui.red‖10%‖end‖
+        Reduce ‖color:gui.red‖10%‖end‖ ‖color:gui.orange‖maximum health‖end‖
+
+        resistance to poison and bleeding is increased
         melee attack damage is increased by ‖color:gui.green‖30%‖end‖
         Each round has a ‖color:gui.green‖50%‖end‖ chance to obtain a Sunflower Seed. The sunflower randomly drops different petals; each petal, when used, grants a different bonus:
         Sharp Petal: increases ‖color:gui.green‖10%‖end‖ ranged damage and reduces ‖color:gui.green‖10%‖end‖ damage taken
@@ -444,7 +451,7 @@
         Deals an extra ‖color:gui.green‖30%‖end‖ freeze damage.
         Skill acquisition speed ‖color:gui.red‖−50%‖end‖.
         When in water, gain ‖color:gui.green‖20%‖end‖ ‖color:gui.orange‖attack speed‖end‖ and ‖color:gui.green‖20%‖end‖ ‖color:gui.orange‖movement speed‖end‖, while gradually healing some wounds.
-        \nWhen using magic melee weapons, each attack inflicts ‖color:gui.green‖4–8‖end‖ points of ‖color:gui.orange‖Freeze‖end‖, scaling with weapon crafting difficulty.
+        \nWhen using magic melee weapons, each attack inflicts ‖color:gui.green‖7.5–22.5‖end‖ points of ‖color:gui.orange‖Freeze‖end‖, scaling with weapon crafting difficulty.
         \nRanged barrages (non-turret) against enemies over half health have a ‖color:gui.green‖35%‖end‖ chance to apply minor ‖color:gui.orange‖Freeze‖end‖.
     </talentdescription.CirnoTalent>
     <afflictionname.Touhou_Cirno_Character_Effect>Sharp Ice Fairy</afflictionname.Touhou_Cirno_Character_Effect>
@@ -578,8 +585,8 @@
         Harder for enemies to notice you.
         \n‖color:gui.yellow‖Burn‖end‖ damage dealt +‖color:gui.green‖10%‖end‖.
         \nReduce ‖color:gui.red‖10%‖end‖ ‖color:gui.orange‖max health‖end‖.
-        \nMagic weapon ranged attacks have a ‖color:gui.green‖5%‖end‖ chance to inflict extra ‖color:gui.yellow‖burn‖end‖. If the Fairy-class talent ‖color:gui.red‖“Fairy Alliance”‖end‖ is unlocked, also inflicts Sunlight effect.
-        Melee attacks have a ‖color:gui.green‖30%‖end‖ chance to inflict extra ‖color:gui.yellow‖burn‖end‖. If “Fairy Alliance” is unlocked, also inflicts Sunlight effect.
+        \nMagic weapon ranged attacks have a ‖color:gui.green‖30%‖end‖ chance to inflict extra ‖color:gui.yellow‖burn‖end‖. If the Fairy-class talent ‖color:gui.red‖“Fairy Alliance”‖end‖ is unlocked, also inflicts Sunlight effect.
+        Melee attacks have a ‖color:gui.green‖60%‖end‖ chance to inflict extra ‖color:gui.yellow‖burn‖end‖. If “Fairy Alliance” is unlocked, also inflicts Sunlight effect.
         ‖color:gui.yellow‖Sunlight‖end‖: reduces enemies' attack damage and briefly removes their target from sight.
     </talentdescription.SunnyTalent>
     <afflictionname.Touhou_Sunny_Character_Effect>Shining Sunlight</afflictionname.Touhou_Sunny_Character_Effect>
@@ -619,7 +626,7 @@
         \nYou can sense the location of living creatures around you.
         After a long time without taking damage, increase ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖maximum health‖end‖, reduce damage taken by ‖color:gui.green‖20%‖end‖, and significantly increase health recovery speed.
         \nEnemies who have dealt damage to you:
-        When their health is below ‖color:gui.green‖50%‖end‖, ranged barrages (non-turrets) have a ‖color:gui.green‖5%‖end‖ chance to cause additional ‖color:gui.yellow‖stun, burn, and Starlight‖end‖. The probability for melee weapons is ‖color:gui.green‖30%‖end‖.
+        When their health is below ‖color:gui.green‖50%‖end‖, ranged barrages (non-turrets) have a ‖color:gui.green‖20%‖end‖ chance to cause additional ‖color:gui.yellow‖stun, burn, and Starlight‖end‖. The probability for melee weapons is ‖color:gui.green‖40%‖end‖.
         \nIf the fairy class talent ‖color:gui.red‖"Fairy Alliance"‖end‖ is unlocked, any attack has a ‖color:gui.green‖10%‖end‖ chance to apply the ‖color:gui.yellow‖Starlight‖end‖ effect.
         Attacking enemies with ‖color:gui.yellow‖Starlight‖end‖ deals an additional ‖color:gui.green‖5%‖end‖ damage, and killing enemies with Starlight will restore your ‖color:gui.yellow‖physical damage, burn, and bleed‖end‖.
         ‖color:gui.yellow‖Starlight‖end‖: Reduces creatures' physical damage resistance, attack damage, movement speed, and skill level.
@@ -850,6 +857,8 @@
     <talentname.KokoroTalent>Expressive Poker Face</talentname.KokoroTalent>
     <talentdescription.KokoroTalent>While wearing Kokoro's Outfit+:
         All skills −‖color:gui.red‖10‖end‖; reduce ‖color:gui.red‖10%‖end‖ ‖color:gui.orange‖movement speed, attack damage, physical resistance, and max health‖end‖.
+
+        +‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖danmaku damage‖end‖.
         Grabbing high-max-health non-mechanical creatures may let you learn new emotions (each creature once, up to 66 total).
         Once per minute, you can spend one learned emotion to switch to one of four main emotions for the rest of the mission:
         Joy: +‖color:gui.green‖15%‖end‖ movement speed and attack speed.
@@ -944,7 +953,7 @@
         Damage taken from enemies affected by this effect is reduced by ‖color:gui.green‖15%‖end‖.
 
         When Mind Reading is actively activated, all attacks inflict ‖color:gui.yellow‖Endless Nightmare‖end‖.
-        Mind Reading can be used once every ‖color:gui.green‖3‖end‖ minutes.
+        Mind Reading can be used once every ‖color:gui.green‖2‖end‖ minutes.
         During this state, killing any creature grants abilities derived from that creature or memories associated with it.
 
         Fear Memory of Humans: +‖color:gui.green‖20%‖end‖ ‖color:gui.orange‖skill levels‖end‖
@@ -1001,12 +1010,12 @@
 
         When attacking, has a chance to trigger a random
         ‖color:gui.orange‖Lucky Favor‖end‖ effect on yourself.
-        This effect has a ‖color:gui.green‖15‖end‖ second cooldown.
+        This effect has a ‖color:gui.green‖12‖end‖ second cooldown.
 
         When using magical plant-based medicine,
         has a chance to trigger a random
         ‖color:gui.orange‖Lucky Protection‖end‖ effect on yourself.
-        This effect has a ‖color:gui.green‖3‖end‖ minute cooldown.
+        This effect has a ‖color:gui.green‖2‖end‖ minute cooldown.
     </talentdescription.TewiTalent>
     <afflictionname.Touhou_Tewi_Character_Effect>Ground Rabbit</afflictionname.Touhou_Tewi_Character_Effect>
     <afflictiondescription.Touhou_Tewi_Character_Effect>She has sticky, dull black short hair, with a pair of fluffy rabbit ears drooping from her head.</afflictiondescription.Touhou_Tewi_Character_Effect>

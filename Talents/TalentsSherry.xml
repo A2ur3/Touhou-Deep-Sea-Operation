@@ -105,7 +105,7 @@
         <AbilityGroupEffect abilityeffecttype="OnAttacked">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Sherry_Character_Effect"/>
-                <AbilityConditionHasAffliction afflictionidentifier="SherryTalent_Witch_Transformation_End" />
+                <AbilityConditionHasAffliction afflictionidentifier="SherryTalent_Witch_Transformation_End" minimumPercentage="0.99" />
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="2.0"/>

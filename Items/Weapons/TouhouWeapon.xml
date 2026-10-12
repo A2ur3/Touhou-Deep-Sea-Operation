@@ -1920,7 +1920,8 @@
                 <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0"/>
             </LightComponent>
             <Attack targetimpulse="5" severlimbsprobability="0.1" itemdamage="85" structuresoundtype="StructureSlash" penetration="0.4">
-                <Affliction identifier="lacerations" strength="20"/>
+                <Affliction identifier="lacerations" strength="26"/>
+                <Affliction identifier="explosiondamage" strength="5"/>
                 <Affliction identifier="burn" strength="5"/>
                 <Affliction identifier="burn" strength="5" probability="0.4"/>
                 <Affliction identifier="stun" strength="0.3"/>
@@ -1934,7 +1935,6 @@
                 <Affliction identifier="Touhou_Lost_Dream" strength="10" probability="0.5"/>
             </StatusEffect>
             <StatusEffect type="OnUse" target="Limb">
-                <Affliction identifier="explosiondamage" strength="5" penetration="0.2"/>
                 <Affliction identifier="burn" strength="5" penetration="0.2"/>
             </StatusEffect>
             <StatusEffect type="OnUse" target="UseTarget">
@@ -1962,7 +1962,7 @@
         </MeleeWeapon>
         <aitarget sightrange="1000" soundrange="500" fadeouttime="2"/>
         <Quality>
-            <QualityStat stattype="StrikingPowerMultiplier" value="0.16"/>
+            <QualityStat stattype="StrikingPowerMultiplier" value="0.12"/>
         </Quality>
         <SkillRequirementHint identifier="weapons" level="100"/>
     </Item>
@@ -6406,7 +6406,7 @@
 
     <!--灿烂匕首-->
     <Item name="灿烂匕首" identifier="Touhou_Brilliant_Star_Dagger" subcategory="Touhou" category="Weapon"
-          Tags="smallitem,weapon,Touhou_Weapon_Level04,Touhou_Cam_Offset_Low" cargocontaineridentifier="metalcrate" scale="0.75"
+          Tags="smallitem,weapon,Touhou_Weapon_Level04,Touhou_Cam_Offset_Low" cargocontaineridentifier="metalcrate" scale="0.28"
           impactsoundtag="impact_metal_light" RequireAimToUse="True">
         <PreferredContainer primary="armcab"/>
         <Price baseprice="8000" sold="false">
@@ -6432,10 +6432,10 @@
             <RequiredItem identifier="physicorium" amount="2"/>
             <RequiredItem identifier="Power_Point"/>
         </Fabricate>
-        <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Three_Fairies_Weapon.png" sourcerect="1,84,78,42" origin="0.5,0.5"/>
-        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Three_Fairies_Weapon.png" sourcerect="82,85,111,41" depth="0.55" origin="0.5,0.5"/>
-        <Body width="111" height="41" density="10"/>
-        <MeleeWeapon slots="Any,LeftHand+RightHand" aimpos="35,10" handle1="-18,1" holdangle="20" aimangle="30" reload="0.85" range="111"
+        <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Brilliant_Star_Dagger.png" sourcerect="0,150,170,112" origin="0.5,0.5"/>
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Brilliant_Star_Dagger.png" sourcerect="0,0,400,142" depth="0.55" origin="0.5,0.5"/>
+        <Body width="400" height="120" density="10"/>
+        <MeleeWeapon slots="Any,LeftHand+RightHand" aimpos="35,10" handle1="-35,1" holdangle="20" aimangle="30" reload="0.85" range="400"
                      combatPriority="50" allowhitmultiple="true" msg="ItemMsgPickUpSelect">
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.85" setvalue="true"/>
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.75" setvalue="true"/>
@@ -6459,6 +6459,8 @@
                 <Conditional increasedmeleedamage_temporary="gt 0"/>
                 <Affliction identifier="Touhou_Decreased_Meleedamage_Effect02" strength="100"/>
             </StatusEffect>
+
+            <StatusEffect type="OnActive" target="This" scale="0.28" setvalue="true" Interval="0.5"/>
 
             <Attack targetimpulse="6" severlimbsprobability="0.4" itemdamage="75" structuresoundtype="StructureSlash" penetration="0.2">
                 <Affliction identifier="lacerations" strength="18"/>
@@ -17085,7 +17087,7 @@
             <ParticleEmitter particle="GlowDot" scalemin="0.6" scalemax="0.6" particleamount="10" anglemin="0" anglemax="360" velocitymin="0"
                              velocitymax="0" colormultiplier="100,100,255,255"/>
             <StatusEffect type="OnUse" target="This" forceplaysounds="true">
-                <sound file="%ModDir%/Sounds/Weapons/Touhou_Sun_Dart_Phase_Gun_Attack.ogg" volume="3.0" range="3000" type="OnUse" selectionmode="random"/>
+                <sound file="%ModDir%/Sounds/Weapons/Touhou_Sun_Dart_Phase_Gun_Attack.ogg" volume="1.5" range="3000" type="OnUse" selectionmode="random"/>
             </StatusEffect>
             <StatusEffect type="OnUse" target="This">
                 <Explosion range="200.0" force="0.8" shockwave="false" smoke="false" flash="false" sparks="false" flames="false"
@@ -17408,7 +17410,7 @@
             <ParticleEmitter particle="GlowDot" scalemin="0.6" scalemax="0.6" particleamount="10" anglemin="0" anglemax="360" velocitymin="0"
                              velocitymax="0" colormultiplier="100,100,255,255"/>
             <StatusEffect type="OnUse" target="This" forceplaysounds="true">
-                <sound file="%ModDir%/Sounds/Weapons/Touhou_Sun_Dart_Phase_Gun_Attack.ogg" volume="3.0" range="3000" type="OnUse" selectionmode="random"/>
+                <sound file="%ModDir%/Sounds/Weapons/Touhou_Sun_Dart_Phase_Gun_Attack.ogg" volume="1.5" range="3000" type="OnUse" selectionmode="random"/>
             </StatusEffect>
             <StatusEffect type="OnUse" target="This">
                 <Explosion range="200.0" force="0.8" shockwave="false" smoke="false" flash="false" sparks="false" flames="false"
@@ -18419,9 +18421,11 @@
 
             <Attack targetimpulse="2" severlimbsprobability="0.6" itemdamage="70" structuresoundtype="StructureSlash" penetration="0.2">
                 <Affliction identifier="lacerations" strength="32"/>
-                <Affliction identifier="lacerations" strength="16" probability="0.05"/>
+                <Affliction identifier="lacerations" strength="16" probability="0.1"/>
+                <Affliction identifier="bitewounds" strength="8"/>
+                <Affliction identifier="bitewounds" strength="4" probability="0.1"/>
                 <Affliction identifier="explosiondamage" strength="3"/>
-                <Affliction identifier="explosiondamage" strength="3" probability="0.05"/>
+                <Affliction identifier="explosiondamage" strength="3" probability="0.1"/>
                 <Affliction identifier="Touhou_Lost_Dream" strength="4"/>
                 <Affliction identifier="Touhou_Lost_Dream" strength="2" probability="0.05"/>
                 <Affliction identifier="stun" strength="0.2"/>

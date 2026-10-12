@@ -268,8 +268,8 @@
                 <AbilityConditionAttackData tags="shotgunammo" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="burn" strength="0.35"/>
-                <CharacterAbilityGiveAffliction affliction="Touhou_Sparkfire_Shotgun_Effect" strength="0.05" multiplystrengthbyskill="Touhou_Magic"/>
+                <CharacterAbilityHitAffliction affliction="burn" strength="1.05"/>
+                <CharacterAbilityHitAffliction affliction="Touhou_Sparkfire_Shotgun_Effect" strength="0.15" multiplystrengthbyskill="Touhou_Magic"/>
             </Abilities>
         </AbilityGroupEffect>
 
@@ -410,7 +410,7 @@
                 <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="Touhou_Savior_Mod_Attack_Effect" strength="50.0"/>
+                <CharacterAbilityHitAffliction affliction="Touhou_Savior_Mod_Attack_Effect" strength="150.0"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -706,8 +706,8 @@
                 <AbilityConditionServerRandom randomchance="0.1"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="burn" strength="1"/>
-                <CharacterAbilityGiveAffliction affliction="burning" strength="20"/>
+                <CharacterAbilityHitAffliction affliction="burn" strength="3"/>
+                <CharacterAbilityHitAffliction affliction="burning" strength="60"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -717,7 +717,7 @@
                 <AbilityConditionServerRandom randomchance="0.1"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="stun" strength="0.1"/>
+                <CharacterAbilityHitAffliction affliction="stun" strength="0.1"/>
                 <CharacterAbilityGiveAffliction affliction="electricshock" strength="20"/>
             </Abilities>
         </AbilityGroupEffect>
@@ -750,7 +750,7 @@
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="burn" strength="0.5"/>
+                <CharacterAbilityHitAffliction affliction="burn" strength="1.5"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -819,7 +819,7 @@
                 <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="burn" strength="0.5"/>
+                <CharacterAbilityHitAffliction affliction="burn" strength="1.5"/>
                 <CharacterAbilityGiveAffliction affliction="electricshock" strength="30"/>
             </Abilities>
         </AbilityGroupEffect>
@@ -856,7 +856,7 @@
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="lacerations" strength="1"/>
+                <CharacterAbilityHitAffliction affliction="lacerations" strength="3"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnKillCharacter">
@@ -1351,7 +1351,7 @@
                 <AbilityConditionIsAiming weapontype="ranged"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="explosiondamage" strength="0.085"/>
+                <CharacterAbilityHitAffliction affliction="explosiondamage" strength="0.255"/>
                 <CharacterAbilityGiveAffliction affliction="electricshock" strength="5.0"/>
             </Abilities>
         </AbilityGroupEffect>

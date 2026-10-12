@@ -704,31 +704,26 @@
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.03"/>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
-                <AbilityConditionHasTalent identifier="Touhou_Yokai_Talents_Locked" invert="true"/>
-            </Conditions>
-            <Conditions>
                 <AbilityConditionAttackData weapontype="Turret" invert="true"/>
                 <AbilityConditionCharacter targettype="Enemy">
+                    <Conditional MaxHealth="gt 100"/>
                     <Conditional MaxHealth="lte 300"/>
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.03"/>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.07"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
-                <AbilityConditionHasTalent identifier="Touhou_Yokai_Talents_Locked" invert="true"/>
-            </Conditions>
-            <Conditions>
                 <AbilityConditionAttackData weapontype="Turret" invert="true"/>
                 <AbilityConditionCharacter targettype="Enemy">
-                    <Conditional MaxHealth="lte 600"/>
+                    <Conditional MaxHealth="gt 300"/>
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
@@ -832,6 +827,7 @@
     <Talent identifier="Touhou_Youling_Wangling04">
         <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Defense.png" sheetindex="0,0" sheetelementsize="400,400"/>
         <Description tag="talentdescription.Touhou_Youling_Wangling04"/>
+        <!--受击触发（原来每 30 秒判一次、buff 只 5 秒，覆盖率约 17%）：挨打时血量 <30% 就给自己挂上，然后进 30 秒 CD。旧写法留档：
         <AbilityGroupInterval interval="30">
             <Conditions>
                 <AbilityConditionAboveVitality vitalitypercentage="0.3" Invert="true"/>
@@ -846,6 +842,21 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupInterval>
+        -->
+        <AbilityGroupEffect abilityeffecttype="OnAttacked">
+            <Conditions>
+                <AbilityConditionAboveVitality invert="true" vitalitypercentage="0.3"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityHitAffliction cooldown="30">
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="This" multiplyafflictionsbymaxvitality="true" disabledeltatime="true">
+                            <Affliction identifier="Touhou_Youling_Wangling04_Effect" strength="10.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityHitAffliction>
+            </Abilities>
+        </AbilityGroupEffect>
         <AbilityGroupInterval interval="9.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Youmu_Character_Effect"/>
@@ -1421,7 +1432,7 @@
             </Abilities>
         </AbilityGroupInterval>
         <!--觉-->
-        <AbilityGroupEffect abilityeffecttype="OnAttacked">
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Satori_Character_Effect"/>
                 <AbilityConditionCharacter targettype="Enemy">
@@ -1769,7 +1780,7 @@
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Koakuma_Character_Effect"/>
                 <AbilityConditionCharacter targettype="Enemy">
-                    <Conditional Touhou_Elements_Marked="lte 0"/>
+                    <Conditional Touhou_Elements_Marked="gt 0"/>
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
@@ -1869,15 +1880,13 @@
         </AbilityGroupEffect>
         <!--荷取-->
         <AbilityGroupInterval interval="60">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Nitori_Character_Effect"/>
+            </Conditions>
             <Abilities>
                 <CharacterAbilityGiveItemStatToTags tags="reactor" stattype="ReactorFuelConsumption" value="0.8"/>
             </Abilities>
         </AbilityGroupInterval>
-        <AbilityGroupEffect abilityeffecttype="None">
-            <Abilities>
-                <CharacterAbilityGiveItemStatToTags tags="reactor" stattype="ReactorFuelConsumption" value="0.8"/>
-            </Abilities>
-        </AbilityGroupEffect>
         <AbilityGroupInterval interval="0.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Nitori_Character_Effect"/>
@@ -1906,16 +1915,7 @@
                 <CharacterAbilityGiveItemStatToTags tags="reactor" stattype="ReactorMaxOutput" value="1.1"/>
             </Abilities>
         </AbilityGroupInterval>
-        <AbilityGroupEffect abilityeffecttype="None">
-            <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Nitori_Character_Effect"/>
-                <AbilityConditionHasSkill skillidentifier="mechanical" minvalue="80"/>
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityGiveItemStatToTags tags="reactor" stattype="ReactorMaxOutput" value="1.1"/>
-            </Abilities>
-        </AbilityGroupEffect>
-        <AbilityGroupEffect abilityeffecttype="None">
+        <AbilityGroupInterval interval="60">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Nitori_Character_Effect"/>
                 <AbilityConditionHasSkill skillidentifier="mechanical" minvalue="80"/>
@@ -1923,7 +1923,7 @@
             <Abilities>
                 <CharacterAbilityGiveItemStatToTags tags="pump" stattype="PumpMaxFlow" value="1.1"/>
             </Abilities>
-        </AbilityGroupEffect>
+        </AbilityGroupInterval>
         <!--恋-->
         <AbilityGroupInterval interval="0.5">
             <Conditions>
@@ -2715,13 +2715,17 @@
                 <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityApplyStatusEffects>
-                    <StatusEffects>
-                        <StatusEffect type="OnAbility" target="UseTarget" targetlimb="Torso" delay="0.1" disabledeltatime="true" stackable="false">
-                            <Affliction identifier="bitewounds" strength="1.0"/>
-                        </StatusEffect>
-                    </StatusEffects>
-                </CharacterAbilityApplyStatusEffects>
+                <CharacterAbilityHitAffliction affliction="bitewounds" strength="5.0"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionCharacter targettype="Enemy">
+                    <Conditional HealthPercentage="lt 50.5"/>
+                </AbilityConditionCharacter>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1"/>
             </Abilities>
         </AbilityGroupEffect>
         <!--高丽野阿吽-->
@@ -2814,6 +2818,7 @@
                 <CharacterAbilityGiveStat stattype="ExtraLevelGain" value="0.5"/>
             </Abilities>
         </AbilityGroupEffect>
+        <!--队友光环改用 C# 的 CharacterAbilityProximityAura（与 TalentsAunn.xml 的守护神兽同一套）。
         <AbilityGroupInterval interval="4.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Aunn_Character_Effect"/>
@@ -2826,6 +2831,14 @@
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffectsToAllies>
+            </Abilities>
+        </AbilityGroupInterval>
+        -->
+        <AbilityGroupInterval interval="4.9">
+            <Abilities>
+                <CharacterAbilityProximityAura affliction="Touhou_Yaoshou_Shouren05_Effect_Aunn" strength="1" maxdistance="800"
+                                              gateaffliction="Touhou_Aunn_Character_Effect"
+                                              allowself="false" requiresalive="true"/>
             </Abilities>
         </AbilityGroupInterval>
         <!--铃仙·优昙华院·因幡-->
@@ -2867,6 +2880,14 @@
                 <CharacterAbilityModifyStat stattype="MeleeAttackSpeed" value="0.2"/>
             </Abilities>
         </AbilityGroupInterval>
+        <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Tewi_Character_Effect"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStat stattype="MovementSpeed" value="0.1"/>
+            </Abilities>
+        </AbilityGroupInterval>
     </Talent>
 
     <!--妖尾摆风 根据角色等级增加最大生命值，每级增加0.5%，最多10%
@@ -2882,7 +2903,7 @@
         <Description tag="talentdescription.Touhou_Yaoshou_Shouren06"/>
         <AbilityGroupInterval interval="0.5">
             <Abilities>
-                <CharacterAbilityModifyStatToLevel stattype="MaximumHealthMultiplier" statperlevel="0.005" maxlevel="20"/>
+                <CharacterAbilityModifyStatToLevel stattype="MaximumHealthMultiplier" statperlevel="0.0075" maxlevel="20"/>
             </Abilities>
         </AbilityGroupInterval>
         <!--高丽野阿吽-->
@@ -2970,7 +2991,8 @@
                 <CharacterAbilityApplyStatusEffectsToAttacker>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" targetlimb="Torso" delay="0.1" disabledeltatime="true">
-                            <Conditional speciesgroup="neq human"/>
+                            <Conditional TeamID="Team2"/>
+                            <Conditional TeamID="None"/>
                             <Affliction identifier="Touhou_Lost_Dream" amount="15.0"/>
                             <Affliction identifier="Sleepless_Nightmare" amount="15.0"/>
                         </StatusEffect>
@@ -3111,6 +3133,7 @@
                 <CharacterAbilityGiveStat stattype="TeamAttackMultiplier" value="-0.15"/>
             </Abilities>
         </AbilityGroupEffect>
+        <!--范围效果改用 C# 的 CharacterAbilityProximityAura：只在进出 500 时施加/摘掉
         <AbilityGroupInterval interval="1.9">
             <Conditions>
                 <AbilityConditionCrewMemberUnconscious/>
@@ -3124,6 +3147,17 @@
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffectsToAllies>
+            </Abilities>
+        </AbilityGroupInterval>
+        -->
+        <AbilityGroupInterval interval="1.9">
+            <Conditions>
+                <AbilityConditionCrewMemberUnconscious/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStat stattype="MedicalItemApplyingMultiplier" value="0.15"/>
+                <CharacterAbilityProximityAura affliction="Touhou_Tiangou02_Effect" strength="1" maxdistance="500"
+                                              allowself="false" requiresalive="true"/>
             </Abilities>
         </AbilityGroupInterval>
     </Talent>
@@ -3372,7 +3406,7 @@
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Momizi_Character_Effect"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyStatToLevel stattype="MeleeAttackMultiplier" statperlevel="0.02" maxlevel="25"/>
+                <CharacterAbilityModifyStatToLevel stattype="MeleeAttackMultiplier" statperlevel="0.02" maxlevel="20"/>
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupEffect abilityeffecttype="OnAttacked">
@@ -3403,6 +3437,7 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupInterval>
+        <!--旧写法是 None 组 + GiveStat：None 组只在拿到天赋那一刻判一次条件，等级跨过 15 级不会切换到更重的惩罚；改成间隔组 + ModifyStat（稳态开关）才会随等级正确升级。原样留档：
         <AbilityGroupEffect abilityeffecttype="None">
             <Conditions>
                 <AbilityConditionHasLevel minlevel="15" invert="true"/>
@@ -3419,6 +3454,23 @@
                 <CharacterAbilityGiveStat stattype="SkillGainSpeed" value="-1.5"/>
             </Abilities>
         </AbilityGroupEffect>
+        -->
+        <AbilityGroupInterval Interval="4.9">
+            <Conditions>
+                <AbilityConditionHasLevel minlevel="15" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStat stattype="SkillGainSpeed" value="-0.5"/>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval Interval="4.9">
+            <Conditions>
+                <AbilityConditionHasLevel minlevel="15"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStat stattype="SkillGainSpeed" value="-1.5"/>
+            </Abilities>
+        </AbilityGroupInterval>
     </Talent>
 
     <!--天衣无缝 提高20%毒药抗性和10%debuff抗性。如果你比最高等级的船员低2级以上，增加20%技能获取速度。否则提高10%最大生命值-->
@@ -3511,11 +3563,16 @@
         </AbilityGroupEffect>
     </Talent>
 
-    <!--如梦似幻 击杀任意生物后，给予所有技能点1点。这个效果一巡回最多触发3次。
+    <!--如梦似幻 击杀任意生物后，给予所有技能点1点。这个效果一巡回最多触发3次。减少10%友军伤害。
         穿着天子装束+时：巡回完成所有任务后，增加1个计数。计数达到10个后，增加10%近战攻击速度和10%物理伤害抗性。计数在死亡后清除-->
     <Talent identifier="Touhou_Tianren_Xianren05" trackedstat="Touhou_Tiangou05_Counter" trackedmax="10">
         <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Buff.png" sheetindex="0,0" sheetelementsize="400,400"/>
         <Description tag="talentdescription.Touhou_Tianren_Xianren05"/>
+        <AbilityGroupEffect abilityeffecttype="None">
+            <Abilities>
+                <CharacterAbilityGiveStat stattype="TeamAttackMultiplier" value="-0.1"/>
+            </Abilities>
+        </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnRoundEnd">
             <Abilities>
                 <CharacterAbilityResetPermanentStat statidentifier="Touhou_Tianren_Xianren04_Counter"/>
@@ -3563,15 +3620,26 @@
         </AbilityGroupInterval>
     </Talent>
 
-    <!--超凡脱俗 允许技能水平的上限超过100达到200，修理速度下降70%，减少10%技能水平
+    <!--超凡脱俗 允许技能水平的上限超过100达到150，修理速度下降35%
         穿着天子装束+时：对被气质剥离的敌人造成的伤害提高10%。根据角色等级，每级增加1%攻击速度，最高20%-->
     <Talent identifier="Touhou_Tianren_Xianren06">
         <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Indirect_Damage.png" sheetindex="0,0" sheetelementsize="400,400"/>
         <Description tag="talentdescription.Touhou_Tianren_Xianren06"/>
+        <!--技能上限改用自定义能力（见 CSharp/Shared/SkillCap.cs）：原版 flag 只能一刀切到全局 200、换天赋还带得走。旧写法留档：
         <AbilityGroupEffect abilityeffecttype="None">
             <Abilities>
                 <CharacterAbilityGiveFlag flagtype="GainSkillPastMaximum"/>
-                <CharacterAbilityGiveStat stattype="RepairSpeed" value="-0.7"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        -->
+        <AbilityGroupInterval Interval="4.9">
+            <Abilities>
+                <CharacterAbilitySkillCap maxskill="150"/>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupEffect abilityeffecttype="None">
+            <Abilities>
+                <CharacterAbilityGiveStat stattype="RepairSpeed" value="-0.35"/>
             </Abilities>
         </AbilityGroupEffect>
         <!--比那名居天子-->
@@ -3603,11 +3671,6 @@
     <Talent identifier="Touhou_Tianren_Xianren07">
         <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Buff.png" sheetindex="0,0" sheetelementsize="400,400"/>
         <Description tag="talentdescription.Touhou_Tianren_Xianren07"/>
-        <AbilityGroupEffect abilityeffecttype="None">
-            <Abilities>
-                <CharacterAbilityGiveFlag flagtype="GainSkillPastMaximum"/>
-            </Abilities>
-        </AbilityGroupEffect>
         <!--比那名居天子-->
         <AbilityGroupEffect abilityeffecttype="None">
             <Conditions>
@@ -3621,7 +3684,7 @@
         <AbilityGroupInterval interval="0.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Tenshi_Character_Effect"/>
-                <AbilityConditionHasSkill skillidentifier="Touhou_Magic" minvalue="300" invert="true"/>
+                <AbilityConditionHasSkill skillidentifier="Touhou_Magic" minvalue="200" invert="true"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyStatToSkill stattype="MaximumHealthMultiplier" maxvalue="0.1" skillidentifier="Touhou_Magic"/>
@@ -3646,7 +3709,7 @@
         <Description tag="talentdescription.Touhou_ShenMing01"/>
         <AbilityGroupEffect abilityeffecttype="None">
             <Abilities>
-                <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.1"/>
+                <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.05"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupInterval interval="4.9">
@@ -3698,7 +3761,8 @@
                 <AbilityConditionAttackData weapontype="Turret" invert="true"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="Touhou_Lost_Dream" strength="0.005" multiplystrengthbyskill="Touhou_Magic"/>
+                <!--附加梦消失：系数从 0.005 提到 0.05。旧值每次只有 0.5 点，抵不过每秒 −1.5 的衰减，等于没效果-->
+                <CharacterAbilityHitAffliction affliction="Touhou_Lost_Dream" strength="0.05" multiplystrengthbyskill="Touhou_Magic"/>
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
@@ -4144,13 +4208,7 @@
                 <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityApplyStatusEffects>
-                    <StatusEffects>
-                        <StatusEffect type="OnAbility" target="UseTarget" targetlimb="Torso" delay="0.1" disabledeltatime="true" stackable="false">
-                            <Affliction identifier="burn" strength="0.8"/>
-                        </StatusEffect>
-                    </StatusEffects>
-                </CharacterAbilityApplyStatusEffects>
+                <CharacterAbilityHitAffliction affliction="burn" strength="4"/>
             </Abilities>
         </AbilityGroupEffect>
 
@@ -4161,7 +4219,7 @@
                 <AbilityConditionHasPermanentStat statidentifier="Mood_Learning_Counter" min="33"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="Touhou_ShenMing06_Effect_Kokoro01" strength="1.0"/>
+                <CharacterAbilityHitAffliction affliction="Touhou_ShenMing06_Effect_Kokoro01" strength="1.0"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">

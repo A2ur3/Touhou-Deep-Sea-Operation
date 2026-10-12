@@ -398,8 +398,8 @@
     <Affliction identifier="Touhou_Youmu_Character_Effect" type="Touhou_Character_Affliction" limbspecific="false" indicatorlimb="Torso" hideiconafterdelay="false"
                 isbuff="true"
                 duration="1.0" maxstrength="10" showinhealthscannerthreshold="100" iconcolors="94,94,94;163,164,164;255,255,255">
-        <Effect minstrength="0" maxstrength="10">
-            <StatValue stattype="WalkingSpeed" value="0.24"/>
+        <Effect minstrength="0" maxstrength="10" resistancefor="burn" minresistance="-0.15" maxresistance="-0.15">
+            <StatValue stattype="WalkingSpeed" value="0.15"/>
             <StatValue stattype="MeleeAttackMultiplier" value="0.3"/>
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Touhou_Youmu_Character_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
@@ -562,7 +562,7 @@
         <Effect minstrength="0" maxstrength="10" resistancefor="stun" minresistance="0.1" maxresistance="0.1">
 <!--            <StatValue stattype="RangedAttackMultiplier" value="0.3"/>-->
             <StatValue stattype="MeleeAttackMultiplier" value="0.3"/>
-            <StatValue stattype="RangedAttackSpeed" value="0.2"/>
+            <StatValue stattype="RangedAttackSpeed" value="0.05"/>
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Akyuu_Weapons.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
     </Affliction>
@@ -1007,7 +1007,8 @@
             showinhealthscannerthreshold="1000"
             duration="10"
             maxstrength="1">
-        <Effect minstrength="0" maxstrength="1" resistancefor="damage,stun" minresistance="0.1" maxresistance="0.1">
+        <!--描述只写了「物理伤害抗性和25%近战攻击伤害」，这里原本还多给了一份眩晕抗性-->
+        <Effect minstrength="0" maxstrength="1" resistancefor="damage" minresistance="0.1" maxresistance="0.1">
             <StatValue stattype="MeleeAttackMultiplier" value="0.25"/>
         </Effect>
         <icon texture="%ModDir%/Images/Transparent.png" sourcerect="0,0,128,128" color="0,0,0,0" origin="0,0"/>
@@ -1042,7 +1043,7 @@
     <Affliction identifier="Touhou_Yuka_Character_Effect" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
                 maxstrength="10"
                 duration="1.0" showinhealthscannerthreshold="100" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
-        <Effect minstrength="0" maxstrength="10" resistancefor="poison,bleedinng" minresistance="0.25" maxresistance="0.25">
+        <Effect minstrength="0" maxstrength="10" resistancefor="poison,bleeding" minresistance="0.25" maxresistance="0.25">
             <StatusEffect target="Character" Interval="1.0" Duration="1.0">
                 <Conditional HealthPercentage="lt 100"/>
                 <Conditional burn="gt 0"/>
@@ -1050,6 +1051,7 @@
                 <ReduceAffliction type="burn" strength="0.02"/>
             </StatusEffect>
             <StatValue stattype="MeleeAttackMultiplier" value="0.3"/>
+            <StatValue stattype="MaximumHealthMultiplier" value="-0.1"/>
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Touhou_Yuka_Character_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
     </Affliction>
@@ -1068,7 +1070,7 @@
     <Affliction identifier="Hyouibana_Yuka_Effect" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
                 maxstrength="10"
                 showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
-        <Effect minstrength="0" maxstrength="10" resistancefor="poison,bleedinng" minresistance="0.1" maxresistance="0.1">
+        <Effect minstrength="0" maxstrength="10" resistancefor="poison,bleeding" minresistance="0.1" maxresistance="0.1">
             <StatValue stattype="MeleeAttackMultiplier" value="0.2"/>
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Touhou_Yuka_Character_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
@@ -1130,11 +1132,13 @@
                 maxstrength="10"
                 duration="1.0" showinhealthscannerthreshold="100" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
         <Effect minstrength="0" maxstrength="10" resistancefor="Reiki_Pressure,psychosis" minresistance="0.2" maxresistance="0.2">
+            <!--白送回血/回精神（血不满时每秒 damage 0.05、psychosis 0.5）描述没写，已停用，原样留档：
             <StatusEffect target="Character" Interval="1.0" Duration="1.0" CanGiveMedicalSkill="false">
                 <Conditional HealthPercentage="lt 100"/>
                 <ReduceAffliction type="damage" strength="0.05"/>
                 <ReduceAffliction type="psychosis" strength="0.5"/>
             </StatusEffect>
+            -->
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Touhou_Aunn_Character_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
     </Affliction>
@@ -1199,10 +1203,9 @@
 
     <!--狮子-->
     <Affliction identifier="Aunn_Lion" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" resetbetweenrounds="true"
-                hideiconafterdelay="true" maxstrength="10"
+                hideiconafterdelay="true" maxstrength="10" duration="2.0"
                 showinhealthscannerthreshold="100" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
-        <Effect minstrength="0" maxstrength="10" resistancefor="damage" minresistance="-0.1" maxresistance="-0.1"
-                strengthchange="-1">
+        <Effect minstrength="0" maxstrength="10" resistancefor="damage" minresistance="-0.1" maxresistance="-0.1">
             <StatValue stattype="RangedAttackMultiplier" value="0.1"/>
             <StatValue stattype="MeleeAttackMultiplier" value="0.1"/>
             <StatValue stattype="MeleeAttackSpeed" value="0.1"/>
@@ -1214,18 +1217,19 @@
 
     <!--狛犬-->
     <Affliction identifier="Aunn_Koma_Inu" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" resetbetweenrounds="true"
-                hideiconafterdelay="true" maxstrength="10"
+                hideiconafterdelay="true" maxstrength="10" duration="2.0"
                 showinhealthscannerthreshold="100" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
-        <Effect minstrength="0" maxstrength="10" resistancefor="damage,psychosis" minresistance="0.1" maxresistance="0.1"
-                strengthchange="-1">
+        <Effect minstrength="0" maxstrength="10" resistancefor="damage,psychosis" minresistance="0.1" maxresistance="0.1">
             <StatValue stattype="TeamAttackMultiplier" value="-0.15"/>
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Aunn_Koma_Inu.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
     </Affliction>
 
     <!--守护神兽-->
+    <!--持续时间只作兜底：正常由 CharacterAbilityProximityAura 在离开范围/换形态时摘掉-->
     <Affliction identifier="Aunn_Koma_Inu_Others" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="true"
                 maxstrength="10"
+                duration="60"
                 resetbetweenrounds="true" showinhealthscannerthreshold="100" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
         <Effect minstrength="0" maxstrength="10" resistancefor="damage,psychosis" minresistance="0.1" maxresistance="0.1" minvitalitydecrease="-10"
                 maxvitalitydecrease="-10" multiplybymaxvitality="false"/>
@@ -3469,15 +3473,27 @@
                 hideiconafterdelay="false" maxstrength="100.1"
                 resetbetweenrounds="true" iconcolors="255,255,255;255,255,200;255,255,150;255,255,100">
         <Effect minstrength="0" maxstrength="100">
+            <!-- 「食用 3 级及以上等级料理或饮品可以提前解除」= 或关系。
+                 原先两条 Conditional 挤在同一个 StatusEffect 里，靠 comparison 的默认值决定与/或；
+                 这里拆成两个各自独立的效果，「有料理」与「有饮品」各自都能单独触发。 -->
             <StatusEffect target="Character" disabledeltatime="true" Interval="0.5">
                 <Conditional Touhou_Cuisine_Effect03="gt 0"/>
+                <ReduceAffliction identifier="EmaTalent_Witch_Transformation" strength="500"/>
+            </StatusEffect>
+            <StatusEffect target="Character" disabledeltatime="true" Interval="0.5">
                 <Conditional Touhou_Drinks_Effect03="gt 0"/>
                 <ReduceAffliction identifier="EmaTalent_Witch_Transformation" strength="500"/>
             </StatusEffect>
         </Effect>
         <Effect minstrength="100" maxstrength="100.1" multiplybymaxvitality="false" minvitalitydecrease="-20" maxvitalitydecrease="-20">
+            <!-- 「食用 3 级及以上等级料理或饮品可以提前解除」= 或关系。
+                 原先两条 Conditional 挤在同一个 StatusEffect 里，靠 comparison 的默认值决定与/或；
+                 这里拆成两个各自独立的效果，「有料理」与「有饮品」各自都能单独触发。 -->
             <StatusEffect target="Character" disabledeltatime="true" Interval="0.5">
                 <Conditional Touhou_Cuisine_Effect03="gt 0"/>
+                <ReduceAffliction identifier="EmaTalent_Witch_Transformation" strength="500"/>
+            </StatusEffect>
+            <StatusEffect target="Character" disabledeltatime="true" Interval="0.5">
                 <Conditional Touhou_Drinks_Effect03="gt 0"/>
                 <ReduceAffliction identifier="EmaTalent_Witch_Transformation" strength="500"/>
             </StatusEffect>
@@ -3628,8 +3644,9 @@
     </Affliction>
 
     <!--莉莉白给予其他玩家效果-->
+    <!--Duration 从 5.0 提到 60：现在由 CharacterAbilityProximityAura 负责进出范围时摘掉，5 秒会短于重新检查的节奏而出现空档-->
     <Affliction identifier="LilywhiteTalent_ToAllies_Effect" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
-                maxstrength="10" Duration="5.0" showiconthreshold="100"
+                maxstrength="10" Duration="60.0" showiconthreshold="100"
                 showinhealthscannerthreshold="100" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
         <Effect minstrength="0" maxstrength="10" resistancefor="chemaddiction,opiateaddiction,oxygenlow" minresistance="0.15" maxresistance="0.15" >
             <StatValue stattype="MedicalItemApplyingMultiplier" value="0.1"/>
@@ -3700,7 +3717,7 @@
     <!--觉使用心灵读取CD-->
     <Affliction identifier="SatoriTalent_Mind_Reading_CD" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
                 maxstrength="10" showiconthreshold="100"
-                duration="180.0" showinhealthscannerthreshold="100" iconcolors="100,100,100;100,100,100;100,100,100;100,100,100">
+                duration="120.0" showinhealthscannerthreshold="100" iconcolors="100,100,100;100,100,100;100,100,100;100,100,100">
         <Effect minstrength="0" maxstrength="10" />
         <Icon texture="%ModDir%/Images/Afflictions/Touhou_Satori_Character_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
     </Affliction>
@@ -4004,12 +4021,13 @@
         <Icon texture="%ModDir%/Images/Afflictions/Tewi_Weapons.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
     </Affliction>
 
+
     <!--永远与须臾的罪人-->
     <Affliction identifier="Touhou_Kaguya_Character_Effect" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
                 maxstrength="10"
                 duration="1.0" showinhealthscannerthreshold="100" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
         <Effect minstrength="0" maxstrength="10" resistancefor="damage,stun" minresistance="-0.2" maxresistance="-0.2" >
-            <StatValue stattype="RangedAttackMultiplier" value="-0.15"/>
+            <StatValue stattype="RangedAttackMultiplier" value="-0.1"/>
             <StatValue stattype="MeleeAttackMultiplier" value="-0.4"/>
             <StatValue stattype="MovementSpeed" value="-0.1"/>
             <StatValue stattype="DebuffDurationMultiplier" value="-0.15"/>
@@ -4268,16 +4286,28 @@
                 hideiconafterdelay="false" maxstrength="100.1"
                 resetbetweenrounds="true" iconcolors="255,255,255;255,255,200;255,255,150;255,255,100">
         <Effect minstrength="0" maxstrength="100">
+            <!-- 「食用 3 级及以上等级料理或饮品可以提前解除」= 或关系。
+                 原先两条 Conditional 挤在同一个 StatusEffect 里，靠 comparison 的默认值决定与/或；
+                 这里拆成两个各自独立的效果，「有料理」与「有饮品」各自都能单独触发。 -->
             <StatusEffect target="Character" disabledeltatime="true" Interval="0.5">
                 <Conditional Touhou_Cuisine_Effect03="gt 0"/>
+                <ReduceAffliction identifier="HiroTalent_Witch_Transformation" strength="500"/>
+            </StatusEffect>
+            <StatusEffect target="Character" disabledeltatime="true" Interval="0.5">
                 <Conditional Touhou_Drinks_Effect03="gt 0"/>
                 <ReduceAffliction identifier="HiroTalent_Witch_Transformation" strength="500"/>
             </StatusEffect>
         </Effect>
         <Effect minstrength="100" maxstrength="100.1" resistancefor="damage,burn" minresistance="0.15" maxresistance="0.15"
                 multiplybymaxvitality="false" minvitalitydecrease="-20" maxvitalitydecrease="-20">
+            <!-- 「食用 3 级及以上等级料理或饮品可以提前解除」= 或关系。
+                 原先两条 Conditional 挤在同一个 StatusEffect 里，靠 comparison 的默认值决定与/或；
+                 这里拆成两个各自独立的效果，「有料理」与「有饮品」各自都能单独触发。 -->
             <StatusEffect target="Character" disabledeltatime="true" Interval="0.5">
                 <Conditional Touhou_Cuisine_Effect03="gt 0"/>
+                <ReduceAffliction identifier="HiroTalent_Witch_Transformation" strength="500"/>
+            </StatusEffect>
+            <StatusEffect target="Character" disabledeltatime="true" Interval="0.5">
                 <Conditional Touhou_Drinks_Effect03="gt 0"/>
                 <ReduceAffliction identifier="HiroTalent_Witch_Transformation" strength="500"/>
             </StatusEffect>
@@ -4443,15 +4473,27 @@
                 hideiconafterdelay="false" maxstrength="100.1"
                 resetbetweenrounds="true" iconcolors="255,255,255;255,255,200;255,255,150;255,255,100">
         <Effect minstrength="0" maxstrength="100">
+            <!-- 「食用 3 级及以上等级料理或饮品可以提前解除」= 或关系。
+                 原先两条 Conditional 挤在同一个 StatusEffect 里，靠 comparison 的默认值决定与/或；
+                 这里拆成两个各自独立的效果，「有料理」与「有饮品」各自都能单独触发。 -->
             <StatusEffect target="Character" disabledeltatime="true" Interval="0.5">
                 <Conditional Touhou_Cuisine_Effect03="gt 0"/>
+                <ReduceAffliction identifier="SherryTalent_Witch_Transformation" strength="500"/>
+            </StatusEffect>
+            <StatusEffect target="Character" disabledeltatime="true" Interval="0.5">
                 <Conditional Touhou_Drinks_Effect03="gt 0"/>
                 <ReduceAffliction identifier="SherryTalent_Witch_Transformation" strength="500"/>
             </StatusEffect>
         </Effect>
         <Effect minstrength="100" maxstrength="100.1" multiplybymaxvitality="false" minvitalitydecrease="-20" maxvitalitydecrease="-20">
+            <!-- 「食用 3 级及以上等级料理或饮品可以提前解除」= 或关系。
+                 原先两条 Conditional 挤在同一个 StatusEffect 里，靠 comparison 的默认值决定与/或；
+                 这里拆成两个各自独立的效果，「有料理」与「有饮品」各自都能单独触发。 -->
             <StatusEffect target="Character" disabledeltatime="true" Interval="0.5">
                 <Conditional Touhou_Cuisine_Effect03="gt 0"/>
+                <ReduceAffliction identifier="SherryTalent_Witch_Transformation" strength="500"/>
+            </StatusEffect>
+            <StatusEffect target="Character" disabledeltatime="true" Interval="0.5">
                 <Conditional Touhou_Drinks_Effect03="gt 0"/>
                 <ReduceAffliction identifier="SherryTalent_Witch_Transformation" strength="500"/>
             </StatusEffect>
@@ -4912,7 +4954,7 @@
     </Affliction>
 
     <!--厄运缠身攻击敌人削减最大生命值-->
-    <Affliction identifier="Touhou_Misfortune_Curse_MaxHealth_Debuff" type="debuff" isbuff="true" limbspecific="false" hideiconafterdelay="false"
+    <Affliction identifier="Touhou_Misfortune_Curse_MaxHealth_Debuff" type="debuff" limbspecific="false" hideiconafterdelay="false"
                 maxstrength="10" resetbetweenrounds="true" showiconthreshold="100" showinhealthscannerthreshold="100" >
         <Effect minstrength="0" maxstrength="10" >
             <StatValue stattype="MaximumHealthMultiplier" minvalue="0" maxvalue="-0.15"/>

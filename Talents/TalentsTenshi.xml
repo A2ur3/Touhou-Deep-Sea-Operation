@@ -39,6 +39,10 @@
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttackedResult">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Tenshi_Character_Effect"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Tenshi_Guarded" minimumpercentage="1.0"/>
+            </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>

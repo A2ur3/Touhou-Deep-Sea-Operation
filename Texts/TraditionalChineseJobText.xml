@@ -360,7 +360,7 @@
         穿著‖color:gui.red‖鈴仙裝束+‖end‖時：增加‖color:gui.green‖50%‖end‖‖color:gui.orange‖技能獲取速度‖end‖和‖color:gui.green‖15%‖end‖‖color:gui.orange‖經驗獲取速度‖end‖，提高‖color:gui.green‖20%‖end‖‖color:gui.yellow‖眩暈抗性‖end‖
         穿著‖color:gui.red‖因幡天為裝束+‖end‖時：增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖移動速度‖end‖。每‖color:gui.green‖1‖end‖點‖color:gui.orange‖魔法能力‖end‖，提供‖color:gui.green‖0.1%‖end‖‖color:gui.orange‖攻擊速度‖end‖。最多‖color:gui.green‖20%‖end‖</talentdescription.Touhou_Yaoshou_Shouren05>
     <talentname.Touhou_Yaoshou_Shouren06>妖尾擺風</talentname.Touhou_Yaoshou_Shouren06>
-    <talentdescription.Touhou_Yaoshou_Shouren06>根據‖color:gui.orange‖角色等級‖end‖增加‖color:gui.orange‖最大生命值‖end‖，每級增加‖color:gui.green‖0.5%‖end‖，最多‖color:gui.green‖10%‖end‖
+    <talentdescription.Touhou_Yaoshou_Shouren06>根據‖color:gui.orange‖角色等級‖end‖增加‖color:gui.orange‖最大生命值‖end‖，每級增加‖color:gui.green‖0.75%‖end‖，最多‖color:gui.green‖15%‖end‖
         穿著‖color:gui.red‖阿吽裝束+‖end‖時：增加‖color:gui.green‖10%‖end‖對人類敵人的傷害。根據角色等級給予不同的效果：
         ‖color:gui.green‖15‖end‖級：可以全速拖動生物
         ‖color:gui.green‖20‖end‖級：提高‖color:gui.green‖50%‖end‖‖color:gui.orange‖缺氧抗性‖end‖
@@ -398,7 +398,7 @@
     <talentname.Touhou_Tiangou07>山中神靈</talentname.Touhou_Tiangou07>
     <talentdescription.Touhou_Tiangou07>
         穿著‖color:gui.red‖文文裝束+‖end‖時：根據角色等級，每級增加‖color:gui.green‖1%‖end‖‖color:gui.orange‖移動速度‖end‖，最高‖color:gui.green‖25%‖end‖。角色等級達到‖color:gui.green‖20‖end‖後，額外增加‖color:gui.green‖15%‖end‖‖color:gui.orange‖造成的傷害‖end‖
-        穿著‖color:gui.red‖椛 裝束+‖end‖時：根據角色等級，每級增加‖color:gui.green‖2%‖end‖‖color:gui.orange‖近戰攻擊傷害‖end‖，最高‖color:gui.green‖50%‖end‖。角色等級到達‖color:gui.green‖20‖end‖後，額外減少‖color:gui.green‖15%‖end‖受到的傷害。</talentdescription.Touhou_Tiangou07>
+        穿著‖color:gui.red‖椛 裝束+‖end‖時：根據角色等級，每級增加‖color:gui.green‖2%‖end‖‖color:gui.orange‖近戰攻擊傷害‖end‖，最高‖color:gui.green‖40%‖end‖。角色等級到達‖color:gui.green‖20‖end‖後，額外減少‖color:gui.green‖15%‖end‖受到的傷害。</talentdescription.Touhou_Tiangou07>
 
     <talenttree.Touhou_Tianren_Xianren>天人/仙人</talenttree.Touhou_Tianren_Xianren>
     <talentname.Touhou_Tianren_Xianren01>悠然自在</talentname.Touhou_Tianren_Xianren01>
@@ -411,10 +411,10 @@
     <talentname.Touhou_Tianren_Xianren04>無念無想</talentname.Touhou_Tianren_Xianren04>
     <talentdescription.Touhou_Tianren_Xianren04>滿血時，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖移動速度‖end‖。血量低於‖color:gui.green‖0‖end‖時，增加‖color:gui.green‖90%‖end‖‖color:gui.orange‖缺氧抗性‖end‖。等級大於‖color:gui.green‖15‖end‖後，受到的攻擊傷害減少‖color:gui.green‖10%‖end‖</talentdescription.Touhou_Tianren_Xianren04>
     <talentname.Touhou_Tianren_Xianren05>如夢似幻</talentname.Touhou_Tianren_Xianren05>
-    <talentdescription.Touhou_Tianren_Xianren05>擊殺任意生物後，給予所有技能點‖color:gui.green‖1‖end‖點。這個效果一巡迴最多觸發‖color:gui.green‖3‖end‖次。
+    <talentdescription.Touhou_Tianren_Xianren05>擊殺任意生物後，給予所有技能點‖color:gui.green‖1‖end‖點。這個效果一巡迴最多觸發‖color:gui.green‖3‖end‖次。減少‖color:gui.green‖10%‖end‖‖color:gui.orange‖友軍傷害‖end‖。
         穿著‖color:gui.red‖天子裝束+‖end‖時：巡迴完成所有任務後，增加‖color:gui.green‖1‖end‖個計數。計數達到‖color:gui.green‖10‖end‖個後，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖近戰攻擊速度‖end‖和‖color:gui.orange‖物理傷害抗性‖end‖。計數在死亡後清除</talentdescription.Touhou_Tianren_Xianren05>
     <talentname.Touhou_Tianren_Xianren06>超凡脫俗</talentname.Touhou_Tianren_Xianren06>
-    <talentdescription.Touhou_Tianren_Xianren06>允許技能水平的上限超過‖color:gui.green‖100‖end‖達到‖color:gui.green‖200‖end‖，‖color:gui.orange‖修理速度‖end‖下降‖color:gui.red‖70%‖end‖，減少‖color:gui.red‖10%‖end‖‖color:gui.orange‖技能水平‖end‖
+    <talentdescription.Touhou_Tianren_Xianren06>允許技能水平的上限超過‖color:gui.green‖100‖end‖達到‖color:gui.green‖150‖end‖，‖color:gui.orange‖修理速度‖end‖下降‖color:gui.red‖35%‖end‖
         穿著‖color:gui.red‖天子裝束+‖end‖時：根據角色等級，每級增加‖color:gui.green‖1%‖end‖‖color:gui.orange‖攻擊速度‖end‖，最高‖color:gui.green‖20%‖end‖</talentdescription.Touhou_Tianren_Xianren06>
     <talentname.Touhou_Tianren_Xianren07>至聖至明</talentname.Touhou_Tianren_Xianren07>
     <talentdescription.Touhou_Tianren_Xianren07>
@@ -422,7 +422,7 @@
 
     <talenttree.Touhou_ShenMing>神明/付喪神</talenttree.Touhou_ShenMing>
     <talentname.Touhou_ShenMing01>寄宿於物</talentname.Touhou_ShenMing01>
-    <talentdescription.Touhou_ShenMing01>增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖。生命值高於‖color:gui.green‖50%‖end‖時，更難被敵人發現</talentdescription.Touhou_ShenMing01>
+    <talentdescription.Touhou_ShenMing01>增加‖color:gui.green‖5%‖end‖‖color:gui.orange‖最大生命值‖end‖。生命值高於‖color:gui.green‖50%‖end‖時，更難被敵人發現</talentdescription.Touhou_ShenMing01>
     <talentname.Touhou_ShenMing02>光亮如新</talentname.Touhou_ShenMing02>
     <talentdescription.Touhou_ShenMing02>受到藥物治療的效果增加‖color:gui.green‖20%‖end‖，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖debuff抗性‖end‖和‖color:gui.green‖35%‖end‖‖color:gui.orange‖毒藥抗性‖end‖，減少‖color:gui.green‖10%‖end‖‖color:gui.orange‖debuff持續時間‖end‖</talentdescription.Touhou_ShenMing02>
     <talentname.Touhou_ShenMing03>本質具現</talentname.Touhou_ShenMing03>

@@ -3,6 +3,15 @@
     <Talent identifier="KokoroTalent" trackedstat="Mood_Learning_Counter" trackedmax="67">
         <Icon texture="%ModDir%/Images/Talents/KokoroTalent.png" sheetindex="0,0" sheetelementsize="128,128"/>
         <Description tag="talentdescription.KokoroTalent"/>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kokoro_Character_Effect"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1"/>
+            </Abilities>
+        </AbilityGroupEffect>
         <AbilityGroupInterval interval="9.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kokoro_Character_Effect" invert="true"/>
@@ -20,7 +29,7 @@
                     <Conditional ispet="false"/>
                     <Conditional KokoroTalent_Mark="lte 0"/>
                 </AbilityConditionCharacter>
-                <AbilityConditionServerRandom randomchance="0.4"/>
+                <AbilityConditionServerRandom randomchance="0.6"/>
                 <AbilityConditionHasPermanentStat statidentifier="Mood_Learning_Counter" min="66" invert="true"/>
                 <AbilityConditionCharacterNotLooted identifier="KokoroTalent_Mark"/>
             </Conditions>

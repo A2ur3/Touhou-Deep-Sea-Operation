@@ -7758,7 +7758,7 @@
                 </StatusEffect>
             </Button>
         </CustomInterface>
-        <RangedWeapon barrelpos="200,2" weapondamagemodifier="1.0" spread="0" combatPriority="90" maxchargetime="0.0"
+        <RangedWeapon barrelpos="200,2" weapondamagemodifier="1.0" spread="0" combatPriority="100" maxchargetime="0.0"
                       Reload="1.45" holdtrigger="true" drawhudwhenequipped="true" crosshairscale="1.0">
             <!--            <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />-->
             <CrosshairPointer texture="%ModDir%/Images/OtherWeapons/Touhou_Starkiller_CrosshairPointer.png" sourcerect="0,0,8192,4096"/>

@@ -12,6 +12,15 @@
                 <CharacterAbilityModifyResistance resistanceid="Reiki_Side_Effect" multiplier="0.75"/>
             </Abilities>
         </AbilityGroupInterval>
+        <AbilityGroupInterval interval="5.0">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kaguya_Character_Effect"/>
+                <AbilityConditionInSubmarine submarinetype="Player" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStat stattype="SkillGainSpeed" value="0.25"/>
+            </Abilities>
+        </AbilityGroupInterval>
     </Talent>
 
     <!--佛体的金刚石天赋-->
@@ -64,15 +73,6 @@
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffects>
-            </Abilities>
-        </AbilityGroupInterval>
-        <AbilityGroupInterval interval="3.0">
-            <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kaguya_Character_Effect"/>
-                <AbilityConditionInSubmarine submarinetype="Player" />
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityModifyStat stattype="SkillGainSpeed" value="0.25"/>
             </Abilities>
         </AbilityGroupInterval>
     </Talent>
@@ -128,6 +128,7 @@
                 <CharacterAbilityModifyStat stattype="RangedAttackMultiplier" value="0.1"/>
                 <CharacterAbilityModifyStat stattype="MeleeAttackMultiplier" value="0.1"/>
                 <CharacterAbilityModifyStat stattype="MaximumHealthMultiplier" value="0.1"/>
+                <CharacterAbilityModifyStat stattype="MovementSpeed" value="0.1"/>
                 <CharacterAbilityModifyResistance resistanceid="damage" multiplier="0.9"/>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>

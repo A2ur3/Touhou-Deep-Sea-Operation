@@ -78,6 +78,10 @@
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttackedResult">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Momizi_Character_Effect"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Tenshi_Guarded" minimumpercentage="1.0"/>
+            </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>

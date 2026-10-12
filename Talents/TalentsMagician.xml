@@ -786,7 +786,7 @@
                 <AbilityConditionHasLevel minlevel="5"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyStatToLevel stattype="SkillGainSpeed" statperlevel="0.04" maxlevel="20"/>
+                <CharacterAbilityModifyStatToLevel stattype="SkillGainSpeed" statperlevel="0.03" maxlevel="20"/>
                 <CharacterAbilityModifyStatToLevel stattype="ExperienceGainMultiplier" statperlevel="0.01" maxlevel="20"/>
             </Abilities>
         </AbilityGroupInterval>

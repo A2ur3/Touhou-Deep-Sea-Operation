@@ -38,9 +38,9 @@
         <AbilityGroupEffect abilityeffecttype="OnAttacked">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Satori_Character_Effect"/>
-                <AbilityConditionCharacter targettype="Enemy">
+                <AbilityConditionAttacker targettype="Enemy">
                     <Conditional SatoriTalent_OnAttacked_Effect="gt 0"/>
-                </AbilityConditionCharacter>
+                </AbilityConditionAttacker>
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.15"/>

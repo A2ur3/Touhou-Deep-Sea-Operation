@@ -80,7 +80,7 @@
                 <AbilityConditionServerRandom randomchance="0.05"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="stun" strength="0.1"/>
+                <CharacterAbilityHitAffliction affliction="stun" strength="0.1"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -91,7 +91,7 @@
                 <AbilityConditionServerRandom randomchance="0.05"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="stun" strength="0.05"/>
+                <CharacterAbilityHitAffliction affliction="stun" strength="0.05"/>
                 <CharacterAbilityGiveAffliction affliction="Light_Of_The_Moon_Effect" strength="100"/>
             </Abilities>
         </AbilityGroupEffect>
@@ -102,7 +102,7 @@
                 <AbilityConditionServerRandom randomchance="0.3"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="stun" strength="0.1"/>
+                <CharacterAbilityHitAffliction affliction="stun" strength="0.1"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -113,7 +113,7 @@
                 <AbilityConditionServerRandom randomchance="0.3"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="stun" strength="0.05"/>
+                <CharacterAbilityHitAffliction affliction="stun" strength="0.05"/>
                 <CharacterAbilityGiveAffliction affliction="Light_Of_The_Moon_Effect" strength="100"/>
             </Abilities>
         </AbilityGroupEffect>

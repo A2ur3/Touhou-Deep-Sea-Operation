@@ -729,7 +729,7 @@
                 <AbilityConditionServerRandom randomchance="0.05"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="burn" strength="0.15"/>
+                <CharacterAbilityHitAffliction affliction="burn" strength="0.45"/>
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
@@ -778,7 +778,7 @@
                 <AbilityConditionServerRandom randomchance="0.05"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="stun" strength="0.05"/>
+                <CharacterAbilityHitAffliction affliction="stun" strength="0.05"/>
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
@@ -990,9 +990,9 @@
         <AbilityGroupEffect abilityeffecttype="OnAttacked">
             <Conditions>
                 <AbilityConditionAttackData weapontype="Any"/>
-                <AbilityConditionCharacter targettype="Enemy">
+                <AbilityConditionAttacker targettype="Enemy">
                     <Conditional psychosis="gt 5"/>
-                </AbilityConditionCharacter>
+                </AbilityConditionAttacker>
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.1"/>
